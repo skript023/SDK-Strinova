@@ -21,7 +21,7 @@
 #include "Slate_structs.hpp"
 #include "ALSV4_CPP_structs.hpp"
 
-
+using namespace UC;
 namespace SDK
 {
 
@@ -8705,11 +8705,11 @@ enum class EAnimType : uint8
 
 // Enum PMGame.EActionType
 // NumValues: 0x0002
-enum class PMGame::EActionType : uint8
-{
-	Standby                                  = 0,
-	EActionType_MAX                          = 1,
-};
+//enum class PMGame::EActionType : uint8
+//{
+//	Standby                                  = 0,
+//	EActionType_MAX                          = 1,
+//};
 
 // Enum PMGame.ERoleWeaponState
 // NumValues: 0x0004
@@ -8849,7 +8849,7 @@ enum class ELoginChannel : uint8
 	LC_X                                     = 6,
 	LC_MAIL                                  = 7,
 	LC_PLAYSTATION                           = 8,
-	LC_MAX                                   = 9,
+	MAX                                   = 9,
 };
 
 // Enum PMGame.ENewPlayerGuideSpecialStep
@@ -11318,7 +11318,7 @@ enum class EInternalSlideWallBlockType : uint8
 struct FCyTableRowBase : public FTableRowBase
 {
 };
-DUMPER7_ASSERTS_FCyTableRowBase;
+//DUMPER7_ASSERTS_FCyTableRowBase;
 
 // ScriptStruct PMGame.CyRoomTrainingTableRow
 // 0x00C8 (0x00D0 - 0x0008)
@@ -11339,7 +11339,7 @@ public:
 	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              PlayModeIcon;                                      // 0x00A8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCyRoomTrainingTableRow;
+//DUMPER7_ASSERTS_FCyRoomTrainingTableRow;
 
 // ScriptStruct PMGame.CyCameraModifierCommand
 // 0x0010 (0x0010 - 0x0000)
@@ -11350,7 +11350,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UCameraModifier>            CameraModifier;                                    // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCyCameraModifierCommand;
+//DUMPER7_ASSERTS_FCyCameraModifierCommand;
 
 // ScriptStruct PMGame.ActorArray
 // 0x0010 (0x0010 - 0x0000)
@@ -11382,7 +11382,7 @@ public:
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	uint64                                        WatchPlayerID;                                     // 0x0010(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCySpectatorWatchInfo;
+//DUMPER7_ASSERTS_FCySpectatorWatchInfo;
 
 // ScriptStruct PMGame.CheckZVelocityMaxDataArray
 // 0x0018 (0x0018 - 0x0000)
@@ -11401,7 +11401,7 @@ public:
 	TSubclassOf<class UGameplayEffect>            EffectClass;                                       // 0x0000(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FGameplayEffectWithHandle;
+//DUMPER7_ASSERTS_FGameplayEffectWithHandle;
 
 // ScriptStruct PMGame.GameplayEffectWithHandleArr
 // 0x0010 (0x0010 - 0x0000)
@@ -11432,7 +11432,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ErrorDesc;                                         // 0x0010(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCyErrorCodeTableRow;
+//DUMPER7_ASSERTS_FCyErrorCodeTableRow;
 
 // ScriptStruct PMGame.EventFilterData
 // 0x0038 (0x0038 - 0x0000)
@@ -11446,7 +11446,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class ICyGPOwnerInterface>   OwnerInterface;                                    // 0x0028(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FEventFilterData;
+//DUMPER7_ASSERTS_FEventFilterData;
 
 // ScriptStruct PMGame.RoleSkillTrackedData
 // 0x0078 (0x0078 - 0x0000)
@@ -11479,7 +11479,7 @@ public:
 	ECyGuideEquipmentSlotType                     EquipmentSlotType;                                 // 0x001C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0xB];                                       // 0x001D(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FCyGuideGameplayEventConfig;
+//DUMPER7_ASSERTS_FCyGuideGameplayEventConfig;
 
 // ScriptStruct PMGame.CyGuideReviewConfig
 // 0x00C0 (0x00C8 - 0x0008)
@@ -11495,7 +11495,7 @@ public:
 	TArray<struct FCyGuideGameplayEventConfig>    TriggerEvents;                                     // 0x00A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FCyGuideGameplayEventConfig>    EndEvents;                                         // 0x00B8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCyGuideReviewConfig;
+//DUMPER7_ASSERTS_FCyGuideReviewConfig;
 
 // ScriptStruct PMGame.AbilityDebugTagInfo
 // 0x0070 (0x0070 - 0x0000)
@@ -11505,7 +11505,7 @@ public:
 	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x0060)(NativeAccessSpecifierPublic)
 	class FString                                 Comment;                                           // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FAbilityDebugTagInfo;
+//DUMPER7_ASSERTS_FAbilityDebugTagInfo;
 
 // ScriptStruct PMGame.CyClosingParticleComponentData
 // 0x0008 (0x0008 - 0x0000)
@@ -11545,7 +11545,7 @@ public:
 	struct FTriggerAtomData                       AtomData;                                          // 0x0000(0x0030)(Transient, NativeAccessSpecifierPublic)
 	struct FGameplayEventData                     GameplayEventData;                                 // 0x0030(0x0150)(Transient, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FRunningEventData;
+//DUMPER7_ASSERTS_FRunningEventData;
 
 // ScriptStruct PMGame.GrowthSkillAttributeInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -11570,7 +11570,7 @@ public:
 	TArray<int32>                                 GameMode;                                          // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FGrowthSkillAttributeInfo>      AttributeInfo;                                     // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCyGrowthSkillToAttributeTableRow;
+//DUMPER7_ASSERTS_FCyGrowthSkillToAttributeTableRow;
 
 // ScriptStruct PMGame.ActivityMxrgameplayData
 // 0x0098 (0x0098 - 0x0000)
@@ -11614,7 +11614,7 @@ public:
 	struct FVector2D                              Size;                                              // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAnchorData                            AnchorData;                                        // 0x0050(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCyGuideUIGuideTypeConfig;
+//DUMPER7_ASSERTS_FCyGuideUIGuideTypeConfig;
 
 // ScriptStruct PMGame.CyGuideUIGuideConfig
 // 0x0038 (0x0040 - 0x0008)
@@ -11627,7 +11627,7 @@ public:
 	TArray<struct FCyGuideGameplayEventConfig>    TriggerBeginEvents;                                // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FCyGuideGameplayEventConfig>    TriggerEndEvents;                                  // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCyGuideUIGuideConfig;
+//DUMPER7_ASSERTS_FCyGuideUIGuideConfig;
 
 // ScriptStruct PMGame.CyCustomPlayerRule
 // 0x00F0 (0x00F0 - 0x0000)
@@ -11666,7 +11666,7 @@ public:
 	TMap<struct FGameplayAttribute, float>        SpecificGameAttributeRule;                         // 0x0050(0x0050)(Edit, NativeAccessSpecifierPublic)
 	TMap<ECyCustomGameSettingType, struct FCyArray> SpecificGameSettingRule;                         // 0x00A0(0x0050)(Edit, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCySpecificCustomGameRuleInfo;
+//DUMPER7_ASSERTS_FCySpecificCustomGameRuleInfo;
 
 // ScriptStruct PMGame.CyTeamConfigData
 // 0x0002 (0x0002 - 0x0000)
@@ -13877,7 +13877,7 @@ public:
 	struct FScalableFloat                         Run;                                               // 0x0060(0x0030)(Edit, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FScalableFloat                         InAir;                                             // 0x0090(0x0030)(Edit, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FCySpreadLocomotion;
+//DUMPER7_ASSERTS_FCySpreadLocomotion;
 
 // ScriptStruct PMGame.CyKillPlayerInfo
 // 0x0010 (0x0010 - 0x0000)
