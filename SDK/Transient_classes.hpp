@@ -12,10 +12,67 @@
 
 #include "UnLua_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798")
+	}
+	static class ULUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_KnifeFightResultPage_ScorePage_C_2147434756
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScorePage_C_2147434756 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_KnifeFightResultPage_ScorePage_C_2147434756")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_KnifeFightResultPage_ScorePage_C_2147434756")
+	}
+	static class ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScorePage_C_2147434756* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScorePage_C_2147434756>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScorePage_C_2147434756;
 
 // LuaOverridesClass Transient.LUA_OVERRIDES_CyConditionGameInstanceSubsystem_2147482536
 // 0x0000 (0x0260 - 0x0260)
@@ -40,16 +97,96 @@ public:
 };
 DUMPER7_ASSERTS_ULUA_OVERRIDES_CyConditionGameInstanceSubsystem_2147482536;
 
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultRankPanel_C_2147434779
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultRankPanel_C_2147434779 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultRankPanel_C_2147434779")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultRankPanel_C_2147434779")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultRankPanel_C_2147434779* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultRankPanel_C_2147434779>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultRankPanel_C_2147434779;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_24CelebrationCheckInPageItem_C_2147463828
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_24CelebrationCheckInPageItem_C_2147463828 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_24CelebrationCheckInPageItem_C_2147463828")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_24CelebrationCheckInPageItem_C_2147463828")
+	}
+	static class ULUA_OVERRIDES_WBP_24CelebrationCheckInPageItem_C_2147463828* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_24CelebrationCheckInPageItem_C_2147463828>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_24CelebrationCheckInPageItem_C_2147463828;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_AddFriendButton_C_2147434773
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_AddFriendButton_C_2147434773 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_AddFriendButton_C_2147434773")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_AddFriendButton_C_2147434773")
+	}
+	static class ULUA_OVERRIDES_WBP_AddFriendButton_C_2147434773* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_AddFriendButton_C_2147434773>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_AddFriendButton_C_2147434773;
+
 // LuaOverridesClass Transient.LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338
 // 0x0000 (0x0260 - 0x0260)
 class ULUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338 final : public ULuaOverridesClass
 {
 public:
-	void OnLuaReconnectFailed();
-	void OnLuaReceiveSessionCmd(int32 cmd_id);
-	void OnLuaSessionOpen(int32 ErrCode);
-	void OnLuaSessionReOpen(int32 ErrCode);
 	void OnLuaReconnectSuccess();
+	void OnLuaReconnectFailed();
+	void OnLuaSessionReOpen(int32 ErrCode);
+	void OnLuaSessionOpen(int32 ErrCode);
+	void OnLuaReceiveSessionCmd(int32 cmd_id);
 	void OnLuaSessionClose(int32 ErrCode);
 
 public:
@@ -68,18 +205,259 @@ public:
 };
 DUMPER7_ASSERTS_ULUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338;
 
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultAccountAndRolePanel_C_2147434782
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultAccountAndRolePanel_C_2147434782 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultAccountAndRolePanel_C_2147434782")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultAccountAndRolePanel_C_2147434782")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultAccountAndRolePanel_C_2147434782* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultAccountAndRolePanel_C_2147434782>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultAccountAndRolePanel_C_2147434782;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ClanIcon_C_2147481991
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ClanIcon_C_2147481991 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ClanIcon_C_2147481991")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ClanIcon_C_2147481991")
+	}
+	static class ULUA_OVERRIDES_WBP_ClanIcon_C_2147481991* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ClanIcon_C_2147481991>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ClanIcon_C_2147481991;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771")
+	}
+	static class ULUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987")
+	}
+	static class ULUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleWeaponSubItemLong_C_2147434733
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleWeaponSubItemLong_C_2147434733 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleWeaponSubItemLong_C_2147434733")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleWeaponSubItemLong_C_2147434733")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleWeaponSubItemLong_C_2147434733* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleWeaponSubItemLong_C_2147434733>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleWeaponSubItemLong_C_2147434733;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BigHeadResultPage_ScorePage_C_2147434765
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BigHeadResultPage_ScorePage_C_2147434765 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BigHeadResultPage_ScorePage_C_2147434765")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BigHeadResultPage_ScorePage_C_2147434765")
+	}
+	static class ULUA_OVERRIDES_WBP_BigHeadResultPage_ScorePage_C_2147434765* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BigHeadResultPage_ScorePage_C_2147434765>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BigHeadResultPage_ScorePage_C_2147434765;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_MineResultPage_ScorePage_C_2147434754
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_MineResultPage_ScorePage_C_2147434754 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_MineResultPage_ScorePage_C_2147434754")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_MineResultPage_ScorePage_C_2147434754")
+	}
+	static class ULUA_OVERRIDES_WBP_MineResultPage_ScorePage_C_2147434754* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_MineResultPage_ScorePage_C_2147434754>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_MineResultPage_ScorePage_C_2147434754;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163")
+	}
+	static class ULUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163;
+
 // LuaOverridesClass Transient.LUA_OVERRIDES_WBP_LoginPage_C_2147482236
 // 0x0000 (0x0260 - 0x0260)
 class ULUA_OVERRIDES_WBP_LoginPage_C_2147482236 final : public ULuaOverridesClass
 {
 public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
 	void OnLuaClose();
 	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
 	void OnLuaHide();
-	void Destruct();
-	void Construct();
 	void OnLuaOpen();
-	void OnInitialized();
 	void OnLuaShow();
 
 public:
@@ -104,8 +482,8 @@ class ULUA_OVERRIDES_PMLuaBridgeObject_2147482336 final : public ULuaOverridesCl
 {
 public:
 	void OnAutoRegist();
-	void TickLuaBridge(float DeltaTime);
 	void ShowDelegates();
+	void TickLuaBridge(float DeltaTime);
 
 public:
 	static class UClass* StaticClass()
@@ -123,14 +501,143 @@ public:
 };
 DUMPER7_ASSERTS_ULUA_OVERRIDES_PMLuaBridgeObject_2147482336;
 
-// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RedDot_Pic_Panel_C_2147482237
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthLevelProgressInfo_C_2147434864
 // 0x0000 (0x0260 - 0x0260)
-class ULUA_OVERRIDES_WBP_RedDot_Pic_Panel_C_2147482237 final : public ULuaOverridesClass
+class ULUA_OVERRIDES_WBP_GrowthLevelProgressInfo_C_2147434864 final : public ULuaOverridesClass
 {
 public:
 	void Construct();
 	void Destruct();
 	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthLevelProgressInfo_C_2147434864")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthLevelProgressInfo_C_2147434864")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthLevelProgressInfo_C_2147434864* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthLevelProgressInfo_C_2147434864>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthLevelProgressInfo_C_2147434864;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultEscortBox_C_2147434785
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultEscortBox_C_2147434785 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultEscortBox_C_2147434785")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultEscortBox_C_2147434785")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultEscortBox_C_2147434785* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultEscortBox_C_2147434785>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultEscortBox_C_2147434785;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_LeisureCupBadge_C_2147434776
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_LeisureCupBadge_C_2147434776 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_LeisureCupBadge_C_2147434776")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_LeisureCupBadge_C_2147434776")
+	}
+	static class ULUA_OVERRIDES_WBP_LeisureCupBadge_C_2147434776* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_LeisureCupBadge_C_2147434776>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_LeisureCupBadge_C_2147434776;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_NetItem_C_2147466260
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_NetItem_C_2147466260 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaItemUnhovered();
+	void OnLuaItemHovered();
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_NetItem_C_2147466260")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_NetItem_C_2147466260")
+	}
+	static class ULUA_OVERRIDES_WBP_NetItem_C_2147466260* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_NetItem_C_2147466260>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_NetItem_C_2147466260;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultScoreTips_C_2147434774
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultScoreTips_C_2147434774 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultScoreTips_C_2147434774")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultScoreTips_C_2147434774")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultScoreTips_C_2147434774* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultScoreTips_C_2147434774>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultScoreTips_C_2147434774;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RedDot_Pic_Panel_C_2147482237
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RedDot_Pic_Panel_C_2147482237 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()
@@ -147,6 +654,8217 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RedDot_Pic_Panel_C_2147482237;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleWeaponSubItemShort_C_2147434732
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleWeaponSubItemShort_C_2147434732 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleWeaponSubItemShort_C_2147434732")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleWeaponSubItemShort_C_2147434732")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleWeaponSubItemShort_C_2147434732* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleWeaponSubItemShort_C_2147434732>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleWeaponSubItemShort_C_2147434732;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861")
+	}
+	static class ULUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatEmotion_C_2147482004
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatEmotion_C_2147482004 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatEmotion_C_2147482004")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatEmotion_C_2147482004")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatEmotion_C_2147482004* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatEmotion_C_2147482004>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatEmotion_C_2147482004;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741")
+	}
+	static class ULUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit1_C_2147434853
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit1_C_2147434853 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit1_C_2147434853")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit1_C_2147434853")
+	}
+	static class ULUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit1_C_2147434853* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit1_C_2147434853>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit1_C_2147434853;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734")
+	}
+	static class ULUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SharingClan_C_2147482001
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SharingClan_C_2147482001 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaHide();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SharingClan_C_2147482001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SharingClan_C_2147482001")
+	}
+	static class ULUA_OVERRIDES_WBP_SharingClan_C_2147482001* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SharingClan_C_2147482001>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SharingClan_C_2147482001;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListTile_C_2147434757
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListTile_C_2147434757 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListTile_C_2147434757")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListTile_C_2147434757")
+	}
+	static class ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListTile_C_2147434757* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListTile_C_2147434757>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListTile_C_2147434757;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735")
+	}
+	static class ULUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_DynamicIcon_C_2147480442
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_DynamicIcon_C_2147480442 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_DynamicIcon_C_2147480442")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_DynamicIcon_C_2147480442")
+	}
+	static class ULUA_OVERRIDES_WBP_DynamicIcon_C_2147480442* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_DynamicIcon_C_2147480442>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_DynamicIcon_C_2147480442;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ShortcutTaskItem_C_2147481859
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ShortcutTaskItem_C_2147481859 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ShortcutTaskItem_C_2147481859")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ShortcutTaskItem_C_2147481859")
+	}
+	static class ULUA_OVERRIDES_WBP_ShortcutTaskItem_C_2147481859* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ShortcutTaskItem_C_2147481859>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ShortcutTaskItem_C_2147481859;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736")
+	}
+	static class ULUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleListItem_C_2147434737
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleListItem_C_2147434737 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleListItem_C_2147434737")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleListItem_C_2147434737")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleListItem_C_2147434737* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleListItem_C_2147434737>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleListItem_C_2147434737;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListTile_C_2147434750
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ZombieResultPage_ScoreListTile_C_2147434750 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListTile_C_2147434750")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListTile_C_2147434750")
+	}
+	static class ULUA_OVERRIDES_WBP_ZombieResultPage_ScoreListTile_C_2147434750* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ZombieResultPage_ScoreListTile_C_2147434750>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ZombieResultPage_ScoreListTile_C_2147434750;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleCommonTips_C_2147434738
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleCommonTips_C_2147434738 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleCommonTips_C_2147434738")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleCommonTips_C_2147434738")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleCommonTips_C_2147434738* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleCommonTips_C_2147434738>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleCommonTips_C_2147434738;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultNextReward_C_2147434786
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultNextReward_C_2147434786 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultNextReward_C_2147434786")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultNextReward_C_2147434786")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultNextReward_C_2147434786* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultNextReward_C_2147434786>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultNextReward_C_2147434786;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_LeisureCupStar_C_2147434777
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_LeisureCupStar_C_2147434777 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_LeisureCupStar_C_2147434777")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_LeisureCupStar_C_2147434777")
+	}
+	static class ULUA_OVERRIDES_WBP_LeisureCupStar_C_2147434777* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_LeisureCupStar_C_2147434777>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_LeisureCupStar_C_2147434777;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EscortResultPage_ScoreListTile_C_2147434761
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EscortResultPage_ScoreListTile_C_2147434761 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EscortResultPage_ScoreListTile_C_2147434761")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EscortResultPage_ScoreListTile_C_2147434761")
+	}
+	static class ULUA_OVERRIDES_WBP_EscortResultPage_ScoreListTile_C_2147434761* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EscortResultPage_ScoreListTile_C_2147434761>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EscortResultPage_ScoreListTile_C_2147434761;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListTile_C_2147434766
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListTile_C_2147434766 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListTile_C_2147434766")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListTile_C_2147434766")
+	}
+	static class ULUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListTile_C_2147434766* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListTile_C_2147434766>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListTile_C_2147434766;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatText_C_2147434802
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatText_C_2147434802 final : public ULuaOverridesClass
+{
+public:
+	void Destruct();
+	void Construct();
+	void OnInitialized();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatText_C_2147434802")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatText_C_2147434802")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatText_C_2147434802* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatText_C_2147434802>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatText_C_2147434802;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742")
+	}
+	static class ULUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433")
+	}
+	static class ULUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743")
+	}
+	static class ULUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744")
+	}
+	static class ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListTile_C_2147434763
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BombPassResultPage_ScoreListTile_C_2147434763 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListTile_C_2147434763")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListTile_C_2147434763")
+	}
+	static class ULUA_OVERRIDES_WBP_BombPassResultPage_ScoreListTile_C_2147434763* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BombPassResultPage_ScoreListTile_C_2147434763>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BombPassResultPage_ScoreListTile_C_2147434763;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745")
+	}
+	static class ULUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatClanPage_C_2147481982
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatClanPage_C_2147481982 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatClanPage_C_2147481982")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatClanPage_C_2147481982")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatClanPage_C_2147481982* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatClanPage_C_2147481982>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatClanPage_C_2147481982;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthWeaponAttributes_Retrofit_C_2147434858
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthWeaponAttributes_Retrofit_C_2147434858 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthWeaponAttributes_Retrofit_C_2147434858")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthWeaponAttributes_Retrofit_C_2147434858")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthWeaponAttributes_Retrofit_C_2147434858* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthWeaponAttributes_Retrofit_C_2147434858>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthWeaponAttributes_Retrofit_C_2147434858;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_FriendShortcutMenu_C_2147434789
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_FriendShortcutMenu_C_2147434789 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_FriendShortcutMenu_C_2147434789")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_FriendShortcutMenu_C_2147434789")
+	}
+	static class ULUA_OVERRIDES_WBP_FriendShortcutMenu_C_2147434789* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_FriendShortcutMenu_C_2147434789>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_FriendShortcutMenu_C_2147434789;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaItemUnhovered();
+	void OnLuaItemClick();
+	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void Construct();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnLuaItemHovered();
+	void OnLuaItemDoubleClick();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748")
+	}
+	static class ULUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ZombieResultPage_ScorePage_C_2147434749
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ZombieResultPage_ScorePage_C_2147434749 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ZombieResultPage_ScorePage_C_2147434749")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ZombieResultPage_ScorePage_C_2147434749")
+	}
+	static class ULUA_OVERRIDES_WBP_ZombieResultPage_ScorePage_C_2147434749* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ZombieResultPage_ScorePage_C_2147434749>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ZombieResultPage_ScorePage_C_2147434749;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamThreeResultPage_ScorePage_C_2147434751
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScorePage_C_2147434751 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamThreeResultPage_ScorePage_C_2147434751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamThreeResultPage_ScorePage_C_2147434751")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScorePage_C_2147434751* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScorePage_C_2147434751>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScorePage_C_2147434751;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ImageItemProxy_C_2147480449
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ImageItemProxy_C_2147480449 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ImageItemProxy_C_2147480449")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ImageItemProxy_C_2147480449")
+	}
+	static class ULUA_OVERRIDES_WBP_ImageItemProxy_C_2147480449* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ImageItemProxy_C_2147480449>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ImageItemProxy_C_2147480449;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamResultPage_ScorePage_C_2147434752
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamResultPage_ScorePage_C_2147434752 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamResultPage_ScorePage_C_2147434752")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamResultPage_ScorePage_C_2147434752")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamResultPage_ScorePage_C_2147434752* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamResultPage_ScorePage_C_2147434752>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamResultPage_ScorePage_C_2147434752;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RankCard_C_2147466256
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RankCard_C_2147466256 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RankCard_C_2147466256")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RankCard_C_2147466256")
+	}
+	static class ULUA_OVERRIDES_WBP_RankCard_C_2147466256* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RankCard_C_2147466256>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RankCard_C_2147466256;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849 final : public ULuaOverridesClass
+{
+public:
+	void OnRoundResultChanged(const TArray<struct FMatchRoundResult>& MatchRoundResult);
+	void Construct();
+	void OnBombOwnerTeamChanged(const class APMGameState_Bomb* GameState);
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849")
+	}
+	static class ULUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void OnLuaShow();
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	bool LuaOnNavigation(const EUINavigation& UINavigationType);
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void HideOrShowAllPage(bool bShowCharacterOnly);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770")
+	}
+	static class ULUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamResultPage_ScoreListTile_C_2147434753
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamResultPage_ScoreListTile_C_2147434753 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamResultPage_ScoreListTile_C_2147434753")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamResultPage_ScoreListTile_C_2147434753")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamResultPage_ScoreListTile_C_2147434753* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamResultPage_ScoreListTile_C_2147434753>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamResultPage_ScoreListTile_C_2147434753;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CommonPlayerHead_C_2147482010
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CommonPlayerHead_C_2147482010 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CommonPlayerHead_C_2147482010")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CommonPlayerHead_C_2147482010")
+	}
+	static class ULUA_OVERRIDES_WBP_CommonPlayerHead_C_2147482010* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CommonPlayerHead_C_2147482010>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CommonPlayerHead_C_2147482010;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_MineResultPage_ScoreListTile_C_2147434755
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_MineResultPage_ScoreListTile_C_2147434755 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_MineResultPage_ScoreListTile_C_2147434755")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_MineResultPage_ScoreListTile_C_2147434755")
+	}
+	static class ULUA_OVERRIDES_WBP_MineResultPage_ScoreListTile_C_2147434755* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_MineResultPage_ScoreListTile_C_2147434755>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_MineResultPage_ScoreListTile_C_2147434755;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787")
+	}
+	static class ULUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852 final : public ULuaOverridesClass
+{
+public:
+	void K2_OnLastCharacterOut(const class AActor* LastViewTarget);
+	void OnLuaOpen();
+	void K2_OnNewCharacterIn(const class AActor* InViewTarget);
+	void Construct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_HotZoneResultPage_ScorePage_C_2147434758
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_HotZoneResultPage_ScorePage_C_2147434758 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_HotZoneResultPage_ScorePage_C_2147434758")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_HotZoneResultPage_ScorePage_C_2147434758")
+	}
+	static class ULUA_OVERRIDES_WBP_HotZoneResultPage_ScorePage_C_2147434758* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_HotZoneResultPage_ScorePage_C_2147434758>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_HotZoneResultPage_ScorePage_C_2147434758;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultAcountPanel_C_2147434784
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultAcountPanel_C_2147434784 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultAcountPanel_C_2147434784")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultAcountPanel_C_2147434784")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultAcountPanel_C_2147434784* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultAcountPanel_C_2147434784>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultAcountPanel_C_2147434784;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GunGameResultPage_ScorePage_C_2147434759
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GunGameResultPage_ScorePage_C_2147434759 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GunGameResultPage_ScorePage_C_2147434759")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GunGameResultPage_ScorePage_C_2147434759")
+	}
+	static class ULUA_OVERRIDES_WBP_GunGameResultPage_ScorePage_C_2147434759* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GunGameResultPage_ScorePage_C_2147434759>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GunGameResultPage_ScorePage_C_2147434759;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListTile_C_2147434778
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListTile_C_2147434778 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListTile_C_2147434778")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListTile_C_2147434778")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListTile_C_2147434778* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListTile_C_2147434778>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListTile_C_2147434778;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnLuaItemHovered();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnLuaItemUnhovered();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850")
+	}
+	static class ULUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EscortResultPage_ScorePage_C_2147434760
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EscortResultPage_ScorePage_C_2147434760 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EscortResultPage_ScorePage_C_2147434760")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EscortResultPage_ScorePage_C_2147434760")
+	}
+	static class ULUA_OVERRIDES_WBP_EscortResultPage_ScorePage_C_2147434760* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EscortResultPage_ScorePage_C_2147434760>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EscortResultPage_ScorePage_C_2147434760;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RoomOperations_C_2147466254
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RoomOperations_C_2147466254 final : public ULuaOverridesClass
+{
+public:
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RoomOperations_C_2147466254")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RoomOperations_C_2147466254")
+	}
+	static class ULUA_OVERRIDES_WBP_RoomOperations_C_2147466254* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RoomOperations_C_2147466254>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RoomOperations_C_2147466254;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultBPBaseInfoPanel_C_2147434781
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultBPBaseInfoPanel_C_2147434781 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultBPBaseInfoPanel_C_2147434781")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultBPBaseInfoPanel_C_2147434781")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultBPBaseInfoPanel_C_2147434781* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultBPBaseInfoPanel_C_2147434781>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultBPBaseInfoPanel_C_2147434781;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BombPassResultPage_ScorePage_C_2147434762
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BombPassResultPage_ScorePage_C_2147434762 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BombPassResultPage_ScorePage_C_2147434762")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BombPassResultPage_ScorePage_C_2147434762")
+	}
+	static class ULUA_OVERRIDES_WBP_BombPassResultPage_ScorePage_C_2147434762* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BombPassResultPage_ScorePage_C_2147434762>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BombPassResultPage_ScorePage_C_2147434762;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990")
+	}
+	static class ULUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CampusActivities_ResultPage_C_2147434783
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CampusActivities_ResultPage_C_2147434783 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CampusActivities_ResultPage_C_2147434783")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CampusActivities_ResultPage_C_2147434783")
+	}
+	static class ULUA_OVERRIDES_WBP_CampusActivities_ResultPage_C_2147434783* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CampusActivities_ResultPage_C_2147434783>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CampusActivities_ResultPage_C_2147434783;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_WareHoursePC_GoodsGridsPanel_C_2147480443
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_WareHoursePC_GoodsGridsPanel_C_2147480443 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_WareHoursePC_GoodsGridsPanel_C_2147480443")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_WareHoursePC_GoodsGridsPanel_C_2147480443")
+	}
+	static class ULUA_OVERRIDES_WBP_WareHoursePC_GoodsGridsPanel_C_2147480443* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_WareHoursePC_GoodsGridsPanel_C_2147480443>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_WareHoursePC_GoodsGridsPanel_C_2147480443;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BombResultPage_ScorePage_C_2147434764
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BombResultPage_ScorePage_C_2147434764 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BombResultPage_ScorePage_C_2147434764")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BombResultPage_ScorePage_C_2147434764")
+	}
+	static class ULUA_OVERRIDES_WBP_BombResultPage_ScorePage_C_2147434764* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BombResultPage_ScorePage_C_2147434764>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BombResultPage_ScorePage_C_2147434764;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultBPPanel_C_2147434780
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultBPPanel_C_2147434780 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultBPPanel_C_2147434780")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultBPPanel_C_2147434780")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultBPPanel_C_2147434780* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultBPPanel_C_2147434780>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultBPPanel_C_2147434780;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CareerRankCombo_C_2147480531
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CareerRankCombo_C_2147480531 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CareerRankCombo_C_2147480531")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CareerRankCombo_C_2147480531")
+	}
+	static class ULUA_OVERRIDES_WBP_CareerRankCombo_C_2147480531* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CareerRankCombo_C_2147480531>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CareerRankCombo_C_2147480531;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PlayerCardBG_C_2147480441
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PlayerCardBG_C_2147480441 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PlayerCardBG_C_2147480441")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PlayerCardBG_C_2147480441")
+	}
+	static class ULUA_OVERRIDES_WBP_PlayerCardBG_C_2147480441* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PlayerCardBG_C_2147480441>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PlayerCardBG_C_2147480441;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	void UpdateFriendIcon(class APMPlayerState* PlayerState);
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PlayerManagerButton_C_2147434790
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PlayerManagerButton_C_2147434790 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PlayerManagerButton_C_2147434790")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PlayerManagerButton_C_2147434790")
+	}
+	static class ULUA_OVERRIDES_WBP_PlayerManagerButton_C_2147434790* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PlayerManagerButton_C_2147434790>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PlayerManagerButton_C_2147434790;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool ConfirmItem();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void InitItems();
+	void UpdateItem();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791")
+	}
+	static class ULUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void SetHovering();
+	void SetDefault();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792")
+	}
+	static class ULUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnLuaShow();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793")
+	}
+	static class ULUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534")
+	}
+	static class ULUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GamePlayGuideButton_C_2147434794
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GamePlayGuideButton_C_2147434794 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GamePlayGuideButton_C_2147434794")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GamePlayGuideButton_C_2147434794")
+	}
+	static class ULUA_OVERRIDES_WBP_GamePlayGuideButton_C_2147434794* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GamePlayGuideButton_C_2147434794>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GamePlayGuideButton_C_2147434794;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RoomModeSelectBtn_C_2147466572
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RoomModeSelectBtn_C_2147466572 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RoomModeSelectBtn_C_2147466572")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RoomModeSelectBtn_C_2147466572")
+	}
+	static class ULUA_OVERRIDES_WBP_RoomModeSelectBtn_C_2147466572* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RoomModeSelectBtn_C_2147466572>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RoomModeSelectBtn_C_2147466572;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682")
+	}
+	static class ULUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795")
+	}
+	static class ULUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Result_Mapping_item_C_2147479486
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Result_Mapping_item_C_2147479486 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Result_Mapping_item_C_2147479486")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Result_Mapping_item_C_2147479486")
+	}
+	static class ULUA_OVERRIDES_WBP_Result_Mapping_item_C_2147479486* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Result_Mapping_item_C_2147479486>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Result_Mapping_item_C_2147479486;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	void SetHovering();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void SetDefault();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796")
+	}
+	static class ULUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797 final : public ULuaOverridesClass
+{
+public:
+	void K2_OnSelectRoleIDReplicated(const class ACyPlayerState* CyPlayerState);
+	void OnLuaOpen();
+	void K2_OnViewTargetChanged(const class AActor* InViewTarget);
+	void Construct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797")
+	}
+	static class ULUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	bool CustomHandleNavAction(struct FUINavActionReply* Reply);
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596")
+	}
+	static class ULUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_HumanMachineModeListItem_C_2147466578
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_HumanMachineModeListItem_C_2147466578 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_HumanMachineModeListItem_C_2147466578")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_HumanMachineModeListItem_C_2147466578")
+	}
+	static class ULUA_OVERRIDES_WBP_HumanMachineModeListItem_C_2147466578* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_HumanMachineModeListItem_C_2147466578>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_HumanMachineModeListItem_C_2147466578;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799")
+	}
+	static class ULUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GameKeyTipsSkillItem_C_2147434800
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GameKeyTipsSkillItem_C_2147434800 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GameKeyTipsSkillItem_C_2147434800")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GameKeyTipsSkillItem_C_2147434800")
+	}
+	static class ULUA_OVERRIDES_WBP_GameKeyTipsSkillItem_C_2147434800* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GameKeyTipsSkillItem_C_2147434800>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GameKeyTipsSkillItem_C_2147434800;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BattleDataPage_C_2147462408
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BattleDataPage_C_2147462408 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BattleDataPage_C_2147462408")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BattleDataPage_C_2147462408")
+	}
+	static class ULUA_OVERRIDES_WBP_BattleDataPage_C_2147462408* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BattleDataPage_C_2147462408>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BattleDataPage_C_2147462408;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GameChatPage_C_2147434801
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GameChatPage_C_2147434801 final : public ULuaOverridesClass
+{
+public:
+	bool IsChatActived();
+	void OnLuaOpen();
+	void OnGameStateChanged(EGStateType PrevState, EGStateType NextState);
+	void Construct();
+	void SetInGameState(bool bInGame);
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void InitView();
+	void OnLuaHide();
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void AddSystemMsg(class FText* SystemMsgContent);
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GameChatPage_C_2147434801")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GameChatPage_C_2147434801")
+	}
+	static class ULUA_OVERRIDES_WBP_GameChatPage_C_2147434801* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GameChatPage_C_2147434801>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GameChatPage_C_2147434801;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void UpdateScrollBar(int32 InMaxPageIndex, int32 InCurrentPageIndex);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805")
+	}
+	static class ULUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807")
+	}
+	static class ULUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_WareHouse_C_2147480436
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_WareHouse_C_2147480436 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	void OnLuaOpen();
+	void Construct();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_WareHouse_C_2147480436")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_WareHouse_C_2147480436")
+	}
+	static class ULUA_OVERRIDES_WBP_WareHouse_C_2147480436* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_WareHouse_C_2147480436>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_WareHouse_C_2147480436;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808")
+	}
+	static class ULUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ScoreTeam_C_2147434809
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ScoreTeam_C_2147434809 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ScoreTeam_C_2147434809")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ScoreTeam_C_2147434809")
+	}
+	static class ULUA_OVERRIDES_WBP_ScoreTeam_C_2147434809* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ScoreTeam_C_2147434809>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ScoreTeam_C_2147434809;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TriTeamRoundPanel_C_2147434810
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TriTeamRoundPanel_C_2147434810 final : public ULuaOverridesClass
+{
+public:
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TriTeamRoundPanel_C_2147434810")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TriTeamRoundPanel_C_2147434810")
+	}
+	static class ULUA_OVERRIDES_WBP_TriTeamRoundPanel_C_2147434810* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TriTeamRoundPanel_C_2147434810>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TriTeamRoundPanel_C_2147434810;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CardPanel_C_2147466257
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CardPanel_C_2147466257 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CardPanel_C_2147466257")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CardPanel_C_2147466257")
+	}
+	static class ULUA_OVERRIDES_WBP_CardPanel_C_2147466257* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CardPanel_C_2147466257>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CardPanel_C_2147466257;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void UpdateItem();
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811")
+	}
+	static class ULUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_PMPlayerController_2147462818
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_PMPlayerController_2147462818 final : public ULuaOverridesClass
+{
+public:
+	bool IsFriendOrRoomMember(int64 InPlayerId);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	bool CamparePlayer(int64 InPlayerId_1, int64 InPlayerId_2, uint8 InPlayerSerial_1, uint8 InPlayerSerial_2);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_PMPlayerController_2147462818")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_PMPlayerController_2147462818")
+	}
+	static class ULUA_OVERRIDES_PMPlayerController_2147462818* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_PMPlayerController_2147462818>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_PMPlayerController_2147462818;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void SetHovering();
+	void SetDefault();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void InitItem(const struct FPMPersonalityInfo& Info, int32 PropsNum);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812")
+	}
+	static class ULUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PressNamePanel_C_2147481992
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PressNamePanel_C_2147481992 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PressNamePanel_C_2147481992")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PressNamePanel_C_2147481992")
+	}
+	static class ULUA_OVERRIDES_WBP_PressNamePanel_C_2147481992* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PressNamePanel_C_2147481992>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PressNamePanel_C_2147481992;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	void K2_OnSelectRoleIDReplicated(const class ACyPlayerState* CyPlayerState);
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void K2_OnViewTargetChanged(const class AActor* InViewTarget);
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813")
+	}
+	static class ULUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GameKeyTipItem_C_2147434814
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GameKeyTipItem_C_2147434814 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GameKeyTipItem_C_2147434814")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GameKeyTipItem_C_2147434814")
+	}
+	static class ULUA_OVERRIDES_WBP_GameKeyTipItem_C_2147434814* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GameKeyTipItem_C_2147434814>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GameKeyTipItem_C_2147434814;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnLuaShow();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816")
+	}
+	static class ULUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChipCard_C_2147434818
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChipCard_C_2147434818 final : public ULuaOverridesClass
+{
+public:
+	void OnRefreshCardPanel();
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChipCard_C_2147434818")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChipCard_C_2147434818")
+	}
+	static class ULUA_OVERRIDES_WBP_ChipCard_C_2147434818* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChipCard_C_2147434818>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChipCard_C_2147434818;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680")
+	}
+	static class ULUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void UpdateScrollBar(int32 InMaxPageIndex, int32 InCurrentPageIndex);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsBtn_C_2147434843
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleCardIllustrationsBtn_C_2147434843 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsBtn_C_2147434843")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsBtn_C_2147434843")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleCardIllustrationsBtn_C_2147434843* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleCardIllustrationsBtn_C_2147434843>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleCardIllustrationsBtn_C_2147434843;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BuffItem_C_2147481858
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BuffItem_C_2147481858 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BuffItem_C_2147481858")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BuffItem_C_2147481858")
+	}
+	static class ULUA_OVERRIDES_WBP_BuffItem_C_2147481858* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BuffItem_C_2147481858>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BuffItem_C_2147481858;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Buff_C_2147481857
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Buff_C_2147481857 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Buff_C_2147481857")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Buff_C_2147481857")
+	}
+	static class ULUA_OVERRIDES_WBP_Buff_C_2147481857* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Buff_C_2147481857>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Buff_C_2147481857;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824 final : public ULuaOverridesClass
+{
+public:
+	bool LuaOnNavigation(const EUINavigation& UINavigationType);
+	void OnLuaOpen();
+	void Construct();
+	void Destruct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleChangeListPanel_C_2147434829
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleChangeListPanel_C_2147434829 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleChangeListPanel_C_2147434829")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleChangeListPanel_C_2147434829")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleChangeListPanel_C_2147434829* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleChangeListPanel_C_2147434829>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleChangeListPanel_C_2147434829;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxCheckInItem_C_2147481401
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxCheckInItem_C_2147481401 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxCheckInItem_C_2147481401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxCheckInItem_C_2147481401")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxCheckInItem_C_2147481401* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxCheckInItem_C_2147481401>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxCheckInItem_C_2147481401;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleWeaponMainItem_C_2147434831
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleWeaponMainItem_C_2147434831 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleWeaponMainItem_C_2147434831")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleWeaponMainItem_C_2147434831")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleWeaponMainItem_C_2147434831* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleWeaponMainItem_C_2147434831>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleWeaponMainItem_C_2147434831;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void UpdateItem();
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833")
+	}
+	static class ULUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RoomNetworkPanel_C_2147466262
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RoomNetworkPanel_C_2147466262 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RoomNetworkPanel_C_2147466262")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RoomNetworkPanel_C_2147466262")
+	}
+	static class ULUA_OVERRIDES_WBP_RoomNetworkPanel_C_2147466262* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RoomNetworkPanel_C_2147466262>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RoomNetworkPanel_C_2147466262;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultDisplay_C_2147479637
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultDisplay_C_2147479637 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultDisplay_C_2147479637")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultDisplay_C_2147479637")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultDisplay_C_2147479637* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultDisplay_C_2147479637>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultDisplay_C_2147479637;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void SetHovering();
+	void SetDefault();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void InitItem(const struct FPMPersonalityInfo& Info);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834")
+	}
+	static class ULUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ListPanel_C_2147478665
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ListPanel_C_2147478665 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ListPanel_C_2147478665")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ListPanel_C_2147478665")
+	}
+	static class ULUA_OVERRIDES_WBP_ListPanel_C_2147478665* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ListPanel_C_2147478665>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ListPanel_C_2147478665;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837 final : public ULuaOverridesClass
+{
+public:
+	void Destruct();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaClose();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BuffEntry_C_2147481851
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BuffEntry_C_2147481851 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BuffEntry_C_2147481851")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BuffEntry_C_2147481851")
+	}
+	static class ULUA_OVERRIDES_WBP_BuffEntry_C_2147481851* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BuffEntry_C_2147481851>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BuffEntry_C_2147481851;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RoleGridItem_C_2147478876 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaItemDoubleClick();
+	void OnLuaItemHovered();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void Construct();
+	void OnLuaItemClick();
+	void OnLuaItemUnhovered();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876")
+	}
+	static class ULUA_OVERRIDES_WBP_RoleGridItem_C_2147478876* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RoleGridItem_C_2147478876>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RoleGridItem_C_2147478876;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986")
+	}
+	static class ULUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TitlePage_C_2147434841
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TitlePage_C_2147434841 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TitlePage_C_2147434841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TitlePage_C_2147434841")
+	}
+	static class ULUA_OVERRIDES_WBP_TitlePage_C_2147434841* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TitlePage_C_2147434841>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TitlePage_C_2147434841;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BombResultPage_ScoreListTile_C_2147434844
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BombResultPage_ScoreListTile_C_2147434844 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BombResultPage_ScoreListTile_C_2147434844")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BombResultPage_ScoreListTile_C_2147434844")
+	}
+	static class ULUA_OVERRIDES_WBP_BombResultPage_ScoreListTile_C_2147434844* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BombResultPage_ScoreListTile_C_2147434844>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BombResultPage_ScoreListTile_C_2147434844;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListTile_C_2147434845
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListTile_C_2147434845 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListTile_C_2147434845")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListTile_C_2147434845")
+	}
+	static class ULUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListTile_C_2147434845* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListTile_C_2147434845>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListTile_C_2147434845;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CareerRank_C_2147480527
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CareerRank_C_2147480527 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CareerRank_C_2147480527")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CareerRank_C_2147480527")
+	}
+	static class ULUA_OVERRIDES_WBP_CareerRank_C_2147480527* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CareerRank_C_2147480527>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CareerRank_C_2147480527;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PraiseButton_C_2147434846
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PraiseButton_C_2147434846 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PraiseButton_C_2147434846")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PraiseButton_C_2147434846")
+	}
+	static class ULUA_OVERRIDES_WBP_PraiseButton_C_2147434846* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PraiseButton_C_2147434846>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PraiseButton_C_2147434846;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PrivateChatList_C_2147434847
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PrivateChatList_C_2147434847 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PrivateChatList_C_2147434847")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PrivateChatList_C_2147434847")
+	}
+	static class ULUA_OVERRIDES_WBP_PrivateChatList_C_2147434847* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PrivateChatList_C_2147434847>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PrivateChatList_C_2147434847;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PrivateChatName_C_2147434848
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PrivateChatName_C_2147434848 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PrivateChatName_C_2147434848")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PrivateChatName_C_2147434848")
+	}
+	static class ULUA_OVERRIDES_WBP_PrivateChatName_C_2147434848* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PrivateChatName_C_2147434848>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PrivateChatName_C_2147434848;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ScoreRoundResultTeam_C_2147434850
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ScoreRoundResultTeam_C_2147434850 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ScoreRoundResultTeam_C_2147434850")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ScoreRoundResultTeam_C_2147434850")
+	}
+	static class ULUA_OVERRIDES_WBP_ScoreRoundResultTeam_C_2147434850* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ScoreRoundResultTeam_C_2147434850>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ScoreRoundResultTeam_C_2147434850;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845")
+	}
+	static class ULUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851 final : public ULuaOverridesClass
+{
+public:
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnLuaShow();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit2_C_2147434854
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit2_C_2147434854 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit2_C_2147434854")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit2_C_2147434854")
+	}
+	static class ULUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit2_C_2147434854* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit2_C_2147434854>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Growth_EquipWeaponItemRetrofit2_C_2147434854;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthPartItem_Recommend_C_2147462425
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthPartItem_Recommend_C_2147462425 final : public ULuaOverridesClass
+{
+public:
+	void OnAnimStartFinish();
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthPartItem_Recommend_C_2147462425")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthPartItem_Recommend_C_2147462425")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthPartItem_Recommend_C_2147462425* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthPartItem_Recommend_C_2147462425>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthPartItem_Recommend_C_2147462425;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthRetrofitAwakePanel_C_2147434855
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthRetrofitAwakePanel_C_2147434855 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthRetrofitAwakePanel_C_2147434855")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthRetrofitAwakePanel_C_2147434855")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthRetrofitAwakePanel_C_2147434855* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthRetrofitAwakePanel_C_2147434855>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthRetrofitAwakePanel_C_2147434855;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_DivisionCompetition_Panel_C_2147480533
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_DivisionCompetition_Panel_C_2147480533 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_DivisionCompetition_Panel_C_2147480533")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_DivisionCompetition_Panel_C_2147480533")
+	}
+	static class ULUA_OVERRIDES_WBP_DivisionCompetition_Panel_C_2147480533* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_DivisionCompetition_Panel_C_2147480533>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_DivisionCompetition_Panel_C_2147480533;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthSuperStringAttributes_Retrofit_C_2147434857
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthSuperStringAttributes_Retrofit_C_2147434857 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthSuperStringAttributes_Retrofit_C_2147434857")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthSuperStringAttributes_Retrofit_C_2147434857")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthSuperStringAttributes_Retrofit_C_2147434857* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthSuperStringAttributes_Retrofit_C_2147434857>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthSuperStringAttributes_Retrofit_C_2147434857;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthWakeItem_Retrofit_C_2147434859
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthWakeItem_Retrofit_C_2147434859 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthWakeItem_Retrofit_C_2147434859")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthWakeItem_Retrofit_C_2147434859")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthWakeItem_Retrofit_C_2147434859* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthWakeItem_Retrofit_C_2147434859>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthWakeItem_Retrofit_C_2147434859;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit2_C_2147434860
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit2_C_2147434860 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit2_C_2147434860")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit2_C_2147434860")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit2_C_2147434860* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit2_C_2147434860>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit2_C_2147434860;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit3_C_2147434861
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit3_C_2147434861 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit3_C_2147434861")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit3_C_2147434861")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit3_C_2147434861* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit3_C_2147434861>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit3_C_2147434861;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit_C_2147434862
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit_C_2147434862 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit_C_2147434862")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit_C_2147434862")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit_C_2147434862* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit_C_2147434862>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthWakeLevel_Retrofit_C_2147434862;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthLevelNumInfo_C_2147434863
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthLevelNumInfo_C_2147434863 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthLevelNumInfo_C_2147434863")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthLevelNumInfo_C_2147434863")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthLevelNumInfo_C_2147434863* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthLevelNumInfo_C_2147434863>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthLevelNumInfo_C_2147434863;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PlaceBall1_C_2147482086
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PlaceBall1_C_2147482086 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PlaceBall1_C_2147482086")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PlaceBall1_C_2147482086")
+	}
+	static class ULUA_OVERRIDES_WBP_PlaceBall1_C_2147482086* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PlaceBall1_C_2147482086>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PlaceBall1_C_2147482086;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_PlaceBall2_C_2147482085
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_PlaceBall2_C_2147482085 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_PlaceBall2_C_2147482085")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_PlaceBall2_C_2147482085")
+	}
+	static class ULUA_OVERRIDES_WBP_PlaceBall2_C_2147482085* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_PlaceBall2_C_2147482085>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_PlaceBall2_C_2147482085;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_QuickPlace_C_2147482083
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_QuickPlace_C_2147482083 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_QuickPlace_C_2147482083")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_QuickPlace_C_2147482083")
+	}
+	static class ULUA_OVERRIDES_WBP_QuickPlace_C_2147482083* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_QuickPlace_C_2147482083>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_QuickPlace_C_2147482083;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084")
+	}
+	static class ULUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082")
+	}
+	static class ULUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081")
+	}
+	static class ULUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BallSetItem_C_2147482080
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BallSetItem_C_2147482080 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BallSetItem_C_2147482080")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BallSetItem_C_2147482080")
+	}
+	static class ULUA_OVERRIDES_WBP_BallSetItem_C_2147482080* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BallSetItem_C_2147482080>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BallSetItem_C_2147482080;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079")
+	}
+	static class ULUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CustomWidgetOptMenu_C_2147466263
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CustomWidgetOptMenu_C_2147466263 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CustomWidgetOptMenu_C_2147466263")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CustomWidgetOptMenu_C_2147466263")
+	}
+	static class ULUA_OVERRIDES_WBP_CustomWidgetOptMenu_C_2147466263* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CustomWidgetOptMenu_C_2147466263>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CustomWidgetOptMenu_C_2147466263;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_OperateScreen_C_2147482078
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_OperateScreen_C_2147482078 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_OperateScreen_C_2147482078")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_OperateScreen_C_2147482078")
+	}
+	static class ULUA_OVERRIDES_WBP_OperateScreen_C_2147482078* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_OperateScreen_C_2147482078>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_OperateScreen_C_2147482078;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultPage_C_2147434865
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultPage_C_2147434865 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void Construct();
+	void OnLuaShow();
+	void OnLuaHide();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultPage_C_2147434865")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultPage_C_2147434865")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultPage_C_2147434865* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultPage_C_2147434865>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultPage_C_2147434865;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatClanItem_C_2147481978
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatClanItem_C_2147481978 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatClanItem_C_2147481978")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatClanItem_C_2147481978")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatClanItem_C_2147481978* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatClanItem_C_2147481978>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatClanItem_C_2147481978;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_OneMoreRoundButton_C_2147434866
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_OneMoreRoundButton_C_2147434866 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_OneMoreRoundButton_C_2147434866")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_OneMoreRoundButton_C_2147434866")
+	}
+	static class ULUA_OVERRIDES_WBP_OneMoreRoundButton_C_2147434866* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_OneMoreRoundButton_C_2147434866>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_OneMoreRoundButton_C_2147434866;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RankPreparePage_C_2147463284
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RankPreparePage_C_2147463284 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaHide();
+	void OnLuaOpen();
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+	void OnLuaClose();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RankPreparePage_C_2147463284")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RankPreparePage_C_2147463284")
+	}
+	static class ULUA_OVERRIDES_WBP_RankPreparePage_C_2147463284* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RankPreparePage_C_2147463284>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RankPreparePage_C_2147463284;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultAchvPanel_C_2147434867
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultAchvPanel_C_2147434867 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultAchvPanel_C_2147434867")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultAchvPanel_C_2147434867")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultAchvPanel_C_2147434867* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultAchvPanel_C_2147434867>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultAchvPanel_C_2147434867;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+	bool CustomHandleNavAction(struct FUINavActionReply* Reply);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846")
+	}
+	static class ULUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultVictoryDefeatTitlePanel_C_2147434868
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultVictoryDefeatTitlePanel_C_2147434868 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultVictoryDefeatTitlePanel_C_2147434868")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultVictoryDefeatTitlePanel_C_2147434868")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultVictoryDefeatTitlePanel_C_2147434868* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultVictoryDefeatTitlePanel_C_2147434868>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultVictoryDefeatTitlePanel_C_2147434868;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_DownloadButtonNew_C_2147434869
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_DownloadButtonNew_C_2147434869 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_DownloadButtonNew_C_2147434869")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_DownloadButtonNew_C_2147434869")
+	}
+	static class ULUA_OVERRIDES_WBP_DownloadButtonNew_C_2147434869* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_DownloadButtonNew_C_2147434869>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_DownloadButtonNew_C_2147434869;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_FastMessageItem_C_2147482015
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_FastMessageItem_C_2147482015 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_FastMessageItem_C_2147482015")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_FastMessageItem_C_2147482015")
+	}
+	static class ULUA_OVERRIDES_WBP_FastMessageItem_C_2147482015* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_FastMessageItem_C_2147482015>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_FastMessageItem_C_2147482015;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaHide();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014")
+	}
+	static class ULUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EmotionItem_C_2147482013
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EmotionItem_C_2147482013 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnLuaItemHovered();
+	void OnLuaItemClick();
+	void OnLuaItemUnhovered();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EmotionItem_C_2147482013")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EmotionItem_C_2147482013")
+	}
+	static class ULUA_OVERRIDES_WBP_EmotionItem_C_2147482013* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EmotionItem_C_2147482013>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EmotionItem_C_2147482013;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ToolTipsPage_C_2147482011
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ToolTipsPage_C_2147482011 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ToolTipsPage_C_2147482011")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ToolTipsPage_C_2147482011")
+	}
+	static class ULUA_OVERRIDES_WBP_ToolTipsPage_C_2147482011* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ToolTipsPage_C_2147482011>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ToolTipsPage_C_2147482011;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008")
+	}
+	static class ULUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatBubbles_C_2147482007 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaOpen();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatBubbles_C_2147482007* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatBubbles_C_2147482007>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatBubbles_C_2147482007;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_DivisionShow_C_2147482006
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_DivisionShow_C_2147482006 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_DivisionShow_C_2147482006")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_DivisionShow_C_2147482006")
+	}
+	static class ULUA_OVERRIDES_WBP_DivisionShow_C_2147482006* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_DivisionShow_C_2147482006>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_DivisionShow_C_2147482006;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CommonHoveredTips_C_2147482005
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CommonHoveredTips_C_2147482005 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CommonHoveredTips_C_2147482005")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CommonHoveredTips_C_2147482005")
+	}
+	static class ULUA_OVERRIDES_WBP_CommonHoveredTips_C_2147482005* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CommonHoveredTips_C_2147482005>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CommonHoveredTips_C_2147482005;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatPrePage_C_2147482003
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatPrePage_C_2147482003 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatPrePage_C_2147482003")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatPrePage_C_2147482003")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatPrePage_C_2147482003* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatPrePage_C_2147482003>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatPrePage_C_2147482003;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RedDot_CustomA_Panel_C_2147481865
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RedDot_CustomA_Panel_C_2147481865 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RedDot_CustomA_Panel_C_2147481865")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RedDot_CustomA_Panel_C_2147481865")
+	}
+	static class ULUA_OVERRIDES_WBP_RedDot_CustomA_Panel_C_2147481865* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RedDot_CustomA_Panel_C_2147481865>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RedDot_CustomA_Panel_C_2147481865;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CompetitionCard_C_2147482002
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CompetitionCard_C_2147482002 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CompetitionCard_C_2147482002")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CompetitionCard_C_2147482002")
+	}
+	static class ULUA_OVERRIDES_WBP_CompetitionCard_C_2147482002* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CompetitionCard_C_2147482002>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CompetitionCard_C_2147482002;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SharingCompetition_C_2147482000
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SharingCompetition_C_2147482000 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaHide();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SharingCompetition_C_2147482000")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SharingCompetition_C_2147482000")
+	}
+	static class ULUA_OVERRIDES_WBP_SharingCompetition_C_2147482000* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SharingCompetition_C_2147482000>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SharingCompetition_C_2147482000;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatInput_C_2147481997
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatInput_C_2147481997 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaOpen();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatInput_C_2147481997")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatInput_C_2147481997")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatInput_C_2147481997* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatInput_C_2147481997>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatInput_C_2147481997;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SharePanel_C_2147481996
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SharePanel_C_2147481996 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void Destruct();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SharePanel_C_2147481996")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SharePanel_C_2147481996")
+	}
+	static class ULUA_OVERRIDES_WBP_SharePanel_C_2147481996* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SharePanel_C_2147481996>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SharePanel_C_2147481996;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CompetitionReminderItem_C_2147481849
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CompetitionReminderItem_C_2147481849 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CompetitionReminderItem_C_2147481849")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CompetitionReminderItem_C_2147481849")
+	}
+	static class ULUA_OVERRIDES_WBP_CompetitionReminderItem_C_2147481849* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CompetitionReminderItem_C_2147481849>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CompetitionReminderItem_C_2147481849;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatTranslate_C_2147481995
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatTranslate_C_2147481995 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatTranslate_C_2147481995")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatTranslate_C_2147481995")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatTranslate_C_2147481995* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatTranslate_C_2147481995>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatTranslate_C_2147481995;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989")
+	}
+	static class ULUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void Construct();
+	void Destruct();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnLuaOpen();
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985")
+	}
+	static class ULUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatFriendPage_C_2147481983
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatFriendPage_C_2147481983 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatFriendPage_C_2147481983")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatFriendPage_C_2147481983")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatFriendPage_C_2147481983* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatFriendPage_C_2147481983>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatFriendPage_C_2147481983;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981 final : public ULuaOverridesClass
+{
+public:
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	void Construct();
+	void OnLuaShow();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatMainPage_C_2147481980 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaClose();
+	void OnLuaOpen();
+	void OnLuaShow();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatMainPage_C_2147481980* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatMainPage_C_2147481980>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatMainPage_C_2147481980;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void Construct();
+	void OnLuaOpen();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void Construct();
+	void OnLuaOpen();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectMode_C_2147466573
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectMode_C_2147466573 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectMode_C_2147466573")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectMode_C_2147466573")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectMode_C_2147466573* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectMode_C_2147466573>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectMode_C_2147466573;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975")
+	}
+	static class ULUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864")
+	}
+	static class ULUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_NavBarCurrencyPanel_C_2147481863
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_NavBarCurrencyPanel_C_2147481863 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_NavBarCurrencyPanel_C_2147481863")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_NavBarCurrencyPanel_C_2147481863")
+	}
+	static class ULUA_OVERRIDES_WBP_NavBarCurrencyPanel_C_2147481863* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_NavBarCurrencyPanel_C_2147481863>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_NavBarCurrencyPanel_C_2147481863;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862")
+	}
+	static class ULUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860")
+	}
+	static class ULUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ScoreTip_C_2147480529
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ScoreTip_C_2147480529 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ScoreTip_C_2147480529")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ScoreTip_C_2147480529")
+	}
+	static class ULUA_OVERRIDES_WBP_ScoreTip_C_2147480529* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ScoreTip_C_2147480529>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ScoreTip_C_2147480529;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856")
+	}
+	static class ULUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CareerRankDetailProgressBar_C_2147480532
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CareerRankDetailProgressBar_C_2147480532 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CareerRankDetailProgressBar_C_2147480532")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CareerRankDetailProgressBar_C_2147480532")
+	}
+	static class ULUA_OVERRIDES_WBP_CareerRankDetailProgressBar_C_2147480532* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CareerRankDetailProgressBar_C_2147480532>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CareerRankDetailProgressBar_C_2147480532;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855")
+	}
+	static class ULUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CommonGoods_C_2147481854
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CommonGoods_C_2147481854 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CommonGoods_C_2147481854")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CommonGoods_C_2147481854")
+	}
+	static class ULUA_OVERRIDES_WBP_CommonGoods_C_2147481854* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CommonGoods_C_2147481854>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CommonGoods_C_2147481854;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853")
+	}
+	static class ULUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852")
+	}
+	static class ULUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848")
+	}
+	static class ULUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847 final : public ULuaOverridesClass
+{
+public:
+	TArray<struct FKey> GetKeyFromSettingsByInputName(class FName InActionName, bool bGamePad);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847")
+	}
+	static class ULUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaHide();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844")
+	}
+	static class ULUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_TargetGuideEntrance_C_2147481843
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_TargetGuideEntrance_C_2147481843 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_TargetGuideEntrance_C_2147481843")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_TargetGuideEntrance_C_2147481843")
+	}
+	static class ULUA_OVERRIDES_WBP_TargetGuideEntrance_C_2147481843* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_TargetGuideEntrance_C_2147481843>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_TargetGuideEntrance_C_2147481843;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void OnLuaOpen();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841")
+	}
+	static class ULUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_NavigationPage_C_2147481840
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_NavigationPage_C_2147481840 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool CustomHandleNavAction(struct FUINavActionReply* Reply);
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_NavigationPage_C_2147481840")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_NavigationPage_C_2147481840")
+	}
+	static class ULUA_OVERRIDES_WBP_NavigationPage_C_2147481840* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_NavigationPage_C_2147481840>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_NavigationPage_C_2147481840;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_WareHoursePC_TypeBtn_C_2147480448
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_WareHoursePC_TypeBtn_C_2147480448 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_WareHoursePC_TypeBtn_C_2147480448")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_WareHoursePC_TypeBtn_C_2147480448")
+	}
+	static class ULUA_OVERRIDES_WBP_WareHoursePC_TypeBtn_C_2147480448* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_WareHoursePC_TypeBtn_C_2147480448>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_WareHoursePC_TypeBtn_C_2147480448;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_AchievementIcon_C_2147466269
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_AchievementIcon_C_2147466269 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_AchievementIcon_C_2147466269")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_AchievementIcon_C_2147466269")
+	}
+	static class ULUA_OVERRIDES_WBP_AchievementIcon_C_2147466269* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_AchievementIcon_C_2147466269>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_AchievementIcon_C_2147466269;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GoodsGridsPanel_C_2147480450
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GoodsGridsPanel_C_2147480450 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GoodsGridsPanel_C_2147480450")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GoodsGridsPanel_C_2147480450")
+	}
+	static class ULUA_OVERRIDES_WBP_GoodsGridsPanel_C_2147480450* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GoodsGridsPanel_C_2147480450>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GoodsGridsPanel_C_2147480450;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_MapDataDownloadButton_C_2147466266
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_MapDataDownloadButton_C_2147466266 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_MapDataDownloadButton_C_2147466266")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_MapDataDownloadButton_C_2147466266")
+	}
+	static class ULUA_OVERRIDES_WBP_MapDataDownloadButton_C_2147466266* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_MapDataDownloadButton_C_2147466266>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_MapDataDownloadButton_C_2147466266;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437 final : public ULuaOverridesClass
+{
+public:
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437")
+	}
+	static class ULUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438 final : public ULuaOverridesClass
+{
+public:
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void Construct();
+	void OnGMHidePage(bool bHide);
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438")
+	}
+	static class ULUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058 final : public ULuaOverridesClass
+{
+public:
+	bool IsFriendOrRoomMember(int64 InPlayerId);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	bool CamparePlayer(int64 InPlayerId_1, int64 InPlayerId_2, uint8 InPlayerSerial_1, uint8 InPlayerSerial_2);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058")
+	}
+	static class ULUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CommonPC_RuleBtn_C_2147480439
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CommonPC_RuleBtn_C_2147480439 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CommonPC_RuleBtn_C_2147480439")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CommonPC_RuleBtn_C_2147480439")
+	}
+	static class ULUA_OVERRIDES_WBP_CommonPC_RuleBtn_C_2147480439* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CommonPC_RuleBtn_C_2147480439>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CommonPC_RuleBtn_C_2147480439;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RankBadge7n1_C_2147480530
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RankBadge7n1_C_2147480530 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void BadgeDownDisappear();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RankBadge7n1_C_2147480530")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RankBadge7n1_C_2147480530")
+	}
+	static class ULUA_OVERRIDES_WBP_RankBadge7n1_C_2147480530* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RankBadge7n1_C_2147480530>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RankBadge7n1_C_2147480530;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ItemImageDisplayPage_C_2147480440
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ItemImageDisplayPage_C_2147480440 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ItemImageDisplayPage_C_2147480440")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ItemImageDisplayPage_C_2147480440")
+	}
+	static class ULUA_OVERRIDES_WBP_ItemImageDisplayPage_C_2147480440* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ItemImageDisplayPage_C_2147480440>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ItemImageDisplayPage_C_2147480440;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615 final : public ULuaOverridesClass
+{
+public:
+	void TrimTextEventEnd();
+	void TrimTextEvent();
+	void GetCurveSpeed(float InX, float* Percent);
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615")
+	}
+	static class ULUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RoleVoiceDsiplay_C_2147480444
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RoleVoiceDsiplay_C_2147480444 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RoleVoiceDsiplay_C_2147480444")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RoleVoiceDsiplay_C_2147480444")
+	}
+	static class ULUA_OVERRIDES_WBP_RoleVoiceDsiplay_C_2147480444* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RoleVoiceDsiplay_C_2147480444>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RoleVoiceDsiplay_C_2147480444;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445 final : public ULuaOverridesClass
+{
+public:
+	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
+	void OnLuaItemUnhovered();
+	void OnLuaItemClick();
+	void Construct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnLuaItemHovered();
+	void OnLuaItemDoubleClick();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445")
+	}
+	static class ULUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_DragItem_C_2147480446
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_DragItem_C_2147480446 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_DragItem_C_2147480446")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_DragItem_C_2147480446")
+	}
+	static class ULUA_OVERRIDES_WBP_DragItem_C_2147480446* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_DragItem_C_2147480446>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_DragItem_C_2147480446;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaItemUnhovered();
+	void OnLuaItemClick();
+	void Construct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnLuaItemHovered();
+	void OnLuaItemDoubleClick();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447")
+	}
+	static class ULUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ActivityTask_C_2147466265
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ActivityTask_C_2147466265 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ActivityTask_C_2147466265")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ActivityTask_C_2147466265")
+	}
+	static class ULUA_OVERRIDES_WBP_ActivityTask_C_2147466265* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ActivityTask_C_2147466265>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ActivityTask_C_2147466265;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_CyConditionObject_2147481438
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_CyConditionObject_2147481438 final : public ULuaOverridesClass
+{
+public:
+	int32 BPGetMatchConditionCount(const class FString& ModuleName, const class FString& ParamsStr);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_CyConditionObject_2147481438")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_CyConditionObject_2147481438")
+	}
+	static class ULUA_OVERRIDES_CyConditionObject_2147481438* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_CyConditionObject_2147481438>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_CyConditionObject_2147481438;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxGoodsItem_C_2147481408
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxGoodsItem_C_2147481408 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxGoodsItem_C_2147481408")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxGoodsItem_C_2147481408")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxGoodsItem_C_2147481408* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxGoodsItem_C_2147481408>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxGoodsItem_C_2147481408;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxShopItem_C_2147481407
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxShopItem_C_2147481407 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxShopItem_C_2147481407")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxShopItem_C_2147481407")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxShopItem_C_2147481407* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxShopItem_C_2147481407>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxShopItem_C_2147481407;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxWelcomeTipItem_C_2147481405
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxWelcomeTipItem_C_2147481405 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxWelcomeTipItem_C_2147481405")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxWelcomeTipItem_C_2147481405")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxWelcomeTipItem_C_2147481405* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxWelcomeTipItem_C_2147481405>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxWelcomeTipItem_C_2147481405;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnLuaHide();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264")
+	}
+	static class ULUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void OnLuaHide();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_NetPanel_C_2147466255
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_NetPanel_C_2147466255 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+	void OnListItemObjectSet(class UObject* ListItemObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_NetPanel_C_2147466255")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_NetPanel_C_2147466255")
+	}
+	static class ULUA_OVERRIDES_WBP_NetPanel_C_2147466255* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_NetPanel_C_2147466255>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_NetPanel_C_2147466255;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void Construct();
+	void OnLuaOpen();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnInitialized();
+	void Destruct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398")
+	}
+	static class ULUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RankPrepareCard_C_2147463285
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RankPrepareCard_C_2147463285 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RankPrepareCard_C_2147463285")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RankPrepareCard_C_2147463285")
+	}
+	static class ULUA_OVERRIDES_WBP_RankPrepareCard_C_2147463285* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RankPrepareCard_C_2147463285>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RankPrepareCard_C_2147463285;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_LotteryDisplay_Resident_SelectUp_C_2147480235
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_LotteryDisplay_Resident_SelectUp_C_2147480235 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_LotteryDisplay_Resident_SelectUp_C_2147480235")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_LotteryDisplay_Resident_SelectUp_C_2147480235")
+	}
+	static class ULUA_OVERRIDES_WBP_LotteryDisplay_Resident_SelectUp_C_2147480235* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_LotteryDisplay_Resident_SelectUp_C_2147480235>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_LotteryDisplay_Resident_SelectUp_C_2147480235;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528")
+	}
+	static class ULUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_RankStarTrack_C_2147480488
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_RankStarTrack_C_2147480488 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	void StarIsBack();
+	void StarIsFront();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_RankStarTrack_C_2147480488")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_RankStarTrack_C_2147480488")
+	}
+	static class ULUA_OVERRIDES_WBP_RankStarTrack_C_2147480488* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_RankStarTrack_C_2147480488>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_RankStarTrack_C_2147480488;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638")
+	}
+	static class ULUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ItemDescWithHeadPanel_C_2147479640
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ItemDescWithHeadPanel_C_2147479640 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ItemDescWithHeadPanel_C_2147479640")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ItemDescWithHeadPanel_C_2147479640")
+	}
+	static class ULUA_OVERRIDES_WBP_ItemDescWithHeadPanel_C_2147479640* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ItemDescWithHeadPanel_C_2147479640>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ItemDescWithHeadPanel_C_2147479640;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SmallSpeakerContrlPanel_C_2147466271
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SmallSpeakerContrlPanel_C_2147466271 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SmallSpeakerContrlPanel_C_2147466271")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SmallSpeakerContrlPanel_C_2147466271")
+	}
+	static class ULUA_OVERRIDES_WBP_SmallSpeakerContrlPanel_C_2147466271* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SmallSpeakerContrlPanel_C_2147466271>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SmallSpeakerContrlPanel_C_2147466271;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultBallItem_C_2147479639
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultBallItem_C_2147479639 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultBallItem_C_2147479639")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultBallItem_C_2147479639")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultBallItem_C_2147479639* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultBallItem_C_2147479639>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultBallItem_C_2147479639;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthPart_Retrofit_C_2147462424
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthPart_Retrofit_C_2147462424 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthPart_Retrofit_C_2147462424")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthPart_Retrofit_C_2147462424")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthPart_Retrofit_C_2147462424* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthPart_Retrofit_C_2147462424>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthPart_Retrofit_C_2147462424;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleGridPanel_C_2147478875
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleGridPanel_C_2147478875 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleGridPanel_C_2147478875")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleGridPanel_C_2147478875")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleGridPanel_C_2147478875* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleGridPanel_C_2147478875>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleGridPanel_C_2147478875;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_AdvancedSkinItem_C_2147478696
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_AdvancedSkinItem_C_2147478696 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaItemHovered();
+	void OnLuaItemClick();
+	void OnLuaItemUnhovered();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_AdvancedSkinItem_C_2147478696")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_AdvancedSkinItem_C_2147478696")
+	}
+	static class ULUA_OVERRIDES_WBP_AdvancedSkinItem_C_2147478696* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_AdvancedSkinItem_C_2147478696>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_AdvancedSkinItem_C_2147478696;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ListIconItem_C_2147478689
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ListIconItem_C_2147478689 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ListIconItem_C_2147478689")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ListIconItem_C_2147478689")
+	}
+	static class ULUA_OVERRIDES_WBP_ListIconItem_C_2147478689* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ListIconItem_C_2147478689>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ListIconItem_C_2147478689;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaClose();
+	void OnLuaHide();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaShow();
+	void Construct();
+	void OnLuaOpen();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688")
+	}
+	static class ULUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687")
+	}
+	static class ULUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679")
+	}
+	static class ULUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678 final : public ULuaOverridesClass
+{
+public:
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnInitialized();
+	void Destruct();
+	void Construct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678")
+	}
+	static class ULUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ListItem_C_2147478659
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ListItem_C_2147478659 final : public ULuaOverridesClass
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnLuaItemDoubleClick();
+	void OnLuaItemHovered();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
+	void Construct();
+	void OnLuaItemClick();
+	void OnLuaItemUnhovered();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ListItem_C_2147478659")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ListItem_C_2147478659")
+	}
+	static class ULUA_OVERRIDES_WBP_ListItem_C_2147478659* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ListItem_C_2147478659>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ListItem_C_2147478659;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_MatchRoom_C_2147466253
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_MatchRoom_C_2147466253 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_MatchRoom_C_2147466253")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_MatchRoom_C_2147466253")
+	}
+	static class ULUA_OVERRIDES_WBP_MatchRoom_C_2147466253* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_MatchRoom_C_2147466253>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_MatchRoom_C_2147466253;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	bool OnDrop(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258")
+	}
+	static class ULUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259 final : public ULuaOverridesClass
+{
+public:
+	void OnDragCancelled(const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
+	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
+	void Construct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259")
+	}
+	static class ULUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_NetMainPanel_C_2147466261 final : public ULuaOverridesClass
+{
+public:
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261")
+	}
+	static class ULUA_OVERRIDES_WBP_NetMainPanel_C_2147466261* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_NetMainPanel_C_2147466261>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_NetMainPanel_C_2147466261;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ActivityTaskItem_C_2147466267
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ActivityTaskItem_C_2147466267 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ActivityTaskItem_C_2147466267")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ActivityTaskItem_C_2147466267")
+	}
+	static class ULUA_OVERRIDES_WBP_ActivityTaskItem_C_2147466267* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ActivityTaskItem_C_2147466267>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ActivityTaskItem_C_2147466267;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_AchievementMedalShortTip_C_2147466268
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_AchievementMedalShortTip_C_2147466268 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_AchievementMedalShortTip_C_2147466268")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_AchievementMedalShortTip_C_2147466268")
+	}
+	static class ULUA_OVERRIDES_WBP_AchievementMedalShortTip_C_2147466268* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_AchievementMedalShortTip_C_2147466268>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_AchievementMedalShortTip_C_2147466268;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_CardContextMenu_C_2147466270
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_CardContextMenu_C_2147466270 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_CardContextMenu_C_2147466270")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_CardContextMenu_C_2147466270")
+	}
+	static class ULUA_OVERRIDES_WBP_CardContextMenu_C_2147466270* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_CardContextMenu_C_2147466270>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_CardContextMenu_C_2147466270;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371")
+	}
+	static class ULUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthPartItem_Arousal_C_2147462404
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthPartItem_Arousal_C_2147462404 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthPartItem_Arousal_C_2147462404")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthPartItem_Arousal_C_2147462404")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthPartItem_Arousal_C_2147462404* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthPartItem_Arousal_C_2147462404>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthPartItem_Arousal_C_2147462404;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BattleDataSecondaryPanel_C_2147462405
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BattleDataSecondaryPanel_C_2147462405 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BattleDataSecondaryPanel_C_2147462405")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BattleDataSecondaryPanel_C_2147462405")
+	}
+	static class ULUA_OVERRIDES_WBP_BattleDataSecondaryPanel_C_2147462405* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BattleDataSecondaryPanel_C_2147462405>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BattleDataSecondaryPanel_C_2147462405;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_C_2147462422
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Growth_EquipWeaponList2_C_2147462422 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_C_2147462422")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_C_2147462422")
+	}
+	static class ULUA_OVERRIDES_WBP_Growth_EquipWeaponList2_C_2147462422* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Growth_EquipWeaponList2_C_2147462422>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Growth_EquipWeaponList2_C_2147462422;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_C_2147462423
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Growth_EquipWeaponList1_C_2147462423 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_C_2147462423")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_C_2147462423")
+	}
+	static class ULUA_OVERRIDES_WBP_Growth_EquipWeaponList1_C_2147462423* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Growth_EquipWeaponList1_C_2147462423>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Growth_EquipWeaponList1_C_2147462423;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_GrowthPartItem_Retrofit_C_2147462426
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_GrowthPartItem_Retrofit_C_2147462426 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_GrowthPartItem_Retrofit_C_2147462426")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_GrowthPartItem_Retrofit_C_2147462426")
+	}
+	static class ULUA_OVERRIDES_WBP_GrowthPartItem_Retrofit_C_2147462426* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_GrowthPartItem_Retrofit_C_2147462426>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_GrowthPartItem_Retrofit_C_2147462426;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427 final : public ULuaOverridesClass
+{
+public:
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427")
+	}
+	static class ULUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429 final : public ULuaOverridesClass
+{
+public:
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void UpdateCSkillPoint(float InCSkillPoint, float InCSkillPointMax);
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429")
+	}
+	static class ULUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BattleDataSecondaryItem_C_2147462431
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BattleDataSecondaryItem_C_2147462431 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BattleDataSecondaryItem_C_2147462431")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BattleDataSecondaryItem_C_2147462431")
+	}
+	static class ULUA_OVERRIDES_WBP_BattleDataSecondaryItem_C_2147462431* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BattleDataSecondaryItem_C_2147462431>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BattleDataSecondaryItem_C_2147462431;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_BattleDataPageItem_C_2147462432
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_BattleDataPageItem_C_2147462432 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_BattleDataPageItem_C_2147462432")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_BattleDataPageItem_C_2147462432")
+	}
+	static class ULUA_OVERRIDES_WBP_BattleDataPageItem_C_2147462432* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_BattleDataPageItem_C_2147462432>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_BattleDataPageItem_C_2147462432;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectModeItem_C_2147466574
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectModeItem_C_2147466574 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectModeItem_C_2147466574")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectModeItem_C_2147466574")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectModeItem_C_2147466574* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectModeItem_C_2147466574>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectModeItem_C_2147466574;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ArcadeModeList_C_2147466575
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ArcadeModeList_C_2147466575 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ArcadeModeList_C_2147466575")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ArcadeModeList_C_2147466575")
+	}
+	static class ULUA_OVERRIDES_WBP_ArcadeModeList_C_2147466575* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ArcadeModeList_C_2147466575>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ArcadeModeList_C_2147466575;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_HumanMachineModeList_C_2147466576
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_HumanMachineModeList_C_2147466576 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_HumanMachineModeList_C_2147466576")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_HumanMachineModeList_C_2147466576")
+	}
+	static class ULUA_OVERRIDES_WBP_HumanMachineModeList_C_2147466576* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_HumanMachineModeList_C_2147466576>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_HumanMachineModeList_C_2147466576;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577 final : public ULuaOverridesClass
+{
+public:
+	void Construct();
+	void Destruct();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577")
+	}
+	static class ULUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810 final : public ULuaOverridesClass
+{
+public:
+	void OnLuaHide();
+	void OnLuaShow();
+	bool LuaHandleKeyEvent(const struct FKey& Key, EInputEvent InputEvent);
+	void OnLuaOpen();
+	void Construct();
+	void OnLuaClose();
+	void Destruct();
+	void UpdateScrollBar(int32 InMaxPageIndex, int32 InCurrentPageIndex);
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810")
+	}
+	static class ULUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810;
+
+// LuaOverridesClass Transient.LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059
+// 0x0000 (0x0260 - 0x0260)
+class ULUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059 final : public ULuaOverridesClass
+{
+public:
+	bool IsFriendOrRoomMember(int64 InPlayerId);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	bool CamparePlayer(int64 InPlayerId_1, int64 InPlayerId_2, uint8 InPlayerSerial_1, uint8 InPlayerSerial_2);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059")
+	}
+	static class ULUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059>();
+	}
+};
+DUMPER7_ASSERTS_ULUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059;
 
 }
 

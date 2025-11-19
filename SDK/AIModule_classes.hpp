@@ -3316,7 +3316,7 @@ DUMPER7_ASSERTS_UBTService_RunEQS;
 
 // Class AIModule.BTTask_BlueprintBase
 // 0x0038 (0x00A8 - 0x0070)
-class UBTTask_BlueprintBase final : public UBTTaskNode
+class UBTTask_BlueprintBase : public UBTTaskNode
 {
 public:
 	class AAIController*                          AIOwner;                                           // 0x0070(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3847,7 +3847,7 @@ DUMPER7_ASSERTS_UEnvQueryContext;
 
 // Class AIModule.EnvQueryContext_BlueprintBase
 // 0x0008 (0x0030 - 0x0028)
-class UEnvQueryContext_BlueprintBase final : public UEnvQueryContext
+class UEnvQueryContext_BlueprintBase : public UEnvQueryContext
 {
 public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])

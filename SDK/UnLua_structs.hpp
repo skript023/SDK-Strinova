@@ -10,7 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "PMGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -22,11 +24,17 @@ namespace SDK
 struct FPropertyCollector final
 {
 public:
-	struct FFormatArgumentData                    None;                                              // 0x0000(0x0040)(HasGetValueTypeHash)
-	struct FInputAxisKeyMapping                   None_0;                                            // 0x0000(0x0028)(HasGetValueTypeHash)
-	struct FIntPoint                              None_1;                                            // 0x0000(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMonitorInfomation                     None_2;                                            // 0x0000(0x0030)(HasGetValueTypeHash)
-	struct FInputActionKeyMapping                 None_3;                                            // 0x0000(0x0028)(HasGetValueTypeHash)
+	class UPMLuaBaseObject*                       None;                                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBindActionData                        None_0;                                            // 0x0000(0x0048)(HasGetValueTypeHash)
+	ECyItemQualityType                            None_1;                                            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         None_2;                                            // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FCyApartmentGarageKitSeverConfig       None_3;                                            // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   None_4;                                            // 0x0000(0x0018)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    None_5;                                            // 0x0000(0x0040)(HasGetValueTypeHash)
+	struct FInputAxisKeyMapping                   None_6;                                            // 0x0000(0x0028)(HasGetValueTypeHash)
+	struct FIntPoint                              None_7;                                            // 0x0000(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMonitorInfomation                     None_8;                                            // 0x0000(0x0030)(HasGetValueTypeHash)
+	struct FInputActionKeyMapping                 None_9;                                            // 0x0000(0x0028)(HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_FPropertyCollector;
 

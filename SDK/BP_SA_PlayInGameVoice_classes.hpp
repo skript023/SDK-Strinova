@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_SA_PlayInGameVoice.BP_SA_PlayInGameVoice_C
 // 0x0000 (0x0590 - 0x0590)
-class UBP_SA_PlayInGameVoice_C final : public UCySAtomPlayInGameVoice
+class BP_SA_PlayInGameVoice::UBP_SA_PlayInGameVoice_C final : public UCySAtomPlayInGameVoice
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_SA_PlayInGameVoice_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_SA_PlayInGameVoice.BP_SA_PlayInGameVoice_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_SA_PlayInGameVoice_C")
 	}
-	static class UBP_SA_PlayInGameVoice_C* GetDefaultObj()
+	static class BP_SA_PlayInGameVoice::UBP_SA_PlayInGameVoice_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_SA_PlayInGameVoice_C>();
+		return GetDefaultObjImpl<BP_SA_PlayInGameVoice::UBP_SA_PlayInGameVoice_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_SA_PlayInGameVoice_C;
+DUMPER7_ASSERTS_BP_SA_PlayInGameVoice__UBP_SA_PlayInGameVoice_C;
 
 }
 

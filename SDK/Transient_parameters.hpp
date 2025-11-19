@@ -12,10 +12,24 @@
 
 #include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "PMGame_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameKeyTipsAwakeningItem_C_2147434798_LuaHandleKeyEvent;
 
 // LuaFunction Transient.LUA_OVERRIDES_CyConditionGameInstanceSubsystem_2147482536.CreateLuaUObject
 // 0x0028 (0x0028 - 0x0000)
@@ -29,23 +43,16 @@ public:
 };
 DUMPER7_ASSERTS_LUA_OVERRIDES_CyConditionGameInstanceSubsystem_2147482536_CreateLuaUObject;
 
-// LuaFunction Transient.LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338.OnLuaReceiveSessionCmd
-// 0x0004 (0x0004 - 0x0000)
-struct LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaReceiveSessionCmd final
+// LuaFunction Transient.LUA_OVERRIDES_WBP_AddFriendButton_C_2147434773.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_AddFriendButton_C_2147434773_LuaHandleKeyEvent final
 {
 public:
-	int32                                         cmd_id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaReceiveSessionCmd;
-
-// LuaFunction Transient.LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338.OnLuaSessionOpen
-// 0x0004 (0x0004 - 0x0000)
-struct LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaSessionOpen final
-{
-public:
-	int32                                         ErrCode;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaSessionOpen;
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_AddFriendButton_C_2147434773_LuaHandleKeyEvent;
 
 // LuaFunction Transient.LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338.OnLuaSessionReOpen
 // 0x0004 (0x0004 - 0x0000)
@@ -56,6 +63,24 @@ public:
 };
 DUMPER7_ASSERTS_LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaSessionReOpen;
 
+// LuaFunction Transient.LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338.OnLuaSessionOpen
+// 0x0004 (0x0004 - 0x0000)
+struct LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaSessionOpen final
+{
+public:
+	int32                                         ErrCode;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaSessionOpen;
+
+// LuaFunction Transient.LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338.OnLuaReceiveSessionCmd
+// 0x0004 (0x0004 - 0x0000)
+struct LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaReceiveSessionCmd final
+{
+public:
+	int32                                         cmd_id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaReceiveSessionCmd;
+
 // LuaFunction Transient.LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338.OnLuaSessionClose
 // 0x0004 (0x0004 - 0x0000)
 struct LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaSessionClose final
@@ -64,6 +89,48 @@ public:
 	int32                                         ErrCode;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LUA_OVERRIDES_PMOnlineServiceHandle_Lua_2147482338_OnLuaSessionClose;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameFinishRewardPage_AchievementPanel_C_2147434771_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ContentPage_FriendsRoom_C_2147481987_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectPlayerShowSelf_C_2147434839_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_LoadingAssetPage_C_2147482163_LuaHandleKeyEvent;
 
 // LuaFunction Transient.LUA_OVERRIDES_WBP_LoginPage_C_2147482236.LuaHandleKeyEvent
 // 0x0020 (0x0020 - 0x0000)
@@ -84,6 +151,2665 @@ public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LUA_OVERRIDES_PMLuaBridgeObject_2147482336_TickLuaBridge;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NetItem_C_2147466260.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_NetItem_C_2147466260_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NetItem_C_2147466260_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NetItem_C_2147466260.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_NetItem_C_2147466260_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NetItem_C_2147466260_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NavigationBarPanel3_C_2147481861_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788.Tick
+// 0x003C (0x003C - 0x0000)
+struct LUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TeamScoreCustom_PlayerDateItem_C_2147434788_Tick;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleWeaponPanel_C_2147434828_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_EscortResultPage_ScoreListItem_C_2147434741_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BigHeadResultPage_ScoreListItem_C_2147434734_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SharingClan_C_2147482001.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SharingClan_C_2147482001_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SharingClan_C_2147482001_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BombResultPage_ScoreListItem_C_2147434735_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BombPassResultPage_ScoreListItem_C_2147434736_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleCustomSkinPanel_C_2147434739_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleChangeSkinListItem_C_2147434740_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatTextTeamCard_C_2147481993_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_C_2147434802.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_C_2147434802_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_C_2147434802_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GunGameResultPage_ScoreListItem_C_2147434742_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_Growth_EquipWeaponList1_Item_C_2147462433_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_HotZoneResultPage_ScoreListItem_C_2147434743_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_KnifeFightResultPage_ScoreListItem_C_2147434744_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatChannelListItem_C_2147481998_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_MineResultPage_ScoreListItem_C_2147434745_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatClanPage_C_2147481982.OnRemovedFromFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatClanPage_C_2147481982_OnRemovedFromFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatClanPage_C_2147481982_OnRemovedFromFocusPath;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TeamResultPage_ScoreListItem_C_2147434746_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TeamThreeResultPage_ScoreListItem_C_2147434747_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768.OnDragDetected
+// 0x00B0 (0x00B0 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768_OnDragDetected final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768_OnDragDetected;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoletChangeSkinPanelListItem_C_2147434768_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ZombieResultPage_ScoreListItem_C_2147434748_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849.OnRoundResultChanged
+// 0x0010 (0x0010 - 0x0000)
+struct LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849_OnRoundResultChanged final
+{
+public:
+	TArray<struct FMatchRoundResult>              MatchRoundResult;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849_OnRoundResultChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849.OnBombOwnerTeamChanged
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849_OnBombOwnerTeamChanged final
+{
+public:
+	const class APMGameState_Bomb*                GameState;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ScoreRoundResultBomb_C_2147434849_OnBombOwnerTeamChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821.OnMouseMove
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821_OnMouseMove final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821_OnMouseMove;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821.LuaOnNavigation
+// 0x0002 (0x0002 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821_LuaOnNavigation final
+{
+public:
+	EUINavigation                                 UINavigationType;                                  // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821_LuaOnNavigation;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821.HideOrShowAllPage
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821_HideOrShowAllPage final
+{
+public:
+	bool                                          bShowCharacterOnly;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleBombPage_C_2147434821_HideOrShowAllPage;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CampusActivities_ResultTag_C_2147434770_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787.Tick
+// 0x003C (0x003C - 0x0000)
+struct LUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ScorePlayerTeam_C_2147434787_Tick;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852.K2_OnLastCharacterOut
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852_K2_OnLastCharacterOut final
+{
+public:
+	const class AActor*                           LastViewTarget;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852_K2_OnLastCharacterOut;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852.K2_OnNewCharacterIn
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852_K2_OnNewCharacterIn final
+{
+public:
+	const class AActor*                           InViewTarget;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852_K2_OnNewCharacterIn;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GrowthRetrofitPanel_C_2147434852_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultLeisureCupPage_C_2147434775_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CompetitionProgress_C_2147481850_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RoomOperations_C_2147466254.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RoomOperations_C_2147466254_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RoomOperations_C_2147466254_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ClanInfoCard_C_2147481990_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767.UpdateFriendIcon
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767_UpdateFriendIcon final
+{
+public:
+	class APMPlayerState*                         PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767_UpdateFriendIcon;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleLoadingItem_C_2147434767_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultRolePanel_C_2147434769_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultBPTaskItemPanel_C_2147434772_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791.ConfirmItem
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791_ConfirmItem final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791_ConfirmItem;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TacticWheelPanel_C_2147434791_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TacticWheelItem_C_2147434792_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BombRoundResultPage_C_2147434793_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CareerRankComboItem_C_2147480534_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_EquipRoomStory_ChapterItem_C_2147478682_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_MarkWheelPanel_C_2147434795_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_MarkWheelItem_C_2147434796_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797.K2_OnSelectRoleIDReplicated
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797_K2_OnSelectRoleIDReplicated final
+{
+public:
+	const class ACyPlayerState*                   CyPlayerState;                                     // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797_K2_OnSelectRoleIDReplicated;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797.K2_OnViewTargetChanged
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797_K2_OnViewTargetChanged final
+{
+public:
+	const class AActor*                           InViewTarget;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797_K2_OnViewTargetChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameKeyTipsNewPage_C_2147434797_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596.CustomHandleNavAction
+// 0x0058 (0x0058 - 0x0000)
+struct LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596_CustomHandleNavAction final
+{
+public:
+	struct FUINavActionReply                      Reply;                                             // 0x0000(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RoomModeSelectPage_C_2147466596_CustomHandleNavAction;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameKeyTipsRoleItem_C_2147434799_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BattleDataPage_C_2147462408.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_BattleDataPage_C_2147462408_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BattleDataPage_C_2147462408_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameChatPage_C_2147434801.IsChatActived
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_IsChatActived final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_IsChatActived;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameChatPage_C_2147434801.OnGameStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_OnGameStateChanged final
+{
+public:
+	EGStateType                                   PrevState;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGStateType                                   NextState;                                         // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_OnGameStateChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameChatPage_C_2147434801.SetInGameState
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_SetInGameState final
+{
+public:
+	bool                                          bInGame;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_SetInGameState;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameChatPage_C_2147434801.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameChatPage_C_2147434801.OnRemovedFromFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_OnRemovedFromFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_OnRemovedFromFocusPath;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameChatPage_C_2147434801.AddSystemMsg
+// 0x0018 (0x0018 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_AddSystemMsg final
+{
+public:
+	class FText                                   SystemMsgContent;                                  // 0x0000(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameChatPage_C_2147434801_AddSystemMsg;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatTextPlayerCard_C_2147481994_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TeamScoreCustom_Main_C_2147434803_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GrowthDowngradeDialog_C_2147434804_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805.UpdateScrollBar
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805_UpdateScrollBar final
+{
+public:
+	int32                                         InMaxPageIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InCurrentPageIndex;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TeamThreeSelectRoleLoadingPanel_C_2147434805_UpdateScrollBar;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GrowthCommonPanel_Retrofit_C_2147434806_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ScoreTeamThree_C_2147434807_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_WareHouse_C_2147480436.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_WareHouse_C_2147480436_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_WareHouse_C_2147480436_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808.Tick
+// 0x003C (0x003C - 0x0000)
+struct LUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ScorePlayerTeamThree_C_2147434808_Tick;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ScoreTeam_C_2147434809.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ScoreTeam_C_2147434809_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ScoreTeam_C_2147434809_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_DecalWheelPanel_C_2147434811_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_PMPlayerController_2147462818.IsFriendOrRoomMember
+// 0x0010 (0x0010 - 0x0000)
+struct LUA_OVERRIDES_PMPlayerController_2147462818_IsFriendOrRoomMember final
+{
+public:
+	int64                                         InPlayerId;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_PMPlayerController_2147462818_IsFriendOrRoomMember;
+
+// LuaFunction Transient.LUA_OVERRIDES_PMPlayerController_2147462818.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_PMPlayerController_2147462818_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_PMPlayerController_2147462818_ReceiveEndPlay;
+
+// LuaFunction Transient.LUA_OVERRIDES_PMPlayerController_2147462818.CamparePlayer
+// 0x0018 (0x0018 - 0x0000)
+struct LUA_OVERRIDES_PMPlayerController_2147462818_CamparePlayer final
+{
+public:
+	int64                                         InPlayerId_1;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         InPlayerId_2;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         InPlayerSerial_1;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         InPlayerSerial_2;                                  // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0012(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_PMPlayerController_2147462818_CamparePlayer;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812.InitItem
+// 0x000C (0x000C - 0x0000)
+struct LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812_InitItem final
+{
+public:
+	struct FPMPersonalityInfo                     Info;                                              // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         PropsNum;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_DecalWheelItem_C_2147434812_InitItem;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813.K2_OnSelectRoleIDReplicated
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813_K2_OnSelectRoleIDReplicated final
+{
+public:
+	const class ACyPlayerState*                   CyPlayerState;                                     // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813_K2_OnSelectRoleIDReplicated;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813.K2_OnViewTargetChanged
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813_K2_OnViewTargetChanged final
+{
+public:
+	const class AActor*                           InViewTarget;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GameKeyTipsPage_C_2147434813_K2_OnViewTargetChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxBattlePassItem_C_2147481397_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultCharacterPage_C_2147434815_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BombRoundResultSpectatorPage_C_2147434816_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultTimeDilationPage_C_2147434817_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_EquipRoomStory_PersonalInfoItem_C_2147478680_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819.UpdateScrollBar
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819_UpdateScrollBar final
+{
+public:
+	int32                                         InMaxPageIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InCurrentPageIndex;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleLoadingPanel_C_2147434819_UpdateScrollBar;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleLoadingScrollBar_C_2147434820_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BuffItem_C_2147481858.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_BuffItem_C_2147481858_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BuffItem_C_2147481858_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BuffItem_C_2147481858.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_BuffItem_C_2147481858_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BuffItem_C_2147481858_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectPlayerList_C_2147434822_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleDetailPanel_C_2147434823_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824.LuaOnNavigation
+// 0x0002 (0x0002 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824_LuaOnNavigation final
+{
+public:
+	EUINavigation                                 UINavigationType;                                  // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824_LuaOnNavigation;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleListPanel_C_2147434824_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleRedSkinButton_C_2147434825_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleRoomInfo_C_2147434826_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleChangeSkinPanel_C_2147434827_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleChangeSkinAdvanceList_C_2147434830_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectPlayerItem_C_2147434832_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_PersonalityWheelPanel_C_2147434833_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultDisplay_C_2147479637.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultDisplay_C_2147479637_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultDisplay_C_2147479637_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834.InitItem
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834_InitItem final
+{
+public:
+	struct FPMPersonalityInfo                     Info;                                              // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_PersonalityWheelItem_C_2147434834_InitItem;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleCardIllustrationsListItem_C_2147434835_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectPlayerBumpTip_C_2147434836_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectPlayerChangeRole_C_2147434837_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BuffEntry_C_2147481851.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_BuffEntry_C_2147481851_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BuffEntry_C_2147481851_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectPlayerShareSkinTips_C_2147434838_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876.OnDragDetected
+// 0x00B0 (0x00B0 - 0x0000)
+struct LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876_OnDragDetected final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876_OnDragDetected;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RoleGridItem_C_2147478876_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ContentPage_Clan_C_2147481986_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectPlayerShowSkin_C_2147434840_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TitlePage_C_2147434841.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_TitlePage_C_2147434841_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TitlePage_C_2147434841_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleCardIllustrations_C_2147434842_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CareerRank_C_2147480527.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_CareerRank_C_2147480527_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CareerRank_C_2147480527_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845.OnMouseWheel
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845_OnMouseWheel final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BannerCellPanel_C_2147481845_OnMouseWheel;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultGameFinishPage_C_2147434851_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GrowthRoleAttributes_Retrofit_C_2147434856_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_PlaceBall1_C_2147482086.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_PlaceBall1_C_2147482086_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_PlaceBall1_C_2147482086_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_PlaceBall2_C_2147482085.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_PlaceBall2_C_2147482085_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_PlaceBall2_C_2147482085_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_QuickPlace_C_2147482083.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_QuickPlace_C_2147482083_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_QuickPlace_C_2147482083_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_OperationButtonBase_C_2147482084_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_StartLotteryBtn_C_2147482082_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ClearSetBtn_C_2147482081_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_BallSetDisplay_C_2147482079_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_OperateScreen_C_2147482078.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_OperateScreen_C_2147482078_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_OperateScreen_C_2147482078_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultPage_C_2147434865.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultPage_C_2147434865_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultPage_C_2147434865_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatClanItem_C_2147481978.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatClanItem_C_2147481978_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatClanItem_C_2147481978_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RankPreparePage_C_2147463284.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RankPreparePage_C_2147463284_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RankPreparePage_C_2147463284_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846.CustomHandleNavAction
+// 0x0058 (0x0058 - 0x0000)
+struct LUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846_CustomHandleNavAction final
+{
+public:
+	struct FUINavActionReply                      Reply;                                             // 0x0000(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SecondaryNavBar_C_2147481846_CustomHandleNavAction;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_FastMessagePanel_C_2147482014_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatFirstLevelTag_C_2147482012_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Pre_C_2147482009_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ShareClanPanel_C_2147482008_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatBubbles_C_2147482007_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatPrePage_C_2147482003.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatPrePage_C_2147482003_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatPrePage_C_2147482003_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CompetitionCard_C_2147482002.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_CompetitionCard_C_2147482002_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CompetitionCard_C_2147482002_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SharingCompetition_C_2147482000.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SharingCompetition_C_2147482000_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SharingCompetition_C_2147482000_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatChannelItem_C_2147481999_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatInput_C_2147481997.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatInput_C_2147481997_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatInput_C_2147481997_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SharePanel_C_2147481996.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SharePanel_C_2147481996_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SharePanel_C_2147481996_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatTranslate_C_2147481995.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatTranslate_C_2147481995_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatTranslate_C_2147481995_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ClanCard_ClanOrfriend_C_2147481989_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_FriendsRoom_C_2147481988_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ContentPage_Channel_C_2147481985_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatRoomPage_C_2147481984_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatChannelPage_C_2147481981_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980.OnRemovedFromFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980_OnRemovedFromFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980_OnRemovedFromFocusPath;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatMainPage_C_2147481980_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Channel_C_2147481979_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatText_Clan_C_2147481977_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatFriendItem_C_2147481976_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ChatRoomItem_C_2147481975_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SurveyEntryPanel_C_2147481864_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NavigationBarPanel_C_2147481862_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ShorcutCurrencyPanel_C_2147481860_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SecondaryNavBarBtn_C_2147481856_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ShortcutTaskPanel_C_2147481855_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CommonGoods_C_2147481854.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_CommonGoods_C_2147481854_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CommonGoods_C_2147481854_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_TargetGuideStateItem_C_2147481853_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RoleFreeEntry_C_2147481852_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848.OnMouseWheel
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848_OnMouseWheel final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CompetitionProgressList_C_2147481848_OnMouseWheel;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847.GetKeyFromSettingsByInputName
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847_GetKeyFromSettingsByInputName final
+{
+public:
+	class FName                                   InActionName;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bGamePad;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FKey>                           ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RichTextKeyMappings_C_2147481847_GetKeyFromSettingsByInputName;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ActivityEntryPanel_C_2147481844_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxBannerCellPanel_C_2147481842_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841.OnMouseWheel
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841_OnMouseWheel final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CompetitionReminder_C_2147481841_OnMouseWheel;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NavigationPage_C_2147481840.CustomHandleNavAction
+// 0x0058 (0x0058 - 0x0000)
+struct LUA_OVERRIDES_WBP_NavigationPage_C_2147481840_CustomHandleNavAction final
+{
+public:
+	struct FUINavActionReply                      Reply;                                             // 0x0000(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NavigationPage_C_2147481840_CustomHandleNavAction;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NavigationPage_C_2147481840.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_NavigationPage_C_2147481840_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NavigationPage_C_2147481840_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437.OnMouseMove
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437_OnMouseMove final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437_OnMouseMove;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ItemDescPanel_C_2147480437_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438.OnGMHidePage
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438_OnGMHidePage final
+{
+public:
+	bool                                          bHide;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ItemDisplayKeys_C_2147480438_OnGMHidePage;
+
+// LuaFunction Transient.LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058.IsFriendOrRoomMember
+// 0x0010 (0x0010 - 0x0000)
+struct LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058_IsFriendOrRoomMember final
+{
+public:
+	int64                                         InPlayerId;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058_IsFriendOrRoomMember;
+
+// LuaFunction Transient.LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058_ReceiveEndPlay;
+
+// LuaFunction Transient.LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058.CamparePlayer
+// 0x0018 (0x0018 - 0x0000)
+struct LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058_CamparePlayer final
+{
+public:
+	int64                                         InPlayerId_1;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         InPlayerId_2;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         InPlayerSerial_1;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         InPlayerSerial_2;                                  // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0012(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_BP_PMPlayerController_TeamMatch_C_2147435058_CamparePlayer;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615.GetCurveSpeed
+// 0x0010 (0x0010 - 0x0000)
+struct LUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615_GetCurveSpeed final
+{
+public:
+	float                                         InX;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Percent;                                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetFloatValue_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_FeedBackSets_Count_C_2147432615_GetCurveSpeed;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445.OnDragDetected
+// 0x00B0 (0x00B0 - 0x0000)
+struct LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445_OnDragDetected final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445_OnDragDetected;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_GoodsGridItem_C_2147480445_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447.OnDragDetected
+// 0x00B0 (0x00B0 - 0x0000)
+struct LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447_OnDragDetected final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447_OnDragDetected;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_WareHouseGoodsGridItem_C_2147480447_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_CyConditionObject_2147481438.BPGetMatchConditionCount
+// 0x0028 (0x0028 - 0x0000)
+struct LUA_OVERRIDES_CyConditionObject_2147481438_BPGetMatchConditionCount final
+{
+public:
+	class FString                                 ModuleName;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ParamsStr;                                         // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_CyConditionObject_2147481438_BPGetMatchConditionCount;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxShopPanel_C_2147481406_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxFriendPanel_C_2147481404_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxTaskItem_C_2147481403_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CampusActivities_RoomCampIcon_C_2147466264_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxWelcomePanel_C_2147481402_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxCheckInPanel_C_2147481400_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NetPanel_C_2147466255.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_NetPanel_C_2147466255_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NetPanel_C_2147466255_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxBattlePassPanel_C_2147481399_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RefluxMainPage_C_2147481398_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528.Tick
+// 0x003C (0x003C - 0x0000)
+struct LUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_RankScoreProgress_C_2147480528_Tick;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_HighQualityItemDisplay_C_2147479638_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ListIconItem_C_2147478689.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ListIconItem_C_2147478689_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ListIconItem_C_2147478689_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_EquipRoomStory_DescPage_C_2147478688_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_EquipRoomStory_MainPage_C_2147478687_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_EquipRoomStory_RoleDetailItem_C_2147478679_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_EquipRoomStory_ChapterBtnItem_C_2147478678_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ListItem_C_2147478659.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_WBP_ListItem_C_2147478659_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ListItem_C_2147478659_BP_OnItemSelectionChanged;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ListItem_C_2147478659.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_ListItem_C_2147478659_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ListItem_C_2147478659_OnListItemObjectSet;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ListItem_C_2147478659.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_ListItem_C_2147478659_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ListItem_C_2147478659_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ListItem_C_2147478659.OnDragDetected
+// 0x00B0 (0x00B0 - 0x0000)
+struct LUA_OVERRIDES_WBP_ListItem_C_2147478659_OnDragDetected final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ListItem_C_2147478659_OnDragDetected;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_MatchRoom_C_2147466253.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_MatchRoom_C_2147466253_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_MatchRoom_C_2147466253_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258.OnDrop
+// 0x00B8 (0x00B8 - 0x0000)
+struct LUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258_OnDrop final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(Parm, NativeAccessSpecifierPublic)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CustomWidgetLayoutPanel_C_2147466258_OnDrop;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259.OnDragCancelled
+// 0x0078 (0x0078 - 0x0000)
+struct LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259_OnDragCancelled final
+{
+public:
+	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UDragDropOperation*                     Operation;                                         // 0x0070(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259_OnDragCancelled;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259.OnDragDetected
+// 0x00B0 (0x00B0 - 0x0000)
+struct LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259_OnDragDetected final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259_OnDragDetected;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_CustomWidgetOptItem_C_2147466259_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261.OnMouseEnter
+// 0x00A8 (0x00A8 - 0x0000)
+struct LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261_OnMouseEnter;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261.OnMouseLeave
+// 0x0070 (0x0070 - 0x0000)
+struct LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_NetMainPanel_C_2147466261_OnMouseLeave;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ResultMvpPage_C_2147462371_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427.OnMouseButtonUp
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427_OnMouseButtonUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_Growth_EquipWeaponList2_Item_C_2147462427_OnMouseButtonUp;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429.OnMouseButtonUp
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429_OnMouseButtonUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429_OnMouseButtonUp;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429.UpdateCSkillPoint
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429_UpdateCSkillPoint final
+{
+public:
+	float                                         InCSkillPoint;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InCSkillPointMax;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_Growth_EquipWeapon_Skill_C_2147462429_UpdateCSkillPoint;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectModeItem_C_2147466574.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectModeItem_C_2147466574_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectModeItem_C_2147466574_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577.OnMouseButtonDown
+// 0x0160 (0x0160 - 0x0000)
+struct LUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_ArcadeModeListItem_C_2147466577_OnMouseButtonDown;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810.LuaHandleKeyEvent
+// 0x0020 (0x0020 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810_LuaHandleKeyEvent final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInputEvent                                   InputEvent;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810_LuaHandleKeyEvent;
+
+// LuaFunction Transient.LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810.UpdateScrollBar
+// 0x0008 (0x0008 - 0x0000)
+struct LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810_UpdateScrollBar final
+{
+public:
+	int32                                         InMaxPageIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InCurrentPageIndex;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_WBP_SelectRoleTeamTwoLoading_C_2147433810_UpdateScrollBar;
+
+// LuaFunction Transient.LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059.IsFriendOrRoomMember
+// 0x0010 (0x0010 - 0x0000)
+struct LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059_IsFriendOrRoomMember final
+{
+public:
+	int64                                         InPlayerId;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059_IsFriendOrRoomMember;
+
+// LuaFunction Transient.LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059_ReceiveEndPlay;
+
+// LuaFunction Transient.LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059.CamparePlayer
+// 0x0018 (0x0018 - 0x0000)
+struct LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059_CamparePlayer final
+{
+public:
+	int64                                         InPlayerId_1;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         InPlayerId_2;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         InPlayerSerial_1;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         InPlayerSerial_2;                                  // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0012(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LUA_OVERRIDES_BP_SpectatorPlayerController_C_2147435059_CamparePlayer;
 
 }
 
