@@ -990,9 +990,9 @@ bool IGameplayTagAssetInterface::HasAnyMatchingGameplayTags(const struct FGamepl
 
 
 // Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// const struct FGameplayTag&              TagToCheck                                             (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGameplayTag&              TagToCheck                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool IGameplayTagAssetInterface::HasMatchingGameplayTag(const struct FGameplayTag& TagToCheck) const

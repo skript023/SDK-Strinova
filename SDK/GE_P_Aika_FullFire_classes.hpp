@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_Aika_FullFire.GE_P_Aika_FullFire_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_P_Aika_FullFire::UGE_P_Aika_FullFire_C final : public UCyGameplayEffect
 {
 public:

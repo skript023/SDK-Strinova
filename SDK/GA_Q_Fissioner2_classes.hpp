@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Q_Fissioner2.GA_Q_Fissioner2_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class UGA_Q_Fissioner2_C final : public UCyBaseAbility
 {
 public:

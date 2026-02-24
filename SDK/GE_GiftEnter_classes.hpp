@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_GiftEnter.GE_GiftEnter_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_GiftEnter_C final : public UCyGameplayEffect
 {
 public:

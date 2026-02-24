@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Enemy_InsideTag.GE_Enemy_InsideTag_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Enemy_InsideTag_2::UGE_Enemy_InsideTag_C final : public UCyGameplayEffect
 {
 public:

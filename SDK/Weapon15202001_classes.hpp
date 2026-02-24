@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon15202001.Weapon15202001_C
-// 0x0000 (0x11F0 - 0x11F0)
+// 0x0000 (0x12C0 - 0x12C0)
 class AWeapon15202001_C final : public ACyWeaponMelee_ExtremeKnifeFight
 {
 public:

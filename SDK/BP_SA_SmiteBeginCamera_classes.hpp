@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_SmiteBeginCamera.BP_SA_SmiteBeginCamera_C
-// 0x0000 (0x0748 - 0x0748)
+// 0x0000 (0x0750 - 0x0750)
 class BP_SA_SmiteBeginCamera::UBP_SA_SmiteBeginCamera_C final : public UCySAtomChangeCameraParam
 {
 public:

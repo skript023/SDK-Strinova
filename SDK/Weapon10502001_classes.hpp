@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon10502001.Weapon10502001_C
-// 0x0020 (0x11E0 - 0x11C0)
+// 0x0020 (0x12B0 - 0x1290)
 class AWeapon10502001_C final : public ACyWeaponRifle
 {
 public:
-	class UCyAmmoUpdateMaterialComponent*         CyAmmoUpdateMaterial;                              // 0x11C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFEndReloadState*                     StateEndReload;                                    // 0x11C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFSecondStartReloadState*             StateSecondStartReload;                            // 0x11D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFStartReloadState*                   StateStartReload;                                  // 0x11D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyAmmoUpdateMaterialComponent*         CyAmmoUpdateMaterial;                              // 0x1290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFEndReloadState*                     StateEndReload;                                    // 0x1298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFSecondStartReloadState*             StateSecondStartReload;                            // 0x12A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStartReloadState*                   StateStartReload;                                  // 0x12A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

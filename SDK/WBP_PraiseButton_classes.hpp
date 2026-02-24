@@ -33,9 +33,9 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_Praise;                             // 0x0608(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_PraiseButton(int32 EntryPoint);
 	void Construct();
 	void Destruct();
+	void ExecuteUbergraph_WBP_PraiseButton(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

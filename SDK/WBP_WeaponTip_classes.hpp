@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_WeaponTip.WBP_WeaponTip_C
-// 0x0000 (0x0A38 - 0x0A38)
+// 0x0000 (0x0A50 - 0x0A50)
 class UWBP_WeaponTip_C final : public UCyWeaponTip
 {
 public:

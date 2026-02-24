@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ChatPlayerHead.WBP_ChatPlayerHead_C
-// 0x0010 (0x08D0 - 0x08C0)
+// 0x0010 (0x08E8 - 0x08D8)
 class UWBP_ChatPlayerHead_C final : public UPMUserWidget
 {
 public:
-	class UImage*                                 Image_PlayerBorder;                                // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_PlayerIcon;                                  // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_PlayerBorder;                                // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_PlayerIcon;                                  // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

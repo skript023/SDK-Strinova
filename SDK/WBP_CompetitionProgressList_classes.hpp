@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CompetitionProgressList.WBP_CompetitionProgressList_C
-// 0x0008 (0x08C8 - 0x08C0)
+// 0x0008 (0x08E0 - 0x08D8)
 class UWBP_CompetitionProgressList_C final : public UPMUserWidget
 {
 public:
-	class UListView*                              ListView_Progress;                                 // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UListView*                              ListView_Progress;                                 // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

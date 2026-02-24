@@ -18,14 +18,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_UseProps.Weapon_UseProps_C
-// 0x0020 (0x11B0 - 0x1190)
+// 0x0030 (0x1290 - 0x1260)
 class AWeapon_UseProps_C final : public ACyWeaponSkill
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1190(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCyTargetActorsComponent*               CyTargetActors;                                    // 0x1198(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyTargetDisplayComponent*              CyTargetDisplay;                                   // 0x11A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchGroupComponent*                CySearchGroup;                                     // 0x11A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x1268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyTargetActorsComponent*               CyTargetActors;                                    // 0x1270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyTargetDisplayComponent*              CyTargetDisplay;                                   // 0x1278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchGroupComponent*                CySearchGroup;                                     // 0x1280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ReceiveBeginPlay();

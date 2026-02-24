@@ -17,16 +17,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Summon_Generator_Grenades.BP_Summon_Generator_Grenades_C
-// 0x0030 (0x07C0 - 0x0790)
+// 0x0030 (0x0870 - 0x0840)
 class ABP_Summon_Generator_Grenades_C final : public ACySummonActor
 {
 public:
-	class UCyAIStateMonitor*                      CyAIStateMonitor;                                  // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyAIWaitState*                         CyAIWaitState;                                     // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyAIWorkState*                         CyAIWorkState;                                     // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyAIMachine*                           CyAIMachine;                                       // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyAbilitySystemComponent*              CyAbilitySystem;                                   // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_838[0x8];                                      // 0x0838(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCyAIStateMonitor*                      CyAIStateMonitor;                                  // 0x0840(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyAIWaitState*                         CyAIWaitState;                                     // 0x0848(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyAIWorkState*                         CyAIWorkState;                                     // 0x0850(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyAIMachine*                           CyAIMachine;                                       // 0x0858(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyAbilitySystemComponent*              CyAbilitySystem;                                   // 0x0860(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0868(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

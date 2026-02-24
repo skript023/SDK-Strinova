@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DeathZoneActor.DeathZoneActor_C
-// 0x0008 (0x0350 - 0x0348)
+// 0x0008 (0x0390 - 0x0388)
 class ADeathZoneActor_C final : public APMDangerousZoneActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0348(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ReceiveActorBeginOverlap(class AActor* OtherActor);

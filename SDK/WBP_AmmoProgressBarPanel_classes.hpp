@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AmmoProgressBarPanel.WBP_AmmoProgressBarPanel_C
-// 0x0000 (0x0A20 - 0x0A20)
+// 0x0000 (0x0A38 - 0x0A38)
 class UWBP_AmmoProgressBarPanel_C final : public UPMUWAmmoProgressBarPanelPC
 {
 public:

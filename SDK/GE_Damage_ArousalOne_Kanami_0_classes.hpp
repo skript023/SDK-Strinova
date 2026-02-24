@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Damage_ArousalOne_Kanami.GE_Damage_ArousalOne_Kanami_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Damage_ArousalOne_Kanami_0::UGE_Damage_ArousalOne_Kanami_C final : public UCyGameplayEffect
 {
 public:

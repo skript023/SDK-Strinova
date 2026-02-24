@@ -31,11 +31,11 @@ public:
 	class UWBP_RedDot_Pic_Panel_C*                WBP_RedDot_Pic_Panel;                              // 0x05F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem(int32 EntryPoint);
-	void BP_OnEntryReleased();
-	void OnListItemObjectSet(class UObject* ListItemObject);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
 	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void BP_OnEntryReleased();
+	void ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SummonProjectile_X_Audery.SummonProjectile_X_Audery_C
-// 0x0018 (0x0AE0 - 0x0AC8)
+// 0x0018 (0x0B28 - 0x0B10)
 class SummonProjectile_X_Audery::ASummonProjectile_X_Audery_C final : public ACyProjectileBlast
 {
 public:
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0AC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_GameStateComponent_Summon_C*        BP_GameStateComponent_Summon;                      // 0x0AD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySkinComponent*                       CySkin;                                            // 0x0AD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_GameStateComponent_Summon_C*        BP_GameStateComponent_Summon;                      // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x0B20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

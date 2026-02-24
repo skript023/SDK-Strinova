@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon10602001.Weapon10602001_C
-// 0x0020 (0x11E0 - 0x11C0)
+// 0x0020 (0x12B0 - 0x1290)
 class AWeapon10602001_C final : public ACyWeaponRifle
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x11C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCyAmmoUpdateMaterialComponent*         CyAmmoUpdateMaterial;                              // 0x11C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFEndReloadState*                     StateEndReload;                                    // 0x11D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFStartReloadState*                   StateStartReload;                                  // 0x11D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCyAmmoUpdateMaterialComponent*         CyAmmoUpdateMaterial;                              // 0x1298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFEndReloadState*                     StateEndReload;                                    // 0x12A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStartReloadState*                   StateStartReload;                                  // 0x12A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ReceiveTick(float DeltaSeconds);

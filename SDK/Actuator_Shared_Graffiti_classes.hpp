@@ -17,12 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Actuator_Shared_Graffiti.Actuator_Shared_Graffiti_C
-// 0x0010 (0x07A0 - 0x0790)
+// 0x0010 (0x0850 - 0x0840)
 class AActuator_Shared_Graffiti_C final : public ACySummonActor
 {
 public:
-	class UCyActuatorGraffitiComponent*           ActuatorGraffiti;                                  // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_838[0x8];                                      // 0x0838(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCyActuatorGraffitiComponent*           ActuatorGraffiti;                                  // 0x0840(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0848(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

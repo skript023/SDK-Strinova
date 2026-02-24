@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Character_Aika.BP_Character_Aika_C
-// 0x0010 (0x1DC0 - 0x1DB0)
+// 0x0000 (0x1E10 - 0x1E10)
 class ABP_Character_Aika_C final : public ABP_PMCharacterBase_V3_C
 {
 public:
-	class UBP_WeaponManager_Aika_C*               BP_WeaponManager_Aika;                             // 0x1DB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_WeaponManager_Aika_C*               BP_WeaponManager_Aika;                             // 0x1E08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

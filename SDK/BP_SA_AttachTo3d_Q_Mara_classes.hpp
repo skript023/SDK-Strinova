@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_AttachTo3d_Q_Mara.BP_SA_AttachTo3d_Q_Mara_C
-// 0x0000 (0x0660 - 0x0660)
+// 0x0000 (0x0670 - 0x0670)
 class UBP_SA_AttachTo3d_Q_Mara_C final : public UCySAtomAttachTo
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_InteractionProgressBar.WBP_InteractionProgressBar_C
-// 0x0000 (0x08C8 - 0x08C8)
+// 0x0000 (0x08E0 - 0x08E0)
 class UWBP_InteractionProgressBar_C final : public UPMUWInteractionProgressBarPC
 {
 public:

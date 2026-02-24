@@ -91,8 +91,8 @@ public:
 	float                                         LimitRate;                                         // 0x07D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CareerRank(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_CareerRank(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

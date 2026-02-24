@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TargetDetectorSphere_OnlyViewTarget.BP_TargetDetectorSphere_OnlyViewTarget_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class UBP_TargetDetectorSphere_OnlyViewTarget_C final : public UCyTargetDetectorSphere
 {
 public:

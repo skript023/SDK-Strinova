@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SAtom_AttachToTargetActor_Q_Mara_Arousal2.BP_SAtom_AttachToTargetActor_Q_Mara_Arousal2_C
-// 0x0000 (0x0660 - 0x0660)
+// 0x0000 (0x0670 - 0x0670)
 class UBP_SAtom_AttachToTargetActor_Q_Mara_Arousal2_C final : public UCySAtomAttachTo
 {
 public:

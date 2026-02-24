@@ -17,18 +17,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Q_KokonaShiki.Weapon_Q_KokonaShiki_C
-// 0x0040 (0x13E0 - 0x13A0)
+// 0x0040 (0x14B0 - 0x1470)
 class Weapon_Q_KokonaShiki::AWeapon_Q_KokonaShiki_C final : public ACyWeaponCustom
 {
 public:
-	class UCyFFinishState*                        CyFFinishState;                                    // 0x13A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyTargetDisplayComponent*              CyTargetDisplay;                                   // 0x13A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyTargetActorsComponent*               CyTargetActors;                                    // 0x13B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchGroupComponent*                CySearchGroup;                                     // 0x13B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x13C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFSecondWorkState*                    CyFSecondWorkState;                                // 0x13C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFWorkState*                          CyFWorkState;                                      // 0x13D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySkinComponent*                       CySkin;                                            // 0x13D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFFinishState*                        CyFFinishState;                                    // 0x1470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyTargetDisplayComponent*              CyTargetDisplay;                                   // 0x1478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyTargetActorsComponent*               CyTargetActors;                                    // 0x1480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchGroupComponent*                CySearchGroup;                                     // 0x1488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x1490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFSecondWorkState*                    CyFSecondWorkState;                                // 0x1498(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFWorkState*                          CyFWorkState;                                      // 0x14A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x14A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

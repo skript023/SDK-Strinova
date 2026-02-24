@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ExtraArmorMax_X_KokonaShiki.GE_ExtraArmorMax_X_KokonaShiki_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_ExtraArmorMax_X_KokonaShiki_C final : public UCyGameplayEffect
 {
 public:

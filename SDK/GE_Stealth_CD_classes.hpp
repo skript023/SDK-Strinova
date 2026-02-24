@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Stealth_CD.GE_Stealth_CD_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Stealth_CD_C final : public UCyGameplayEffect
 {
 public:

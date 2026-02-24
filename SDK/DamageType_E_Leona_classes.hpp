@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_E_Leona.DamageType_E_Leona_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UDamageType_E_Leona_C final : public UPMDamageType
 {
 public:

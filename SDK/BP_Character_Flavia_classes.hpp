@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Character_Flavia.BP_Character_Flavia_C
-// 0x0020 (0x1DD0 - 0x1DB0)
+// 0x0010 (0x1E20 - 0x1E10)
 class ABP_Character_Flavia_C final : public ABP_PMCharacterBase_V3_C
 {
 public:
-	class USkeletalMeshComponent*                 ButterflyWings;                                    // 0x1DB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateMonitor*                       CyCStateMonitor_Alive;                             // 0x1DB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_WeaponManager_Flavia_C*             BP_WeaponManager_Flavia;                           // 0x1DC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 ButterflyWings;                                    // 0x1E08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateMonitor*                       CyCStateMonitor_Alive;                             // 0x1E10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_WeaponManager_Flavia_C*             BP_WeaponManager_Flavia;                           // 0x1E18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

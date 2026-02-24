@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DurationAttenuationByDistance_E_Ming.BP_DurationAttenuationByDistance_E_Ming_C
-// 0x0000 (0x0048 - 0x0048)
+// 0x0000 (0x0088 - 0x0088)
 class UBP_DurationAttenuationByDistance_E_Ming_C final : public UCyCalculationAttenuationByDistance
 {
 public:

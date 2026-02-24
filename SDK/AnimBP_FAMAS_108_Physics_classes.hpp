@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
+#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass AnimBP_FAMAS_108_Physics.AnimBP_FAMAS_108_Physics_C
-// 0x02C0 (0x0590 - 0x02D0)
+// 0x02C0 (0x0540 - 0x0280)
 class UAnimBP_FAMAS_108_Physics_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2C8[0x8];                                      // 0x02C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02D8(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0308(0x0080)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0388(0x0050)()
-	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x03D8(0x0138)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0510(0x0080)()
+	uint8                                         Pad_278[0x8];                                      // 0x0278(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0288(0x0030)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x02B8(0x0080)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0338(0x0050)()
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x0388(0x0138)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x04C0(0x0080)()
 
 public:
 	void AnimGraph(struct FPoseLink* AnimGraph_0);

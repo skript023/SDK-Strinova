@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GameVoiceChatPage.WBP_GameVoiceChatPage_C
-// 0x0008 (0x0B50 - 0x0B48)
+// 0x0008 (0x0B68 - 0x0B60)
 class UWBP_GameVoiceChatPage_C final : public UPMUWVoiceChatPagePC
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B48(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B60(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void Construct();

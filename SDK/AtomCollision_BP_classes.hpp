@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AtomCollision_BP.AtomCollision_BP_C
-// 0x0000 (0x0348 - 0x0348)
+// 0x0000 (0x03B8 - 0x03B8)
 class AAtomCollision_BP_C : public AUGCAtomActor
 {
 public:

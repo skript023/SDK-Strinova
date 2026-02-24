@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_X_Huixing_Escort2.Weapon_X_Huixing_Escort2_C
-// 0x0010 (0x13B0 - 0x13A0)
+// 0x0010 (0x1480 - 0x1470)
 class AWeapon_X_Huixing_Escort2_C final : public ACyWeaponCustom
 {
 public:
-	class UCyFFinishState*                        CyFFinishState;                                    // 0x13A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x13A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFFinishState*                        CyFFinishState;                                    // 0x1470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

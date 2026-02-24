@@ -92,11 +92,11 @@ public:
 	TMulticastInlineDelegate<void()>              BadgeDisappear;                                    // 0x0818(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_WBP_RankBadge7n1(int32 EntryPoint);
-	void BadgeDownDisappear();
-	void Construct();
-	void PreConstruct(bool IsDesignTime);
 	void SequenceEvent__ENTRYPOINTWBP_RankBadge7n1_0();
+	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void BadgeDownDisappear();
+	void ExecuteUbergraph_WBP_RankBadge7n1(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

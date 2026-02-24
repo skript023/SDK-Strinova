@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_Q_CrystalloidAlpha.CD_Q_CrystalloidAlpha_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UCD_Q_CrystalloidAlpha_C final : public UCyGameplayEffect
 {
 public:

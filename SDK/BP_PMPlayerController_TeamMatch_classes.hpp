@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PMPlayerController_TeamMatch.BP_PMPlayerController_TeamMatch_C
-// 0x0008 (0x0D50 - 0x0D48)
+// 0x0008 (0x0D90 - 0x0D88)
 class ABP_PMPlayerController_TeamMatch_C final : public APMPlayerController_TeamDeath
 {
 public:
-	class UCyRoleSelectComponent*                 CyRoleSelect;                                      // 0x0D48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRoleSelectComponent*                 CyRoleSelect;                                      // 0x0D88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

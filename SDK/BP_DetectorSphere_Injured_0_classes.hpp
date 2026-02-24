@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DetectorSphere_Injured.BP_DetectorSphere_Injured_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class BP_DetectorSphere_Injured_0::UBP_DetectorSphere_Injured_C final : public UCyTargetDetectorSphere
 {
 public:

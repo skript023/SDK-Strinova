@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_RecoverHealth_Escort2.GE_RecoverHealth_Escort2_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_RecoverHealth_Escort2_C final : public UCyGameplayEffect
 {
 public:

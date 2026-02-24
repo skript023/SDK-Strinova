@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PracticeAIController.BP_PracticeAIController_C
-// 0x0000 (0x06F8 - 0x06F8)
+// 0x0000 (0x0738 - 0x0738)
 class ABP_PracticeAIController_C final : public ACyPracticeAIController
 {
 public:

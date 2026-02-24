@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ForceMoveUpVector_WindField.BP_ForceMoveUpVector_WindField_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0608 - 0x0608)
 class BP_ForceMoveUpVector_WindField_1::UBP_ForceMoveUpVector_WindField_C final : public UCySAtomAddForceUpVector
 {
 public:

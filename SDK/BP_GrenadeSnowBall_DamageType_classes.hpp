@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GrenadeSnowBall_DamageType.BP_GrenadeSnowBall_DamageType_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_GrenadeSnowBall_DamageType_C final : public UPMDamageType
 {
 public:

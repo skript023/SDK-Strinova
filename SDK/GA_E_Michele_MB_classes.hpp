@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_E_Michele_MB.GA_E_Michele_MB_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class UGA_E_Michele_MB_C final : public UCyBaseAbility
 {
 public:

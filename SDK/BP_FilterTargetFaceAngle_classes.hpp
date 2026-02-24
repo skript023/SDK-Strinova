@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FilterTargetFaceAngle.BP_FilterTargetFaceAngle_C
-// 0x0000 (0x0098 - 0x0098)
+// 0x0000 (0x00A0 - 0x00A0)
 class BP_FilterTargetFaceAngle::UBP_FilterTargetFaceAngle_C final : public UCyFilterTargetFaceAngle
 {
 public:

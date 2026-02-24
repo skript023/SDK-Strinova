@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_HuiXing_End.GE_X_HuiXing_End_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_HuiXing_End_0::UGE_X_HuiXing_End_C final : public UCyGameplayEffect
 {
 public:

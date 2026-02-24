@@ -17,14 +17,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TeamChangeRoleTips.WBP_TeamChangeRoleTips_C
-// 0x0020 (0x0968 - 0x0948)
+// 0x0018 (0x0978 - 0x0960)
 class UWBP_TeamChangeRoleTips_C final : public UPMTeamChangeRoleTipsPanel
 {
 public:
-	class UTextBlock*                             TextDesc;                                          // 0x0948(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TextDesc_1;                                        // 0x0950(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_RichTextKeyMappings_C*             WBP_RichTextKeyMappingsPC_1;                       // 0x0958(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_RichTextKeyMappings_C*             WBP_RichTextKeyMappingsPC_2;                       // 0x0960(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_332;                               // 0x0960(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_RichTextKeyMappings_C*             WBP_RichTextKeyMappingsPC_1;                       // 0x0968(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_RichTextKeyMappings_C*             WBP_RichTextKeyMappingsPC_2;                       // 0x0970(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TeamStateComponent.BP_TeamStateComponent_C
-// 0x0000 (0x0198 - 0x0198)
+// 0x0000 (0x01A8 - 0x01A8)
 class UBP_TeamStateComponent_C final : public UCyTeamStateComponent
 {
 public:

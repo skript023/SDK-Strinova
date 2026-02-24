@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon15402001.Weapon15402001_C
-// 0x0010 (0x1200 - 0x11F0)
+// 0x0010 (0x12D0 - 0x12C0)
 class AWeapon15402001_C final : public ACyWeaponMelee_ExtremeKnifeFight
 {
 public:
-	class UCyFSmiteEndSwitch*                     CyFSmiteEndSwitch;                                 // 0x11F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyEventActionComponent*                CyEventAction;                                     // 0x11F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFSmiteEndSwitch*                     CyFSmiteEndSwitch;                                 // 0x12C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyEventActionComponent*                CyEventAction;                                     // 0x12C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

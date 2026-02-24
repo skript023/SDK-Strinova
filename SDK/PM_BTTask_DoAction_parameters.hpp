@@ -14,6 +14,16 @@
 namespace SDK::Params
 {
 
+// Function PM_BTTask_DoAction.PM_BTTask_DoAction_C.ReceiveExecuteAI
+// 0x0010 (0x0010 - 0x0000)
+struct PM_BTTask_DoAction_C_ReceiveExecuteAI final
+{
+public:
+	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PM_BTTask_DoAction_C_ReceiveExecuteAI;
+
 // Function PM_BTTask_DoAction.PM_BTTask_DoAction_C.ExecuteUbergraph_PM_BTTask_DoAction
 // 0x0028 (0x0028 - 0x0000)
 struct PM_BTTask_DoAction_C_ExecuteUbergraph_PM_BTTask_DoAction final
@@ -28,16 +38,6 @@ public:
 	bool                                          CallFunc_DoActionByType_ReturnValue;               // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_PM_BTTask_DoAction_C_ExecuteUbergraph_PM_BTTask_DoAction;
-
-// Function PM_BTTask_DoAction.PM_BTTask_DoAction_C.ReceiveExecuteAI
-// 0x0010 (0x0010 - 0x0000)
-struct PM_BTTask_DoAction_C_ReceiveExecuteAI final
-{
-public:
-	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_PM_BTTask_DoAction_C_ReceiveExecuteAI;
 
 }
 

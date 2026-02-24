@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Survive_Vanguard_Second_Infinite.GE_Survive_Vanguard_Second_Infinite_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Survive_Vanguard_Second_Infinite_C final : public UCyGameplayEffect
 {
 public:

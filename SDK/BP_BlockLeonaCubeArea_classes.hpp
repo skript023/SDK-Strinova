@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BlockLeonaCubeArea.BP_BlockLeonaCubeArea_C
-// 0x0010 (0x02E0 - 0x02D0)
+// 0x0010 (0x0320 - 0x0310)
 class ABP_BlockLeonaCubeArea_C final : public AActor
 {
 public:
-	class UBoxComponent*                          Box;                                               // 0x02D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Box;                                               // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

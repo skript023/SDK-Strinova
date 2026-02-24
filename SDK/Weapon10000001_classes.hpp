@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon10000001.Weapon10000001_C
-// 0x0020 (0x11B0 - 0x1190)
+// 0x0020 (0x1280 - 0x1260)
 class AWeapon10000001_C final : public ACyWeaponBomb
 {
 public:
-	class UCyFStateMonitor*                       WorkStateMonitor;                                  // 0x1190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x1198(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyRecordCanDropLocationComponent*      CyRecordCanDropLocation;                           // 0x11A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySkinComponent*                       CySkin;                                            // 0x11A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStateMonitor*                       WorkStateMonitor;                                  // 0x1260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x1268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRecordCanDropLocationComponent*      CyRecordCanDropLocation;                           // 0x1270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

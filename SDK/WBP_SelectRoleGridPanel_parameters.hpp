@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_SelectRoleGridPanel.WBP_SelectRoleGridPanel_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_SelectRoleGridPanel_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_SelectRoleGridPanel_C_PreConstruct;
+
 // Function WBP_SelectRoleGridPanel.WBP_SelectRoleGridPanel_C.ExecuteUbergraph_WBP_SelectRoleGridPanel
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_SelectRoleGridPanel_C_ExecuteUbergraph_WBP_SelectRoleGridPanel final
@@ -23,15 +32,6 @@ public:
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_SelectRoleGridPanel_C_ExecuteUbergraph_WBP_SelectRoleGridPanel;
-
-// Function WBP_SelectRoleGridPanel.WBP_SelectRoleGridPanel_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_SelectRoleGridPanel_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_SelectRoleGridPanel_C_PreConstruct;
 
 }
 

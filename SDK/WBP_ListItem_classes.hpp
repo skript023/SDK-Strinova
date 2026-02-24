@@ -47,11 +47,11 @@ public:
 	struct FSlateColor                            ItemNameNotSelectColor;                            // 0x06F0(0x0028)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_WBP_ListItem(int32 EntryPoint);
-	void OnListItemObjectSet(class UObject* ListItemObject);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
-	void BP_OnItemExpansionChanged(bool bIsExpanded);
 	void BP_OnEntryReleased();
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void ExecuteUbergraph_WBP_ListItem(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

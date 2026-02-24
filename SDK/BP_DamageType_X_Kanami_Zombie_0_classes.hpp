@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_X_Kanami_Zombie.BP_DamageType_X_Kanami_Zombie_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class BP_DamageType_X_Kanami_Zombie_0::UBP_DamageType_X_Kanami_Zombie_C final : public UPMDamageType
 {
 public:

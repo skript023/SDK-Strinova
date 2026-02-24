@@ -17,13 +17,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Summon_Actuator_SpeedUp.BP_Summon_Actuator_SpeedUp_C
-// 0x0020 (0x07B0 - 0x0790)
+// 0x0020 (0x0860 - 0x0840)
 class ABP_Summon_Actuator_SpeedUp_C final : public ACySummonActor
 {
 public:
-	class UBP_Actuator_SpeedUp_C*                 BP_Actuator_SpeedUp;                               // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_838[0x8];                                      // 0x0838(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_Actuator_SpeedUp_C*                 BP_Actuator_SpeedUp;                               // 0x0840(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x0848(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0850(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

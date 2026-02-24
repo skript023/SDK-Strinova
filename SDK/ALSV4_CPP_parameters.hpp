@@ -18,42 +18,14 @@
 namespace SDK::Params
 {
 
-// Function ALSV4_CPP.CyRagdollComponent.Multicast_RagdollEnd
-// 0x000C (0x000C - 0x0000)
-struct CyRagdollComponent_Multicast_RagdollEnd final
+// Function ALSV4_CPP.CyRotationComponent.OnRotationModeChanged
+// 0x0001 (0x0001 - 0x0000)
+struct CyRotationComponent_OnRotationModeChanged final
 {
 public:
-	struct FVector                                CharacterLocation;                                 // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EALSRotationMode                              PreviousRotationMode;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_CyRagdollComponent_Multicast_RagdollEnd;
-
-// Function ALSV4_CPP.CyRagdollComponent.OnMovementStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct CyRagdollComponent_OnMovementStateChanged final
-{
-public:
-	EALSMovementState                             PreMovementState;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EALSMovementState                             CurMovementState;                                  // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_CyRagdollComponent_OnMovementStateChanged;
-
-// Function ALSV4_CPP.CyRagdollComponent.Server_RagdollEnd
-// 0x000C (0x000C - 0x0000)
-struct CyRagdollComponent_Server_RagdollEnd final
-{
-public:
-	struct FVector                                CharacterLocation;                                 // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_CyRagdollComponent_Server_RagdollEnd;
-
-// Function ALSV4_CPP.CyRagdollComponent.Server_SetMeshLocationDuringRagdoll
-// 0x000C (0x000C - 0x0000)
-struct CyRagdollComponent_Server_SetMeshLocationDuringRagdoll final
-{
-public:
-	struct FVector                                MeshLocation;                                      // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_CyRagdollComponent_Server_SetMeshLocationDuringRagdoll;
+DUMPER7_ASSERTS_CyRotationComponent_OnRotationModeChanged;
 
 // Function ALSV4_CPP.ALSBaseCharacter.EventOnJumped
 // 0x0001 (0x0001 - 0x0000)
@@ -849,6 +821,43 @@ public:
 };
 DUMPER7_ASSERTS_CyBlueprintLibrary_UpdateAnimRootMotion;
 
+// Function ALSV4_CPP.CyRagdollComponent.Multicast_RagdollEnd
+// 0x000C (0x000C - 0x0000)
+struct CyRagdollComponent_Multicast_RagdollEnd final
+{
+public:
+	struct FVector                                CharacterLocation;                                 // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_CyRagdollComponent_Multicast_RagdollEnd;
+
+// Function ALSV4_CPP.CyRagdollComponent.OnMovementStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct CyRagdollComponent_OnMovementStateChanged final
+{
+public:
+	EALSMovementState                             PreMovementState;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EALSMovementState                             CurMovementState;                                  // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_CyRagdollComponent_OnMovementStateChanged;
+
+// Function ALSV4_CPP.CyRagdollComponent.Server_RagdollEnd
+// 0x000C (0x000C - 0x0000)
+struct CyRagdollComponent_Server_RagdollEnd final
+{
+public:
+	struct FVector                                CharacterLocation;                                 // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_CyRagdollComponent_Server_RagdollEnd;
+
+// Function ALSV4_CPP.CyRagdollComponent.Server_SetMeshLocationDuringRagdoll
+// 0x000C (0x000C - 0x0000)
+struct CyRagdollComponent_Server_SetMeshLocationDuringRagdoll final
+{
+public:
+	struct FVector                                MeshLocation;                                      // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_CyRagdollComponent_Server_SetMeshLocationDuringRagdoll;
+
 // Function ALSV4_CPP.CyRollComponent.OnOwnerLandEvent
 // 0x0001 (0x0001 - 0x0000)
 struct CyRollComponent_OnOwnerLandEvent final
@@ -866,15 +875,6 @@ public:
 	bool                                          bDisposed;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_CyRollComponent_OnOwnerRollInput;
-
-// Function ALSV4_CPP.CyRotationComponent.OnRotationModeChanged
-// 0x0001 (0x0001 - 0x0000)
-struct CyRotationComponent_OnRotationModeChanged final
-{
-public:
-	EALSRotationMode                              PreviousRotationMode;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_CyRotationComponent_OnRotationModeChanged;
 
 }
 

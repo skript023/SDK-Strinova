@@ -18,21 +18,21 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Q_Nobunaga.Weapon_Q_Nobunaga_C
-// 0x0060 (0x1400 - 0x13A0)
+// 0x0060 (0x14D0 - 0x1470)
 class Weapon_Q_Nobunaga::AWeapon_Q_Nobunaga_C final : public ACyWeaponCustom
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x13A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCyFFinishState*                        CyFFinishState;                                    // 0x13A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFThirdWorkState*                     CyFThirdWorkState;                                 // 0x13B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySkinComponent*                       CySkin;                                            // 0x13B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFStateMonitor*                       CyStateMonitor_EquipAttackEffect;                  // 0x13C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFSecondWorkState*                    CyFSecondWorkState_PutDown;                        // 0x13C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyTargetActorsComponent*               CyTargetActors;                                    // 0x13D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFWorkEndState*                       CyFWorkEndState;                                   // 0x13D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFWorkState*                          CyFWorkState;                                      // 0x13E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySpawnManagerComponent*               CySpawnManager;                                    // 0x13E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x13F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1470(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCyFFinishState*                        CyFFinishState;                                    // 0x1478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFThirdWorkState*                     CyFThirdWorkState;                                 // 0x1480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStateMonitor*                       CyStateMonitor_EquipAttackEffect;                  // 0x1490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFSecondWorkState*                    CyFSecondWorkState_PutDown;                        // 0x1498(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyTargetActorsComponent*               CyTargetActors;                                    // 0x14A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFWorkEndState*                       CyFWorkEndState;                                   // 0x14A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFWorkState*                          CyFWorkState;                                      // 0x14B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySpawnManagerComponent*               CySpawnManager;                                    // 0x14B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x14C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Weapon_Q_Nobunaga(int32 EntryPoint);

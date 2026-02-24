@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ArousalOne_Chiyo.GE_ArousalOne_Chiyo_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_ArousalOne_Chiyo_C final : public UCyGameplayEffect
 {
 public:

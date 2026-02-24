@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AirWallBlueActor.BP_AirWallBlueActor_C
-// 0x0008 (0x0308 - 0x0300)
+// 0x0008 (0x0348 - 0x0340)
 class ABP_AirWallBlueActor_C final : public APMAirWall
 {
 public:
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

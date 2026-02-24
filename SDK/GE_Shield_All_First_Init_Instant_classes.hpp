@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Shield_All_First_Init_Instant.GE_Shield_All_First_Init_Instant_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Shield_All_First_Init_Instant_C final : public UCyGameplayEffect
 {
 public:

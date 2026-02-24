@@ -10,90 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "RuntimeMeshComponent_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "RuntimeMeshComponent_structs.hpp"
 #include "Engine_classes.hpp"
 
 
 namespace SDK
 {
-
-// Class RuntimeMeshComponent.RuntimeBlueprintMeshAccessor
-// 0x0010 (0x0038 - 0x0028)
-class URuntimeBlueprintMeshAccessor : public UObject
-{
-public:
-	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("RuntimeBlueprintMeshAccessor")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"RuntimeBlueprintMeshAccessor")
-	}
-	static class URuntimeBlueprintMeshAccessor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URuntimeBlueprintMeshAccessor>();
-	}
-};
-DUMPER7_ASSERTS_URuntimeBlueprintMeshAccessor;
-
-// Class RuntimeMeshComponent.RuntimeBlueprintMeshBuilder
-// 0x0010 (0x0048 - 0x0038)
-class URuntimeBlueprintMeshBuilder final : public URuntimeBlueprintMeshAccessor
-{
-public:
-	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	int32 AddIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewIndex);
-	int32 AddTriangle(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index0, int32 Index1, int32 Index2);
-	int32 AddVertex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, const struct FVector& InPosition, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent, const struct FVector2D& UV0, const struct FLinearColor& Color);
-	void EmptyIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Slack);
-	void EmptyVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Slack);
-	struct FLinearColor GetColor(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
-	int32 GetIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
-	struct FVector4 GetNormal(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
-	struct FVector GetPosition(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
-	struct FVector GetTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
-	struct FVector2D GetUV(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, int32 Channel);
-	bool IsReadonly(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
-	bool IsUsing32BitIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
-	bool IsUsingHighPrecisionTangents(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
-	bool IsUsingHighPrecisionUVs(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
-	int32 NumIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
-	int32 NumUVChannels(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
-	int32 NumVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
-	int32 SetColor(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FLinearColor& Value);
-	void SetIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, int32 Value);
-	int32 SetNormal(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector4& Value);
-	int32 SetNormalTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent);
-	void SetNumIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewNum);
-	void SetNumVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewNum);
-	int32 SetPosition(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& Value);
-	int32 SetTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FRuntimeMeshTangent& Value);
-	int32 SetTangents(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& TangentX, const struct FVector& TangentY, const struct FVector& TangentZ);
-	int32 SetUV(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector2D& Value, int32 Channel);
-	int32 SetVertex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& InPosition, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent, const struct FVector2D& UV0, const struct FLinearColor& Color);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("RuntimeBlueprintMeshBuilder")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"RuntimeBlueprintMeshBuilder")
-	}
-	static class URuntimeBlueprintMeshBuilder* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URuntimeBlueprintMeshBuilder>();
-	}
-};
-DUMPER7_ASSERTS_URuntimeBlueprintMeshBuilder;
 
 // Class RuntimeMeshComponent.RuntimeMesh
 // 0x0078 (0x00A0 - 0x0028)
@@ -184,14 +107,14 @@ public:
 DUMPER7_ASSERTS_URuntimeMesh;
 
 // Class RuntimeMeshComponent.RuntimeMeshActor
-// 0x0010 (0x02E0 - 0x02D0)
+// 0x0010 (0x0320 - 0x0310)
 class ARuntimeMeshActor final : public AActor
 {
 public:
-	class URuntimeMeshComponent*                  RuntimeMeshComponent;                              // 0x02D0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bRunGenerateMeshesOnConstruction;                  // 0x02D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRunGenerateMeshesOnBeginPlay;                     // 0x02D9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2DA[0x6];                                      // 0x02DA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class URuntimeMeshComponent*                  RuntimeMeshComponent;                              // 0x0310(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bRunGenerateMeshesOnConstruction;                  // 0x0318(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRunGenerateMeshesOnBeginPlay;                     // 0x0319(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31A[0x6];                                      // 0x031A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GenerateMeshes();
@@ -213,6 +136,83 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ARuntimeMeshActor;
+
+// Class RuntimeMeshComponent.RuntimeBlueprintMeshAccessor
+// 0x0010 (0x0038 - 0x0028)
+class URuntimeBlueprintMeshAccessor : public UObject
+{
+public:
+	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("RuntimeBlueprintMeshAccessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RuntimeBlueprintMeshAccessor")
+	}
+	static class URuntimeBlueprintMeshAccessor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URuntimeBlueprintMeshAccessor>();
+	}
+};
+DUMPER7_ASSERTS_URuntimeBlueprintMeshAccessor;
+
+// Class RuntimeMeshComponent.RuntimeBlueprintMeshBuilder
+// 0x0010 (0x0048 - 0x0038)
+class URuntimeBlueprintMeshBuilder final : public URuntimeBlueprintMeshAccessor
+{
+public:
+	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	int32 AddIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewIndex);
+	int32 AddTriangle(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index0, int32 Index1, int32 Index2);
+	int32 AddVertex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, const struct FVector& InPosition, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent, const struct FVector2D& UV0, const struct FLinearColor& Color);
+	void EmptyIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Slack);
+	void EmptyVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Slack);
+	struct FLinearColor GetColor(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
+	int32 GetIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
+	struct FVector4 GetNormal(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
+	struct FVector GetPosition(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
+	struct FVector GetTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0);
+	struct FVector2D GetUV(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, int32 Channel);
+	bool IsReadonly(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
+	bool IsUsing32BitIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
+	bool IsUsingHighPrecisionTangents(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
+	bool IsUsingHighPrecisionUVs(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
+	int32 NumIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
+	int32 NumUVChannels(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
+	int32 NumVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder);
+	int32 SetColor(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FLinearColor& Value);
+	void SetIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, int32 Value);
+	int32 SetNormal(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector4& Value);
+	int32 SetNormalTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent);
+	void SetNumIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewNum);
+	void SetNumVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewNum);
+	int32 SetPosition(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& Value);
+	int32 SetTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FRuntimeMeshTangent& Value);
+	int32 SetTangents(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& TangentX, const struct FVector& TangentY, const struct FVector& TangentZ);
+	int32 SetUV(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector2D& Value, int32 Channel);
+	int32 SetVertex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& InPosition, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent, const struct FVector2D& UV0, const struct FLinearColor& Color);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("RuntimeBlueprintMeshBuilder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RuntimeBlueprintMeshBuilder")
+	}
+	static class URuntimeBlueprintMeshBuilder* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URuntimeBlueprintMeshBuilder>();
+	}
+};
+DUMPER7_ASSERTS_URuntimeBlueprintMeshBuilder;
 
 // Class RuntimeMeshComponent.RuntimeMeshBuilderFunctions
 // 0x0000 (0x0028 - 0x0028)
@@ -238,17 +238,17 @@ public:
 DUMPER7_ASSERTS_URuntimeMeshBuilderFunctions;
 
 // Class RuntimeMeshComponent.RuntimeMeshComponent
-// 0x0040 (0x0500 - 0x04C0)
+// 0x0040 (0x0510 - 0x04D0)
 class URuntimeMeshComponent : public UMeshComponent
 {
 public:
-	uint8                                         Pad_4C0[0x8];                                      // 0x04C0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class URuntimeMesh*                           RuntimeMeshReference;                              // 0x04C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_4D0[0x8];                                      // 0x04D0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               OS_MID;                                            // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UBodySetup*                             BodySetup;                                         // 0x04E0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UBodySetup*>                     AsyncBodySetupQueue;                               // 0x04E8(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_4F8[0x8];                                      // 0x04F8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class URuntimeMesh*                           RuntimeMeshReference;                              // 0x04D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_4E0[0x8];                                      // 0x04E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               OS_MID;                                            // 0x04E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UBodySetup*                             BodySetup;                                         // 0x04F0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<class UBodySetup*>                     AsyncBodySetupQueue;                               // 0x04F8(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_508[0x8];                                      // 0x0508(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	int32 AddCollisionBox(const struct FRuntimeMeshCollisionBox& NewBox);

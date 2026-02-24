@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_E_Ming.Weapon_E_Ming_C
-// 0x0020 (0x11B0 - 0x1190)
-class Weapon_E_Ming::AWeapon_E_Ming_C final : public ACyWeaponQuickThrow
+// 0x0020 (0x1280 - 0x1260)
+class Weapon_E_Ming::AWeapon_E_Ming_C final : public ACyWeaponTriggerThrow
 {
 public:
-	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x1190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyWeaponProjectClearLifeSpanComponent* CyWeaponProjectClearLifeSpan;                      // 0x1198(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x11A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x1260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyWeaponProjectClearLifeSpanComponent* CyWeaponProjectClearLifeSpan;                      // 0x1268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x1270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

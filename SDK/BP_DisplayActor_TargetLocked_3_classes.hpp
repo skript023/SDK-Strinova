@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DisplayActor_TargetLocked.BP_DisplayActor_TargetLocked_C
-// 0x0010 (0x0398 - 0x0388)
+// 0x0010 (0x03D8 - 0x03C8)
 class BP_DisplayActor_TargetLocked_3::ABP_DisplayActor_TargetLocked_C final : public ACyDisplayWorldReticle
 {
 public:
-	class UBP_CommonOverheadComponent_C*          Reticle;                                           // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_CommonOverheadComponent_C*          Reticle;                                           // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

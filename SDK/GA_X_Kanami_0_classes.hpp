@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_X_Kanami.GA_X_Kanami_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_X_Kanami_0::UGA_X_Kanami_C final : public UCyBaseAbility
 {
 public:

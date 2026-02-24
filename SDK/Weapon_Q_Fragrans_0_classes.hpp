@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Q_Fragrans.Weapon_Q_Fragrans_C
-// 0x0020 (0x13C0 - 0x13A0)
+// 0x0020 (0x1490 - 0x1470)
 class Weapon_Q_Fragrans_0::AWeapon_Q_Fragrans_C final : public ACyWeaponCustom
 {
 public:
-	class UCyTargetLocationComponent*             CyTargetLocation;                                  // 0x13A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFSecondWorkState*                    CyFSecondWorkState;                                // 0x13A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFWorkState*                          CyFWorkState;                                      // 0x13B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySkinComponent*                       CySkin;                                            // 0x13B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRecordBoolComponent*                 CyRecordBool;                                      // 0x1470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyTargetLocationComponent*             CyTargetLocation;                                  // 0x1478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFWorkState*                          CyFWorkState;                                      // 0x1480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

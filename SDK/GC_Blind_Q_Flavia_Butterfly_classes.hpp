@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Blind_Q_Flavia_Butterfly.GC_Blind_Q_Flavia_Butterfly_C
-// 0x0008 (0x04B8 - 0x04B0)
+// 0x0008 (0x04F8 - 0x04F0)
 class AGC_Blind_Q_Flavia_Butterfly_C final : public ACyCueNotifyActor
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x04B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

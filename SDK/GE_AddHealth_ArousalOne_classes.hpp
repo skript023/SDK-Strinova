@@ -17,24 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AddHealth_ArousalOne.GE_AddHealth_ArousalOne_C
-// 0x0000 (0x10D8 - 0x10D8)
-class UGE_AddHealth_ArousalOne_C final : public UCyGameplayEffect
+// 0x0000 (0x10E0 - 0x10E0)
+class GE_AddHealth_ArousalOne::UGE_AddHealth_ArousalOne_C final : public UCyGameplayEffect
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("GE_AddHealth_ArousalOne_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass GE_AddHealth_ArousalOne.GE_AddHealth_ArousalOne_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"GE_AddHealth_ArousalOne_C")
 	}
-	static class UGE_AddHealth_ArousalOne_C* GetDefaultObj()
+	static class GE_AddHealth_ArousalOne::UGE_AddHealth_ArousalOne_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UGE_AddHealth_ArousalOne_C>();
+		return GetDefaultObjImpl<GE_AddHealth_ArousalOne::UGE_AddHealth_ArousalOne_C>();
 	}
 };
-DUMPER7_ASSERTS_UGE_AddHealth_ArousalOne_C;
+DUMPER7_ASSERTS_GE_AddHealth_ArousalOne__UGE_AddHealth_ArousalOne_C;
 
 }
 

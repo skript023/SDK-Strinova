@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PMAIController_TeamMath.BP_PMAIController_TeamMath_C
-// 0x0000 (0x06F8 - 0x06F8)
+// 0x0000 (0x0738 - 0x0738)
 class ABP_PMAIController_TeamMath_C final : public APMAIController
 {
 public:

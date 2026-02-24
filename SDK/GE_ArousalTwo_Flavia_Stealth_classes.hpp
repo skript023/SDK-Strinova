@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass GE_ArousalTwo_Flavia_Stealth.GE_ArousalTwo_Flavia_Stealth_C
 // 0x0000 (0x1060 - 0x1060)
-class GE_ArousalTwo_Flavia_Stealth::UGE_ArousalTwo_Flavia_Stealth_C final : public UGameplayEffect
+class UGE_ArousalTwo_Flavia_Stealth_C final : public UGameplayEffect
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass GE_ArousalTwo_Flavia_Stealth.GE_ArousalTwo_Flavia_Stealth_C")
+		BP_STATIC_CLASS_IMPL("GE_ArousalTwo_Flavia_Stealth_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"GE_ArousalTwo_Flavia_Stealth_C")
 	}
-	static class GE_ArousalTwo_Flavia_Stealth::UGE_ArousalTwo_Flavia_Stealth_C* GetDefaultObj()
+	static class UGE_ArousalTwo_Flavia_Stealth_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<GE_ArousalTwo_Flavia_Stealth::UGE_ArousalTwo_Flavia_Stealth_C>();
+		return GetDefaultObjImpl<UGE_ArousalTwo_Flavia_Stealth_C>();
 	}
 };
-DUMPER7_ASSERTS_GE_ArousalTwo_Flavia_Stealth__UGE_ArousalTwo_Flavia_Stealth_C;
+DUMPER7_ASSERTS_UGE_ArousalTwo_Flavia_Stealth_C;
 
 }
 

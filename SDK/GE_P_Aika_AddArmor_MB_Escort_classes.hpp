@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_Aika_AddArmor_MB_Escort.GE_P_Aika_AddArmor_MB_Escort_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_P_Aika_AddArmor_MB_Escort_C final : public UCyGameplayEffect
 {
 public:

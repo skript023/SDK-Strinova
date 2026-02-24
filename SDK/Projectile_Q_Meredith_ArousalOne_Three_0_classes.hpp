@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Q_Meredith_ArousalOne_Three.Projectile_Q_Meredith_ArousalOne_Three_C
-// 0x0010 (0x0AD8 - 0x0AC8)
+// 0x0010 (0x0B20 - 0x0B10)
 class Projectile_Q_Meredith_ArousalOne_Three_0::AProjectile_Q_Meredith_ArousalOne_Three_C final : public ACyProjectileBlast
 {
 public:
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0AC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0AD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

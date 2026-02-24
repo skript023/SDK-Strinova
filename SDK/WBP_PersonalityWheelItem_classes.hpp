@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PersonalityWheelItem.WBP_PersonalityWheelItem_C
-// 0x0008 (0x08F8 - 0x08F0)
+// 0x0008 (0x0918 - 0x0910)
 class UWBP_PersonalityWheelItem_C final : public UCyUWPersonalityWheelPanelItem
 {
 public:
-	class UImage*                                 Img_Icon;                                          // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Icon;                                          // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

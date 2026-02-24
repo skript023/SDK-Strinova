@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Calculation_AttenuationByDistance_SlowSpeed.BP_Calculation_AttenuationByDistance_SlowSpeed_C
-// 0x0000 (0x0048 - 0x0048)
+// 0x0000 (0x0088 - 0x0088)
 class UBP_Calculation_AttenuationByDistance_SlowSpeed_C final : public UCyCalculationAttenuationByDistance
 {
 public:

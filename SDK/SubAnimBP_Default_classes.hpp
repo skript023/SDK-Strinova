@@ -19,22 +19,23 @@ namespace SDK
 {
 
 // DynamicClass SubAnimBP_Default.SubAnimBP_Default_C
-// 0x0620 (0x0B60 - 0x0540)
+// 0x0620 (0x0B10 - 0x04F0)
 class USubAnimBP_Default_C final : public UCySubAnimInstanceDefault
 {
 public:
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0540(0x0030)(NativeAccessSpecifierPublic)
-	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive;                       // 0x0570(0x00E8)(NativeAccessSpecifierPublic)
-	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend_2;                       // 0x0658(0x00C8)(NativeAccessSpecifierPublic)
-	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend_1;                       // 0x0720(0x00C8)(NativeAccessSpecifierPublic)
-	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend;                         // 0x07E8(0x00C8)(NativeAccessSpecifierPublic)
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x08B0(0x0080)(NativeAccessSpecifierPublic)
-	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_4;                 // 0x0930(0x0050)(NativeAccessSpecifierPublic)
-	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_3;                 // 0x0980(0x0050)(NativeAccessSpecifierPublic)
-	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_2;                 // 0x09D0(0x0050)(NativeAccessSpecifierPublic)
-	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_1;                 // 0x0A20(0x0050)(NativeAccessSpecifierPublic)
-	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator;                   // 0x0A70(0x0050)(NativeAccessSpecifierPublic)
-	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool;                     // 0x0AC0(0x00A0)(NativeAccessSpecifierPublic)
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x04E8(0x0030)(NativeAccessSpecifierPublic)
+	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive;                       // 0x0518(0x00E8)(NativeAccessSpecifierPublic)
+	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend_2;                       // 0x0600(0x00C8)(NativeAccessSpecifierPublic)
+	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend_1;                       // 0x06C8(0x00C8)(NativeAccessSpecifierPublic)
+	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend;                         // 0x0790(0x00C8)(NativeAccessSpecifierPublic)
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0858(0x0080)(NativeAccessSpecifierPublic)
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_4;                 // 0x08D8(0x0050)(NativeAccessSpecifierPublic)
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_3;                 // 0x0928(0x0050)(NativeAccessSpecifierPublic)
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_2;                 // 0x0978(0x0050)(NativeAccessSpecifierPublic)
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator_1;                 // 0x09C8(0x0050)(NativeAccessSpecifierPublic)
+	struct FAnimNode_SequenceEvaluator            AnimGraphNode_SequenceEvaluator;                   // 0x0A18(0x0050)(NativeAccessSpecifierPublic)
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool;                     // 0x0A68(0x00A0)(NativeAccessSpecifierPublic)
+	uint8                                         Pad_B08[0x8];                                      // 0x0B08(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ExecuteUbergraph_SubAnimBP_Default(int32 bpp__EntryPoint__pf);

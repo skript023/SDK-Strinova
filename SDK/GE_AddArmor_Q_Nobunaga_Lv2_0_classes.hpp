@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AddArmor_Q_Nobunaga_Lv2.GE_AddArmor_Q_Nobunaga_Lv2_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_AddArmor_Q_Nobunaga_Lv2_0::UGE_AddArmor_Q_Nobunaga_Lv2_C final : public UCyGameplayEffect
 {
 public:

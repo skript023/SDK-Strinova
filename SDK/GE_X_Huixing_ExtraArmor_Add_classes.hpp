@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_HuiXing_ExtraArmor_Add.GE_X_HuiXing_ExtraArmor_Add_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_HuiXing_ExtraArmor_Add::UGE_X_HuiXing_ExtraArmor_Add_C final : public UCyGameplayEffect
 {
 public:

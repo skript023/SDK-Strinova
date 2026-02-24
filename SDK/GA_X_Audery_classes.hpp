@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_X_Audery.GA_X_Audery_C
-// 0x0008 (0x1AF0 - 0x1AE8)
+// 0x0008 (0x1B00 - 0x1AF8)
 class GA_X_Audery::UGA_X_Audery_C final : public UCyBaseAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1AE8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1AF8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GA_X_Audery(int32 EntryPoint);

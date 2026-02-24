@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AIController_Arousal_Three.AIController_Arousal_Three_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x0420 - 0x0420)
 class AIController_Arousal_Three_0::AAIController_Arousal_Three_C final : public ACyBehaviorAIController
 {
 public:

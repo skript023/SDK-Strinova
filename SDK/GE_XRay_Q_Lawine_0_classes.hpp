@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_XRay_Q_Lawine.GE_XRay_Q_Lawine_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_XRay_Q_Lawine_0::UGE_XRay_Q_Lawine_C final : public UCyGameplayEffect
 {
 public:

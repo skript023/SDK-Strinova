@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "ActorSequence_structs.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
+#include "ActorSequence_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -44,14 +44,14 @@ public:
 DUMPER7_ASSERTS_UActorSequence;
 
 // Class ActorSequence.ActorSequenceComponent
-// 0x0028 (0x0140 - 0x0118)
+// 0x0028 (0x0150 - 0x0128)
 class UActorSequenceComponent final : public UActorComponent
 {
 public:
-	struct FMovieSceneSequencePlaybackSettings    PlaybackSettings;                                  // 0x0118(0x0014)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UActorSequence*                         Sequence;                                          // 0x0130(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UActorSequencePlayer*                   SequencePlayer;                                    // 0x0138(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FMovieSceneSequencePlaybackSettings    PlaybackSettings;                                  // 0x0128(0x0014)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UActorSequence*                         Sequence;                                          // 0x0140(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UActorSequencePlayer*                   SequencePlayer;                                    // 0x0148(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_P_Reiichi.CD_P_Reiichi_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class CD_P_Reiichi_0::UCD_P_Reiichi_C final : public UCyGameplayEffect
 {
 public:

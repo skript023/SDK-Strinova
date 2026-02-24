@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_limitViewRadius_X_Mara.GE_limitViewRadius_X_Mara_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_limitViewRadius_X_Mara::UGE_limitViewRadius_X_Mara_C final : public UCyGameplayEffect
 {
 public:

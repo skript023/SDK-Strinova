@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Blind_Flavia.GE_Blind_Flavia_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Blind_Flavia::UGE_Blind_Flavia_C final : public UCyGameplayEffect
 {
 public:

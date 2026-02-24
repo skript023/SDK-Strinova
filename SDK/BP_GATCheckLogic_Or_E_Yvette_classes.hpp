@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_GATCheckLogic_Or_E_Yvette.BP_GATCheckLogic_Or_E_Yvette_C
 // 0x0000 (0x0080 - 0x0080)
-class UBP_GATCheckLogic_Or_E_Yvette_C final : public UCyGATCheckLogic
+class BP_GATCheckLogic_Or_E_Yvette::UBP_GATCheckLogic_Or_E_Yvette_C final : public UCyGATCheckLogic
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_GATCheckLogic_Or_E_Yvette_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_GATCheckLogic_Or_E_Yvette.BP_GATCheckLogic_Or_E_Yvette_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_GATCheckLogic_Or_E_Yvette_C")
 	}
-	static class UBP_GATCheckLogic_Or_E_Yvette_C* GetDefaultObj()
+	static class BP_GATCheckLogic_Or_E_Yvette::UBP_GATCheckLogic_Or_E_Yvette_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_GATCheckLogic_Or_E_Yvette_C>();
+		return GetDefaultObjImpl<BP_GATCheckLogic_Or_E_Yvette::UBP_GATCheckLogic_Or_E_Yvette_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_GATCheckLogic_Or_E_Yvette_C;
+DUMPER7_ASSERTS_BP_GATCheckLogic_Or_E_Yvette__UBP_GATCheckLogic_Or_E_Yvette_C;
 
 }
 

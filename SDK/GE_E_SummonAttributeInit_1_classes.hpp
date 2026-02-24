@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_E_SummonAttributeInit.GE_E_SummonAttributeInit_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_E_SummonAttributeInit_1::UGE_E_SummonAttributeInit_C final : public UCyGameplayEffect
 {
 public:

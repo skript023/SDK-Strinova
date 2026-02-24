@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectory_xiari.BP_BulletTrajectory_xiari_C
-// 0x0000 (0x02F0 - 0x02F0)
+// 0x0000 (0x0330 - 0x0330)
 class BP_BulletTrajectory_xiari::ABP_BulletTrajectory_xiari_C final : public ABP_BulletTrajectoryBase_C
 {
 public:

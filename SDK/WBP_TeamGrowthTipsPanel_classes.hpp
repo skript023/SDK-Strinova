@@ -17,11 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TeamGrowthTipsPanel.WBP_TeamGrowthTipsPanel_C
-// 0x0008 (0x0A20 - 0x0A18)
+// 0x0010 (0x0A40 - 0x0A30)
 class UWBP_TeamGrowthTipsPanel_C final : public UCyUWTeamGrowthTipsPanel
 {
 public:
-	class UWBP_RichTextKeyMappings_C*             WBP_RichTextKeyMappingsPC_4;                       // 0x0A18(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_91;                                // 0x0A30(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_RichTextKeyMappings_C*             WBP_RichTextKeyMappingsPC_4;                       // 0x0A38(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

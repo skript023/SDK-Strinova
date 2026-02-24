@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectRoleLoadingItem.WBP_SelectRoleLoadingItem_C
-// 0x0018 (0x0980 - 0x0968)
+// 0x0018 (0x0998 - 0x0980)
 class UWBP_SelectRoleLoadingItem_C final : public UPMUWSelectRoleLoadingItemPC
 {
 public:
-	class UImage*                                 Image_331;                                         // 0x0968(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPMImageSwitcher*                       Image_Intimacy;                                    // 0x0970(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           ProgressBar_270;                                   // 0x0978(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_331;                                         // 0x0980(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPMImageSwitcher*                       Image_Intimacy;                                    // 0x0988(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           ProgressBar_270;                                   // 0x0990(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

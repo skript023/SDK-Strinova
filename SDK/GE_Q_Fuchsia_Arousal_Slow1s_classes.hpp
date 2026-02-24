@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Fuchsia_Arousal_Slow1s.GE_Q_Fuchsia_Arousal_Slow1s_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Q_Fuchsia_Arousal_Slow1s::UGE_Q_Fuchsia_Arousal_Slow1s_C final : public UCyGameplayEffect
 {
 public:

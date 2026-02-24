@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_XRay_Q_Lawine_ArousalThree.GE_XRay_Q_Lawine_ArousalThree_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_XRay_Q_Lawine_ArousalThree_C final : public UCyGameplayEffect
 {
 public:

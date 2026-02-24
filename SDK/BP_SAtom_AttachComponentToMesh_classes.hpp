@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SAtom_AttachComponentToMesh.BP_SAtom_AttachComponentToMesh_C
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05E0 - 0x05E0)
 class UBP_SAtom_AttachComponentToMesh_C final : public UCySAtomAttachComponentToMesh
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PreviewPlaneStepOne_BP.PreviewPlaneStepOne_BP_C
-// 0x0000 (0x0380 - 0x0380)
+// 0x0000 (0x03F0 - 0x03F0)
 class APreviewPlaneStepOne_BP_C final : public AUGCPreviewPlaneStepOneActor
 {
 public:

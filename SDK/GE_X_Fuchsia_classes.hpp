@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_Fuchsia.GE_X_Fuchsia_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_Fuchsia::UGE_X_Fuchsia_C final : public UCyGameplayEffect
 {
 public:

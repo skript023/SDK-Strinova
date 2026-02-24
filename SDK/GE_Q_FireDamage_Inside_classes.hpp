@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_FireDamage_Inside.GE_Q_FireDamage_Inside_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Q_FireDamage_Inside::UGE_Q_FireDamage_Inside_C final : public UCyGameplayEffect
 {
 public:

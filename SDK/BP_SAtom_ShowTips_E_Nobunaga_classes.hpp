@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SAtom_ShowTips_E_Nobunaga.BP_SAtom_ShowTips_E_Nobunaga_C
-// 0x0000 (0x0688 - 0x0688)
+// 0x0000 (0x0690 - 0x0690)
 class BP_SAtom_ShowTips_E_Nobunaga::UBP_SAtom_ShowTips_E_Nobunaga_C final : public UCyStateAtomShowTips
 {
 public:

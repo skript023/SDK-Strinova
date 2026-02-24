@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Q_Yvette.Projectile_Q_Yvette_C
-// 0x0000 (0x0AC8 - 0x0AC8)
+// 0x0000 (0x0B10 - 0x0B10)
 class Projectile_Q_Yvette_0::AProjectile_Q_Yvette_C final : public ACyProjectileBlast
 {
 public:

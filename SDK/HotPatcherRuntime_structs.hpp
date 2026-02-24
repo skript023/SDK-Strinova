@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "BinariesPatchFeature_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -138,19 +138,6 @@ enum class ESearchCaseMode : uint8
 	ESearchCaseMode_MAX                      = 2,
 };
 
-// ScriptStruct HotPatcherRuntime.IoStorePlatformContainers
-// 0x0038 (0x0038 - 0x0000)
-struct FIoStorePlatformContainers final
-{
-public:
-	struct FDirectoryPath                         BasePackageStagedRootDir;                          // 0x0000(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bGenerateDiffPatch;                                // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFilePath                              GlobalContainersOverride;                          // 0x0018(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FFilePath                              PatchSourceOverride;                               // 0x0028(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FIoStorePlatformContainers;
-
 // ScriptStruct HotPatcherRuntime.PakMountInfo
 // 0x0018 (0x0018 - 0x0000)
 struct FPakMountInfo final
@@ -161,6 +148,55 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FPakMountInfo;
+
+// ScriptStruct HotPatcherRuntime.PakEncryptSettings
+// 0x0018 (0x0018 - 0x0000)
+struct FPakEncryptSettings final
+{
+public:
+	bool                                          bUseDefaultCryptoIni;                              // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFilePath                              CryptoKeys;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPakEncryptSettings;
+
+// ScriptStruct HotPatcherRuntime.PlatformBasePak
+// 0x0018 (0x0018 - 0x0000)
+struct FPlatformBasePak final
+{
+public:
+	ETargetPlatform                               Platform;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFilePath>                      Paks;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPlatformBasePak;
+
+// ScriptStruct HotPatcherRuntime.MatchRule
+// 0x0028 (0x0028 - 0x0000)
+struct FMatchRule final
+{
+public:
+	EMatchRule                                    Rule;                                              // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMatchOperator                                Operator;                                          // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Size;                                              // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Formaters;                                         // 0x0008(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         AssetTypes;                                        // 0x0018(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMatchRule;
+
+// ScriptStruct HotPatcherRuntime.BinariesPatchConfig
+// 0x0050 (0x0050 - 0x0000)
+struct FBinariesPatchConfig final
+{
+public:
+	EBinariesPatchFeature                         BinariesPatchType;                                 // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x17];                                       // 0x0001(0x0017)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPakEncryptSettings                    EncryptSettings;                                   // 0x0018(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FPlatformBasePak>               BaseVersionPaks;                                   // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMatchRule>                     MatchRules;                                        // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FBinariesPatchConfig;
 
 // ScriptStruct HotPatcherRuntime.AssetDetail
 // 0x0018 (0x0018 - 0x0000)
@@ -245,55 +281,6 @@ public:
 };
 DUMPER7_ASSERTS_FAssetScanConfig;
 
-// ScriptStruct HotPatcherRuntime.MatchRule
-// 0x0028 (0x0028 - 0x0000)
-struct FMatchRule final
-{
-public:
-	EMatchRule                                    Rule;                                              // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMatchOperator                                Operator;                                          // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Size;                                              // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Formaters;                                         // 0x0008(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         AssetTypes;                                        // 0x0018(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FMatchRule;
-
-// ScriptStruct HotPatcherRuntime.PakEncryptSettings
-// 0x0018 (0x0018 - 0x0000)
-struct FPakEncryptSettings final
-{
-public:
-	bool                                          bUseDefaultCryptoIni;                              // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFilePath                              CryptoKeys;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPakEncryptSettings;
-
-// ScriptStruct HotPatcherRuntime.PlatformBasePak
-// 0x0018 (0x0018 - 0x0000)
-struct FPlatformBasePak final
-{
-public:
-	ETargetPlatform                               Platform;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFilePath>                      Paks;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPlatformBasePak;
-
-// ScriptStruct HotPatcherRuntime.BinariesPatchConfig
-// 0x0050 (0x0050 - 0x0000)
-struct FBinariesPatchConfig final
-{
-public:
-	EBinariesPatchFeature                         BinariesPatchType;                                 // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x17];                                       // 0x0001(0x0017)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPakEncryptSettings                    EncryptSettings;                                   // 0x0018(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FPlatformBasePak>               BaseVersionPaks;                                   // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FMatchRule>                     MatchRules;                                        // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FBinariesPatchConfig;
-
 // ScriptStruct HotPatcherRuntime.ChunkAssetDescribe
 // 0x0148 (0x0148 - 0x0000)
 struct alignas(0x08) FChunkAssetDescribe final
@@ -311,6 +298,18 @@ public:
 	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FChunkPakCommand;
+
+// ScriptStruct HotPatcherRuntime.PakInternalInfo
+// 0x0006 (0x0006 - 0x0000)
+struct FPakInternalInfo final
+{
+public:
+	uint8                                         Pad_0[0x3];                                        // 0x0000(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIncludeEngineIni;                                 // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIncludePluginIni;                                 // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIncludeProjectIni;                                // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPakInternalInfo;
 
 // ScriptStruct HotPatcherRuntime.ExternFileInfo
 // 0x0038 (0x0038 - 0x0000)
@@ -348,18 +347,6 @@ public:
 	TArray<struct FExternDirectoryInfo>           AddExternDirectoryToPak;                           // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FPlatformExternAssets;
-
-// ScriptStruct HotPatcherRuntime.PakInternalInfo
-// 0x0006 (0x0006 - 0x0000)
-struct FPakInternalInfo final
-{
-public:
-	uint8                                         Pad_0[0x3];                                        // 0x0000(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bIncludeEngineIni;                                 // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIncludePluginIni;                                 // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIncludeProjectIni;                                // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPakInternalInfo;
 
 // ScriptStruct HotPatcherRuntime.CookShaderOptions
 // 0x0028 (0x0028 - 0x0000)
@@ -489,6 +476,19 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FUnrealPakSettings;
+
+// ScriptStruct HotPatcherRuntime.IoStorePlatformContainers
+// 0x0038 (0x0038 - 0x0000)
+struct FIoStorePlatformContainers final
+{
+public:
+	struct FDirectoryPath                         BasePackageStagedRootDir;                          // 0x0000(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bGenerateDiffPatch;                                // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFilePath                              GlobalContainersOverride;                          // 0x0018(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FFilePath                              PatchSourceOverride;                               // 0x0028(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FIoStorePlatformContainers;
 
 // ScriptStruct HotPatcherRuntime.IoStoreSettings
 // 0x0080 (0x0080 - 0x0000)

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_CommonOverheadComponent.BP_CommonOverheadComponent_C
-// 0x0000 (0x0690 - 0x0690)
+// 0x0000 (0x06A0 - 0x06A0)
 class UBP_CommonOverheadComponent_C final : public UPMCommonOverheadComponent
 {
 public:

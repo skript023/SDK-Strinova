@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_WeaponManager_Leona.BP_WeaponManager_Leona_C
-// 0x0000 (0x15E8 - 0x15E8)
+// 0x0000 (0x1668 - 0x1668)
 class UBP_WeaponManager_Leona_C final : public UBP_WeaponManager_C
 {
 public:

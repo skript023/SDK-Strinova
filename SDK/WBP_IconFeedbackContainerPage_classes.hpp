@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_IconFeedbackContainerPage.WBP_IconFeedbackContainerPage_C
-// 0x0008 (0x0B70 - 0x0B68)
+// 0x0008 (0x0B88 - 0x0B80)
 class UWBP_IconFeedbackContainerPage_C final : public UCyUWIconFeedbackContainerPagePC
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B68(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B80(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	class UTextureRenderTarget2D* TryBlueprintExport(float InDeltaTime, const struct FVector2D& InOutSize);

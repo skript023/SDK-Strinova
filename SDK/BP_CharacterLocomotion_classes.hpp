@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_CharacterLocomotion.BP_CharacterLocomotion_C
-// 0x0000 (0x0350 - 0x0350)
+// 0x0000 (0x0360 - 0x0360)
 class UBP_CharacterLocomotion_C final : public UCyLocomotionComponent
 {
 public:

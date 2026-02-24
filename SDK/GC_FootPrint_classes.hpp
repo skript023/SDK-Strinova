@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_FootPrint.GC_FootPrint_C
-// 0x0008 (0x0608 - 0x0600)
+// 0x0008 (0x0648 - 0x0640)
 class AGC_FootPrint_C final : public ACyCueNotifyActorAnimNotify
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0600(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0640(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

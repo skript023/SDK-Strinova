@@ -17,40 +17,60 @@
 namespace SDK
 {
 
-// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.ExecuteUbergraph_WBP_CareerRankComboItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_CareerRankComboItem_C::ExecuteUbergraph_WBP_CareerRankComboItem(int32 EntryPoint)
+void UWBP_CareerRankComboItem_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "ExecuteUbergraph_WBP_CareerRankComboItem");
+		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "BP_OnEntryReleased");
 
-	Params::WBP_CareerRankComboItem_C_ExecuteUbergraph_WBP_CareerRankComboItem Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_CareerRankComboItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "BP_OnItemExpansionChanged");
+
+	Params::WBP_CareerRankComboItem_C_BP_OnItemExpansionChanged Parms{};
+
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.Construct
-// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
+// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.BP_OnItemSelectionChanged
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_CareerRankComboItem_C::Construct()
+void UWBP_CareerRankComboItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "Construct");
+		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "BP_OnItemSelectionChanged");
+
+	Params::WBP_CareerRankComboItem_C_BP_OnItemSelectionChanged Parms{};
+
+	Parms.bIsSelected = bIsSelected;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -81,62 +101,42 @@ void UWBP_CareerRankComboItem_C::OnListItemObjectSet(class UObject* ListItemObje
 }
 
 
-// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.BP_OnItemSelectionChanged
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.Construct
+// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
 
-void UWBP_CareerRankComboItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
+void UWBP_CareerRankComboItem_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "BP_OnItemSelectionChanged");
-
-	Params::WBP_CareerRankComboItem_C_BP_OnItemSelectionChanged Parms{};
-
-	Parms.bIsSelected = bIsSelected;
+		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.ExecuteUbergraph_WBP_CareerRankComboItem
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CareerRankComboItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+void UWBP_CareerRankComboItem_C::ExecuteUbergraph_WBP_CareerRankComboItem(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "BP_OnItemExpansionChanged");
+		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "ExecuteUbergraph_WBP_CareerRankComboItem");
 
-	Params::WBP_CareerRankComboItem_C_BP_OnItemExpansionChanged Parms{};
+	Params::WBP_CareerRankComboItem_C_ExecuteUbergraph_WBP_CareerRankComboItem Parms{};
 
-	Parms.bIsExpanded = bIsExpanded;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CareerRankComboItem.WBP_CareerRankComboItem_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CareerRankComboItem_C::BP_OnEntryReleased()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CareerRankComboItem_C", "BP_OnEntryReleased");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

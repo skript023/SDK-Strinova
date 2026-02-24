@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_X_Kanami.BP_DamageType_X_Kanami_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class BP_DamageType_X_Kanami::UBP_DamageType_X_Kanami_C final : public UPMArmorDamageType
 {
 public:

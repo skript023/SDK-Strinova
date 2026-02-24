@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_X_Fuchsia.Weapon_X_Fuchsia_C
-// 0x0000 (0x1190 - 0x1190)
+// 0x0000 (0x1260 - 0x1260)
 class Weapon_X_Fuchsia::AWeapon_X_Fuchsia_C final : public ACyWeaponSkill
 {
 public:

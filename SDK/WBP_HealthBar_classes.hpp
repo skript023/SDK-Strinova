@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_HealthBar.WBP_HealthBar_C
-// 0x0010 (0x0B90 - 0x0B80)
+// 0x0010 (0x0BA8 - 0x0B98)
 class UWBP_HealthBar_C final : public UCyUWCharacterHealthBarPC
 {
 public:
-	class UCanvasPanel*                           CanvasPanel;                                       // 0x0B80(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x0B88(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel;                                       // 0x0B98(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x0BA0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

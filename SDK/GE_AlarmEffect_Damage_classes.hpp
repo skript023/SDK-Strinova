@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AlarmEffect_Damage.GE_AlarmEffect_Damage_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_AlarmEffect_Damage_C final : public UCyGameplayEffect
 {
 public:

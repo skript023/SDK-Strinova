@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_X_Aika.DamageType_X_Aika_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class DamageType_X_Aika_0::UDamageType_X_Aika_C final : public UPMDamageType
 {
 public:

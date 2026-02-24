@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SpectatorPawn.BP_SpectatorPawn_C
-// 0x0008 (0x04F8 - 0x04F0)
+// 0x0008 (0x0538 - 0x0530)
 class ABP_SpectatorPawn_C final : public APMSpectatorPawn
 {
 public:
-	class UCySceneMapSpectatorMaskComponent*      CySceneMapSpectatorMask;                           // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySceneMapSpectatorMaskComponent*      CySceneMapSpectatorMask;                           // 0x0530(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

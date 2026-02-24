@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Fuchsia_ExtraDamage.GE_Q_Fuchsia_ExtraDamage_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Q_Fuchsia_ExtraDamage::UGE_Q_Fuchsia_ExtraDamage_C final : public UCyGameplayEffect
 {
 public:

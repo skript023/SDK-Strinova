@@ -16,25 +16,25 @@
 namespace SDK
 {
 
-// Class AudioExtensions.SoundfieldEndpointSettingsBase
+// Class AudioExtensions.ReverbPluginSourceSettingsBase
 // 0x0000 (0x0028 - 0x0028)
-class USoundfieldEndpointSettingsBase final : public UObject
+class UReverbPluginSourceSettingsBase final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("SoundfieldEndpointSettingsBase")
+		STATIC_CLASS_IMPL("ReverbPluginSourceSettingsBase")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"SoundfieldEndpointSettingsBase")
+		STATIC_NAME_IMPL(L"ReverbPluginSourceSettingsBase")
 	}
-	static class USoundfieldEndpointSettingsBase* GetDefaultObj()
+	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<USoundfieldEndpointSettingsBase>();
+		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
 	}
 };
-DUMPER7_ASSERTS_USoundfieldEndpointSettingsBase;
+DUMPER7_ASSERTS_UReverbPluginSourceSettingsBase;
 
 // Class AudioExtensions.SoundfieldEncodingSettingsBase
 // 0x0000 (0x0028 - 0x0028)
@@ -136,25 +136,25 @@ public:
 };
 DUMPER7_ASSERTS_USoundModulationPluginSourceSettingsBase;
 
-// Class AudioExtensions.ReverbPluginSourceSettingsBase
+// Class AudioExtensions.SoundfieldEndpointSettingsBase
 // 0x0000 (0x0028 - 0x0028)
-class UReverbPluginSourceSettingsBase final : public UObject
+class USoundfieldEndpointSettingsBase final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("ReverbPluginSourceSettingsBase")
+		STATIC_CLASS_IMPL("SoundfieldEndpointSettingsBase")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"ReverbPluginSourceSettingsBase")
+		STATIC_NAME_IMPL(L"SoundfieldEndpointSettingsBase")
 	}
-	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
+	static class USoundfieldEndpointSettingsBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
+		return GetDefaultObjImpl<USoundfieldEndpointSettingsBase>();
 	}
 };
-DUMPER7_ASSERTS_UReverbPluginSourceSettingsBase;
+DUMPER7_ASSERTS_USoundfieldEndpointSettingsBase;
 
 // Class AudioExtensions.SoundfieldEffectSettingsBase
 // 0x0000 (0x0028 - 0x0028)

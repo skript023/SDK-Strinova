@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GPEM_Block.BP_GPEM_Block_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0548 - 0x0548)
 class UBP_GPEM_Block_C final : public UCyGPEM_Event
 {
 public:

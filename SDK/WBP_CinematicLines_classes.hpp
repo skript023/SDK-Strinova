@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CinematicLines.WBP_CinematicLines_C
-// 0x0020 (0x0940 - 0x0920)
+// 0x0020 (0x0958 - 0x0938)
 class UWBP_CinematicLines_C final : public UCyCinematicInteractiveDialogue
 {
 public:
-	class UWBP_DialogueSelectItem_C*              DialogueSelectItem_01;                             // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_DialogueSelectItem_C*              DialogueSelectItem_02;                             // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_DialogueSelectItem_C*              DialogueSelectItem_03;                             // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_357;                                         // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DialogueSelectItem_C*              DialogueSelectItem_01;                             // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DialogueSelectItem_C*              DialogueSelectItem_02;                             // 0x0940(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DialogueSelectItem_C*              DialogueSelectItem_03;                             // 0x0948(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_357;                                         // 0x0950(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

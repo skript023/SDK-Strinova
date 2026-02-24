@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
+#include "BP_BulletTrajectoryBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectoryBase_203.BP_BulletTrajectoryBase_203_C
-// 0x0000 (0x02E8 - 0x02E8)
-class BP_BulletTrajectoryBase_203_0::ABP_BulletTrajectoryBase_203_C final : public ACyBulletTrajectory
+// 0x0000 (0x0330 - 0x0330)
+class BP_BulletTrajectoryBase_203_0::ABP_BulletTrajectoryBase_203_C final : public ABP_BulletTrajectoryBase_C
 {
 public:
 	static class UClass* StaticClass()

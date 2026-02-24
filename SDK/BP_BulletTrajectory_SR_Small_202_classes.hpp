@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectory_SR_Small_202.BP_BulletTrajectory_SR_Small_202_C
-// 0x0000 (0x02F0 - 0x02F0)
+// 0x0000 (0x0330 - 0x0330)
 class ABP_BulletTrajectory_SR_Small_202_C final : public ABP_BulletTrajectoryBase_C
 {
 public:

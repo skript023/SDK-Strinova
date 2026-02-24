@@ -17,19 +17,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PlayerState_TeamMatch.BP_PlayerState_TeamMatch_C
-// 0x0050 (0x2480 - 0x2430)
+// 0x0050 (0x24E0 - 0x2490)
 class ABP_PlayerState_TeamMatch_C final : public APMPlayerState_TeamDeath_Two
 {
 public:
-	class UBP_PlayerStateDataCollection_C*        BP_PlayerStateDataCollection;                      // 0x2430(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCustomModePlayerComponent*           CyCustomModePlayer;                                // 0x2438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_PlayerStateSkillDataCollection_C*   BP_PlayerStateSkillDataCollection;                 // 0x2440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyPStateRoleSelectAfter*               CyPStateRoleSelectAfter;                           // 0x2448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyPStateGameEnd*                       CyPStateGameEnd;                                   // 0x2450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyPStateHalfEnterAIHosting*            CyPStateHalfEnterAIHosting;                        // 0x2458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyPStateHalfEnterRoleSelect*           CyPStateHalfEnterRoleSelect;                       // 0x2460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyPStateNone*                          CyPStateNone;                                      // 0x2468(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x2470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_PlayerStateDataCollection_C*        BP_PlayerStateDataCollection;                      // 0x2490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCustomModePlayerComponent*           CyCustomModePlayer;                                // 0x2498(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_PlayerStateSkillDataCollection_C*   BP_PlayerStateSkillDataCollection;                 // 0x24A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPStateRoleSelectAfter*               CyPStateRoleSelectAfter;                           // 0x24A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPStateGameEnd*                       CyPStateGameEnd;                                   // 0x24B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPStateHalfEnterAIHosting*            CyPStateHalfEnterAIHosting;                        // 0x24B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPStateHalfEnterRoleSelect*           CyPStateHalfEnterRoleSelect;                       // 0x24C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPStateNone*                          CyPStateNone;                                      // 0x24C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x24D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

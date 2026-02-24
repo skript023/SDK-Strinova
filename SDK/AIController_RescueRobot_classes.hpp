@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AIController_RescueRobot.AIController_RescueRobot_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x0420 - 0x0420)
 class AAIController_RescueRobot_C final : public ACyBehaviorAIController
 {
 public:

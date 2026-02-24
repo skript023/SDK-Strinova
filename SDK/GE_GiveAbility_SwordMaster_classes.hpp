@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_GiveAbility_SwordMaster.GE_GiveAbility_SwordMaster_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_GiveAbility_SwordMaster_C final : public UCyGameplayEffect
 {
 public:

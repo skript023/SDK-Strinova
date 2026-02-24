@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ShaoBing_DamageType.BP_ShaoBing_DamageType_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_ShaoBing_DamageType_C final : public UPMDamageType
 {
 public:

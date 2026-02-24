@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Activater_PlayVoice_P.BP_Activater_PlayVoice_P_C
-// 0x0000 (0x0238 - 0x0238)
+// 0x0000 (0x03C0 - 0x03C0)
 class UBP_Activater_PlayVoice_P_C final : public UCyGAActivatorPlayInGameVoice
 {
 public:

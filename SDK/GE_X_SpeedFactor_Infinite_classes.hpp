@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_SpeedFactor_Infinite.GE_X_SpeedFactor_Infinite_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_SpeedFactor_Infinite::UGE_X_SpeedFactor_Infinite_C final : public UCyGameplayEffect
 {
 public:

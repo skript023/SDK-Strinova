@@ -17,31 +17,6 @@
 namespace SDK
 {
 
-// Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FSoftClassPath&            InBurnInClass                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ULevelSequenceBurnInOptions::SetBurnIn(const struct FSoftClassPath& InBurnInClass)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceBurnInOptions", "SetBurnIn");
-
-	Params::LevelSequenceBurnInOptions_SetBurnIn Parms{};
-
-	Parms.InBurnInClass = std::move(InBurnInClass);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function LevelSequence.LevelSequenceActor.AddBinding
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -514,67 +489,6 @@ void ULevelSequenceDirector::OnCreated()
 }
 
 
-// Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class ULevelSequence*                   LevelSequence                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMovieSceneSequencePlaybackSettings&Settings                                               (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// class ALevelSequenceActor**             OutActor                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class ULevelSequencePlayer*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class ULevelSequencePlayer* ULevelSequencePlayer::CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LevelSequencePlayer", "CreateLevelSequencePlayer");
-
-	Params::LevelSequencePlayer_CreateLevelSequencePlayer Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.LevelSequence = LevelSequence;
-	Parms.Settings = std::move(Settings);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutActor != nullptr)
-		*OutActor = Parms.OutActor;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UCameraComponent*                 ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UCameraComponent* ULevelSequencePlayer::GetActiveCameraComponent() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequencePlayer", "GetActiveCameraComponent");
-
-	Params::LevelSequencePlayer_GetActiveCameraComponent Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function LevelSequence.LevelSequence.CopyMetaData
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -684,6 +598,31 @@ class UObject* ULevelSequence::FindMetaDataByClass(TSubclassOf<class UObject> In
 }
 
 
+// Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FSoftClassPath&            InBurnInClass                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULevelSequenceBurnInOptions::SetBurnIn(const struct FSoftClassPath& InBurnInClass)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequenceBurnInOptions", "SetBurnIn");
+
+	Params::LevelSequenceBurnInOptions_SetBurnIn Parms{};
+
+	Parms.InBurnInClass = std::move(InBurnInClass);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function LevelSequence.LevelSequenceBurnIn.SetSettings
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -717,6 +656,67 @@ TSubclassOf<class ULevelSequenceBurnInInitSettings> ULevelSequenceBurnIn::GetSet
 		Func = Class->GetFunction("LevelSequenceBurnIn", "GetSettingsClass");
 
 	Params::LevelSequenceBurnIn_GetSettingsClass Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ULevelSequence*                   LevelSequence                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FMovieSceneSequencePlaybackSettings&Settings                                               (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// class ALevelSequenceActor**             OutActor                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ULevelSequencePlayer*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class ULevelSequencePlayer* ULevelSequencePlayer::CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LevelSequencePlayer", "CreateLevelSequencePlayer");
+
+	Params::LevelSequencePlayer_CreateLevelSequencePlayer Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.LevelSequence = LevelSequence;
+	Parms.Settings = std::move(Settings);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutActor != nullptr)
+		*OutActor = Parms.OutActor;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UCameraComponent*                 ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UCameraComponent* ULevelSequencePlayer::GetActiveCameraComponent() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequencePlayer", "GetActiveCameraComponent");
+
+	Params::LevelSequencePlayer_GetActiveCameraComponent Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

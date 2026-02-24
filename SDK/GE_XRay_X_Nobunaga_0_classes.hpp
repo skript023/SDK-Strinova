@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_XRay_X_Nobunaga.GE_XRay_X_Nobunaga_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_XRay_X_Nobunaga_0::UGE_XRay_X_Nobunaga_C final : public UCyGameplayEffect
 {
 public:

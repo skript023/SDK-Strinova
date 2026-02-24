@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_LocationDetectorSource_E_Flavia.BP_LocationDetectorSource_E_Flavia_C
-// 0x0000 (0x01F8 - 0x01F8)
+// 0x0000 (0x0208 - 0x0208)
 class UBP_LocationDetectorSource_E_Flavia_C final : public UCyLocationDetectorSource
 {
 public:

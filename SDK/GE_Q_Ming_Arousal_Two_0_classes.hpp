@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "GameplayAbilities_classes.hpp"
+#include "PMGame_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Ming_Arousal_Two.GE_Q_Ming_Arousal_Two_C
-// 0x0000 (0x1060 - 0x1060)
-class GE_Q_Ming_Arousal_Two_0::UGE_Q_Ming_Arousal_Two_C final : public UGameplayEffect
+// 0x0000 (0x10E0 - 0x10E0)
+class GE_Q_Ming_Arousal_Two_0::UGE_Q_Ming_Arousal_Two_C final : public UCyGameplayEffect
 {
 public:
 	static class UClass* StaticClass()

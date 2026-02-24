@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SummonHeadComponent.BP_SummonHeadComponent_C
-// 0x0000 (0x06B0 - 0x06B0)
+// 0x0000 (0x06C0 - 0x06C0)
 class UBP_SummonHeadComponent_C final : public UPMSummonWidgetComponent
 {
 public:

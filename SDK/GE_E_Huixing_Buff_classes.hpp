@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_E_Huixing_Buff.GE_E_Huixing_Buff_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_E_Huixing_Buff::UGE_E_Huixing_Buff_C final : public UCyGameplayEffect
 {
 public:

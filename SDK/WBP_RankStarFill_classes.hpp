@@ -30,9 +30,9 @@ public:
 	class UPaperSprite*                           Texture2;                                          // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_RankStarFill(int32 EntryPoint);
-	void SetIsFilled(bool bFill);
 	void PreConstruct(bool IsDesignTime);
+	void SetIsFilled(bool bFill);
+	void ExecuteUbergraph_WBP_RankStarFill(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

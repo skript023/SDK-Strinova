@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AllowSendEventToOnDodge_P_MoBai.GE_AllowSendEventToOnDodge_P_MoBai_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_AllowSendEventToOnDodge_P_MoBai_C final : public UCyGameplayEffect
 {
 public:

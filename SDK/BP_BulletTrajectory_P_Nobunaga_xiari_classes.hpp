@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectory_P_Nobunaga_xiari.BP_BulletTrajectory_P_Nobunaga_xiari_C
-// 0x0000 (0x02E8 - 0x02E8)
+// 0x0000 (0x0328 - 0x0328)
 class ABP_BulletTrajectory_P_Nobunaga_xiari_C final : public ACyBulletTrajectory
 {
 public:

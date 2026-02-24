@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon16102001.Weapon16102001_C
-// 0x0000 (0x11F0 - 0x11F0)
+// 0x0000 (0x12C0 - 0x12C0)
 class AWeapon16102001_C : public ACyWeaponMelee
 {
 public:

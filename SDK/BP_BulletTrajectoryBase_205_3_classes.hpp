@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectoryBase_205.BP_BulletTrajectoryBase_205_C
-// 0x0000 (0x02E8 - 0x02E8)
+// 0x0000 (0x0328 - 0x0328)
 class BP_BulletTrajectoryBase_205_3::ABP_BulletTrajectoryBase_205_C final : public ACyBulletTrajectory
 {
 public:

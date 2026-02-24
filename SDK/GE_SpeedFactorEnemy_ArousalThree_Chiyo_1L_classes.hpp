@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_SpeedFactorEnemy_ArousalThree_Chiyo_1L.GE_SpeedFactorEnemy_ArousalThree_Chiyo_1L_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_SpeedFactorEnemy_ArousalThree_Chiyo_1L_C final : public UCyGameplayEffect
 {
 public:

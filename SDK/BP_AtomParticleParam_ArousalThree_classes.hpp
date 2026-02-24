@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AtomParticleParam_ArousalThree.BP_AtomParticleParam_ArousalThree_C
-// 0x0000 (0x07A8 - 0x07A8)
+// 0x0000 (0x07B0 - 0x07B0)
 class BP_AtomParticleParam_ArousalThree::UBP_AtomParticleParam_ArousalThree_C final : public UCySAtomParticleParameterChange
 {
 public:

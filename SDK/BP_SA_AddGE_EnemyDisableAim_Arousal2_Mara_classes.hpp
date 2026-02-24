@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_AddGE_EnemyDisableAim_Arousal2_Mara.BP_SA_AddGE_EnemyDisableAim_Arousal2_Mara_C
-// 0x0000 (0x0628 - 0x0628)
+// 0x0000 (0x0638 - 0x0638)
 class UBP_SA_AddGE_EnemyDisableAim_Arousal2_Mara_C final : public UCySAtomAddGameplayEffect
 {
 public:

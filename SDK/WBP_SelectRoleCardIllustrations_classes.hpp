@@ -30,8 +30,8 @@ public:
 	struct FButtonStyle                           BtnStyle;                                          // 0x05E8(0x0278)(Edit, BlueprintVisible)
 
 public:
-	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_WBP_SelectRoleCardIllustrations(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

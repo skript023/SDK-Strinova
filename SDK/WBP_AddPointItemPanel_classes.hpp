@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AddPointItemPanel.WBP_AddPointItemPanel_C
-// 0x0008 (0x0920 - 0x0918)
+// 0x0008 (0x0938 - 0x0930)
 class UWBP_AddPointItemPanel_C final : public UCyUWScoreBehaviorItem
 {
 public:
-	class UWidgetAnimation*                       Anim_MoveUp1;                                      // 0x0918(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_MoveUp1;                                      // 0x0930(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

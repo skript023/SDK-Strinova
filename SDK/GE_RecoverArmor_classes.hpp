@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_RecoverArmor.GE_RecoverArmor_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_RecoverArmor::UGE_RecoverArmor_C final : public UCyGameplayEffect
 {
 public:

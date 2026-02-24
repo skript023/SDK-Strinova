@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Q_MoBai.Weapon_Q_MoBai_C
-// 0x0030 (0x13D0 - 0x13A0)
+// 0x0030 (0x14A0 - 0x1470)
 class Weapon_Q_MoBai::AWeapon_Q_MoBai_C final : public ACyWeaponCustom
 {
 public:
-	class UCyFWorkEndState*                       CyFWorkEndState;                                   // 0x13A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyWeaponControlModeComponent*          CyWeaponControlMode;                               // 0x13A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x13B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFFinishState*                        CyFFinishState;                                    // 0x13B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFWorkState*                          CyFWorkState;                                      // 0x13C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFWorkEndState*                       CyFWorkEndState;                                   // 0x1470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyWeaponControlModeComponent*          CyWeaponControlMode;                               // 0x1478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFFinishState*                        CyFFinishState;                                    // 0x1488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFWorkState*                          CyFWorkState;                                      // 0x1490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

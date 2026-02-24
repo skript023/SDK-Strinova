@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_CauseDamageFactor_X_Self_Zombie.GE_CauseDamageFactor_X_Self_Zombie_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_CauseDamageFactor_X_Self_Zombie_C final : public UCyGameplayEffect
 {
 public:

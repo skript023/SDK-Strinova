@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_DamageCauserPage.WBP_DamageCauserPage_C
-// 0x0008 (0x0B90 - 0x0B88)
+// 0x0008 (0x0BA8 - 0x0BA0)
 class UWBP_DamageCauserPage_C final : public UPMUWDamageCauserPage
 {
 public:
-	class UWBP_DamageCauserByTagPanel_C*          WBP_DamageCauserByTagPanel;                        // 0x0B88(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DamageCauserByTagPanel_C*          WBP_DamageCauserByTagPanel;                        // 0x0BA0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

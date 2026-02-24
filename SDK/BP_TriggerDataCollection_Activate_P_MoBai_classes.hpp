@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_TriggerDataCollection_Activate_P_MoBai.BP_TriggerDataCollection_Activate_P_MoBai_C
 // 0x0000 (0x0248 - 0x0248)
-class BP_TriggerDataCollection_Activate_P_MoBai::UBP_TriggerDataCollection_Activate_P_MoBai_C final : public UCyGATriggerDataCollectionEvent
+class UBP_TriggerDataCollection_Activate_P_MoBai_C final : public UCyGATriggerDataCollectionEvent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_TriggerDataCollection_Activate_P_MoBai.BP_TriggerDataCollection_Activate_P_MoBai_C")
+		BP_STATIC_CLASS_IMPL("BP_TriggerDataCollection_Activate_P_MoBai_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_TriggerDataCollection_Activate_P_MoBai_C")
 	}
-	static class BP_TriggerDataCollection_Activate_P_MoBai::UBP_TriggerDataCollection_Activate_P_MoBai_C* GetDefaultObj()
+	static class UBP_TriggerDataCollection_Activate_P_MoBai_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_TriggerDataCollection_Activate_P_MoBai::UBP_TriggerDataCollection_Activate_P_MoBai_C>();
+		return GetDefaultObjImpl<UBP_TriggerDataCollection_Activate_P_MoBai_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_TriggerDataCollection_Activate_P_MoBai__UBP_TriggerDataCollection_Activate_P_MoBai_C;
+DUMPER7_ASSERTS_UBP_TriggerDataCollection_Activate_P_MoBai_C;
 
 }
 

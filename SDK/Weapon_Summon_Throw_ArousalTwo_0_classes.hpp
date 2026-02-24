@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Summon_Throw_ArousalTwo.Weapon_Summon_Throw_ArousalTwo_C
-// 0x0010 (0x11A0 - 0x1190)
+// 0x0010 (0x1270 - 0x1260)
 class Weapon_Summon_Throw_ArousalTwo_0::AWeapon_Summon_Throw_ArousalTwo_C final : public ACyWeaponThrow
 {
 public:
-	uint8                                         Pad_1188[0x8];                                     // 0x1188(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCyCrossHairComponent*                  CyCrossHair;                                       // 0x1190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySkinComponent*                       CySkin;                                            // 0x1198(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCyCrossHairComponent*                  CyCrossHair;                                       // 0x1260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

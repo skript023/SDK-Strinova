@@ -14,6 +14,24 @@
 namespace SDK::Params
 {
 
+// Function WBP_PrivateChatList.WBP_PrivateChatList_C.BP_OnItemExpansionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PrivateChatList_C_BP_OnItemExpansionChanged final
+{
+public:
+	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_PrivateChatList_C_BP_OnItemExpansionChanged;
+
+// Function WBP_PrivateChatList.WBP_PrivateChatList_C.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PrivateChatList_C_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_PrivateChatList_C_BP_OnItemSelectionChanged;
+
 // Function WBP_PrivateChatList.WBP_PrivateChatList_C.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_PrivateChatList_C_OnListItemObjectSet final
@@ -35,24 +53,6 @@ public:
 	bool                                          K2Node_Event_bIsSelected;                          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_PrivateChatList_C_ExecuteUbergraph_WBP_PrivateChatList;
-
-// Function WBP_PrivateChatList.WBP_PrivateChatList_C.BP_OnItemExpansionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PrivateChatList_C_BP_OnItemExpansionChanged final
-{
-public:
-	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_PrivateChatList_C_BP_OnItemExpansionChanged;
-
-// Function WBP_PrivateChatList.WBP_PrivateChatList_C.BP_OnItemSelectionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PrivateChatList_C_BP_OnItemSelectionChanged final
-{
-public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_PrivateChatList_C_BP_OnItemSelectionChanged;
 
 }
 

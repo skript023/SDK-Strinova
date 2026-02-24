@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Castling_Galatea.Weapon_Castling_Galatea_C
-// 0x0030 (0x13D0 - 0x13A0)
+// 0x0030 (0x14A0 - 0x1470)
 class Weapon_Castling_Galatea::AWeapon_Castling_Galatea_C final : public ACyWeaponCustom
 {
 public:
-	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x13A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x13A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFSecondWorkState*                    CyFSecondWorkState;                                // 0x13B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyTargetActorsComponent*               CyTargetActors;                                    // 0x13B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFWorkState*                          CyFWorkState;                                      // 0x13C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x1470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFSecondWorkState*                    CyFSecondWorkState;                                // 0x1480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyTargetActorsComponent*               CyTargetActors;                                    // 0x1488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFWorkState*                          CyFWorkState;                                      // 0x1490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

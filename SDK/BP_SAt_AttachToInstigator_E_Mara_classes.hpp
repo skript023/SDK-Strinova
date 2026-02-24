@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SAt_AttachToInstigator_E_Mara.BP_SAt_AttachToInstigator_E_Mara_C
-// 0x0000 (0x0660 - 0x0660)
+// 0x0000 (0x0670 - 0x0670)
 class UBP_SAt_AttachToInstigator_E_Mara_C final : public UCySAtomAttachTo
 {
 public:

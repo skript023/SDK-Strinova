@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_SlowDown_Arousal_Two_Lawine_3.GE_SlowDown_Arousal_Two_Lawine_3_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_SlowDown_Arousal_Two_Lawine_3_0::UGE_SlowDown_Arousal_Two_Lawine_3_C final : public UCyGameplayEffect
 {
 public:

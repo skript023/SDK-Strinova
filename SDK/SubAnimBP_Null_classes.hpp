@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // DynamicClass SubAnimBP_Null.SubAnimBP_Null_C
-// 0x0030 (0x0300 - 0x02D0)
+// 0x0030 (0x02B0 - 0x0280)
 class USubAnimBP_Null_C final : public UAnimInstance
 {
 public:
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)(NativeAccessSpecifierPublic)
-	uint8                                         Pad_2F8[0x8];                                      // 0x02F8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0278(0x0030)(NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ExecuteUbergraph_SubAnimBP_Null(int32 bpp__EntryPoint__pf);

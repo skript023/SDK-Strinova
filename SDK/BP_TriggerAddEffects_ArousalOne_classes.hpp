@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_TriggerAddEffects_ArousalOne.BP_TriggerAddEffects_ArousalOne_C
 // 0x0000 (0x02A8 - 0x02A8)
-class BP_TriggerAddEffects_ArousalOne::UBP_TriggerAddEffects_ArousalOne_C final : public UCyGATriggerAddGameplayEffects
+class UBP_TriggerAddEffects_ArousalOne_C final : public UCyGATriggerAddGameplayEffects
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_TriggerAddEffects_ArousalOne.BP_TriggerAddEffects_ArousalOne_C")
+		BP_STATIC_CLASS_IMPL("BP_TriggerAddEffects_ArousalOne_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_TriggerAddEffects_ArousalOne_C")
 	}
-	static class BP_TriggerAddEffects_ArousalOne::UBP_TriggerAddEffects_ArousalOne_C* GetDefaultObj()
+	static class UBP_TriggerAddEffects_ArousalOne_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_TriggerAddEffects_ArousalOne::UBP_TriggerAddEffects_ArousalOne_C>();
+		return GetDefaultObjImpl<UBP_TriggerAddEffects_ArousalOne_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_TriggerAddEffects_ArousalOne__UBP_TriggerAddEffects_ArousalOne_C;
+DUMPER7_ASSERTS_UBP_TriggerAddEffects_ArousalOne_C;
 
 }
 

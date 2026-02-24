@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Filter_Health.BP_Filter_Health_C
 // 0x0000 (0x0068 - 0x0068)
-class BP_Filter_Health::UBP_Filter_Health_C final : public UCyFilterAttribute
+class UBP_Filter_Health_C final : public UCyFilterAttribute
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_Filter_Health.BP_Filter_Health_C")
+		BP_STATIC_CLASS_IMPL("BP_Filter_Health_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_Filter_Health_C")
 	}
-	static class BP_Filter_Health::UBP_Filter_Health_C* GetDefaultObj()
+	static class UBP_Filter_Health_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_Filter_Health::UBP_Filter_Health_C>();
+		return GetDefaultObjImpl<UBP_Filter_Health_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_Filter_Health__UBP_Filter_Health_C;
+DUMPER7_ASSERTS_UBP_Filter_Health_C;
 
 }
 

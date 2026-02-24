@@ -17,13 +17,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon12201001.Weapon12201001_C
-// 0x0020 (0x11B0 - 0x1190)
+// 0x0020 (0x1280 - 0x1260)
 class AWeapon12201001_C final : public ACyWeaponPistol
 {
 public:
-	class UCyFEndReloadState*                     StateEndReload;                                    // 0x1190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFSecondStartReloadState*             StateSecondStartReload;                            // 0x1198(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFStartReloadState*                   StateStartReload;                                  // 0x11A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyAmmoUpdateMaterialComponent*         CyAmmoUpdateMaterial;                              // 0x1260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFEndReloadState*                     StateEndReload;                                    // 0x1268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFSecondStartReloadState*             StateSecondStartReload;                            // 0x1270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStartReloadState*                   StateStartReload;                                  // 0x1278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

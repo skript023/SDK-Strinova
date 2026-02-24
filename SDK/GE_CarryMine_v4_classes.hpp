@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_CarryMine_v4.GE_CarryMine_v4_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_CarryMine_v4_C final : public UCyGameplayEffect
 {
 public:

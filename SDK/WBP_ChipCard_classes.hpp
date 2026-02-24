@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ChipCard.WBP_ChipCard_C
-// 0x0020 (0x0A38 - 0x0A18)
+// 0x0020 (0x0A50 - 0x0A30)
 class UWBP_ChipCard_C final : public UCyInGameUWPlayerCardPanel
 {
 public:
-	class UWBP_CardPanel_C*                       BP_CardPanel;                                      // 0x0A18(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_206;                                         // 0x0A20(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_291;                                         // 0x0A28(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_RichTextKeyMappings_C*             WBP_RichTextKeyMappingsPC;                         // 0x0A30(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CardPanel_C*                       BP_CardPanel;                                      // 0x0A30(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_206;                                         // 0x0A38(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_291;                                         // 0x0A40(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_RichTextKeyMappings_C*             WBP_RichTextKeyMappingsPC;                         // 0x0A48(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

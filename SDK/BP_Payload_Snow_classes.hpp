@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "BP_Payload_Default_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_Payload_Default_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Payload_Snow.BP_Payload_Snow_C
-// 0x0010 (0x0BC0 - 0x0BB0)
+// 0x0010 (0x0D40 - 0x0D30)
 class ABP_Payload_Snow_C final : public ABP_Payload_Default_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Payload_Snow_C;                  // 0x0BB0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Payload_Snow_C;                  // 0x0D30(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ReceiveBeginPlay();

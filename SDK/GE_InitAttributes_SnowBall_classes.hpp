@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_InitAttributes_SnowBall.GE_InitAttributes_SnowBall_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_InitAttributes_SnowBall_C final : public UCyGameplayEffect
 {
 public:

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile18901001_3.Projectile18901001_3_C
-// 0x0008 (0x0B28 - 0x0B20)
+// 0x0008 (0x0B70 - 0x0B68)
 class AProjectile18901001_3_C final : public ACyProjectileSnowBallGrenade
 {
 public:
-	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0B20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

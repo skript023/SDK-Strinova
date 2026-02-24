@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_X_Audery.Weapon_X_Audery_C
-// 0x0020 (0x11E0 - 0x11C0)
+// 0x0020 (0x12B0 - 0x1290)
 class Weapon_X_Audery::AWeapon_X_Audery_C final : public ACyWeaponShelfRifle
 {
 public:
-	class UCySkinComponent*                       CySkin;                                            // 0x11C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFStateMonitor*                       CyFStateMonitor_WeaponEffect;                      // 0x11C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySpawnManagerComponent*               CySpawnManager;                                    // 0x11D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStateMonitor*                       CyFStateMonitor_WeaponEffect;                      // 0x1298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySpawnManagerComponent*               CySpawnManager;                                    // 0x12A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

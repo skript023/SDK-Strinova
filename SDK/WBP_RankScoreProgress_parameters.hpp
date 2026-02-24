@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_RankScoreProgress.WBP_RankScoreProgress_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RankScoreProgress_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_RankScoreProgress_C_PreConstruct;
+
 // Function WBP_RankScoreProgress.WBP_RankScoreProgress_C.ExecuteUbergraph_WBP_RankScoreProgress
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_RankScoreProgress_C_ExecuteUbergraph_WBP_RankScoreProgress final
@@ -28,15 +37,6 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0028)()
 };
 DUMPER7_ASSERTS_WBP_RankScoreProgress_C_ExecuteUbergraph_WBP_RankScoreProgress;
-
-// Function WBP_RankScoreProgress.WBP_RankScoreProgress_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RankScoreProgress_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_RankScoreProgress_C_PreConstruct;
 
 }
 

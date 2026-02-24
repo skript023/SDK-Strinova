@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PickupMine_Blue_DeathDrop.BP_PickupMine_Blue_DeathDrop_C
-// 0x0000 (0x0738 - 0x0738)
+// 0x0000 (0x0778 - 0x0778)
 class ABP_PickupMine_Blue_DeathDrop_C final : public ABP_PickupMine_Blue_Template_C
 {
 public:

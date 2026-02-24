@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_KatanaSickle_DamageType_Projectile.BP_KatanaSickle_DamageType_Projectile_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_KatanaSickle_DamageType_Projectile_C final : public BP_KatanaSickle_DamageType_0::UBP_KatanaSickle_DamageType_C
 {
 public:

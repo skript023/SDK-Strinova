@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Q_Ming.Projectile_Q_Ming_C
-// 0x0030 (0x0AF8 - 0x0AC8)
+// 0x0030 (0x0B40 - 0x0B10)
 class Projectile_Q_Ming::AProjectile_Q_Ming_C final : public ACyProjectileBlastBome
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AC8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCySearchTargetProjectileExpired*       CySearchTargetProjectileExpired;                   // 0x0AD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x0AD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySceneMapMingQ*                       CySceneMapMingQ;                                   // 0x0AE0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0AE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x0AF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B10(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCySearchTargetProjectileExpired*       CySearchTargetProjectileExpired;                   // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x0B20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySceneMapMingQ*                       CySceneMapMingQ;                                   // 0x0B28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x0B38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ReceiveBeginPlay();

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_GrenadeSnowBall_Hit_Freeze.GE_GrenadeSnowBall_Hit_Freeze_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_GrenadeSnowBall_Hit_Freeze_C final : public UCyGameplayEffect
 {
 public:

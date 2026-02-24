@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon10000004.Weapon10000004_C
-// 0x0000 (0x1190 - 0x1190)
+// 0x0000 (0x1260 - 0x1260)
 class AWeapon10000004_C final : public ACyWeaponTransferWall
 {
 public:

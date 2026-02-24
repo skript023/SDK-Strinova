@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_RecoverHealth.GE_RecoverHealth_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_RecoverHealth_0::UGE_RecoverHealth_C final : public UCyGameplayEffect
 {
 public:

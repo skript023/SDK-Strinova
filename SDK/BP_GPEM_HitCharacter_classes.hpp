@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GPEM_HitCharacter.BP_GPEM_HitCharacter_C
-// 0x0000 (0x0428 - 0x0428)
+// 0x0000 (0x04E8 - 0x04E8)
 class UBP_GPEM_HitCharacter_C final : public UCyGPEM_OnActorHit
 {
 public:

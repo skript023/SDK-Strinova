@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_ArousalThree_Leona.DamageType_ArousalThree_Leona_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UDamageType_ArousalThree_Leona_C final : public UPMDamageType
 {
 public:

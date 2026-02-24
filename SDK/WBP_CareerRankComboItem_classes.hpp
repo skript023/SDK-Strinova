@@ -27,12 +27,12 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_State;                              // 0x0638(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CareerRankComboItem(int32 EntryPoint);
-	void Construct();
-	void OnListItemObjectSet(class UObject* ListItemObject);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
-	void BP_OnItemExpansionChanged(bool bIsExpanded);
 	void BP_OnEntryReleased();
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void Construct();
+	void ExecuteUbergraph_WBP_CareerRankComboItem(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

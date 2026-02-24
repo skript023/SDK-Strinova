@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon16103001.Weapon16103001_C
-// 0x0000 (0x11F0 - 0x11F0)
+// 0x0000 (0x12C0 - 0x12C0)
 class AWeapon16103001_C final : public AWeapon16102001_C
 {
 public:

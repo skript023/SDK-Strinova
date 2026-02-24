@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_AddForceMove_ArousalThree_Leona.BP_SA_AddForceMove_ArousalThree_Leona_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0608 - 0x0608)
 class UBP_SA_AddForceMove_ArousalThree_Leona_C final : public UCySAtomAddForceUpVector
 {
 public:

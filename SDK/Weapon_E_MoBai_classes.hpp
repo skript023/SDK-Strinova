@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_E_MoBai.Weapon_E_MoBai_C
-// 0x0000 (0x1190 - 0x1190)
+// 0x0000 (0x1260 - 0x1260)
 class Weapon_E_MoBai::AWeapon_E_MoBai_C final : public ACyWeaponQuickThrow
 {
 public:

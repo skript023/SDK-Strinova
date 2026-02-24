@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AddXPoints_Zombie.GE_AddXPoints_Zombie_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_AddXPoints_Zombie_C final : public UCyGameplayEffect
 {
 public:

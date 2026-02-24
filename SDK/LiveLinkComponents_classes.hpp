@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_classes.hpp"
-#include "LiveLinkInterface_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "LiveLinkInterface_structs.hpp"
 #include "LiveLinkComponents_structs.hpp"
 
 
@@ -64,17 +64,17 @@ public:
 DUMPER7_ASSERTS_ULiveLinkCameraController;
 
 // Class LiveLinkComponents.LiveLinkComponentController
-// 0x00A8 (0x01C0 - 0x0118)
+// 0x00A8 (0x01D0 - 0x0128)
 class ULiveLinkComponentController final : public UActorComponent
 {
 public:
-	struct FLiveLinkSubjectRepresentation         SubjectRepresentation;                             // 0x0118(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	TMap<TSubclassOf<class ULiveLinkRole>, class ULiveLinkControllerBase*> ControllerMap;            // 0x0128(0x0050)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, NoClear, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          bUpdateInEditor;                                   // 0x0178(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(float DeltaTime)> OnLiveLinkUpdated;                               // 0x0180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FComponentReference                    ComponentToControl;                                // 0x0190(0x0028)(Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B8[0x8];                                      // 0x01B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FLiveLinkSubjectRepresentation         SubjectRepresentation;                             // 0x0128(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	TMap<TSubclassOf<class ULiveLinkRole>, class ULiveLinkControllerBase*> ControllerMap;            // 0x0138(0x0050)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, NoClear, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          bUpdateInEditor;                                   // 0x0188(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(float DeltaTime)> OnLiveLinkUpdated;                               // 0x0190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FComponentReference                    ComponentToControl;                                // 0x01A0(0x0028)(Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C8[0x8];                                      // 0x01C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

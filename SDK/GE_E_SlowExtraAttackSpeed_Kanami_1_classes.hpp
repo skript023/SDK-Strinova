@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_E_SlowExtraAttackSpeed_Kanami_1.GE_E_SlowExtraAttackSpeed_Kanami_1_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_E_SlowExtraAttackSpeed_Kanami_1_C final : public UCyGameplayEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_ForceMoveUpVector.BP_SA_ForceMoveUpVector_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0608 - 0x0608)
 class UBP_SA_ForceMoveUpVector_C final : public UCySAtomAddForceUpVector
 {
 public:

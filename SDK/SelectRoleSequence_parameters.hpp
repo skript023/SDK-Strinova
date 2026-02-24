@@ -19,7 +19,7 @@ namespace SDK::Params
 struct SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_3 final
 {
 public:
-	class ASkeletalMeshActor*                     Dollbear_Mesh;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APMLobbyCharacter*                      BP_Character_LobbyFuchsia;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_3;
 
@@ -28,7 +28,7 @@ DUMPER7_ASSERTS_SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_3;
 struct SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_2 final
 {
 public:
-	class ABP_Character_LobbyYvette_C*            BP_Character_LobbyYvette;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APMLobbyCharacter*                      BP_Character_LobbyFuchsia;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_2;
 
@@ -37,59 +37,57 @@ DUMPER7_ASSERTS_SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_2;
 struct SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_1 final
 {
 public:
-	class USkeletalMeshComponent*                 SkeletalMeshComponent0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWFBaseSkeletalMeshComponent*           CharacterMesh0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_1;
 
-// Function SelectRoleSequence.SequenceDirector_C.播放动画
+// Function SelectRoleSequence.SequenceDirector_C.CharacterMesh0_Event_0
 // 0x0018 (0x0018 - 0x0000)
-struct SequenceDirector_C_播放动画 final
+struct SequenceDirector_C_CharacterMesh0_Event_0 final
 {
 public:
-	class USkeletalMeshComponent*                 SkeletalMeshComponent0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWFBaseSkeletalMeshComponent*           CharacterMesh0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimationAsset*                        NewAnimToPlay;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bLooping;                                          // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-DUMPER7_ASSERTS_SequenceDirector_C_播放动画;
+DUMPER7_ASSERTS_SequenceDirector_C_CharacterMesh0_Event_0;
 
-// Function SelectRoleSequence.SequenceDirector_C.Dollbear_Mesh_Event_0
-// 0x0018 (0x0018 - 0x0000)
-struct SequenceDirector_C_Dollbear_Mesh_Event_0 final
-{
-public:
-	class ASkeletalMeshActor*                     Dollbear_Mesh;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimationAsset*                        NewAnimToPlay;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bLooping;                                          // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_SequenceDirector_C_Dollbear_Mesh_Event_0;
-
-// Function SelectRoleSequence.SequenceDirector_C.BP_Character_LobbyYvette_Event_0
+// Function SelectRoleSequence.SequenceDirector_C.BP_Character_LobbyFuchsia_Event_0
 // 0x0010 (0x0010 - 0x0000)
-struct SequenceDirector_C_BP_Character_LobbyYvette_Event_0 final
+struct SequenceDirector_C_BP_Character_LobbyFuchsia_Event_0 final
 {
 public:
-	class ABP_Character_LobbyYvette_C*            BP_Character_LobbyYvette;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APMLobbyCharacter*                      BP_Character_LobbyFuchsia;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequenceBase*                      NewAnimToPlay;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_SequenceDirector_C_BP_Character_LobbyYvette_Event_0;
+DUMPER7_ASSERTS_SequenceDirector_C_BP_Character_LobbyFuchsia_Event_0;
+
+// Function SelectRoleSequence.SequenceDirector_C.BP_Character_LobbyFuchsia_Event_2
+// 0x0010 (0x0010 - 0x0000)
+struct SequenceDirector_C_BP_Character_LobbyFuchsia_Event_2 final
+{
+public:
+	class APMLobbyCharacter*                      BP_Character_LobbyFuchsia;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequenceBase*                      NewAnimToPlay;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_SequenceDirector_C_BP_Character_LobbyFuchsia_Event_2;
 
 // Function SelectRoleSequence.SequenceDirector_C.ExecuteUbergraph_SequenceDirector
-// 0x0050 (0x0050 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct SequenceDirector_C_ExecuteUbergraph_SequenceDirector final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_Character_LobbyYvette_C*            K2Node_CustomEvent_BP_Character_LobbyYvette;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APMLobbyCharacter*                      K2Node_CustomEvent_BP_Character_LobbyFuchsia;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequenceBase*                      K2Node_CustomEvent_NewAnimToPlay;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 K2Node_CustomEvent_SkeletalMeshComponent0;         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWFBaseSkeletalMeshComponent*           K2Node_CustomEvent_CharacterMesh0;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimationAsset*                        K2Node_CustomEvent_NewAnimToPlay_2;                // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bLooping_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_bLooping;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCySequenceManager*                     CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASkeletalMeshActor*                     K2Node_CustomEvent_Dollbear_Mesh;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimationAsset*                        K2Node_CustomEvent_NewAnimToPlay_1;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bLooping;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class APMLobbyCharacter*                      K2Node_CustomEvent_BP_Character_LobbyFuchsia_1;    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequenceBase*                      K2Node_CustomEvent_NewAnimToPlay_1;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_SequenceDirector_C_ExecuteUbergraph_SequenceDirector;
 

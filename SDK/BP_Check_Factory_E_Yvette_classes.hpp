@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Check_Factory_E_Yvette.BP_Check_Factory_E_Yvette_C
 // 0x0000 (0x0068 - 0x0068)
-class UBP_Check_Factory_E_Yvette_C final : public UCyCheck_Factory
+class BP_Check_Factory_E_Yvette::UBP_Check_Factory_E_Yvette_C final : public UCyCheck_Factory
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_Check_Factory_E_Yvette_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_Check_Factory_E_Yvette.BP_Check_Factory_E_Yvette_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_Check_Factory_E_Yvette_C")
 	}
-	static class UBP_Check_Factory_E_Yvette_C* GetDefaultObj()
+	static class BP_Check_Factory_E_Yvette::UBP_Check_Factory_E_Yvette_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_Check_Factory_E_Yvette_C>();
+		return GetDefaultObjImpl<BP_Check_Factory_E_Yvette::UBP_Check_Factory_E_Yvette_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_Check_Factory_E_Yvette_C;
+DUMPER7_ASSERTS_BP_Check_Factory_E_Yvette__UBP_Check_Factory_E_Yvette_C;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ArousalOne_MoBai.GE_ArousalOne_MoBai_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_ArousalOne_MoBai_0::UGE_ArousalOne_MoBai_C final : public UCyGameplayEffect
 {
 public:

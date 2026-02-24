@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Damage_SummonFire.GE_Damage_SummonFire_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Damage_SummonFire::UGE_Damage_SummonFire_C final : public UCyGameplayEffect
 {
 public:

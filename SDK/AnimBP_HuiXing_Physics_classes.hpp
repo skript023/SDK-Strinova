@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "KawaiiPhysics_structs.hpp"
 #include "Engine_structs.hpp"
+#include "KawaiiPhysics_structs.hpp"
 #include "ALSV4_CPP_classes.hpp"
 
 
@@ -19,31 +19,31 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass AnimBP_HuiXing_Physics.AnimBP_HuiXing_Physics_C
-// 0x2050 (0x2320 - 0x02D0)
+// 0x2050 (0x22D0 - 0x0280)
 class UAnimBP_HuiXing_Physics_C final : public UCyPhysicsAnimInstance
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02D8(0x0030)()
-	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x0308(0x0098)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x03A0(0x0020)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_14;                    // 0x03C0(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_13;                    // 0x05D0(0x0210)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x07E0(0x0068)()
-	uint8                                         Pad_848[0x8];                                      // 0x0848(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_12;                    // 0x0850(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_11;                    // 0x0A60(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_10;                    // 0x0C70(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_9;                     // 0x0E80(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_8;                     // 0x1090(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_7;                     // 0x12A0(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_6;                     // 0x14B0(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_5;                     // 0x16C0(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_4;                     // 0x18D0(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_3;                     // 0x1AE0(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_2;                     // 0x1CF0(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_1;                     // 0x1F00(0x0210)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics;                       // 0x2110(0x0210)()
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0288(0x0030)()
+	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x02B8(0x0098)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0350(0x0020)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_14;                    // 0x0370(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_13;                    // 0x0580(0x0210)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0790(0x0068)()
+	uint8                                         Pad_7F8[0x8];                                      // 0x07F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_12;                    // 0x0800(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_11;                    // 0x0A10(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_10;                    // 0x0C20(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_9;                     // 0x0E30(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_8;                     // 0x1040(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_7;                     // 0x1250(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_6;                     // 0x1460(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_5;                     // 0x1670(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_4;                     // 0x1880(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_3;                     // 0x1A90(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_2;                     // 0x1CA0(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics_1;                     // 0x1EB0(0x0210)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics;                       // 0x20C0(0x0210)()
 
 public:
 	void AnimGraph(const struct FPoseLink& Input, struct FPoseLink* AnimGraph_0);

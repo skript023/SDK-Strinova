@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Michele_ExtraArmor.GE_Michele_ExtraArmor_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Michele_ExtraArmor_0::UGE_Michele_ExtraArmor_C final : public UCyGameplayEffect
 {
 public:

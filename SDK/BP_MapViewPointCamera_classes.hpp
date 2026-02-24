@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapViewPointCamera.BP_MapViewPointCamera_C
-// 0x0000 (0x08A0 - 0x08A0)
+// 0x0000 (0x08E0 - 0x08E0)
 class ABP_MapViewPointCamera_C final : public ACyMapViewPointCameraActor
 {
 public:

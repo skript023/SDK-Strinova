@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BigMapScene.WBP_BigMapScene_C
-// 0x0010 (0x0D30 - 0x0D20)
+// 0x0010 (0x0E68 - 0x0E58)
 class UWBP_BigMapScene_C final : public UCyBigSceneMap2D
 {
 public:
-	class UImage*                                 Image_81;                                          // 0x0D20(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GamePlayGuideButton_C*             WBP_GamePlayGuideButton;                           // 0x0D28(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_81;                                          // 0x0E58(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GamePlayGuideButton_C*             WBP_GamePlayGuideButton;                           // 0x0E60(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

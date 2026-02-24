@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_SlowDown_Q_Michele.GE_SlowDown_Q_Michele_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_SlowDown_Q_Michele::UGE_SlowDown_Q_Michele_C final : public UCyGameplayEffect
 {
 public:

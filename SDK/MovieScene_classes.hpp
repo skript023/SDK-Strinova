@@ -123,6 +123,50 @@ public:
 };
 DUMPER7_ASSERTS_UMovieSceneTrack;
 
+// Class MovieScene.MovieSceneEasingExternalCurve
+// 0x0010 (0x0038 - 0x0028)
+class UMovieSceneEasingExternalCurve final : public UObject
+{
+public:
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            Curve;                                             // 0x0030(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MovieSceneEasingExternalCurve")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneEasingExternalCurve")
+	}
+	static class UMovieSceneEasingExternalCurve* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieSceneEasingExternalCurve>();
+	}
+};
+DUMPER7_ASSERTS_UMovieSceneEasingExternalCurve;
+
+// Class MovieScene.MovieSceneNameableTrack
+// 0x0000 (0x0058 - 0x0058)
+class UMovieSceneNameableTrack : public UMovieSceneTrack
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MovieSceneNameableTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNameableTrack")
+	}
+	static class UMovieSceneNameableTrack* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieSceneNameableTrack>();
+	}
+};
+DUMPER7_ASSERTS_UMovieSceneNameableTrack;
+
 // Class MovieScene.MovieSceneSection
 // 0x0090 (0x00E0 - 0x0050)
 class UMovieSceneSection : public UMovieSceneSignedObject
@@ -184,45 +228,34 @@ public:
 };
 DUMPER7_ASSERTS_UMovieSceneSection;
 
-// Class MovieScene.TestMovieSceneSection
-// 0x0000 (0x00E0 - 0x00E0)
-class UTestMovieSceneSection final : public UMovieSceneSection
+// Class MovieScene.MovieSceneBindingOwnerInterface
+// 0x0000 (0x0000 - 0x0000)
+class IMovieSceneBindingOwnerInterface final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("TestMovieSceneSection")
+		STATIC_CLASS_IMPL("MovieSceneBindingOwnerInterface")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"TestMovieSceneSection")
+		STATIC_NAME_IMPL(L"MovieSceneBindingOwnerInterface")
 	}
-	static class UTestMovieSceneSection* GetDefaultObj()
+	static class IMovieSceneBindingOwnerInterface* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UTestMovieSceneSection>();
+		return GetDefaultObjImpl<IMovieSceneBindingOwnerInterface>();
 	}
-};
-DUMPER7_ASSERTS_UTestMovieSceneSection;
 
-// Class MovieScene.MovieSceneNameableTrack
-// 0x0000 (0x0058 - 0x0058)
-class UMovieSceneNameableTrack : public UMovieSceneTrack
-{
-public:
-	static class UClass* StaticClass()
+	class UObject* AsUObject()
 	{
-		STATIC_CLASS_IMPL("MovieSceneNameableTrack")
+		return reinterpret_cast<UObject*>(this);
 	}
-	static const class FName& StaticName()
+	const class UObject* AsUObject() const
 	{
-		STATIC_NAME_IMPL(L"MovieSceneNameableTrack")
-	}
-	static class UMovieSceneNameableTrack* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieSceneNameableTrack>();
+		return reinterpret_cast<const UObject*>(this);
 	}
 };
-DUMPER7_ASSERTS_UMovieSceneNameableTrack;
+DUMPER7_ASSERTS_IMovieSceneBindingOwnerInterface;
 
 // Class MovieScene.MovieSceneSequencePlayer
 // 0x0868 (0x0890 - 0x0028)
@@ -441,35 +474,6 @@ public:
 };
 DUMPER7_ASSERTS_UMovieSceneBindingOverrides;
 
-// Class MovieScene.MovieSceneBindingOwnerInterface
-// 0x0000 (0x0000 - 0x0000)
-class IMovieSceneBindingOwnerInterface final
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MovieSceneBindingOwnerInterface")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MovieSceneBindingOwnerInterface")
-	}
-	static class IMovieSceneBindingOwnerInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<IMovieSceneBindingOwnerInterface>();
-	}
-
-	class UObject* AsUObject()
-	{
-		return reinterpret_cast<UObject*>(this);
-	}
-	const class UObject* AsUObject() const
-	{
-		return reinterpret_cast<const UObject*>(this);
-	}
-};
-DUMPER7_ASSERTS_IMovieSceneBindingOwnerInterface;
-
 // Class MovieScene.MovieSceneBuiltInEasingFunction
 // 0x0010 (0x0038 - 0x0028)
 class UMovieSceneBuiltInEasingFunction final : public UObject
@@ -494,30 +498,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UMovieSceneBuiltInEasingFunction;
-
-// Class MovieScene.MovieSceneEasingExternalCurve
-// 0x0010 (0x0038 - 0x0028)
-class UMovieSceneEasingExternalCurve final : public UObject
-{
-public:
-	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            Curve;                                             // 0x0030(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MovieSceneEasingExternalCurve")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MovieSceneEasingExternalCurve")
-	}
-	static class UMovieSceneEasingExternalCurve* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieSceneEasingExternalCurve>();
-	}
-};
-DUMPER7_ASSERTS_UMovieSceneEasingExternalCurve;
 
 // Class MovieScene.MovieSceneEasingFunction
 // 0x0000 (0x0000 - 0x0000)
@@ -690,6 +670,26 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UTestMovieSceneTrack;
+
+// Class MovieScene.TestMovieSceneSection
+// 0x0000 (0x00E0 - 0x00E0)
+class UTestMovieSceneSection final : public UMovieSceneSection
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("TestMovieSceneSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TestMovieSceneSection")
+	}
+	static class UTestMovieSceneSection* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTestMovieSceneSection>();
+	}
+};
+DUMPER7_ASSERTS_UTestMovieSceneSection;
 
 // Class MovieScene.TestMovieSceneSubTrack
 // 0x0010 (0x0078 - 0x0068)

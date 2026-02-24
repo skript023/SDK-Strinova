@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GamePausePage.WBP_GamePausePage_C
-// 0x0000 (0x08F0 - 0x08F0)
+// 0x0000 (0x0908 - 0x0908)
 class UWBP_GamePausePage_C final : public UPMUWGamePausePagePC
 {
 public:

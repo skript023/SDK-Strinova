@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_InitModeAttribute_Infinite_BombGuide.GE_InitModeAttribute_Infinite_BombGuide_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_InitModeAttribute_Infinite_BombGuide_C final : public UCyGameplayEffect
 {
 public:

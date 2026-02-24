@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_limitViewRadius_X_Meredith.GE_limitViewRadius_X_Meredith_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_limitViewRadius_X_Meredith::UGE_limitViewRadius_X_Meredith_C final : public UCyGameplayEffect
 {
 public:

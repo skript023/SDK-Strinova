@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_HuiXing_ArousalTwo.GA_HuiXing_ArousalTwo_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_HuiXing_ArousalTwo::UGA_HuiXing_ArousalTwo_C final : public UCyBaseAbility
 {
 public:

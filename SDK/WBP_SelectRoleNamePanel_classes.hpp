@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectRoleNamePanel.WBP_SelectRoleNamePanel_C
-// 0x0000 (0x08E0 - 0x08E0)
+// 0x0000 (0x08F8 - 0x08F8)
 class UWBP_SelectRoleNamePanel_C final : public UCySelectRoleNamePanelPC
 {
 public:

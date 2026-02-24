@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ArousalOne_Maddelena_Health.GE_ArousalOne_Maddelena_Health_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_ArousalOne_Maddelena_Health::UGE_ArousalOne_Maddelena_Health_C final : public UCyGameplayEffect
 {
 public:

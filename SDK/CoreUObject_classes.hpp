@@ -116,25 +116,45 @@ public:
 };
 DUMPER7_ASSERTS_UProperty;
 
-// Class CoreUObject.StrProperty
+// Class CoreUObject.NumericProperty
 // 0x0000 (0x0070 - 0x0070)
-class UStrProperty final : public UProperty
+class UNumericProperty : public UProperty
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("StrProperty")
+		STATIC_CLASS_IMPL("NumericProperty")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"StrProperty")
+		STATIC_NAME_IMPL(L"NumericProperty")
 	}
-	static class UStrProperty* GetDefaultObj()
+	static class UNumericProperty* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UStrProperty>();
+		return GetDefaultObjImpl<UNumericProperty>();
 	}
 };
-DUMPER7_ASSERTS_UStrProperty;
+DUMPER7_ASSERTS_UNumericProperty;
+
+// Class CoreUObject.DoubleProperty
+// 0x0000 (0x0070 - 0x0070)
+class UDoubleProperty final : public UNumericProperty
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("DoubleProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DoubleProperty")
+	}
+	static class UDoubleProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UDoubleProperty>();
+	}
+};
+DUMPER7_ASSERTS_UDoubleProperty;
 
 // Class CoreUObject.Struct
 // 0x00A8 (0x00D8 - 0x0030)
@@ -200,28 +220,160 @@ public:
 };
 DUMPER7_ASSERTS_UClass;
 
-// Class CoreUObject.MapProperty
-// 0x0028 (0x0098 - 0x0070)
-class UMapProperty final : public UProperty
+// Class CoreUObject.ArrayProperty
+// 0x0008 (0x0078 - 0x0070)
+class UArrayProperty final : public UProperty
 {
 public:
-	uint8                                         Pad_70[0x28];                                      // 0x0070(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("MapProperty")
+		STATIC_CLASS_IMPL("ArrayProperty")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"MapProperty")
+		STATIC_NAME_IMPL(L"ArrayProperty")
 	}
-	static class UMapProperty* GetDefaultObj()
+	static class UArrayProperty* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UMapProperty>();
+		return GetDefaultObjImpl<UArrayProperty>();
 	}
 };
-DUMPER7_ASSERTS_UMapProperty;
+DUMPER7_ASSERTS_UArrayProperty;
+
+// Class CoreUObject.Package
+// 0x0070 (0x0098 - 0x0028)
+class UPackage final : public UObject
+{
+public:
+	uint8                                         Pad_28[0x70];                                      // 0x0028(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Package")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Package")
+	}
+	static class UPackage* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPackage>();
+	}
+};
+DUMPER7_ASSERTS_UPackage;
+
+// Class CoreUObject.MulticastDelegateProperty
+// 0x0008 (0x0078 - 0x0070)
+class UMulticastDelegateProperty : public UProperty
+{
+public:
+	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MulticastDelegateProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MulticastDelegateProperty")
+	}
+	static class UMulticastDelegateProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMulticastDelegateProperty>();
+	}
+};
+DUMPER7_ASSERTS_UMulticastDelegateProperty;
+
+// Class CoreUObject.MulticastInlineDelegateProperty
+// 0x0000 (0x0078 - 0x0078)
+class UMulticastInlineDelegateProperty final : public UMulticastDelegateProperty
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MulticastInlineDelegateProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MulticastInlineDelegateProperty")
+	}
+	static class UMulticastInlineDelegateProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMulticastInlineDelegateProperty>();
+	}
+};
+DUMPER7_ASSERTS_UMulticastInlineDelegateProperty;
+
+// Class CoreUObject.GCObjectReferencer
+// 0x0048 (0x0070 - 0x0028)
+class UGCObjectReferencer final : public UObject
+{
+public:
+	uint8                                         Pad_28[0x48];                                      // 0x0028(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GCObjectReferencer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCObjectReferencer")
+	}
+	static class UGCObjectReferencer* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGCObjectReferencer>();
+	}
+};
+DUMPER7_ASSERTS_UGCObjectReferencer;
+
+// Class CoreUObject.FloatProperty
+// 0x0000 (0x0070 - 0x0070)
+class UFloatProperty final : public UNumericProperty
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("FloatProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FloatProperty")
+	}
+	static class UFloatProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UFloatProperty>();
+	}
+};
+DUMPER7_ASSERTS_UFloatProperty;
+
+// Class CoreUObject.EnumProperty
+// 0x0010 (0x0080 - 0x0070)
+class UEnumProperty final : public UProperty
+{
+public:
+	uint8                                         Pad_70[0x10];                                      // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnumProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnumProperty")
+	}
+	static class UEnumProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnumProperty>();
+	}
+};
+DUMPER7_ASSERTS_UEnumProperty;
 
 // Class CoreUObject.Function
 // 0x0030 (0x0108 - 0x00D8)
@@ -250,160 +402,48 @@ public:
 };
 DUMPER7_ASSERTS_UFunction;
 
-// Class CoreUObject.LinkerPlaceholderFunction
-// 0x01B8 (0x02C0 - 0x0108)
-class ULinkerPlaceholderFunction final : public UFunction
-{
-public:
-	uint8                                         Pad_108[0x1B8];                                    // 0x0108(0x01B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LinkerPlaceholderFunction")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LinkerPlaceholderFunction")
-	}
-	static class ULinkerPlaceholderFunction* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULinkerPlaceholderFunction>();
-	}
-};
-DUMPER7_ASSERTS_ULinkerPlaceholderFunction;
-
-// Class CoreUObject.Package
-// 0x0070 (0x0098 - 0x0028)
-class UPackage final : public UObject
-{
-public:
-	uint8                                         Pad_28[0x70];                                      // 0x0028(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("Package")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"Package")
-	}
-	static class UPackage* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPackage>();
-	}
-};
-DUMPER7_ASSERTS_UPackage;
-
-// Class CoreUObject.GCObjectReferencer
-// 0x0048 (0x0070 - 0x0028)
-class UGCObjectReferencer final : public UObject
-{
-public:
-	uint8                                         Pad_28[0x48];                                      // 0x0028(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("GCObjectReferencer")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"GCObjectReferencer")
-	}
-	static class UGCObjectReferencer* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGCObjectReferencer>();
-	}
-};
-DUMPER7_ASSERTS_UGCObjectReferencer;
-
-// Class CoreUObject.StructProperty
-// 0x0008 (0x0078 - 0x0070)
-class UStructProperty final : public UProperty
-{
-public:
-	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("StructProperty")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"StructProperty")
-	}
-	static class UStructProperty* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UStructProperty>();
-	}
-};
-DUMPER7_ASSERTS_UStructProperty;
-
-// Class CoreUObject.ObjectPropertyBase
-// 0x0008 (0x0078 - 0x0070)
-class UObjectPropertyBase : public UProperty
-{
-public:
-	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ObjectPropertyBase")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ObjectPropertyBase")
-	}
-	static class UObjectPropertyBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UObjectPropertyBase>();
-	}
-};
-DUMPER7_ASSERTS_UObjectPropertyBase;
-
-// Class CoreUObject.LazyObjectProperty
-// 0x0000 (0x0078 - 0x0078)
-class ULazyObjectProperty final : public UObjectPropertyBase
+// Class CoreUObject.DelegateFunction
+// 0x0000 (0x0108 - 0x0108)
+class UDelegateFunction : public UFunction
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("LazyObjectProperty")
+		STATIC_CLASS_IMPL("DelegateFunction")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"LazyObjectProperty")
+		STATIC_NAME_IMPL(L"DelegateFunction")
 	}
-	static class ULazyObjectProperty* GetDefaultObj()
+	static class UDelegateFunction* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ULazyObjectProperty>();
+		return GetDefaultObjImpl<UDelegateFunction>();
 	}
 };
-DUMPER7_ASSERTS_ULazyObjectProperty;
+DUMPER7_ASSERTS_UDelegateFunction;
 
-// Class CoreUObject.ObjectProperty
-// 0x0000 (0x0078 - 0x0078)
-class UObjectProperty : public UObjectPropertyBase
+// Class CoreUObject.SparseDelegateFunction
+// 0x0010 (0x0118 - 0x0108)
+class USparseDelegateFunction final : public UDelegateFunction
 {
+public:
+	uint8                                         Pad_108[0x10];                                     // 0x0108(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("ObjectProperty")
+		STATIC_CLASS_IMPL("SparseDelegateFunction")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"ObjectProperty")
+		STATIC_NAME_IMPL(L"SparseDelegateFunction")
 	}
-	static class UObjectProperty* GetDefaultObj()
+	static class USparseDelegateFunction* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UObjectProperty>();
+		return GetDefaultObjImpl<USparseDelegateFunction>();
 	}
 };
-DUMPER7_ASSERTS_UObjectProperty;
+DUMPER7_ASSERTS_USparseDelegateFunction;
 
 // Class CoreUObject.Interface
 // 0x0000 (0x0000 - 0x0000)
@@ -479,49 +519,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UScriptStruct;
-
-// Class CoreUObject.DelegateFunction
-// 0x0000 (0x0108 - 0x0108)
-class UDelegateFunction : public UFunction
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("DelegateFunction")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"DelegateFunction")
-	}
-	static class UDelegateFunction* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UDelegateFunction>();
-	}
-};
-DUMPER7_ASSERTS_UDelegateFunction;
-
-// Class CoreUObject.SparseDelegateFunction
-// 0x0010 (0x0118 - 0x0108)
-class USparseDelegateFunction final : public UDelegateFunction
-{
-public:
-	uint8                                         Pad_108[0x10];                                     // 0x0108(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("SparseDelegateFunction")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"SparseDelegateFunction")
-	}
-	static class USparseDelegateFunction* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USparseDelegateFunction>();
-	}
-};
-DUMPER7_ASSERTS_USparseDelegateFunction;
 
 // Class CoreUObject.DynamicClass
 // 0x0080 (0x02D8 - 0x0258)
@@ -640,6 +637,29 @@ public:
 };
 DUMPER7_ASSERTS_ULinkerPlaceholderExportObject;
 
+// Class CoreUObject.LinkerPlaceholderFunction
+// 0x01B8 (0x02C0 - 0x0108)
+class ULinkerPlaceholderFunction final : public UFunction
+{
+public:
+	uint8                                         Pad_108[0x1B8];                                    // 0x0108(0x01B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LinkerPlaceholderFunction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LinkerPlaceholderFunction")
+	}
+	static class ULinkerPlaceholderFunction* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULinkerPlaceholderFunction>();
+	}
+};
+DUMPER7_ASSERTS_ULinkerPlaceholderFunction;
+
 // Class CoreUObject.MetaData
 // 0x00A0 (0x00C8 - 0x0028)
 class UMetaData final : public UObject
@@ -686,32 +706,9 @@ public:
 };
 DUMPER7_ASSERTS_UObjectRedirector;
 
-// Class CoreUObject.EnumProperty
-// 0x0010 (0x0080 - 0x0070)
-class UEnumProperty final : public UProperty
-{
-public:
-	uint8                                         Pad_70[0x10];                                      // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("EnumProperty")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"EnumProperty")
-	}
-	static class UEnumProperty* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnumProperty>();
-	}
-};
-DUMPER7_ASSERTS_UEnumProperty;
-
-// Class CoreUObject.ArrayProperty
+// Class CoreUObject.ObjectPropertyBase
 // 0x0008 (0x0078 - 0x0070)
-class UArrayProperty final : public UProperty
+class UObjectPropertyBase : public UProperty
 {
 public:
 	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -719,18 +716,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("ArrayProperty")
+		STATIC_CLASS_IMPL("ObjectPropertyBase")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"ArrayProperty")
+		STATIC_NAME_IMPL(L"ObjectPropertyBase")
 	}
-	static class UArrayProperty* GetDefaultObj()
+	static class UObjectPropertyBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UArrayProperty>();
+		return GetDefaultObjImpl<UObjectPropertyBase>();
 	}
 };
-DUMPER7_ASSERTS_UArrayProperty;
+DUMPER7_ASSERTS_UObjectPropertyBase;
 
 // Class CoreUObject.BoolProperty
 // 0x0008 (0x0078 - 0x0070)
@@ -755,26 +752,6 @@ public:
 };
 DUMPER7_ASSERTS_UBoolProperty;
 
-// Class CoreUObject.NumericProperty
-// 0x0000 (0x0070 - 0x0070)
-class UNumericProperty : public UProperty
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("NumericProperty")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"NumericProperty")
-	}
-	static class UNumericProperty* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNumericProperty>();
-	}
-};
-DUMPER7_ASSERTS_UNumericProperty;
-
 // Class CoreUObject.ByteProperty
 // 0x0008 (0x0078 - 0x0070)
 class UByteProperty final : public UNumericProperty
@@ -797,6 +774,26 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UByteProperty;
+
+// Class CoreUObject.ObjectProperty
+// 0x0000 (0x0078 - 0x0078)
+class UObjectProperty : public UObjectPropertyBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ObjectProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ObjectProperty")
+	}
+	static class UObjectProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UObjectProperty>();
+	}
+};
+DUMPER7_ASSERTS_UObjectProperty;
 
 // Class CoreUObject.ClassProperty
 // 0x0008 (0x0080 - 0x0078)
@@ -843,46 +840,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UDelegateProperty;
-
-// Class CoreUObject.DoubleProperty
-// 0x0000 (0x0070 - 0x0070)
-class UDoubleProperty final : public UNumericProperty
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("DoubleProperty")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"DoubleProperty")
-	}
-	static class UDoubleProperty* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UDoubleProperty>();
-	}
-};
-DUMPER7_ASSERTS_UDoubleProperty;
-
-// Class CoreUObject.FloatProperty
-// 0x0000 (0x0070 - 0x0070)
-class UFloatProperty final : public UNumericProperty
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("FloatProperty")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"FloatProperty")
-	}
-	static class UFloatProperty* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UFloatProperty>();
-	}
-};
-DUMPER7_ASSERTS_UFloatProperty;
 
 // Class CoreUObject.IntProperty
 // 0x0000 (0x0070 - 0x0070)
@@ -944,6 +901,49 @@ public:
 };
 DUMPER7_ASSERTS_UInt16Property;
 
+// Class CoreUObject.PropertyWrapper
+// 0x0008 (0x0030 - 0x0028)
+class UPropertyWrapper : public UObject
+{
+public:
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PropertyWrapper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyWrapper")
+	}
+	static class UPropertyWrapper* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPropertyWrapper>();
+	}
+};
+DUMPER7_ASSERTS_UPropertyWrapper;
+
+// Class CoreUObject.MulticastDelegatePropertyWrapper
+// 0x0000 (0x0030 - 0x0030)
+class UMulticastDelegatePropertyWrapper : public UPropertyWrapper
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MulticastDelegatePropertyWrapper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MulticastDelegatePropertyWrapper")
+	}
+	static class UMulticastDelegatePropertyWrapper* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMulticastDelegatePropertyWrapper>();
+	}
+};
+DUMPER7_ASSERTS_UMulticastDelegatePropertyWrapper;
+
 // Class CoreUObject.Int64Property
 // 0x0000 (0x0070 - 0x0070)
 class UInt64Property final : public UNumericProperty
@@ -987,48 +987,48 @@ public:
 };
 DUMPER7_ASSERTS_UInterfaceProperty;
 
-// Class CoreUObject.MulticastDelegateProperty
-// 0x0008 (0x0078 - 0x0070)
-class UMulticastDelegateProperty : public UProperty
-{
-public:
-	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MulticastDelegateProperty")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MulticastDelegateProperty")
-	}
-	static class UMulticastDelegateProperty* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMulticastDelegateProperty>();
-	}
-};
-DUMPER7_ASSERTS_UMulticastDelegateProperty;
-
-// Class CoreUObject.MulticastInlineDelegateProperty
+// Class CoreUObject.LazyObjectProperty
 // 0x0000 (0x0078 - 0x0078)
-class UMulticastInlineDelegateProperty final : public UMulticastDelegateProperty
+class ULazyObjectProperty final : public UObjectPropertyBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("MulticastInlineDelegateProperty")
+		STATIC_CLASS_IMPL("LazyObjectProperty")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"MulticastInlineDelegateProperty")
+		STATIC_NAME_IMPL(L"LazyObjectProperty")
 	}
-	static class UMulticastInlineDelegateProperty* GetDefaultObj()
+	static class ULazyObjectProperty* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UMulticastInlineDelegateProperty>();
+		return GetDefaultObjImpl<ULazyObjectProperty>();
 	}
 };
-DUMPER7_ASSERTS_UMulticastInlineDelegateProperty;
+DUMPER7_ASSERTS_ULazyObjectProperty;
+
+// Class CoreUObject.MapProperty
+// 0x0028 (0x0098 - 0x0070)
+class UMapProperty final : public UProperty
+{
+public:
+	uint8                                         Pad_70[0x28];                                      // 0x0070(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MapProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapProperty")
+	}
+	static class UMapProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMapProperty>();
+	}
+};
+DUMPER7_ASSERTS_UMapProperty;
 
 // Class CoreUObject.MulticastSparseDelegateProperty
 // 0x0000 (0x0078 - 0x0078)
@@ -1136,6 +1136,49 @@ public:
 };
 DUMPER7_ASSERTS_USoftClassProperty;
 
+// Class CoreUObject.StrProperty
+// 0x0000 (0x0070 - 0x0070)
+class UStrProperty final : public UProperty
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("StrProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StrProperty")
+	}
+	static class UStrProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UStrProperty>();
+	}
+};
+DUMPER7_ASSERTS_UStrProperty;
+
+// Class CoreUObject.StructProperty
+// 0x0008 (0x0078 - 0x0070)
+class UStructProperty final : public UProperty
+{
+public:
+	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("StructProperty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StructProperty")
+	}
+	static class UStructProperty* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UStructProperty>();
+	}
+};
+DUMPER7_ASSERTS_UStructProperty;
+
 // Class CoreUObject.UInt16Property
 // 0x0000 (0x0070 - 0x0070)
 class UUInt16Property final : public UNumericProperty
@@ -1235,49 +1278,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UTextProperty;
-
-// Class CoreUObject.PropertyWrapper
-// 0x0008 (0x0030 - 0x0028)
-class UPropertyWrapper : public UObject
-{
-public:
-	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("PropertyWrapper")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"PropertyWrapper")
-	}
-	static class UPropertyWrapper* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPropertyWrapper>();
-	}
-};
-DUMPER7_ASSERTS_UPropertyWrapper;
-
-// Class CoreUObject.MulticastDelegatePropertyWrapper
-// 0x0000 (0x0030 - 0x0030)
-class UMulticastDelegatePropertyWrapper : public UPropertyWrapper
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MulticastDelegatePropertyWrapper")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MulticastDelegatePropertyWrapper")
-	}
-	static class UMulticastDelegatePropertyWrapper* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMulticastDelegatePropertyWrapper>();
-	}
-};
-DUMPER7_ASSERTS_UMulticastDelegatePropertyWrapper;
 
 // Class CoreUObject.MulticastInlineDelegatePropertyWrapper
 // 0x0000 (0x0030 - 0x0030)

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_Q_Fissioner2.CD_Q_Fissioner2_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UCD_Q_Fissioner2_C final : public UCyGameplayEffect
 {
 public:

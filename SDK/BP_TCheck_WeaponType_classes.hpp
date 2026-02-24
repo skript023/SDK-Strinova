@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TCheck_WeaponType.BP_TCheck_WeaponType_C
-// 0x0000 (0x0070 - 0x0070)
-class BP_TCheck_WeaponType::UBP_TCheck_WeaponType_C final : public UCyGATCheckWeaponSlot
+// 0x0000 (0x0090 - 0x0090)
+class BP_TCheck_WeaponType::UBP_TCheck_WeaponType_C final : public UCyGATCheckWeaponType
 {
 public:
 	static class UClass* StaticClass()

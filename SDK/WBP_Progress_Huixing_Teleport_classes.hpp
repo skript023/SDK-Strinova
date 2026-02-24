@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Progress_Huixing_Teleport.WBP_Progress_Huixing_Teleport_C
-// 0x0010 (0x0A78 - 0x0A68)
+// 0x0010 (0x0A90 - 0x0A80)
 class UWBP_Progress_Huixing_Teleport_C final : public UPMUWBuffFullScreenProgressPC
 {
 public:
-	class UImage*                                 Image_12;                                          // 0x0A68(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           ProgressBar_Buff;                                  // 0x0A70(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_12;                                          // 0x0A80(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           ProgressBar_Buff;                                  // 0x0A88(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "AugmentedReality_structs.hpp"
+#include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 
@@ -235,7 +235,7 @@ public:
 DUMPER7_ASSERTS_UARBasicLightEstimate;
 
 // Class AugmentedReality.AROriginActor
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0310 - 0x0310)
 class AAROriginActor final : public AActor
 {
 public:
@@ -384,12 +384,12 @@ public:
 DUMPER7_ASSERTS_UARSessionConfig;
 
 // Class AugmentedReality.ARSharedWorldGameMode
-// 0x0068 (0x0420 - 0x03B8)
+// 0x0068 (0x0460 - 0x03F8)
 class AARSharedWorldGameMode final : public AGameMode
 {
 public:
-	int32                                         BufferSizePerChunk;                                // 0x03B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3BC[0x64];                                     // 0x03BC(0x0064)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         BufferSizePerChunk;                                // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3FC[0x64];                                     // 0x03FC(0x0064)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class AARSharedWorldGameState* GetARSharedWorldGameState();
@@ -414,17 +414,17 @@ public:
 DUMPER7_ASSERTS_AARSharedWorldGameMode;
 
 // Class AugmentedReality.ARSharedWorldGameState
-// 0x0038 (0x0378 - 0x0340)
+// 0x0038 (0x03B8 - 0x0380)
 class AARSharedWorldGameState final : public AGameState
 {
 public:
-	TArray<uint8>                                 PreviewImageData;                                  // 0x0340(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<uint8>                                 ARWorldData;                                       // 0x0350(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewImageBytesTotal;                            // 0x0360(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ARWorldBytesTotal;                                 // 0x0364(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewImageBytesDelivered;                        // 0x0368(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ARWorldBytesDelivered;                             // 0x036C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_370[0x8];                                      // 0x0370(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<uint8>                                 PreviewImageData;                                  // 0x0380(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<uint8>                                 ARWorldData;                                       // 0x0390(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewImageBytesTotal;                            // 0x03A0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ARWorldBytesTotal;                                 // 0x03A4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewImageBytesDelivered;                        // 0x03A8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ARWorldBytesDelivered;                             // 0x03AC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3B0[0x8];                                      // 0x03B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void K2_OnARWorldMapIsReady();
@@ -446,11 +446,11 @@ public:
 DUMPER7_ASSERTS_AARSharedWorldGameState;
 
 // Class AugmentedReality.ARSharedWorldPlayerController
-// 0x0008 (0x0628 - 0x0620)
+// 0x0008 (0x0668 - 0x0660)
 class AARSharedWorldPlayerController final : public APlayerController
 {
 public:
-	uint8                                         Pad_620[0x8];                                      // 0x0620(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_660[0x8];                                      // 0x0660(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientInitSharedWorld(int32 PreviewImageSize, int32 ARWorldDataSize);
@@ -475,12 +475,12 @@ public:
 DUMPER7_ASSERTS_AARSharedWorldPlayerController;
 
 // Class AugmentedReality.ARSkyLight
-// 0x0010 (0x02F0 - 0x02E0)
+// 0x0010 (0x0330 - 0x0320)
 class AARSkyLight final : public ASkyLight
 {
 public:
-	class UAREnvironmentCaptureProbe*             CaptureProbe;                                      // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2E8[0x8];                                      // 0x02E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UAREnvironmentCaptureProbe*             CaptureProbe;                                      // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_328[0x8];                                      // 0x0328(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe);
@@ -895,31 +895,31 @@ public:
 DUMPER7_ASSERTS_UARTrackedPose;
 
 // Class AugmentedReality.ARTrackableNotifyComponent
-// 0x0150 (0x0268 - 0x0118)
+// 0x0150 (0x0278 - 0x0128)
 class UARTrackableNotifyComponent final : public UActorComponent
 {
 public:
-	TMulticastInlineDelegate<void(class UARTrackedGeometry* TrackedGeometry)> OnAddTrackedGeometry;  // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedGeometry* TrackedGeometry)> OnUpdateTrackedGeometry; // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedGeometry* TrackedGeometry)> OnRemoveTrackedGeometry; // 0x0138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARPlaneGeometry* TrackedPlane)> OnAddTrackedPlane;          // 0x0148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARPlaneGeometry* TrackedPlane)> OnUpdateTrackedPlane;       // 0x0158(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARPlaneGeometry* TrackedPlane)> OnRemoveTrackedPlane;       // 0x0168(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedPoint* TrackedPoint)> OnAddTrackedPoint;           // 0x0178(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedPoint* TrackedPoint)> OnUpdateTrackedPoint;        // 0x0188(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedPoint* TrackedPoint)> OnRemoveTrackedPoint;        // 0x0198(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedImage* TrackedImage)> OnAddTrackedImage;           // 0x01A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedImage* TrackedImage)> OnUpdateTrackedImage;        // 0x01B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedImage* TrackedImage)> OnRemoveTrackedImage;        // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARFaceGeometry* TrackedFace)> OnAddTrackedFace;             // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARFaceGeometry* TrackedFace)> OnUpdateTrackedFace;          // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARFaceGeometry* TrackedFace)> OnRemoveTrackedFace;          // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UAREnvironmentCaptureProbe* TrackedEnvProbe)> OnAddTrackedEnvProbe; // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UAREnvironmentCaptureProbe* TrackedEnvProbe)> OnUpdateTrackedEnvProbe; // 0x0218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UAREnvironmentCaptureProbe* TrackedEnvProbe)> OnRemoveTrackedEnvProbe; // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedObject* TrackedObject)> OnAddTrackedObject;        // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedObject* TrackedObject)> OnUpdateTrackedObject;     // 0x0248(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UARTrackedObject* TrackedObject)> OnRemoveTrackedObject;     // 0x0258(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedGeometry* TrackedGeometry)> OnAddTrackedGeometry;  // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedGeometry* TrackedGeometry)> OnUpdateTrackedGeometry; // 0x0138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedGeometry* TrackedGeometry)> OnRemoveTrackedGeometry; // 0x0148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARPlaneGeometry* TrackedPlane)> OnAddTrackedPlane;          // 0x0158(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARPlaneGeometry* TrackedPlane)> OnUpdateTrackedPlane;       // 0x0168(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARPlaneGeometry* TrackedPlane)> OnRemoveTrackedPlane;       // 0x0178(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedPoint* TrackedPoint)> OnAddTrackedPoint;           // 0x0188(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedPoint* TrackedPoint)> OnUpdateTrackedPoint;        // 0x0198(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedPoint* TrackedPoint)> OnRemoveTrackedPoint;        // 0x01A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedImage* TrackedImage)> OnAddTrackedImage;           // 0x01B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedImage* TrackedImage)> OnUpdateTrackedImage;        // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedImage* TrackedImage)> OnRemoveTrackedImage;        // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARFaceGeometry* TrackedFace)> OnAddTrackedFace;             // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARFaceGeometry* TrackedFace)> OnUpdateTrackedFace;          // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARFaceGeometry* TrackedFace)> OnRemoveTrackedFace;          // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UAREnvironmentCaptureProbe* TrackedEnvProbe)> OnAddTrackedEnvProbe; // 0x0218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UAREnvironmentCaptureProbe* TrackedEnvProbe)> OnUpdateTrackedEnvProbe; // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UAREnvironmentCaptureProbe* TrackedEnvProbe)> OnRemoveTrackedEnvProbe; // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedObject* TrackedObject)> OnAddTrackedObject;        // 0x0248(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedObject* TrackedObject)> OnUpdateTrackedObject;     // 0x0258(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UARTrackedObject* TrackedObject)> OnRemoveTrackedObject;     // 0x0268(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()

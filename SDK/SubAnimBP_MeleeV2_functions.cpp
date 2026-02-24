@@ -17,6 +17,25 @@
 namespace SDK
 {
 
+// Function SubAnimBP_MeleeV2.SubAnimBP_MeleeV2_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SubAnimBP_MeleeV2_AnimGraphNode_TransitionResult_51AF998947BBF7242C3CC49818CA31E0
+// (Native, Public)
+
+void USubAnimBP_MeleeV2_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SubAnimBP_MeleeV2_AnimGraphNode_TransitionResult_51AF998947BBF7242C3CC49818CA31E0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SubAnimBP_MeleeV2_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SubAnimBP_MeleeV2_AnimGraphNode_TransitionResult_51AF998947BBF7242C3CC49818CA31E0");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function SubAnimBP_MeleeV2.SubAnimBP_MeleeV2_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SubAnimBP_MeleeV2_AnimGraphNode_TransitionResult_191826864B92944DD98525A714222B7C
 // (Native, Public)
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_LifeStateComponent_Summon.BP_LifeStateComponent_Summon_C
-// 0x0000 (0x0368 - 0x0368)
+// 0x0000 (0x0378 - 0x0378)
 class UBP_LifeStateComponent_Summon_C final : public UCyLifeStateComponent
 {
 public:

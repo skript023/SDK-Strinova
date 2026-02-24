@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PickupDevourEnergy.BP_PickupDevourEnergy_C
-// 0x0010 (0x0738 - 0x0728)
+// 0x0010 (0x0778 - 0x0768)
 class BP_PickupDevourEnergy::ABP_PickupDevourEnergy_C final : public ACyPickupSphereActor
 {
 public:
-	class UCyPickupDevourEnergy*                  CyPickupDevourEnergy;                              // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPB_PickMovement_C*                     PB_PickMovement;                                   // 0x0730(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPickupDevourEnergy*                  CyPickupDevourEnergy;                              // 0x0768(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPB_PickMovement_C*                     PB_PickMovement;                                   // 0x0770(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

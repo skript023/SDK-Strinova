@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CharacterTeamOverheadPanel.WBP_CharacterTeamOverheadPanel_C
-// 0x0000 (0x1050 - 0x1050)
+// 0x0000 (0x1070 - 0x1070)
 class UWBP_CharacterTeamOverheadPanel_C final : public UPMUWCharacterOverheadPanel
 {
 public:

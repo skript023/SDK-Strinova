@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Stealth_P_Yvette.GE_Stealth_P_Yvette_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Stealth_P_Yvette_0::UGE_Stealth_P_Yvette_C final : public UCyGameplayEffect
 {
 public:

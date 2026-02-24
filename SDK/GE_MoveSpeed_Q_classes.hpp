@@ -17,24 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_MoveSpeed_Q.GE_MoveSpeed_Q_C
-// 0x0000 (0x10D8 - 0x10D8)
-class UGE_MoveSpeed_Q_C final : public UCyGameplayEffect
+// 0x0000 (0x10E0 - 0x10E0)
+class GE_MoveSpeed_Q::UGE_MoveSpeed_Q_C final : public UCyGameplayEffect
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("GE_MoveSpeed_Q_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass GE_MoveSpeed_Q.GE_MoveSpeed_Q_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"GE_MoveSpeed_Q_C")
 	}
-	static class UGE_MoveSpeed_Q_C* GetDefaultObj()
+	static class GE_MoveSpeed_Q::UGE_MoveSpeed_Q_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UGE_MoveSpeed_Q_C>();
+		return GetDefaultObjImpl<GE_MoveSpeed_Q::UGE_MoveSpeed_Q_C>();
 	}
 };
-DUMPER7_ASSERTS_UGE_MoveSpeed_Q_C;
+DUMPER7_ASSERTS_GE_MoveSpeed_Q__UGE_MoveSpeed_Q_C;
 
 }
 

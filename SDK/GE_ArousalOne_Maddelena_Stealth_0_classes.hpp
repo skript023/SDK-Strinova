@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ArousalOne_Maddelena_Stealth.GE_ArousalOne_Maddelena_Stealth_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_ArousalOne_Maddelena_Stealth_0::UGE_ArousalOne_Maddelena_Stealth_C final : public UCyGameplayEffect
 {
 public:

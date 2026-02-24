@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Character_Fissioner2.BP_Character_Fissioner2_C
-// 0x0010 (0x1DD0 - 0x1DC0)
+// 0x0010 (0x1E30 - 0x1E20)
 class ABP_Character_Fissioner2_C final : public ABP_Character_Zombie_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1DC0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_WeaponManager_Fissioner2_C*         BP_WeaponManager_Fissioner2;                       // 0x1DC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1E18(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_WeaponManager_Fissioner2_C*         BP_WeaponManager_Fissioner2;                       // 0x1E20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ReceiveBeginPlay();

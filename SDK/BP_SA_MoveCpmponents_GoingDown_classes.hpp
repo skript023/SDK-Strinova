@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_MoveCpmponents_GoingDown.BP_SA_MoveCpmponents_GoingDown_C
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05E8 - 0x05E8)
 class UBP_SA_MoveCpmponents_GoingDown_C final : public UCySAtomMoveComponents
 {
 public:

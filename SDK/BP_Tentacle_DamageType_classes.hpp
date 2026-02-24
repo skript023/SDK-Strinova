@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Tentacle_DamageType.BP_Tentacle_DamageType_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class BP_Tentacle_DamageType::UBP_Tentacle_DamageType_C final : public UPMMeleeDamageType
 {
 public:

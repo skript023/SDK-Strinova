@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RankBadge7n1_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_RankBadge7n1_C_PreConstruct;
+
 // Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.ExecuteUbergraph_WBP_RankBadge7n1
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_RankBadge7n1_C_ExecuteUbergraph_WBP_RankBadge7n1 final
@@ -40,15 +49,6 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue_15;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_RankBadge7n1_C_ExecuteUbergraph_WBP_RankBadge7n1;
-
-// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RankBadge7n1_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_RankBadge7n1_C_PreConstruct;
 
 }
 

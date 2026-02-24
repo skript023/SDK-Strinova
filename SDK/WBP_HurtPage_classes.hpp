@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_HurtPage.WBP_HurtPage_C
-// 0x0000 (0x0A70 - 0x0A70)
+// 0x0000 (0x0A88 - 0x0A88)
 class UWBP_HurtPage_C final : public UPMUWHurtPage
 {
 public:

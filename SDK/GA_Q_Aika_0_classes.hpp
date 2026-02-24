@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Q_Aika.GA_Q_Aika_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_Q_Aika_0::UGA_Q_Aika_C final : public UCyBaseAbility
 {
 public:

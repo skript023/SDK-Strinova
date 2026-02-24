@@ -17,6 +17,25 @@
 namespace SDK
 {
 
+// Function WBP_CareerRankCombo.WBP_CareerRankCombo_C.Construct
+// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
+
+void UWBP_CareerRankCombo_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CareerRankCombo_C", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function WBP_CareerRankCombo.WBP_CareerRankCombo_C.ExecuteUbergraph_WBP_CareerRankCombo
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,25 +53,6 @@ void UWBP_CareerRankCombo_C::ExecuteUbergraph_WBP_CareerRankCombo(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CareerRankCombo.WBP_CareerRankCombo_C.Construct
-// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
-
-void UWBP_CareerRankCombo_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CareerRankCombo_C", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 }

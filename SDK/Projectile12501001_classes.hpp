@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile12501001.Projectile12501001_C
-// 0x0000 (0x0AC8 - 0x0AC8)
+// 0x0000 (0x0B10 - 0x0B10)
 class AProjectile12501001_C final : public ACyProjectileBlast
 {
 public:

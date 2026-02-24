@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PMPlayerCameraManager.BP_PMPlayerCameraManager_C
-// 0x0010 (0x2A80 - 0x2A70)
+// 0x0010 (0x2AD0 - 0x2AC0)
 class ABP_PMPlayerCameraManager_C final : public APMPlayerCameraManager
 {
 public:
-	class UPMIndicatorComponent*                  PMIndicator;                                       // 0x2A70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPMIndicatorComponent*                  PMIndicator;                                       // 0x2AC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

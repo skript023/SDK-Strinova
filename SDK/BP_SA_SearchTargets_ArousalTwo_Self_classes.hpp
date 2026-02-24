@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_SA_SearchTargets_ArousalTwo_Self.BP_SA_SearchTargets_ArousalTwo_Self_C
 // 0x0000 (0x0790 - 0x0790)
-class UBP_SA_SearchTargets_ArousalTwo_Self_C final : public UCySAtomSearchTargets
+class BP_SA_SearchTargets_ArousalTwo_Self::UBP_SA_SearchTargets_ArousalTwo_Self_C final : public UCySAtomSearchTargets
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_SA_SearchTargets_ArousalTwo_Self_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_SA_SearchTargets_ArousalTwo_Self.BP_SA_SearchTargets_ArousalTwo_Self_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_SA_SearchTargets_ArousalTwo_Self_C")
 	}
-	static class UBP_SA_SearchTargets_ArousalTwo_Self_C* GetDefaultObj()
+	static class BP_SA_SearchTargets_ArousalTwo_Self::UBP_SA_SearchTargets_ArousalTwo_Self_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_SA_SearchTargets_ArousalTwo_Self_C>();
+		return GetDefaultObjImpl<BP_SA_SearchTargets_ArousalTwo_Self::UBP_SA_SearchTargets_ArousalTwo_Self_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_SA_SearchTargets_ArousalTwo_Self_C;
+DUMPER7_ASSERTS_BP_SA_SearchTargets_ArousalTwo_Self__UBP_SA_SearchTargets_ArousalTwo_Self_C;
 
 }
 

@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
+#include "GameplayAbilities_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AddArmorMax.GE_AddArmorMax_C
-// 0x0000 (0x10D8 - 0x10D8)
-class GE_AddArmorMax::UGE_AddArmorMax_C final : public UCyGameplayEffect
+// 0x0000 (0x1060 - 0x1060)
+class GE_AddArmorMax::UGE_AddArmorMax_C final : public UGameplayEffect
 {
 public:
 	static class UClass* StaticClass()

@@ -66,7 +66,7 @@ public:
 DUMPER7_ASSERTS_UAnimNotify_PlayMontageNotifyWindow;
 
 // Class AnimGraphRuntime.AnimSequencerInstance
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0280 - 0x0280)
 class UAnimSequencerInstance final : public UAnimInstance
 {
 public:

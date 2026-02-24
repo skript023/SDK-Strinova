@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TargetFilter_NotClose.BP_TargetFilter_NotClose_C
-// 0x0000 (0x00A8 - 0x00A8)
+// 0x0000 (0x00B0 - 0x00B0)
 class BP_TargetFilter_NotClose_0::UBP_TargetFilter_NotClose_C final : public UCyTargetFilterDistance
 {
 public:

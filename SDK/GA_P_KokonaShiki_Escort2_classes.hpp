@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_P_KokonaShiki_Escort2.GA_P_KokonaShiki_Escort2_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class UGA_P_KokonaShiki_Escort2_C final : public UCyBaseAbility
 {
 public:

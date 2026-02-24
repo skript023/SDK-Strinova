@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GPEM_KillEnemy.BP_GPEM_KillEnemy_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0548 - 0x0548)
 class BP_GPEM_KillEnemy::UBP_GPEM_KillEnemy_C final : public UCyGPEM_Event
 {
 public:

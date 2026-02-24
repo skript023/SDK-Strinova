@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_ReceivedAttackHitEffect_MusicWall_2.BP_SA_ReceivedAttackHitEffect_MusicWall_2_C
-// 0x0000 (0x07A0 - 0x07A0)
+// 0x0000 (0x07B0 - 0x07B0)
 class UBP_SA_ReceivedAttackHitEffect_MusicWall_2_C final : public UCySAReceivedAttackHitEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Flavia_ExtraArmorMax.GE_Flavia_ExtraArmorMax_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Flavia_ExtraArmorMax_C final : public UCyGameplayEffect
 {
 public:

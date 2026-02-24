@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SpectatorPlayerController.BP_SpectatorPlayerController_C
-// 0x0000 (0x0D68 - 0x0D68)
+// 0x0000 (0x0DA8 - 0x0DA8)
 class ABP_SpectatorPlayerController_C final : public APMSpectatorPlayerController
 {
 public:

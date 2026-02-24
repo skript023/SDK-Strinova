@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_KatanaLight_DamageType_Smite.BP_KatanaLight_DamageType_Smite_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_KatanaLight_DamageType_Smite_C final : public UBP_KatanaLight_DamageType_C
 {
 public:

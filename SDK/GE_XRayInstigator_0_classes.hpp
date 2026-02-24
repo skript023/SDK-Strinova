@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_XRayInstigator.GE_XRayInstigator_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_XRayInstigator_0::UGE_XRayInstigator_C final : public UCyGameplayEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Slowdown_BlockedBack.GE_Slowdown_BlockedBack_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Slowdown_BlockedBack_C final : public UCyGameplayEffect
 {
 public:

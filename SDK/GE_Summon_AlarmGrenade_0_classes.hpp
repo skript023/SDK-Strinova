@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Summon_AlarmGrenade.GE_Summon_AlarmGrenade_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Summon_AlarmGrenade_0::UGE_Summon_AlarmGrenade_C final : public UCyGameplayEffect
 {
 public:

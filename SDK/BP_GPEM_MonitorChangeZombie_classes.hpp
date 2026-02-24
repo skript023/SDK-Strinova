@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GPEM_MonitorChangeZombie.BP_GPEM_MonitorChangeZombie_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0548 - 0x0548)
 class UBP_GPEM_MonitorChangeZombie_C final : public UCyGPEM_GlobalEvent
 {
 public:

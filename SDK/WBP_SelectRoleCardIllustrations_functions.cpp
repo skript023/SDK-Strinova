@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_SelectRoleCardIllustrations.WBP_SelectRoleCardIllustrations_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SelectRoleCardIllustrations_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectRoleCardIllustrations_C", "PreConstruct");
-
-	Params::WBP_SelectRoleCardIllustrations_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_SelectRoleCardIllustrations.WBP_SelectRoleCardIllustrations_C.ExecuteUbergraph_WBP_SelectRoleCardIllustrations
 // (Final, UbergraphFunction)
 // Parameters:
@@ -52,6 +32,26 @@ void UWBP_SelectRoleCardIllustrations_C::ExecuteUbergraph_WBP_SelectRoleCardIllu
 	Params::WBP_SelectRoleCardIllustrations_C_ExecuteUbergraph_WBP_SelectRoleCardIllustrations Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SelectRoleCardIllustrations.WBP_SelectRoleCardIllustrations_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_SelectRoleCardIllustrations_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SelectRoleCardIllustrations_C", "PreConstruct");
+
+	Params::WBP_SelectRoleCardIllustrations_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

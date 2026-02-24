@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_CheckBlock2D.BP_CheckBlock2D_C
-// 0x0000 (0x0060 - 0x0060)
-class BP_CheckBlock2D_0::UBP_CheckBlock2D_C final : public UCyCheckBlock2D
+// 0x0000 (0x0068 - 0x0068)
+class BP_CheckBlock2D_0::UBP_CheckBlock2D_C final : public UCyCheckBlockBuff
 {
 public:
 	static class UClass* StaticClass()

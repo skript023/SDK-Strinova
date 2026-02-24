@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_InteractionPanel.WBP_InteractionPanel_C
-// 0x0008 (0x0C98 - 0x0C90)
+// 0x0008 (0x0CB0 - 0x0CA8)
 class UWBP_InteractionPanel_C final : public UPMUWInteractionPanelPC
 {
 public:
-	class UWBP_InGameKeyMappings_C*               KeyMappingPanel_Q_1;                               // 0x0C90(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InGameKeyMappings_C*               KeyMappingPanel_Q_1;                               // 0x0CA8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

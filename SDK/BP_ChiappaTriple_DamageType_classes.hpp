@@ -17,24 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ChiappaTriple_DamageType.BP_ChiappaTriple_DamageType_C
-// 0x0000 (0x05B0 - 0x05B0)
-class UBP_ChiappaTriple_DamageType_C final : public UPMDamageType
+// 0x0000 (0x0540 - 0x0540)
+class BP_ChiappaTriple_DamageType::UBP_ChiappaTriple_DamageType_C final : public UPMDamageType
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_ChiappaTriple_DamageType_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_ChiappaTriple_DamageType.BP_ChiappaTriple_DamageType_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_ChiappaTriple_DamageType_C")
 	}
-	static class UBP_ChiappaTriple_DamageType_C* GetDefaultObj()
+	static class BP_ChiappaTriple_DamageType::UBP_ChiappaTriple_DamageType_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_ChiappaTriple_DamageType_C>();
+		return GetDefaultObjImpl<BP_ChiappaTriple_DamageType::UBP_ChiappaTriple_DamageType_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_ChiappaTriple_DamageType_C;
+DUMPER7_ASSERTS_BP_ChiappaTriple_DamageType__UBP_ChiappaTriple_DamageType_C;
 
 }
 

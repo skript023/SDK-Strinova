@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DecalActor.BP_DecalActor_C
-// 0x0018 (0x03A0 - 0x0388)
+// 0x0018 (0x03E0 - 0x03C8)
 class ABP_DecalActor_C final : public ACyGraffitiActor
 {
 public:
-	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyDecalSkinComponent*                  CyDecalSkin;                                       // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem;                                    // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyDecalSkinComponent*                  CyDecalSkin;                                       // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

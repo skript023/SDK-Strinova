@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_GAA_SummonGotoFourth_E_Yvette.BP_GAA_SummonGotoFourth_E_Yvette_C
 // 0x0000 (0x0250 - 0x0250)
-class UBP_GAA_SummonGotoFourth_E_Yvette_C final : public UCyGAAtomSummonGotoState
+class BP_GAA_SummonGotoFourth_E_Yvette::UBP_GAA_SummonGotoFourth_E_Yvette_C final : public UCyGAAtomSummonGotoState
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_GAA_SummonGotoFourth_E_Yvette_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_GAA_SummonGotoFourth_E_Yvette.BP_GAA_SummonGotoFourth_E_Yvette_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_GAA_SummonGotoFourth_E_Yvette_C")
 	}
-	static class UBP_GAA_SummonGotoFourth_E_Yvette_C* GetDefaultObj()
+	static class BP_GAA_SummonGotoFourth_E_Yvette::UBP_GAA_SummonGotoFourth_E_Yvette_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_GAA_SummonGotoFourth_E_Yvette_C>();
+		return GetDefaultObjImpl<BP_GAA_SummonGotoFourth_E_Yvette::UBP_GAA_SummonGotoFourth_E_Yvette_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_GAA_SummonGotoFourth_E_Yvette_C;
+DUMPER7_ASSERTS_BP_GAA_SummonGotoFourth_E_Yvette__UBP_GAA_SummonGotoFourth_E_Yvette_C;
 
 }
 

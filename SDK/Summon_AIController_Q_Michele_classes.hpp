@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summon_AIController_Q_Michele.Summon_AIController_Q_Michele_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x0420 - 0x0420)
 class Summon_AIController_Q_Michele::ASummon_AIController_Q_Michele_C final : public ACyBehaviorAIController
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_LogReviewPage.WBP_LogReviewPage_C
-// 0x0000 (0x08D8 - 0x08D8)
+// 0x0000 (0x08F0 - 0x08F0)
 class UWBP_LogReviewPage_C final : public UCyLogReviewPage
 {
 public:

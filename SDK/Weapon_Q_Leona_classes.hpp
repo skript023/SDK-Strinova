@@ -17,14 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Q_Leona.Weapon_Q_Leona_C
-// 0x0020 (0x11B0 - 0x1190)
-class AWeapon_Q_Leona_C final : public ACyWeaponThrow
+// 0x0020 (0x1280 - 0x1260)
+class AWeapon_Q_Leona_C final : public ACyWeaponQuickThrow
 {
 public:
-	uint8                                         Pad_1188[0x8];                                     // 0x1188(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkComponent*                           Ak;                                                // 0x1190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyRecordBoolComponent*                 CyRecordBool;                                      // 0x1198(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x11A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x1260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRecordBoolComponent*                 CyRecordBool;                                      // 0x1268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x1270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

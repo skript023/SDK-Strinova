@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_Kanami_Vertigo_CD.GE_X_Kanami_Vertigo_CD_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_Kanami_Vertigo_CD::UGE_X_Kanami_Vertigo_CD_C final : public UCyGameplayEffect
 {
 public:

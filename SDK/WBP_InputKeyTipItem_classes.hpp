@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_InputKeyTipItem.WBP_InputKeyTipItem_C
-// 0x0008 (0x08F8 - 0x08F0)
+// 0x0008 (0x0910 - 0x0908)
 class UWBP_InputKeyTipItem_C final : public UCyUWInputKeyTipItem
 {
 public:
-	class UImage*                                 KeyBackground;                                     // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 KeyBackground;                                     // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

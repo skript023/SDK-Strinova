@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_SelectRoleGridPanel.WBP_SelectRoleGridPanel_C.ExecuteUbergraph_WBP_SelectRoleGridPanel
-// (Final, UbergraphFunction)
+// Function WBP_SelectRoleGridPanel.WBP_SelectRoleGridPanel_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_SelectRoleGridPanel_C::ExecuteUbergraph_WBP_SelectRoleGridPanel(int32 EntryPoint)
+void UWBP_SelectRoleGridPanel_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectRoleGridPanel_C", "ExecuteUbergraph_WBP_SelectRoleGridPanel");
+		Func = Class->GetFunction("WBP_SelectRoleGridPanel_C", "PreConstruct");
 
-	Params::WBP_SelectRoleGridPanel_C_ExecuteUbergraph_WBP_SelectRoleGridPanel Parms{};
+	Params::WBP_SelectRoleGridPanel_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -56,21 +56,21 @@ void UWBP_SelectRoleGridPanel_C::Construct()
 }
 
 
-// Function WBP_SelectRoleGridPanel.WBP_SelectRoleGridPanel_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_SelectRoleGridPanel.WBP_SelectRoleGridPanel_C.ExecuteUbergraph_WBP_SelectRoleGridPanel
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SelectRoleGridPanel_C::PreConstruct(bool IsDesignTime)
+void UWBP_SelectRoleGridPanel_C::ExecuteUbergraph_WBP_SelectRoleGridPanel(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectRoleGridPanel_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_SelectRoleGridPanel_C", "ExecuteUbergraph_WBP_SelectRoleGridPanel");
 
-	Params::WBP_SelectRoleGridPanel_C_PreConstruct Parms{};
+	Params::WBP_SelectRoleGridPanel_C_ExecuteUbergraph_WBP_SelectRoleGridPanel Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

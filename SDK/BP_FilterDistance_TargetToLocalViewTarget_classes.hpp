@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FilterDistance_TargetToLocalViewTarget.BP_FilterDistance_TargetToLocalViewTarget_C
-// 0x0000 (0x00A8 - 0x00A8)
+// 0x0000 (0x00B0 - 0x00B0)
 class BP_FilterDistance_TargetToLocalViewTarget::UBP_FilterDistance_TargetToLocalViewTarget_C final : public UCyTargetFilterDistance
 {
 public:

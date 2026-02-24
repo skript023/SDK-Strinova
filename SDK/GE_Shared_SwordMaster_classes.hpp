@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Shared_SwordMaster.GE_Shared_SwordMaster_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Shared_SwordMaster_C final : public UCyGameplayEffect
 {
 public:

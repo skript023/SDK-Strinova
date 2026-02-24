@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Damage_Yugiri.GE_Q_Damage_Yugiri_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Q_Damage_Yugiri_C final : public UCyGameplayEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TargetDetectorSphere_OverlapTargets_XRay_X_Meredith.BP_TargetDetectorSphere_OverlapTargets_XRay_X_Meredith_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class BP_TargetDetectorSphere_OverlapTargets_XRay_X_Meredith_0::UBP_TargetDetectorSphere_OverlapTargets_XRay_X_Meredith_C final : public UCyTargetDetectorSphere
 {
 public:

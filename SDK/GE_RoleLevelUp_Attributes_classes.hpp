@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_RoleLevelUp_Attributes.GE_RoleLevelUp_Attributes_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_RoleLevelUp_Attributes_C final : public UCyGameplayEffect
 {
 public:

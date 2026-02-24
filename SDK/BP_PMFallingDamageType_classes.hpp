@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PMFallingDamageType.BP_PMFallingDamageType_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_PMFallingDamageType_C final : public UPMFallingDamageType
 {
 public:

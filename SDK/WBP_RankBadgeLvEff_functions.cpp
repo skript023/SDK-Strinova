@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_RankBadgeLvEff.WBP_RankBadgeLvEff_C.ExecuteUbergraph_WBP_RankBadgeLvEff
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_RankBadgeLvEff.WBP_RankBadgeLvEff_C.SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_1
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RankBadgeLvEff_C::ExecuteUbergraph_WBP_RankBadgeLvEff(int32 EntryPoint)
+void UWBP_RankBadgeLvEff_C::SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_1()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankBadgeLvEff_C", "ExecuteUbergraph_WBP_RankBadgeLvEff");
-
-	Params::WBP_RankBadgeLvEff_C_ExecuteUbergraph_WBP_RankBadgeLvEff Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RankBadgeLvEff.WBP_RankBadgeLvEff_C.ChangeLevel
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_RankBadgeLvEff_C::ChangeLevel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankBadgeLvEff_C", "ChangeLevel");
+		Func = Class->GetFunction("WBP_RankBadgeLvEff_C", "SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,17 +45,37 @@ void UWBP_RankBadgeLvEff_C::SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_0()
 }
 
 
-// Function WBP_RankBadgeLvEff.WBP_RankBadgeLvEff_C.SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_1
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_RankBadgeLvEff.WBP_RankBadgeLvEff_C.ChangeLevel
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_RankBadgeLvEff_C::SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_1()
+void UWBP_RankBadgeLvEff_C::ChangeLevel()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankBadgeLvEff_C", "SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_1");
+		Func = Class->GetFunction("WBP_RankBadgeLvEff_C", "ChangeLevel");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RankBadgeLvEff.WBP_RankBadgeLvEff_C.ExecuteUbergraph_WBP_RankBadgeLvEff
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RankBadgeLvEff_C::ExecuteUbergraph_WBP_RankBadgeLvEff(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RankBadgeLvEff_C", "ExecuteUbergraph_WBP_RankBadgeLvEff");
+
+	Params::WBP_RankBadgeLvEff_C_ExecuteUbergraph_WBP_RankBadgeLvEff Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

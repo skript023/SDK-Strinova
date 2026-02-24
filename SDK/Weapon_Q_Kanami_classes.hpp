@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Q_Kanami.Weapon_Q_Kanami_C
-// 0x0010 (0x11A0 - 0x1190)
+// 0x0010 (0x1270 - 0x1260)
 class AWeapon_Q_Kanami_C final : public ACyWeaponQuickThrow
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1190(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ReceiveTick(float DeltaSeconds);

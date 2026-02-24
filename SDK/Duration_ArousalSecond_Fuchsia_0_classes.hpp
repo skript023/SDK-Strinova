@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Duration_ArousalSecond_Fuchsia.Duration_ArousalSecond_Fuchsia_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class Duration_ArousalSecond_Fuchsia_0::UDuration_ArousalSecond_Fuchsia_C final : public UCyGameplayEffect
 {
 public:

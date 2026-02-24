@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GEM_Event_OnBeforeRestartPlayer.BP_GEM_Event_OnBeforeRestartPlayer_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0548 - 0x0548)
 class UBP_GEM_Event_OnBeforeRestartPlayer_C final : public UCyGPEM_Event
 {
 public:

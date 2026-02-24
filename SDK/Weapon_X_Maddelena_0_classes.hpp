@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_X_Maddelena.Weapon_X_Maddelena_C
-// 0x0010 (0x11D0 - 0x11C0)
+// 0x0010 (0x12A0 - 0x1290)
 class Weapon_X_Maddelena_0::AWeapon_X_Maddelena_C final : public ACyWeaponRifle
 {
 public:
-	class UCySkinComponent*                       CySkin;                                            // 0x11C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

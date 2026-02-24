@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_E_Chiyo.Weapon_E_Chiyo_C
-// 0x0000 (0x1190 - 0x1190)
+// 0x0000 (0x1260 - 0x1260)
 class AWeapon_E_Chiyo_C final : public ACyWeaponBow
 {
 public:

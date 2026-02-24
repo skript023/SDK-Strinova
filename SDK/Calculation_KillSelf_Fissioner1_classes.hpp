@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Calculation_KillSelf_Fissioner1.Calculation_KillSelf_Fissioner1_C
-// 0x0000 (0x0130 - 0x0130)
+// 0x0000 (0x0258 - 0x0258)
 class UCalculation_KillSelf_Fissioner1_C final : public UCyCalculationWithAttributes
 {
 public:

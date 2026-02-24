@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Q_Maddelena.Weapon_Q_Maddelena_C
-// 0x0010 (0x11D0 - 0x11C0)
+// 0x0010 (0x12A0 - 0x1290)
 class Weapon_Q_Maddelena::AWeapon_Q_Maddelena_C final : public ACyWeaponRifle
 {
 public:
-	class UCySkinComponent*                       CySkin;                                            // 0x11C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x11C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x1298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

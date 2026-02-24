@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Damage_KnifeHitTarget_Q_Mara.GE_Damage_KnifeHitTarget_Q_Mara_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Damage_KnifeHitTarget_Q_Mara_C final : public UCyGameplayEffect
 {
 public:

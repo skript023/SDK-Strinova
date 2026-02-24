@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_EnemiesDetectorSphere_Q_Fissioner2.BP_EnemiesDetectorSphere_Q_Fissioner2_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class UBP_EnemiesDetectorSphere_Q_Fissioner2_C final : public UCyTargetDetectorSphere
 {
 public:

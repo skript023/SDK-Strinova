@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_XRay_ArousalOne_Kanami.GE_XRay_ArousalOne_Kanami_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_XRay_ArousalOne_Kanami::UGE_XRay_ArousalOne_Kanami_C final : public UCyGameplayEffect
 {
 public:

@@ -17,25 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_CardPanel.WBP_CardPanel_C.Construct
-// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
-
-void UWBP_CardPanel_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CardPanel_C", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function WBP_CardPanel.WBP_CardPanel_C.ExecuteUbergraph_WBP_CardPanel
 // (Final, UbergraphFunction)
 // Parameters:
@@ -53,6 +34,25 @@ void UWBP_CardPanel_C::ExecuteUbergraph_WBP_CardPanel(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CardPanel.WBP_CardPanel_C.Construct
+// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
+
+void UWBP_CardPanel_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CardPanel_C", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 }

@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_ChiappaTriple_CameraShake.BP_ChiappaTriple_CameraShake_C
 // 0x0000 (0x0160 - 0x0160)
-class UBP_ChiappaTriple_CameraShake_C final : public UCameraShake
+class BP_ChiappaTriple_CameraShake::UBP_ChiappaTriple_CameraShake_C final : public UCameraShake
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_ChiappaTriple_CameraShake_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_ChiappaTriple_CameraShake.BP_ChiappaTriple_CameraShake_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_ChiappaTriple_CameraShake_C")
 	}
-	static class UBP_ChiappaTriple_CameraShake_C* GetDefaultObj()
+	static class BP_ChiappaTriple_CameraShake::UBP_ChiappaTriple_CameraShake_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_ChiappaTriple_CameraShake_C>();
+		return GetDefaultObjImpl<BP_ChiappaTriple_CameraShake::UBP_ChiappaTriple_CameraShake_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_ChiappaTriple_CameraShake_C;
+DUMPER7_ASSERTS_BP_ChiappaTriple_CameraShake__UBP_ChiappaTriple_CameraShake_C;
 
 }
 

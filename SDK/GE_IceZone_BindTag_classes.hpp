@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_IceZone_BindTag.GE_IceZone_BindTag_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_IceZone_BindTag::UGE_IceZone_BindTag_C final : public UCyGameplayEffect
 {
 public:

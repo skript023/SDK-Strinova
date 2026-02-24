@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_Q_Yvette_Control.CD_Q_Yvette_Control_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class CD_Q_Yvette_Control::UCD_Q_Yvette_Control_C final : public UCyGameplayEffect
 {
 public:

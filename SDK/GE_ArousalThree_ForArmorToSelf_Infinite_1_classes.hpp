@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ArousalThree_ForArmorToSelf_Infinite.GE_ArousalThree_ForArmorToSelf_Infinite_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_ArousalThree_ForArmorToSelf_Infinite_1::UGE_ArousalThree_ForArmorToSelf_Infinite_C final : public UCyGameplayEffect
 {
 public:

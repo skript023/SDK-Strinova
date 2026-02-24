@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_E_Ming.BP_DamageType_E_Ming_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class BP_DamageType_E_Ming::UBP_DamageType_E_Ming_C final : public UPMDamageType
 {
 public:

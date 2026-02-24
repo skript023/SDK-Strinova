@@ -10,363 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "RuntimeMeshComponent_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "RuntimeMeshComponent_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddIndex
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_AddIndex final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NewIndex;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_AddIndex;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddTriangle
-// 0x0018 (0x0018 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_AddTriangle final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index0;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index1;                                            // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index2;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_AddTriangle;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddVertex
-// 0x0050 (0x0050 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_AddVertex final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                InPosition;                                        // 0x0008(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Normal;                                            // 0x0014(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRuntimeMeshTangent                    Tangent;                                           // 0x0020(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              UV0;                                               // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color;                                             // 0x0038(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0048(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_AddVertex;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.EmptyIndices
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_EmptyIndices final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Slack;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_EmptyIndices;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.EmptyVertices
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_EmptyVertices final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Slack;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_EmptyVertices;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetColor
-// 0x0020 (0x0020 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_GetColor final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ReturnValue;                                       // 0x000C(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetColor;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetIndex
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_GetIndex final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetIndex;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetNormal
-// 0x0020 (0x0020 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_GetNormal final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector4                               ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetNormal;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetPosition
-// 0x0018 (0x0018 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_GetPosition final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ReturnValue;                                       // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetPosition;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetTangent
-// 0x0018 (0x0018 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_GetTangent final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ReturnValue;                                       // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetTangent;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetUV
-// 0x0018 (0x0018 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_GetUV final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Channel;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetUV;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsReadonly
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_IsReadonly final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_IsReadonly;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsing32BitIndices
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_IsUsing32BitIndices final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_IsUsing32BitIndices;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsingHighPrecisionTangents
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionTangents final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionTangents;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsingHighPrecisionUVs
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionUVs final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionUVs;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumIndices
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_NumIndices final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_NumIndices;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumUVChannels
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_NumUVChannels final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_NumUVChannels;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumVertices
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_NumVertices final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_NumVertices;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetColor
-// 0x0020 (0x0020 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetColor final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Value;                                             // 0x000C(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetColor;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetIndex
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetIndex final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Value;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetIndex;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNormal
-// 0x0030 (0x0030 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetNormal final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector4                               Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24[0xC];                                       // 0x0024(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetNormal;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNormalTangent
-// 0x0030 (0x0030 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetNormalTangent final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Normal;                                            // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRuntimeMeshTangent                    Tangent;                                           // 0x0018(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetNormalTangent;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNumIndices
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetNumIndices final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NewNum;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetNumIndices;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNumVertices
-// 0x0010 (0x0010 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetNumVertices final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NewNum;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetNumVertices;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetPosition
-// 0x0020 (0x0020 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetPosition final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Value;                                             // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetPosition;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetTangent
-// 0x0020 (0x0020 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetTangent final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRuntimeMeshTangent                    Value;                                             // 0x000C(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetTangent;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetTangents
-// 0x0038 (0x0038 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetTangents final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                TangentX;                                          // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                TangentY;                                          // 0x0018(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                TangentZ;                                          // 0x0024(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetTangents;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetUV
-// 0x0020 (0x0020 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetUV final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Value;                                             // 0x000C(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Channel;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetUV;
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetVertex
-// 0x0050 (0x0050 - 0x0000)
-struct RuntimeBlueprintMeshBuilder_SetVertex final
-{
-public:
-	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                InPosition;                                        // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Normal;                                            // 0x0018(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRuntimeMeshTangent                    Tangent;                                           // 0x0024(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              UV0;                                               // 0x0034(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color;                                             // 0x003C(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x004C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetVertex;
 
 // Function RuntimeMeshComponent.RuntimeMesh.AddCollisionBox
 // 0x0028 (0x0028 - 0x0000)
@@ -879,6 +528,357 @@ public:
 	ERuntimeMeshMobility                          NewMobility;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_RuntimeMeshActor_SetRuntimeMeshMobility;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddIndex
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_AddIndex final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NewIndex;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_AddIndex;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddTriangle
+// 0x0018 (0x0018 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_AddTriangle final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index0;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index1;                                            // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index2;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_AddTriangle;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddVertex
+// 0x0050 (0x0050 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_AddVertex final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                InPosition;                                        // 0x0008(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Normal;                                            // 0x0014(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRuntimeMeshTangent                    Tangent;                                           // 0x0020(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              UV0;                                               // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color;                                             // 0x0038(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0048(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_AddVertex;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.EmptyIndices
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_EmptyIndices final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Slack;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_EmptyIndices;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.EmptyVertices
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_EmptyVertices final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Slack;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_EmptyVertices;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetColor
+// 0x0020 (0x0020 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_GetColor final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ReturnValue;                                       // 0x000C(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetColor;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetIndex
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_GetIndex final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetIndex;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetNormal
+// 0x0020 (0x0020 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_GetNormal final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector4                               ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetNormal;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetPosition
+// 0x0018 (0x0018 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_GetPosition final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetPosition;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetTangent
+// 0x0018 (0x0018 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_GetTangent final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetTangent;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetUV
+// 0x0018 (0x0018 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_GetUV final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Channel;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_GetUV;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsReadonly
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_IsReadonly final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_IsReadonly;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsing32BitIndices
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_IsUsing32BitIndices final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_IsUsing32BitIndices;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsingHighPrecisionTangents
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionTangents final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionTangents;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsingHighPrecisionUVs
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionUVs final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionUVs;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumIndices
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_NumIndices final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_NumIndices;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumUVChannels
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_NumUVChannels final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_NumUVChannels;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumVertices
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_NumVertices final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_NumVertices;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetColor
+// 0x0020 (0x0020 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetColor final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Value;                                             // 0x000C(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetColor;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetIndex
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetIndex final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Value;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetIndex;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNormal
+// 0x0030 (0x0030 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetNormal final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector4                               Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0xC];                                       // 0x0024(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetNormal;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNormalTangent
+// 0x0030 (0x0030 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetNormalTangent final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Normal;                                            // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRuntimeMeshTangent                    Tangent;                                           // 0x0018(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetNormalTangent;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNumIndices
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetNumIndices final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NewNum;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetNumIndices;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNumVertices
+// 0x0010 (0x0010 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetNumVertices final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NewNum;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetNumVertices;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetPosition
+// 0x0020 (0x0020 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetPosition final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Value;                                             // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetPosition;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetTangent
+// 0x0020 (0x0020 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetTangent final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRuntimeMeshTangent                    Value;                                             // 0x000C(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetTangent;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetTangents
+// 0x0038 (0x0038 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetTangents final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                TangentX;                                          // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                TangentY;                                          // 0x0018(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                TangentZ;                                          // 0x0024(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetTangents;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetUV
+// 0x0020 (0x0020 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetUV final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Value;                                             // 0x000C(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Channel;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetUV;
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetVertex
+// 0x0050 (0x0050 - 0x0000)
+struct RuntimeBlueprintMeshBuilder_SetVertex final
+{
+public:
+	class URuntimeBlueprintMeshBuilder*           OutMeshBuilder;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                InPosition;                                        // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Normal;                                            // 0x0018(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRuntimeMeshTangent                    Tangent;                                           // 0x0024(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              UV0;                                               // 0x0034(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color;                                             // 0x003C(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x004C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RuntimeBlueprintMeshBuilder_SetVertex;
 
 // Function RuntimeMeshComponent.RuntimeMeshBuilderFunctions.MakeRuntimeMeshBuilder
 // 0x0018 (0x0018 - 0x0000)

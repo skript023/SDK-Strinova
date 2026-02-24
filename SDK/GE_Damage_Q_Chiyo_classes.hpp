@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Damage_Q_Chiyo.GE_Damage_Q_Chiyo_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Damage_Q_Chiyo_C final : public UCyGameplayEffect
 {
 public:

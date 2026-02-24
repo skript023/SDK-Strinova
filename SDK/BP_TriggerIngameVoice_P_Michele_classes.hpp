@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_TriggerIngameVoice_P_Michele.BP_TriggerIngameVoice_P_Michele_C
 // 0x0000 (0x0248 - 0x0248)
-class BP_TriggerIngameVoice_P_Michele::UBP_TriggerIngameVoice_P_Michele_C final : public UCyGATriggerIngameVoice
+class UBP_TriggerIngameVoice_P_Michele_C final : public UCyGATriggerIngameVoice
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_TriggerIngameVoice_P_Michele.BP_TriggerIngameVoice_P_Michele_C")
+		BP_STATIC_CLASS_IMPL("BP_TriggerIngameVoice_P_Michele_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_TriggerIngameVoice_P_Michele_C")
 	}
-	static class BP_TriggerIngameVoice_P_Michele::UBP_TriggerIngameVoice_P_Michele_C* GetDefaultObj()
+	static class UBP_TriggerIngameVoice_P_Michele_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_TriggerIngameVoice_P_Michele::UBP_TriggerIngameVoice_P_Michele_C>();
+		return GetDefaultObjImpl<UBP_TriggerIngameVoice_P_Michele_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_TriggerIngameVoice_P_Michele__UBP_TriggerIngameVoice_P_Michele_C;
+DUMPER7_ASSERTS_UBP_TriggerIngameVoice_P_Michele_C;
 
 }
 

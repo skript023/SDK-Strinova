@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Trigger_AddEffects.BP_Trigger_AddEffects_C
-// 0x0000 (0x0258 - 0x0258)
-class BP_Trigger_AddEffects::UBP_Trigger_AddEffects_C final : public UCyGATriggerAddEffectsToActuator
+// 0x0000 (0x0268 - 0x0268)
+class BP_Trigger_AddEffects::UBP_Trigger_AddEffects_C final : public UCyGATriggerAddEffects
 {
 public:
 	static class UClass* StaticClass()

@@ -47,8 +47,8 @@ public:
 	TSoftClassPtr<class UClass>                   MedalsWidgetClass;                                 // 0x0660(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_WBP_CardPanel(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

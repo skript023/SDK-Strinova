@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // Class MagicLeapSharedWorld.MagicLeapSharedWorldGameMode
-// 0x00D0 (0x0488 - 0x03B8)
+// 0x00D0 (0x04C8 - 0x03F8)
 class AMagicLeapSharedWorldGameMode final : public AGameMode
 {
 public:
-	struct FMagicLeapSharedWorldSharedData        SharedWorldData;                                   // 0x03B8(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnNewLocalDataFromClients;                         // 0x03C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	float                                         PinSelectionConfidenceThreshold;                   // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3DC[0xA4];                                     // 0x03DC(0x00A4)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMagicLeapSharedWorldPlayerController*  ChosenOne;                                         // 0x0480(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FMagicLeapSharedWorldSharedData        SharedWorldData;                                   // 0x03F8(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnNewLocalDataFromClients;                         // 0x0408(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	float                                         PinSelectionConfidenceThreshold;                   // 0x0418(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_41C[0xA4];                                     // 0x041C(0x00A4)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMagicLeapSharedWorldPlayerController*  ChosenOne;                                         // 0x04C0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	void DetermineSharedWorldData(struct FMagicLeapSharedWorldSharedData* NewSharedWorldData);
@@ -50,14 +50,14 @@ public:
 DUMPER7_ASSERTS_AMagicLeapSharedWorldGameMode;
 
 // Class MagicLeapSharedWorld.MagicLeapSharedWorldGameState
-// 0x0040 (0x0380 - 0x0340)
+// 0x0040 (0x03C0 - 0x0380)
 class AMagicLeapSharedWorldGameState final : public AGameState
 {
 public:
-	struct FMagicLeapSharedWorldSharedData        SharedWorldData;                                   // 0x0340(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
-	struct FMagicLeapSharedWorldAlignmentTransforms AlignmentTransforms;                             // 0x0350(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSharedWorldDataUpdated;                          // 0x0360(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnAlignmentTransformsUpdated;                      // 0x0370(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FMagicLeapSharedWorldSharedData        SharedWorldData;                                   // 0x0380(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
+	struct FMagicLeapSharedWorldAlignmentTransforms AlignmentTransforms;                             // 0x0390(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSharedWorldDataUpdated;                          // 0x03A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAlignmentTransformsUpdated;                      // 0x03B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	void OnReplicate_AlignmentTransforms();
@@ -82,11 +82,11 @@ public:
 DUMPER7_ASSERTS_AMagicLeapSharedWorldGameState;
 
 // Class MagicLeapSharedWorld.MagicLeapSharedWorldPlayerController
-// 0x0018 (0x0638 - 0x0620)
+// 0x0018 (0x0678 - 0x0660)
 class AMagicLeapSharedWorldPlayerController final : public APlayerController
 {
 public:
-	uint8                                         Pad_620[0x18];                                     // 0x0620(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_660[0x18];                                     // 0x0660(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientMarkReadyForSendingLocalData();

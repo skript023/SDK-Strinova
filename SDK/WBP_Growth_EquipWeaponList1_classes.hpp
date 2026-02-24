@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Growth_EquipWeaponList1.WBP_Growth_EquipWeaponList1_C
-// 0x0018 (0x08D8 - 0x08C0)
+// 0x0018 (0x08F0 - 0x08D8)
 class UWBP_Growth_EquipWeaponList1_C final : public UPMUserWidget
 {
 public:
-	class UWidgetAnimation*                       Presse;                                            // 0x08C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Hover;                                             // 0x08C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UPMListView*                            WeaponList;                                        // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Presse;                                            // 0x08D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Hover;                                             // 0x08E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UPMListView*                            WeaponList;                                        // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

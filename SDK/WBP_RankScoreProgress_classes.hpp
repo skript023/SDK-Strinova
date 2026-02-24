@@ -35,8 +35,8 @@ public:
 	struct FSlateColor                            TextColor;                                         // 0x0618(0x0028)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_WBP_RankScoreProgress(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_RankScoreProgress(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

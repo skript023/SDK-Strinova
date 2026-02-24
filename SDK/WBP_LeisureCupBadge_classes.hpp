@@ -72,8 +72,8 @@ public:
 	float                                         BottomPadding;                                     // 0x0724(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_WBP_LeisureCupBadge(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

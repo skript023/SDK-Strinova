@@ -14,33 +14,6 @@
 namespace SDK::Params
 {
 
-// Function VariantManagerContent.PropertyValue.GetFullDisplayString
-// 0x0010 (0x0010 - 0x0000)
-struct PropertyValue_GetFullDisplayString final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PropertyValue_GetFullDisplayString;
-
-// Function VariantManagerContent.PropertyValue.GetPropertyTooltip
-// 0x0018 (0x0018 - 0x0000)
-struct PropertyValue_GetPropertyTooltip final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PropertyValue_GetPropertyTooltip;
-
-// Function VariantManagerContent.PropertyValue.HasRecordedData
-// 0x0001 (0x0001 - 0x0000)
-struct PropertyValue_HasRecordedData final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PropertyValue_HasRecordedData;
-
 // Function VariantManagerContent.LevelVariantSets.GetNumVariantSets
 // 0x0004 (0x0004 - 0x0000)
 struct LevelVariantSets_GetNumVariantSets final
@@ -70,6 +43,33 @@ public:
 	class UVariantSet*                            ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LevelVariantSets_GetVariantSetByName;
+
+// Function VariantManagerContent.PropertyValue.GetFullDisplayString
+// 0x0010 (0x0010 - 0x0000)
+struct PropertyValue_GetFullDisplayString final
+{
+public:
+	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PropertyValue_GetFullDisplayString;
+
+// Function VariantManagerContent.PropertyValue.GetPropertyTooltip
+// 0x0018 (0x0018 - 0x0000)
+struct PropertyValue_GetPropertyTooltip final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PropertyValue_GetPropertyTooltip;
+
+// Function VariantManagerContent.PropertyValue.HasRecordedData
+// 0x0001 (0x0001 - 0x0000)
+struct PropertyValue_HasRecordedData final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PropertyValue_HasRecordedData;
 
 // Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets
 // 0x0010 (0x0010 - 0x0000)

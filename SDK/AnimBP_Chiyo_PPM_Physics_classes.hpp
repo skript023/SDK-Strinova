@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "KawaiiPhysics_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "KawaiiPhysics_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 
 
@@ -20,19 +20,19 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass AnimBP_Chiyo_PPM_Physics.AnimBP_Chiyo_PPM_Physics_C
-// 0x07B0 (0x0A80 - 0x02D0)
+// 0x07B0 (0x0A30 - 0x0280)
 class UAnimBP_Chiyo_PPM_Physics_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2C8[0x8];                                      // 0x02C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x02D8(0x0098)()
-	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics;                       // 0x0370(0x0210)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0580(0x0020)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x05A0(0x0068)()
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0608(0x0030)()
-	uint8                                         Pad_638[0x8];                                      // 0x0638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics;                        // 0x0640(0x0440)()
+	uint8                                         Pad_278[0x8];                                      // 0x0278(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x0288(0x0098)()
+	struct FAnimNode_KawaiiPhysics                AnimGraphNode_KawaiiPhysics;                       // 0x0320(0x0210)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0530(0x0020)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0550(0x0068)()
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x05B8(0x0030)()
+	uint8                                         Pad_5E8[0x8];                                      // 0x05E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnimNode_AnimDynamics                 AnimGraphNode_AnimDynamics;                        // 0x05F0(0x0440)()
 
 public:
 	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);

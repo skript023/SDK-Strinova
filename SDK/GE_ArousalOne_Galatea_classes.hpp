@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ArousalOne_Galatea.GE_ArousalOne_Galatea_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_ArousalOne_Galatea::UGE_ArousalOne_Galatea_C final : public UCyGameplayEffect
 {
 public:

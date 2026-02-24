@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_TriggerAddEffects_P_MoBai.BP_TriggerAddEffects_P_MoBai_C
 // 0x0000 (0x02A8 - 0x02A8)
-class BP_TriggerAddEffects_P_MoBai::UBP_TriggerAddEffects_P_MoBai_C final : public UCyGATriggerAddGameplayEffects
+class UBP_TriggerAddEffects_P_MoBai_C final : public UCyGATriggerAddGameplayEffects
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_TriggerAddEffects_P_MoBai.BP_TriggerAddEffects_P_MoBai_C")
+		BP_STATIC_CLASS_IMPL("BP_TriggerAddEffects_P_MoBai_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_TriggerAddEffects_P_MoBai_C")
 	}
-	static class BP_TriggerAddEffects_P_MoBai::UBP_TriggerAddEffects_P_MoBai_C* GetDefaultObj()
+	static class UBP_TriggerAddEffects_P_MoBai_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_TriggerAddEffects_P_MoBai::UBP_TriggerAddEffects_P_MoBai_C>();
+		return GetDefaultObjImpl<UBP_TriggerAddEffects_P_MoBai_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_TriggerAddEffects_P_MoBai__UBP_TriggerAddEffects_P_MoBai_C;
+DUMPER7_ASSERTS_UBP_TriggerAddEffects_P_MoBai_C;
 
 }
 

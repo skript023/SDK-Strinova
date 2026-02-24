@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_SA_SearchTargets_ArousalOne.BP_SA_SearchTargets_ArousalOne_C
 // 0x0000 (0x0790 - 0x0790)
-class UBP_SA_SearchTargets_ArousalOne_C final : public UCySAtomSearchTargets
+class BP_SA_SearchTargets_ArousalOne::UBP_SA_SearchTargets_ArousalOne_C final : public UCySAtomSearchTargets
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_SA_SearchTargets_ArousalOne_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_SA_SearchTargets_ArousalOne.BP_SA_SearchTargets_ArousalOne_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_SA_SearchTargets_ArousalOne_C")
 	}
-	static class UBP_SA_SearchTargets_ArousalOne_C* GetDefaultObj()
+	static class BP_SA_SearchTargets_ArousalOne::UBP_SA_SearchTargets_ArousalOne_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_SA_SearchTargets_ArousalOne_C>();
+		return GetDefaultObjImpl<BP_SA_SearchTargets_ArousalOne::UBP_SA_SearchTargets_ArousalOne_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_SA_SearchTargets_ArousalOne_C;
+DUMPER7_ASSERTS_BP_SA_SearchTargets_ArousalOne__UBP_SA_SearchTargets_ArousalOne_C;
 
 }
 

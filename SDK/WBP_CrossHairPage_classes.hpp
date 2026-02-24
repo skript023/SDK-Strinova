@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CrossHairPage.WBP_CrossHairPage_C
-// 0x0000 (0x0A78 - 0x0A78)
+// 0x0000 (0x0A90 - 0x0A90)
 class UWBP_CrossHairPage_C final : public UPMUWCrossHairPage
 {
 public:

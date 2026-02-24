@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_Q_Maddelena.DamageType_Q_Maddelena_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class DamageType_Q_Maddelena_0::UDamageType_Q_Maddelena_C final : public UPMDamageType
 {
 public:

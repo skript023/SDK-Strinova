@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GrowthPartItem_Recommend.WBP_GrowthPartItem_Recommend_C
-// 0x0068 (0x0928 - 0x08C0)
+// 0x0068 (0x0940 - 0x08D8)
 class UWBP_GrowthPartItem_Recommend_C final : public UPMUMGGrowthRecommend
 {
 public:
-	class UWidgetAnimation*                       Anim_Loop;                                         // 0x08C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Start;                                        // 0x08C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UOverlay*                               Recommend;                                         // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<class FString, class UAkAudioEvent*>     Ak_Operate;                                        // 0x08D8(0x0050)(Edit, BlueprintVisible)
+	class UWidgetAnimation*                       Anim_Loop;                                         // 0x08D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Start;                                        // 0x08E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UOverlay*                               Recommend;                                         // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMap<class FString, class UAkAudioEvent*>     Ak_Operate;                                        // 0x08F0(0x0050)(Edit, BlueprintVisible)
 
 public:
 	static class UClass* StaticClass()

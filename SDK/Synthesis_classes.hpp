@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Synthesis_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "Synthesis_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "UMG_classes.hpp"
@@ -23,12 +23,12 @@ namespace SDK
 {
 
 // Class Synthesis.EnvelopeFollowerListener
-// 0x0020 (0x0138 - 0x0118)
+// 0x0020 (0x0148 - 0x0128)
 class UEnvelopeFollowerListener final : public UActorComponent
 {
 public:
-	TMulticastInlineDelegate<void(float EnvelopeValue)> OnEnvelopeFollowerUpdate;                    // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_128[0x10];                                     // 0x0128(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(float EnvelopeValue)> OnEnvelopeFollowerUpdate;                    // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138[0x10];                                     // 0x0138(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -122,12 +122,12 @@ public:
 DUMPER7_ASSERTS_UModularSynthLibrary;
 
 // Class Synthesis.ModularSynthComponent
-// 0x06A0 (0x0DD0 - 0x0730)
+// 0x06A0 (0x0DE0 - 0x0740)
 class UModularSynthComponent final : public USynthComponent
 {
 public:
-	int32                                         VoiceCount;                                        // 0x0730(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_734[0x69C];                                    // 0x0734(0x069C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         VoiceCount;                                        // 0x0740(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_744[0x69C];                                    // 0x0744(0x069C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	struct FPatchId CreatePatch(const ESynth1PatchSource PatchSource, const TArray<struct FSynth1PatchCable>& PatchCables, const bool bEnableByDefault);
@@ -794,12 +794,12 @@ public:
 DUMPER7_ASSERTS_USynth2DSlider;
 
 // Class Synthesis.GranularSynth
-// 0x03C0 (0x0AF0 - 0x0730)
+// 0x03C0 (0x0B00 - 0x0740)
 class UGranularSynth final : public USynthComponent
 {
 public:
-	class USoundWave*                             GranulatedSoundWave;                               // 0x0730(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_738[0x3B8];                                    // 0x0738(0x03B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class USoundWave*                             GranulatedSoundWave;                               // 0x0740(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_748[0x3B8];                                    // 0x0748(0x03B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void NoteOff(const float Note, const bool bKill);
@@ -872,14 +872,14 @@ public:
 DUMPER7_ASSERTS_UMonoWaveTableSynthPreset;
 
 // Class Synthesis.SynthComponentMonoWaveTable
-// 0x0740 (0x0E70 - 0x0730)
+// 0x0740 (0x0E80 - 0x0740)
 class USynthComponentMonoWaveTable final : public USynthComponent
 {
 public:
-	TMulticastInlineDelegate<void(int32 TableIndex)> OnTableAltered;                                 // 0x0730(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnNumTablesChanged;                                // 0x0740(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class UMonoWaveTableSynthPreset*              CurrentPreset;                                     // 0x0750(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_758[0x718];                                    // 0x0758(0x0718)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 TableIndex)> OnTableAltered;                                 // 0x0740(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnNumTablesChanged;                                // 0x0750(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class UMonoWaveTableSynthPreset*              CurrentPreset;                                     // 0x0760(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_768[0x718];                                    // 0x0768(0x0718)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetCurveTangent(int32 TableIndex);
@@ -946,14 +946,14 @@ public:
 DUMPER7_ASSERTS_USynthComponentMonoWaveTable;
 
 // Class Synthesis.SynthSamplePlayer
-// 0x0130 (0x0860 - 0x0730)
+// 0x0130 (0x0870 - 0x0740)
 class USynthSamplePlayer final : public USynthComponent
 {
 public:
-	class USoundWave*                             SoundWave;                                         // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSampleLoaded;                                    // 0x0738(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float ProgressPercent, float ProgressTimeSeconds)> OnSamplePlaybackProgress; // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_758[0x108];                                    // 0x0758(0x0108)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class USoundWave*                             SoundWave;                                         // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSampleLoaded;                                    // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float ProgressPercent, float ProgressTimeSeconds)> OnSamplePlaybackProgress; // 0x0758(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_768[0x108];                                    // 0x0768(0x0108)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SeekToTime(float TimeSec, ESamplePlayerSeekType SeekType, bool bWrap);

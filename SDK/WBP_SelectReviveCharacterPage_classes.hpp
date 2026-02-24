@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectReviveCharacterPage.WBP_SelectReviveCharacterPage_C
-// 0x0000 (0x0928 - 0x0928)
+// 0x0000 (0x0940 - 0x0940)
 class UWBP_SelectReviveCharacterPage_C final : public UPMUWSelectReviveCharacterPagePC
 {
 public:

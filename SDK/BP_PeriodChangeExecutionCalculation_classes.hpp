@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_PeriodChangeExecutionCalculation.BP_PeriodChangeExecutionCalculation_C
 // 0x0000 (0x00C8 - 0x00C8)
-class UBP_PeriodChangeExecutionCalculation_C final : public UCyPeriodChangeExecutionCalc
+class BP_PeriodChangeExecutionCalculation::UBP_PeriodChangeExecutionCalculation_C final : public UCyPeriodChangeExecutionCalc
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_PeriodChangeExecutionCalculation_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_PeriodChangeExecutionCalculation.BP_PeriodChangeExecutionCalculation_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_PeriodChangeExecutionCalculation_C")
 	}
-	static class UBP_PeriodChangeExecutionCalculation_C* GetDefaultObj()
+	static class BP_PeriodChangeExecutionCalculation::UBP_PeriodChangeExecutionCalculation_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_PeriodChangeExecutionCalculation_C>();
+		return GetDefaultObjImpl<BP_PeriodChangeExecutionCalculation::UBP_PeriodChangeExecutionCalculation_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_PeriodChangeExecutionCalculation_C;
+DUMPER7_ASSERTS_BP_PeriodChangeExecutionCalculation__UBP_PeriodChangeExecutionCalculation_C;
 
 }
 

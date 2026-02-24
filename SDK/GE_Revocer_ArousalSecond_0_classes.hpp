@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Revocer_ArousalSecond.GE_Revocer_ArousalSecond_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Revocer_ArousalSecond_0::UGE_Revocer_ArousalSecond_C final : public UCyGameplayEffect
 {
 public:

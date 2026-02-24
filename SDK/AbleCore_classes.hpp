@@ -14,9 +14,9 @@
 #include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "InputCore_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "AIModule_classes.hpp"
 
@@ -208,24 +208,24 @@ public:
 DUMPER7_ASSERTS_UAblAbilityBlueprintLibrary;
 
 // Class AbleCore.AblAbilityComponent
-// 0x01C8 (0x02E0 - 0x0118)
+// 0x01C8 (0x02F0 - 0x0128)
 class UAblAbilityComponent final : public UActorComponent
 {
 public:
-	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAblAbilityInstance*                    m_ActiveAbilityInstance;                           // 0x0120(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UAblAbilityInstance*>            m_PassiveAbilityInstances;                         // 0x0128(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TWeakObjectPtr<class UAbleSettings>           m_Settings;                                        // 0x0138(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<uint32, struct FAblAbilityCooldown>      m_ActiveCooldowns;                                 // 0x0140(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	TArray<class UAblAbilityContext*>             m_PendingContext;                                  // 0x0190(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<EAblAbilityTaskResult>                 m_PendingResult;                                   // 0x01A0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UAblAbilityContext*>             m_AsyncContexts;                                   // 0x01B0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FGameplayTagContainer                  m_TagContainer;                                    // 0x01C0(0x0060)(Transient, Protected, NativeAccessSpecifierProtected)
-	bool                                          m_IsProcessingUpdate;                              // 0x0220(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_221[0x67];                                     // 0x0221(0x0067)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAblAbilityNetworkContext              m_ServerActive;                                    // 0x0288(0x0038)(Net, Transient, RepNotify, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FAblAbilityNetworkContext>      m_ServerPassiveAbilities;                          // 0x02C0(0x0010)(Net, ZeroConstructor, Transient, RepNotify, ContainsInstancedReference, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<uint32>                                m_RefreshLoopAbilitiesHash;                        // 0x02D0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_128[0x8];                                      // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAblAbilityInstance*                    m_ActiveAbilityInstance;                           // 0x0130(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class UAblAbilityInstance*>            m_PassiveAbilityInstances;                         // 0x0138(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TWeakObjectPtr<class UAbleSettings>           m_Settings;                                        // 0x0148(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<uint32, struct FAblAbilityCooldown>      m_ActiveCooldowns;                                 // 0x0150(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	TArray<class UAblAbilityContext*>             m_PendingContext;                                  // 0x01A0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<EAblAbilityTaskResult>                 m_PendingResult;                                   // 0x01B0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class UAblAbilityContext*>             m_AsyncContexts;                                   // 0x01C0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FGameplayTagContainer                  m_TagContainer;                                    // 0x01D0(0x0060)(Transient, Protected, NativeAccessSpecifierProtected)
+	bool                                          m_IsProcessingUpdate;                              // 0x0230(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_231[0x67];                                     // 0x0231(0x0067)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAblAbilityNetworkContext              m_ServerActive;                                    // 0x0298(0x0038)(Net, Transient, RepNotify, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FAblAbilityNetworkContext>      m_ServerPassiveAbilities;                          // 0x02D0(0x0010)(Net, ZeroConstructor, Transient, RepNotify, ContainsInstancedReference, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<uint32>                                m_RefreshLoopAbilitiesHash;                        // 0x02E0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	EAblAbilityStartResult ActivateAbility(class UAblAbilityContext* Context);

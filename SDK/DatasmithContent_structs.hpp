@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "CinematicCamera_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CinematicCamera_structs.hpp"
 
 
 namespace SDK
@@ -188,15 +188,6 @@ public:
 };
 DUMPER7_ASSERTS_FDatasmithCameraFocusSettingsTemplate;
 
-// ScriptStruct DatasmithContent.DatasmithStaticParameterSetTemplate
-// 0x0050 (0x0050 - 0x0000)
-struct FDatasmithStaticParameterSetTemplate final
-{
-public:
-	TMap<class FName, bool>                       StaticSwitchParameters;                            // 0x0000(0x0050)(NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDatasmithStaticParameterSetTemplate;
-
 // ScriptStruct DatasmithContent.DatasmithCameraLensSettingsTemplate
 // 0x0004 (0x0004 - 0x0000)
 struct FDatasmithCameraLensSettingsTemplate final
@@ -267,26 +258,6 @@ public:
 };
 DUMPER7_ASSERTS_FDatasmithImportBaseOptions;
 
-// ScriptStruct DatasmithContent.DatasmithMeshBuildSettingsTemplate
-// 0x0010 (0x0010 - 0x0000)
-struct FDatasmithMeshBuildSettingsTemplate final
-{
-public:
-	uint8                                         bUseMikkTSpace : 1;                                // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bRecomputeNormals : 1;                             // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bRecomputeTangents : 1;                            // 0x0000(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bRemoveDegenerates : 1;                            // 0x0000(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bBuildAdjacencyBuffer : 1;                         // 0x0000(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bUseHighPrecisionTangentBasis : 1;                 // 0x0000(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bUseFullPrecisionUVs : 1;                          // 0x0000(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bGenerateLightmapUVs : 1;                          // 0x0000(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MinLightmapResolution;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SrcLightmapIndex;                                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DstLightmapIndex;                                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDatasmithMeshBuildSettingsTemplate;
-
 // ScriptStruct DatasmithContent.DatasmithReimportOptions
 // 0x0002 (0x0002 - 0x0000)
 struct FDatasmithReimportOptions final
@@ -296,6 +267,15 @@ public:
 	bool                                          bRespawnDeletedActors;                             // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FDatasmithReimportOptions;
+
+// ScriptStruct DatasmithContent.DatasmithStaticParameterSetTemplate
+// 0x0050 (0x0050 - 0x0000)
+struct FDatasmithStaticParameterSetTemplate final
+{
+public:
+	TMap<class FName, bool>                       StaticSwitchParameters;                            // 0x0000(0x0050)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDatasmithStaticParameterSetTemplate;
 
 // ScriptStruct DatasmithContent.DatasmithMeshSectionInfoTemplate
 // 0x0004 (0x0004 - 0x0000)
@@ -324,6 +304,26 @@ public:
 	class UMaterialInterface*                     MaterialInterface;                                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FDatasmithStaticMaterialTemplate;
+
+// ScriptStruct DatasmithContent.DatasmithMeshBuildSettingsTemplate
+// 0x0010 (0x0010 - 0x0000)
+struct FDatasmithMeshBuildSettingsTemplate final
+{
+public:
+	uint8                                         bUseMikkTSpace : 1;                                // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bRecomputeNormals : 1;                             // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bRecomputeTangents : 1;                            // 0x0000(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bRemoveDegenerates : 1;                            // 0x0000(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bBuildAdjacencyBuffer : 1;                         // 0x0000(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bUseHighPrecisionTangentBasis : 1;                 // 0x0000(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bUseFullPrecisionUVs : 1;                          // 0x0000(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bGenerateLightmapUVs : 1;                          // 0x0000(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MinLightmapResolution;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SrcLightmapIndex;                                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DstLightmapIndex;                                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDatasmithMeshBuildSettingsTemplate;
 
 }
 

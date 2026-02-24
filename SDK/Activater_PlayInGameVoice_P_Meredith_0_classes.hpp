@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Activater_PlayInGameVoice_P_Meredith.Activater_PlayInGameVoice_P_Meredith_C
-// 0x0000 (0x0238 - 0x0238)
+// 0x0000 (0x03C0 - 0x03C0)
 class Activater_PlayInGameVoice_P_Meredith_0::UActivater_PlayInGameVoice_P_Meredith_C final : public UCyGAActivatorPlayInGameVoice
 {
 public:

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PickupEffect_Mine.BP_PickupEffect_Mine_C
-// 0x0008 (0x0700 - 0x06F8)
+// 0x0008 (0x0770 - 0x0768)
 class ABP_PickupEffect_Mine_C final : public APMMoveToTargetEffect
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x06F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0768(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

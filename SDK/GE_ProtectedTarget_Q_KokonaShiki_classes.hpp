@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ProtectedTarget_Q_KokonaShiki.GE_ProtectedTarget_Q_KokonaShiki_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_ProtectedTarget_Q_KokonaShiki::UGE_ProtectedTarget_Q_KokonaShiki_C final : public UCyGameplayEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_E_Lawine.GA_E_Lawine_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_E_Lawine_0::UGA_E_Lawine_C final : public UCyBaseAbility
 {
 public:

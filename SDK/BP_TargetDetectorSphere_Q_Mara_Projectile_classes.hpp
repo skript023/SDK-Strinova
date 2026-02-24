@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TargetDetectorSphere_Q_Mara_Projectile.BP_TargetDetectorSphere_Q_Mara_Projectile_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class UBP_TargetDetectorSphere_Q_Mara_Projectile_C final : public UCyTargetDetectorSphere
 {
 public:

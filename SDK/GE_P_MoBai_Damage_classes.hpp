@@ -17,24 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_MoBai_Damage.GE_P_MoBai_Damage_C
-// 0x0000 (0x10D8 - 0x10D8)
-class GE_P_MoBai_Damage::UGE_P_MoBai_Damage_C final : public UCyGameplayEffect
+// 0x0000 (0x10E0 - 0x10E0)
+class UGE_P_MoBai_Damage_C final : public UCyGameplayEffect
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass GE_P_MoBai_Damage.GE_P_MoBai_Damage_C")
+		BP_STATIC_CLASS_IMPL("GE_P_MoBai_Damage_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"GE_P_MoBai_Damage_C")
 	}
-	static class GE_P_MoBai_Damage::UGE_P_MoBai_Damage_C* GetDefaultObj()
+	static class UGE_P_MoBai_Damage_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<GE_P_MoBai_Damage::UGE_P_MoBai_Damage_C>();
+		return GetDefaultObjImpl<UGE_P_MoBai_Damage_C>();
 	}
 };
-DUMPER7_ASSERTS_GE_P_MoBai_Damage__UGE_P_MoBai_Damage_C;
+DUMPER7_ASSERTS_UGE_P_MoBai_Damage_C;
 
 }
 

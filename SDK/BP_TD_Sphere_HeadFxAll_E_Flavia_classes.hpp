@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TD_Sphere_HeadFxAll_E_Flavia.BP_TD_Sphere_HeadFxAll_E_Flavia_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class BP_TD_Sphere_HeadFxAll_E_Flavia::UBP_TD_Sphere_HeadFxAll_E_Flavia_C final : public UCyTargetDetectorSphere
 {
 public:

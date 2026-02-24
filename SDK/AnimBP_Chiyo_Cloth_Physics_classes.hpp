@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass AnimBP_Chiyo_Cloth_Physics.AnimBP_Chiyo_Cloth_Physics_C
-// 0x02A0 (0x0570 - 0x02D0)
+// 0x02A0 (0x0520 - 0x0280)
 class UAnimBP_Chiyo_Cloth_Physics_C final : public UCyClothAnimInstance
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02D8(0x0030)()
-	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x0308(0x0138)()
-	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose_1;                   // 0x0440(0x0098)()
-	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x04D8(0x0098)()
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0288(0x0030)()
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x02B8(0x0138)()
+	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose_1;                   // 0x03F0(0x0098)()
+	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x0488(0x0098)()
 
 public:
 	void AnimGraph(const struct FPoseLink& BaseLayerInput, const struct FPoseLink& OverlayLayerInput, struct FPoseLink* AnimGraph_0);

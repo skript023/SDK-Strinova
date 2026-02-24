@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_CastlingFail.GE_CastlingFail_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_CastlingFail_0::UGE_CastlingFail_C final : public UCyGameplayEffect
 {
 public:

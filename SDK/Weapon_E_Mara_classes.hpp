@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_E_Mara.Weapon_E_Mara_C
-// 0x0010 (0x11A0 - 0x1190)
+// 0x0010 (0x1270 - 0x1260)
 class AWeapon_E_Mara_C final : public ACyWeaponSkill
 {
 public:
-	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x1190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySkinComponent*                       CySkin;                                            // 0x1198(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStateMonitor*                       CyFStateMonitor;                                   // 0x1260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

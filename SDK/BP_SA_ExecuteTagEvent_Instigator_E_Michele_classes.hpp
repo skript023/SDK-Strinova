@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_ExecuteTagEvent_Instigator_E_Michele.BP_SA_ExecuteTagEvent_Instigator_E_Michele_C
-// 0x0000 (0x07B8 - 0x07B8)
+// 0x0000 (0x0808 - 0x0808)
 class UBP_SA_ExecuteTagEvent_Instigator_E_Michele_C final : public UCySAtomExecuteGameplayTagEvent
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_IceZone_Skid_Infinite.GE_IceZone_Skid_Infinite_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_IceZone_Skid_Infinite_0::UGE_IceZone_Skid_Infinite_C final : public UCyGameplayEffect
 {
 public:

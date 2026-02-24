@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Q_Michele.Projectile_Q_Michele_C
-// 0x0000 (0x0AC8 - 0x0AC8)
+// 0x0000 (0x0B10 - 0x0B10)
 class Projectile_Q_Michele_0::AProjectile_Q_Michele_C final : public ACyProjectileBlast
 {
 public:

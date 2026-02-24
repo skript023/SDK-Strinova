@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_EnemySilence_X_Mara.GE_EnemySilence_X_Mara_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_EnemySilence_X_Mara_C final : public UCyGameplayEffect
 {
 public:

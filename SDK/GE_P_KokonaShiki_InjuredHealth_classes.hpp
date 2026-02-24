@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_KokonaShiki_InjuredHealth.GE_P_KokonaShiki_InjuredHealth_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_P_KokonaShiki_InjuredHealth::UGE_P_KokonaShiki_InjuredHealth_C final : public UCyGameplayEffect
 {
 public:

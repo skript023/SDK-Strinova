@@ -534,7 +534,7 @@ enum class ECyCharacterActionType : uint8
 };
 
 // Enum ALSV4_CPP.ECyWeaponActionType
-// NumValues: 0x002B
+// NumValues: 0x0030
 enum class ECyWeaponActionType : uint8
 {
 	None                                     = 0,
@@ -566,20 +566,25 @@ enum class ECyWeaponActionType : uint8
 	Work                                     = 26,
 	SecondWork                               = 27,
 	ThirdWork                                = 28,
-	WorkEnd                                  = 29,
-	UnWork                                   = 30,
-	BeginADS                                 = 31,
-	BeginCustom                              = 32,
-	EndCustom                                = 33,
-	CustomAttack                             = 34,
-	ThrowBeginHigh                           = 35,
-	ThrowEndHigh                             = 36,
-	ThrowBeginLow                            = 37,
-	ThrowEndLow                              = 38,
-	MeleeBlockStart                          = 39,
-	MeleeBlockLoop                           = 40,
-	MeleeBlockEnd                            = 41,
-	ECyWeaponActionType_MAX                  = 42,
+	FifthWork                                = 29,
+	WorkEnd                                  = 30,
+	UnWork                                   = 31,
+	BeginADS                                 = 32,
+	BeginCustom                              = 33,
+	EndCustom                                = 34,
+	CustomAttack                             = 35,
+	ThrowBeginHigh                           = 36,
+	ThrowEndHigh                             = 37,
+	ThrowBeginLow                            = 38,
+	ThrowEndLow                              = 39,
+	MeleeBlockStart                          = 40,
+	MeleeBlockLoop                           = 41,
+	MeleeBlockEnd                            = 42,
+	BeginRelax                               = 43,
+	BeginReady                               = 44,
+	BeginAiming                              = 45,
+	BeginWaist                               = 46,
+	ECyWeaponActionType_MAX                  = 47,
 };
 
 // ScriptStruct ALSV4_CPP.AnimSequencePose
@@ -592,6 +597,25 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAnimSequencePose;
+
+// ScriptStruct ALSV4_CPP.CyBoneNames
+// 0x0058 (0x0058 - 0x0000)
+struct FCyBoneNames final
+{
+public:
+	class FName                                   TPCameraTraceL;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   TPCameraTraceR;                                    // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   FP_Camera;                                         // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   IKFootL;                                           // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   IKFootR;                                           // 0x0020(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   VBFootTargetL;                                     // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   VBFootTargetR;                                     // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Root;                                              // 0x0038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Head;                                              // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Pelvis;                                            // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Spine03;                                           // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCyBoneNames;
 
 // ScriptStruct ALSV4_CPP.ALSAnimConfiguration
 // 0x0048 (0x0048 - 0x0000)
@@ -672,6 +696,17 @@ public:
 	struct FALSTurnInPlaceAsset                   C_TurnIP_R180;                                     // 0x0088(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FALSAnimTurnInPlace;
+
+// ScriptStruct ALSV4_CPP.ALSAnimGraphHandIK
+// 0x001C (0x001C - 0x0000)
+struct FALSAnimGraphHandIK final
+{
+public:
+	struct FVector                                HandIKLocation;                                    // 0x0000(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               HandIKRotation;                                    // 0x000C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         OverrideHandIKAlpha;                               // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FALSAnimGraphHandIK;
 
 // ScriptStruct ALSV4_CPP.ALSAnimGraphFootIK
 // 0x009C (0x009C - 0x0000)
@@ -1100,6 +1135,16 @@ public:
 };
 DUMPER7_ASSERTS_FALSStance;
 
+// ScriptStruct ALSV4_CPP.CyFootstepAnimNotifyEventNames
+// 0x0010 (0x0010 - 0x0000)
+struct FCyFootstepAnimNotifyEventNames final
+{
+public:
+	class FName                                   FootLeft;                                          // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   FootRight;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCyFootstepAnimNotifyEventNames;
+
 // ScriptStruct ALSV4_CPP.ALSMovementState
 // 0x0006 (0x0006 - 0x0000)
 struct FALSMovementState final
@@ -1126,6 +1171,20 @@ public:
 	TArray<class UAnimMontage*>                   AnimationsR;                                       // 0x0040(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FHitReactionRandomDirection;
+
+// ScriptStruct ALSV4_CPP.CyWeaponAnims
+// 0x0030 (0x0030 - 0x0000)
+struct FCyWeaponAnims final
+{
+public:
+	class UAnimSequenceBase*                      Stand;                                             // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequenceBase*                      Walk;                                              // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequenceBase*                      Crouch;                                            // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequenceBase*                      Motion_Additive;                                   // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequenceBase*                      InAirLow;                                          // 0x0020(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequenceBase*                      InAirHigh;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCyWeaponAnims;
 
 // ScriptStruct ALSV4_CPP.HitReactionRandom
 // 0x0020 (0x0020 - 0x0000)
@@ -1174,6 +1233,17 @@ public:
 };
 DUMPER7_ASSERTS_FCyWeaponChargeAnims;
 
+// ScriptStruct ALSV4_CPP.CyVirtualBoneTableRow
+// 0x0018 (0x0020 - 0x0008)
+struct FCyVirtualBoneTableRow final : public FTableRowBase
+{
+public:
+	class FName                                   VirtualBoneName;                                   // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SourceBoneName;                                    // 0x0010(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   TargetBoneName;                                    // 0x0018(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCyVirtualBoneTableRow;
+
 // ScriptStruct ALSV4_CPP.CyWeaponRecoilAnims
 // 0x0010 (0x0010 - 0x0000)
 struct FCyWeaponRecoilAnims final
@@ -1217,20 +1287,6 @@ public:
 };
 DUMPER7_ASSERTS_FCyWeaponMoveAnims;
 
-// ScriptStruct ALSV4_CPP.CyWeaponAnims
-// 0x0030 (0x0030 - 0x0000)
-struct FCyWeaponAnims final
-{
-public:
-	class UAnimSequenceBase*                      Stand;                                             // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequenceBase*                      Walk;                                              // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequenceBase*                      Crouch;                                            // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequenceBase*                      Motion_Additive;                                   // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequenceBase*                      InAirLow;                                          // 0x0020(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequenceBase*                      InAirHigh;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FCyWeaponAnims;
-
 // ScriptStruct ALSV4_CPP.CyWeaponOverrideAnims
 // 0x0018 (0x0018 - 0x0000)
 struct FCyWeaponOverrideAnims final
@@ -1270,17 +1326,6 @@ public:
 };
 DUMPER7_ASSERTS_FCyVirtualBoneItem;
 
-// ScriptStruct ALSV4_CPP.CyVirtualBoneTableRow
-// 0x0018 (0x0020 - 0x0008)
-struct FCyVirtualBoneTableRow final : public FTableRowBase
-{
-public:
-	class FName                                   VirtualBoneName;                                   // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SourceBoneName;                                    // 0x0010(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   TargetBoneName;                                    // 0x0018(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FCyVirtualBoneTableRow;
-
 // ScriptStruct ALSV4_CPP.CyCounter
 // 0x0004 (0x0004 - 0x0000)
 struct FCyCounter final
@@ -1289,35 +1334,6 @@ public:
 	int32                                         Count;                                             // 0x0000(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
 DUMPER7_ASSERTS_FCyCounter;
-
-// ScriptStruct ALSV4_CPP.CyFootstepAnimNotifyEventNames
-// 0x0010 (0x0010 - 0x0000)
-struct FCyFootstepAnimNotifyEventNames final
-{
-public:
-	class FName                                   FootLeft;                                          // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   FootRight;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FCyFootstepAnimNotifyEventNames;
-
-// ScriptStruct ALSV4_CPP.CyBoneNames
-// 0x0058 (0x0058 - 0x0000)
-struct FCyBoneNames final
-{
-public:
-	class FName                                   TPCameraTraceL;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   TPCameraTraceR;                                    // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   FP_Camera;                                         // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   IKFootL;                                           // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   IKFootR;                                           // 0x0020(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   VBFootTargetL;                                     // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   VBFootTargetR;                                     // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Root;                                              // 0x0038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Head;                                              // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Pelvis;                                            // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Spine03;                                           // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FCyBoneNames;
 
 // ScriptStruct ALSV4_CPP.CySubGraphState
 // 0x0018 (0x0018 - 0x0000)

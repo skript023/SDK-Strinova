@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_WeaponManager_CrystalloidAlpha.BP_WeaponManager_CrystalloidAlpha_C
-// 0x0000 (0x15E8 - 0x15E8)
+// 0x0000 (0x1668 - 0x1668)
 class UBP_WeaponManager_CrystalloidAlpha_C : public UBP_WeaponManager_C
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TargetDetector_Warning_X_Chiyo.BP_TargetDetector_Warning_X_Chiyo_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class UBP_TargetDetector_Warning_X_Chiyo_C final : public UCyTargetDetectorSphere
 {
 public:

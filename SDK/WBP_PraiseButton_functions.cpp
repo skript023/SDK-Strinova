@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_PraiseButton.WBP_PraiseButton_C.ExecuteUbergraph_WBP_PraiseButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PraiseButton_C::ExecuteUbergraph_WBP_PraiseButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PraiseButton_C", "ExecuteUbergraph_WBP_PraiseButton");
-
-	Params::WBP_PraiseButton_C_ExecuteUbergraph_WBP_PraiseButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_PraiseButton.WBP_PraiseButton_C.Construct
 // (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
 
@@ -72,6 +52,26 @@ void UWBP_PraiseButton_C::Destruct()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function WBP_PraiseButton.WBP_PraiseButton_C.ExecuteUbergraph_WBP_PraiseButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PraiseButton_C::ExecuteUbergraph_WBP_PraiseButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PraiseButton_C", "ExecuteUbergraph_WBP_PraiseButton");
+
+	Params::WBP_PraiseButton_C_ExecuteUbergraph_WBP_PraiseButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

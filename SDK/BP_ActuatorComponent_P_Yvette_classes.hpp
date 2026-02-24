@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ActuatorComponent_P_Yvette.BP_ActuatorComponent_P_Yvette_C
-// 0x0000 (0x01F8 - 0x01F8)
+// 0x0000 (0x0208 - 0x0208)
 class BP_ActuatorComponent_P_Yvette::UBP_ActuatorComponent_P_Yvette_C final : public UCyActuatorComponent
 {
 public:

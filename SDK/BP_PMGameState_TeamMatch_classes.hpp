@@ -17,17 +17,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PMGameState_TeamMatch.BP_PMGameState_TeamMatch_C
-// 0x0038 (0x1B60 - 0x1B28)
+// 0x0038 (0x1C10 - 0x1BD8)
 class ABP_PMGameState_TeamMatch_C final : public APMGameState_TeamDeath_Two
 {
 public:
-	class UBP_GameGrowthComponent_C*              BP_GameGrowthComponent;                            // 0x1B28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCustomModeGameComponent*             CyCustomModeGame;                                  // 0x1B30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyInGameDataTrack*                     CyInGameDataTrack;                                 // 0x1B38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyGStateMonitor*                       CyGStateMonitorFightDelayRespawn;                  // 0x1B40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyGSMonitorTeamStartFinalStage*        CyGSMonitorTeamStartFinalStage;                    // 0x1B48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyGStatePrepare*                       CyGStatePrepare;                                   // 0x1B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x1B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_GameGrowthComponent_C*              BP_GameGrowthComponent;                            // 0x1BD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCustomModeGameComponent*             CyCustomModeGame;                                  // 0x1BE0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyInGameDataTrack*                     CyInGameDataTrack;                                 // 0x1BE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyGStateMonitor*                       CyGStateMonitorFightDelayRespawn;                  // 0x1BF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyGSMonitorTeamStartFinalStage*        CyGSMonitorTeamStartFinalStage;                    // 0x1BF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyGStatePrepare*                       CyGStatePrepare;                                   // 0x1C00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x1C08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

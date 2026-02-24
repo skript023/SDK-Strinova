@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Mara_WeakBuff_BindTag.GE_Q_Mara_WeakBuff_BindTag_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Q_Mara_WeakBuff_BindTag_C final : public UCyGameplayEffect
 {
 public:

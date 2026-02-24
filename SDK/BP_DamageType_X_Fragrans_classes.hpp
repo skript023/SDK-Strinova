@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_X_Fragrans.BP_DamageType_X_Fragrans_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class BP_DamageType_X_Fragrans::UBP_DamageType_X_Fragrans_C final : public UPMDamageType
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_DangerZoneEffect_BigHead.GE_DangerZoneEffect_BigHead_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_DangerZoneEffect_BigHead_C final : public UCyGameplayEffect
 {
 public:

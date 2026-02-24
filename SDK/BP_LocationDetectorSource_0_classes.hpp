@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_LocationDetectorSource.BP_LocationDetectorSource_C
-// 0x0000 (0x01F8 - 0x01F8)
+// 0x0000 (0x0208 - 0x0208)
 class BP_LocationDetectorSource_0::UBP_LocationDetectorSource_C final : public UCyLocationDetectorSource
 {
 public:

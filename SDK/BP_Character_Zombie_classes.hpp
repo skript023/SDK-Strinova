@@ -17,12 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Character_Zombie.BP_Character_Zombie_C
-// 0x0010 (0x1DC0 - 0x1DB0)
-class ABP_Character_Zombie_C : public ABP_PMCharacterBase_V3_C
+// 0x0010 (0x1E20 - 0x1E10)
+#pragma pack(push, 0x1)
+class alignas(0x10) ABP_Character_Zombie_C : public ABP_PMCharacterBase_V3_C
 {
 public:
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1DB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateMonitor*                       CyCMonitorNormal3D;                                // 0x1DB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1E08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateMonitor*                       CyCMonitorNormal3D;                                // 0x1E10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -38,6 +39,7 @@ public:
 		return GetDefaultObjImpl<ABP_Character_Zombie_C>();
 	}
 };
+#pragma pack(pop)
 DUMPER7_ASSERTS_ABP_Character_Zombie_C;
 
 }

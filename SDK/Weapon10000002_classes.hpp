@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon10000002.Weapon10000002_C
-// 0x0010 (0x11A0 - 0x1190)
+// 0x0010 (0x1270 - 0x1260)
 class AWeapon10000002_C final : public ACyWeaponBombDismantle
 {
 public:
-	class UCySkinComponent*                       CySkin;                                            // 0x1190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySkinComponent*                       CySkin;                                            // 0x1260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

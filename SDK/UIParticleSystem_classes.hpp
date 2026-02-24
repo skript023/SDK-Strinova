@@ -53,9 +53,12 @@ public:
 DUMPER7_ASSERTS_UParticleSystemWidget;
 
 // Class UIParticleSystem.UIParticleComponent
-// 0x0000 (0x0700 - 0x0700)
+// 0x0010 (0x0730 - 0x0720)
 class UUIParticleComponent final : public UParticleSystemComponent
 {
+public:
+	uint8                                         Pad_720[0x10];                                     // 0x0720(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -73,7 +76,7 @@ public:
 DUMPER7_ASSERTS_UUIParticleComponent;
 
 // Class UIParticleSystem.UIParticleActor
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0310 - 0x0310)
 class AUIParticleActor final : public AActor
 {
 public:

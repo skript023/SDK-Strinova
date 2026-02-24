@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Enum UGC.EUGCFileVersion
-// NumValues: 0x0008
+// NumValues: 0x0009
 enum class EUGCFileVersion : uint8
 {
 	UFV_1_0                                  = 0,
@@ -28,7 +28,8 @@ enum class EUGCFileVersion : uint8
 	UFV_1_4                                  = 3,
 	UFV_1_5                                  = 4,
 	UFV_1_6                                  = 5,
-	UFV_1_MAX                                = 6,
+	UFV_1_7                                  = 6,
+	UFV_1_MAX                                = 7,
 };
 
 // Enum UGC.EUGCMapSizeByTile
@@ -42,7 +43,7 @@ enum class EUGCMapSizeByTile : uint8
 };
 
 // Enum UGC.EUGCEditMode
-// NumValues: 0x0006
+// NumValues: 0x0007
 enum class EUGCEditMode : uint8
 {
 	UEM_Default                              = 0,
@@ -50,7 +51,8 @@ enum class EUGCEditMode : uint8
 	UEM_Plane                                = 2,
 	UEM_BoxSelect                            = 3,
 	UEM_Connect                              = 4,
-	UEM_MAX                                  = 5,
+	UEM_Child                                = 5,
+	UEM_MAX                                  = 6,
 };
 
 // ScriptStruct UGC.ReplaceActorConfig
@@ -64,12 +66,21 @@ public:
 };
 DUMPER7_ASSERTS_FReplaceActorConfig;
 
+// ScriptStruct UGC.IDSetType
+// 0x0050 (0x0050 - 0x0000)
+struct FIDSetType final
+{
+public:
+	TSet<int32>                                   IDSet;                                             // 0x0000(0x0050)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FIDSetType;
+
 // ScriptStruct UGC.UGCWorldTickFunction
-// 0x0008 (0x0038 - 0x0030)
+// 0x0008 (0x0040 - 0x0038)
 struct FUGCWorldTickFunction final : public FTickFunction
 {
 public:
-	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FUGCWorldTickFunction;
 

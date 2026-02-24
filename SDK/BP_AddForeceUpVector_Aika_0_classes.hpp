@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AddForeceUpVector_Aika.BP_AddForeceUpVector_Aika_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0608 - 0x0608)
 class BP_AddForeceUpVector_Aika_0::UBP_AddForeceUpVector_Aika_C final : public UCySAtomAddForceUpVector
 {
 public:

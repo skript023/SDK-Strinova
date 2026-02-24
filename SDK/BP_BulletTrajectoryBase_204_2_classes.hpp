@@ -17,12 +17,9 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectoryBase_204.BP_BulletTrajectoryBase_204_C
-// 0x0008 (0x02F0 - 0x02E8)
+// 0x0000 (0x0328 - 0x0328)
 class BP_BulletTrajectoryBase_204_2::ABP_BulletTrajectoryBase_204_C final : public ACyBulletTrajectory
 {
-public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
 public:
 	static class UClass* StaticClass()
 	{

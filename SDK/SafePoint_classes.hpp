@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SafePoint.SafePoint_C
-// 0x0008 (0x02D8 - 0x02D0)
+// 0x0008 (0x0318 - 0x0310)
 class ASafePoint_C final : public AActor
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

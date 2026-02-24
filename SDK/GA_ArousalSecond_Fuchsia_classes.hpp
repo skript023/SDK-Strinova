@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_ArousalSecond_Fuchsia.GA_ArousalSecond_Fuchsia_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_ArousalSecond_Fuchsia::UGA_ArousalSecond_Fuchsia_C final : public UCyBaseAbility
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_XRay_AfterDamage_Escort2.GE_XRay_AfterDamage_Escort2_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_XRay_AfterDamage_Escort2_C final : public UCyGameplayEffect
 {
 public:

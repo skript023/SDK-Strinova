@@ -42,9 +42,9 @@ public:
 	bool                                          bChangBar;                                         // 0x065D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void ExecuteUbergraph_WBP_SelectRoleGridPanel(int32 EntryPoint);
-	void Construct();
 	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void ExecuteUbergraph_WBP_SelectRoleGridPanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_MarkWheelItem.WBP_MarkWheelItem_C
-// 0x0020 (0x0928 - 0x0908)
+// 0x0020 (0x0948 - 0x0928)
 class UWBP_MarkWheelItem_C final : public UCyUWMarkWheelPanelItem
 {
 public:
-	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings;                             // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings_1;                           // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings_2;                           // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings_3;                           // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings;                             // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings_1;                           // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings_2;                           // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings_3;                           // 0x0940(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

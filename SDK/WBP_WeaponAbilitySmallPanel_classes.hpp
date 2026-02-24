@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_WeaponAbilitySmallPanel.WBP_WeaponAbilitySmallPanel_C
-// 0x0000 (0x0BE8 - 0x0BE8)
+// 0x0000 (0x0C00 - 0x0C00)
 class UWBP_WeaponAbilitySmallPanel_C final : public UCyUWWeaponSkillPanel
 {
 public:

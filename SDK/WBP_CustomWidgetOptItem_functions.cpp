@@ -17,35 +17,60 @@
 namespace SDK
 {
 
-// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.ExecuteUbergraph_WBP_CustomWidgetOptItem
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomWidgetOptItem_C::BP_OnEntryReleased()
+void UWBP_CustomWidgetOptItem_C::ExecuteUbergraph_WBP_CustomWidgetOptItem(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "BP_OnEntryReleased");
+		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "ExecuteUbergraph_WBP_CustomWidgetOptItem");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_CustomWidgetOptItem_C_ExecuteUbergraph_WBP_CustomWidgetOptItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.Construct
+// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
 
-void UWBP_CustomWidgetOptItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+void UWBP_CustomWidgetOptItem_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "BP_OnItemExpansionChanged");
+		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "Construct");
 
-	Params::WBP_CustomWidgetOptItem_C_BP_OnItemExpansionChanged Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
-	Parms.bIsExpanded = bIsExpanded;
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomWidgetOptItem_C::OnListItemObjectSet(class UObject* ListItemObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "OnListItemObjectSet");
+
+	Params::WBP_CustomWidgetOptItem_C_OnListItemObjectSet Parms{};
+
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -71,62 +96,37 @@ void UWBP_CustomWidgetOptItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
 }
 
 
-// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.OnListItemObjectSet
+// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_CustomWidgetOptItem_C::OnListItemObjectSet(class UObject* ListItemObject)
+void UWBP_CustomWidgetOptItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "OnListItemObjectSet");
+		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "BP_OnItemExpansionChanged");
 
-	Params::WBP_CustomWidgetOptItem_C_OnListItemObjectSet Parms{};
+	Params::WBP_CustomWidgetOptItem_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.ListItemObject = ListItemObject;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.Construct
-// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
+// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_CustomWidgetOptItem_C::Construct()
+void UWBP_CustomWidgetOptItem_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function WBP_CustomWidgetOptItem.WBP_CustomWidgetOptItem_C.ExecuteUbergraph_WBP_CustomWidgetOptItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomWidgetOptItem_C::ExecuteUbergraph_WBP_CustomWidgetOptItem(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomWidgetOptItem_C", "ExecuteUbergraph_WBP_CustomWidgetOptItem");
-
-	Params::WBP_CustomWidgetOptItem_C_ExecuteUbergraph_WBP_CustomWidgetOptItem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

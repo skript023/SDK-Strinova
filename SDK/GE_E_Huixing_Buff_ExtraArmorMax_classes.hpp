@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_E_Huixing_Buff_ExtraArmorMax.GE_E_Huixing_Buff_ExtraArmorMax_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_E_Huixing_Buff_ExtraArmorMax_C final : public UCyGameplayEffect
 {
 public:

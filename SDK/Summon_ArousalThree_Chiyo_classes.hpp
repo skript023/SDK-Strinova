@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summon_ArousalThree_Chiyo.Summon_ArousalThree_Chiyo_C
-// 0x0000 (0x0860 - 0x0860)
+// 0x0000 (0x0920 - 0x0920)
 class ASummon_ArousalThree_Chiyo_C final : public ABP_Summon_Q_Chiyo_C
 {
 public:

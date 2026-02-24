@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_DamageCauserGrenadePanel.WBP_DamageCauserGrenadePanel_C
-// 0x0010 (0x0A58 - 0x0A48)
+// 0x0010 (0x0A70 - 0x0A60)
 class UWBP_DamageCauserGrenadePanel_C final : public UPMUWDamageCauserPanel
 {
 public:
-	class UWidgetAnimation*                       Anim_FadeIn;                                       // 0x0A48(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Image_DamageSource2D;                              // 0x0A50(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FadeIn;                                       // 0x0A60(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Image_DamageSource2D;                              // 0x0A68(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

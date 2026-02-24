@@ -27,11 +27,11 @@ public:
 	TSoftClassPtr<class UClass>                   PrivateChatPanelClass;                             // 0x05D8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void OnListItemObjectSet(class UObject* ListItemObject);
-	void ExecuteUbergraph_WBP_PrivateChatList(int32 EntryPoint);
 	void BP_OnEntryReleased();
 	void BP_OnItemExpansionChanged(bool bIsExpanded);
 	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void ExecuteUbergraph_WBP_PrivateChatList(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

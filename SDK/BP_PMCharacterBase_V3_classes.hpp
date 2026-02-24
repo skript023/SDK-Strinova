@@ -17,34 +17,36 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PMCharacterBase_V3.BP_PMCharacterBase_V3_C
-// 0x00C0 (0x1DB0 - 0x1CF0)
-class ABP_PMCharacterBase_V3_C : public APMCharacter
+// 0x00D0 (0x1E10 - 0x1D40)
+#pragma pack(push, 0x1)
+class alignas(0x10) ABP_PMCharacterBase_V3_C : public APMCharacter
 {
 public:
-	class UBP_CommonOverheadComponent_C*          EmotionWidget;                                     // 0x1CF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPMCharacterAkComponent*                PMCharacterAk;                                     // 0x1CF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCMonitorInjured*                     CyCMonitorInjured;                                 // 0x1D00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateRevival*                       CyCStateRevival;                                   // 0x1D08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateRescuedSelf*                   CyCStateRescuedSelf;                               // 0x1D10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateRescuedTreatment*              CyCStateRescuedTreatment;                          // 0x1D18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateRescued*                       CyCStateRescued;                                   // 0x1D20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateWall2D*                        CyCStateWall2D;                                    // 0x1D28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateSide2D*                        CyCStateSide2D;                                    // 0x1D30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateNormal3D*                      CyCStateNormal3D;                                  // 0x1D38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateInjured*                       CyCStateInjured;                                   // 0x1D40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateFly2D*                         CyCStateFly2D;                                     // 0x1D48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCStateDeath*                         CyCStateDeath;                                     // 0x1D50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySceneMapPawnMaskComponent*           CySceneMapPawnMask;                                // 0x1D58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_GameStateComponent_C*               BP_GameStateComponent;                             // 0x1D60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyShapeComponent*                      CyShape;                                           // 0x1D68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyLifeComponent*                       CyLife;                                            // 0x1D70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyLifeStateComponent*                  CyLifeState;                                       // 0x1D78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyInteractComponent*                   CyInteract;                                        // 0x1D80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyInteractSystemComponent*             CyInteractSystem;                                  // 0x1D88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyPlayerAttributeComponent*            CyPlayerAttribute;                                 // 0x1D90(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCState*                              CyCStateInterrupt;                                 // 0x1D98(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyCMachine*                            CyCMachine;                                        // 0x1DA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_CharacterLocomotion_C*              BP_CharacterLocomotion;                            // 0x1DA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPlayerPartBigHead*                   CyPlayerPartBigHead;                               // 0x1D40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_CommonOverheadComponent_C*          EmotionWidget;                                     // 0x1D48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPMCharacterAkComponent*                PMCharacterAk;                                     // 0x1D50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCMonitorInjured*                     CyCMonitorInjured;                                 // 0x1D58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateRevival*                       CyCStateRevival;                                   // 0x1D60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateRescuedSelf*                   CyCStateRescuedSelf;                               // 0x1D68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateRescuedTreatment*              CyCStateRescuedTreatment;                          // 0x1D70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateRescued*                       CyCStateRescued;                                   // 0x1D78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateWall2D*                        CyCStateWall2D;                                    // 0x1D80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateSide2D*                        CyCStateSide2D;                                    // 0x1D88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateNormal3D*                      CyCStateNormal3D;                                  // 0x1D90(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateInjured*                       CyCStateInjured;                                   // 0x1D98(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateFly2D*                         CyCStateFly2D;                                     // 0x1DA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCStateDeath*                         CyCStateDeath;                                     // 0x1DA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySceneMapPawnMaskComponent*           CySceneMapPawnMask;                                // 0x1DB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_GameStateComponent_C*               BP_GameStateComponent;                             // 0x1DB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyShapeComponent*                      CyShape;                                           // 0x1DC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyLifeComponent*                       CyLife;                                            // 0x1DC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyLifeStateComponent*                  CyLifeState;                                       // 0x1DD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyInteractComponent*                   CyInteract;                                        // 0x1DD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyInteractSystemComponent*             CyInteractSystem;                                  // 0x1DE0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPlayerAttributeComponent*            CyPlayerAttribute;                                 // 0x1DE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCState*                              CyCStateInterrupt;                                 // 0x1DF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyCMachine*                            CyCMachine;                                        // 0x1DF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_CharacterLocomotion_C*              BP_CharacterLocomotion;                            // 0x1E00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -63,6 +65,7 @@ public:
 		return GetDefaultObjImpl<ABP_PMCharacterBase_V3_C>();
 	}
 };
+#pragma pack(pop)
 DUMPER7_ASSERTS_ABP_PMCharacterBase_V3_C;
 
 }

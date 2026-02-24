@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Target_Revival.GE_Target_Revival_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Target_Revival_0::UGE_Target_Revival_C final : public UCyGameplayEffect
 {
 public:

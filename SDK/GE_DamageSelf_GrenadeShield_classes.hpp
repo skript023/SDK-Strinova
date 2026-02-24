@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_DamageSelf_GrenadeShield.GE_DamageSelf_GrenadeShield_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_DamageSelf_GrenadeShield_C final : public UCyGameplayEffect
 {
 public:

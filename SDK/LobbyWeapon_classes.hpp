@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LobbyWeapon.LobbyWeapon_C
-// 0x0000 (0x11D0 - 0x11D0)
+// 0x0000 (0x12C0 - 0x12C0)
 class ALobbyWeapon_C final : public ACyLobbyWeapon
 {
 public:

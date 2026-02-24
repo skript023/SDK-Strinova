@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon15204001.Weapon15204001_C
-// 0x0020 (0x1210 - 0x11F0)
+// 0x0020 (0x12E0 - 0x12C0)
 class AWeapon15204001_C final : public ACyWeaponMelee_ExtremeKnifeFight
 {
 public:
-	class UCyFStateMonitor_ControlMode*           CyFStateMonitor_ControlMode;                       // 0x11F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x11F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x1200(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFStateMonitor_ControlMode*           CyFStateMonitor_ControlMode;                       // 0x12C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x12C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x12D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

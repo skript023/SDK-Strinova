@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AIController_E_Audrey.AIController_E_Audrey_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x0420 - 0x0420)
 class AAIController_E_Audrey_C final : public ACyBehaviorAIController
 {
 public:

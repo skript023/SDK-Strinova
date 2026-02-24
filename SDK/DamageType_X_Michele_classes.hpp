@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_X_Michele.DamageType_X_Michele_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UDamageType_X_Michele_C final : public UPMDamageType
 {
 public:

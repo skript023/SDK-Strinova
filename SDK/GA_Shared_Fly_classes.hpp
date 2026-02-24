@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Shared_Fly.GA_Shared_Fly_C
-// 0x0008 (0x1AF0 - 0x1AE8)
+// 0x0008 (0x1B00 - 0x1AF8)
 class UGA_Shared_Fly_C final : public UCyBaseAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1AE8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1AF8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GA_Shared_Fly(int32 EntryPoint);

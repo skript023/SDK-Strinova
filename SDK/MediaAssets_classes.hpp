@@ -130,12 +130,12 @@ public:
 DUMPER7_ASSERTS_UMediaBlueprintFunctionLibrary;
 
 // Class MediaAssets.MediaComponent
-// 0x0010 (0x0128 - 0x0118)
+// 0x0010 (0x0138 - 0x0128)
 class UMediaComponent final : public UActorComponent
 {
 public:
-	class UMediaTexture*                          MediaTexture;                                      // 0x0118(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMediaPlayer*                           MediaPlayer;                                       // 0x0120(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, Interp, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMediaTexture*                          MediaTexture;                                      // 0x0128(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMediaPlayer*                           MediaPlayer;                                       // 0x0130(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, Interp, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	class UMediaPlayer* GetMediaPlayer() const;
@@ -320,18 +320,18 @@ public:
 DUMPER7_ASSERTS_UMediaPlaylist;
 
 // Class MediaAssets.MediaSoundComponent
-// 0x0200 (0x0930 - 0x0730)
+// 0x0200 (0x0940 - 0x0740)
 class UMediaSoundComponent final : public USynthComponent
 {
 public:
-	EMediaSoundChannels                           Channels;                                          // 0x0730(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DynamicRateAdjustment;                             // 0x0734(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_735[0x3];                                      // 0x0735(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RateAdjustmentFactor;                              // 0x0738(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFloatRange                            RateAdjustmentRange;                               // 0x073C(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_74C[0x4];                                      // 0x074C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMediaPlayer*                           MediaPlayer;                                       // 0x0750(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_758[0x1D8];                                    // 0x0758(0x01D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	EMediaSoundChannels                           Channels;                                          // 0x0740(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DynamicRateAdjustment;                             // 0x0744(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_745[0x3];                                      // 0x0745(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RateAdjustmentFactor;                              // 0x0748(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFloatRange                            RateAdjustmentRange;                               // 0x074C(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_75C[0x4];                                      // 0x075C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMediaPlayer*                           MediaPlayer;                                       // 0x0760(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_768[0x1D8];                                    // 0x0768(0x01D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool BP_GetAttenuationSettingsToApply(struct FSoundAttenuationSettings* OutAttenuationSettings);

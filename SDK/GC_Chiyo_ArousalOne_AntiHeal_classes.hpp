@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_Chiyo_ArousalOne_AntiHeal.GC_Chiyo_ArousalOne_AntiHeal_C
-// 0x0008 (0x04B8 - 0x04B0)
+// 0x0008 (0x04F8 - 0x04F0)
 class AGC_Chiyo_ArousalOne_AntiHeal_C final : public ACyCueNotifyActor
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x04B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

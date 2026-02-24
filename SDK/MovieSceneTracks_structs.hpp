@@ -73,16 +73,18 @@ public:
 };
 DUMPER7_ASSERTS_FMovieSceneStringChannel;
 
-// ScriptStruct MovieSceneTracks.MovieScene3DLocationKeyStruct
-// 0x0028 (0x0030 - 0x0008)
-struct FMovieScene3DLocationKeyStruct final : public FMovieSceneKeyStruct
+// ScriptStruct MovieSceneTracks.MovieScene3DTransformKeyStruct
+// 0x0040 (0x0048 - 0x0008)
+struct FMovieScene3DTransformKeyStruct final : public FMovieSceneKeyStruct
 {
 public:
 	struct FVector                                Location;                                          // 0x0008(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameNumber                           Time;                                              // 0x0014(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FRotator                               Rotation;                                          // 0x0014(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                Scale;                                             // 0x0020(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameNumber                           Time;                                              // 0x002C(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_30[0x18];                                      // 0x0030(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FMovieScene3DLocationKeyStruct;
+DUMPER7_ASSERTS_FMovieScene3DTransformKeyStruct;
 
 // ScriptStruct MovieSceneTracks.MovieScene3DAttachSectionTemplate
 // 0x0030 (0x0050 - 0x0020)
@@ -128,19 +130,6 @@ public:
 };
 DUMPER7_ASSERTS_FMovieSceneTransformMask;
 
-// ScriptStruct MovieSceneTracks.MovieScene3DTransformKeyStruct
-// 0x0040 (0x0048 - 0x0008)
-struct FMovieScene3DTransformKeyStruct final : public FMovieSceneKeyStruct
-{
-public:
-	struct FVector                                Location;                                          // 0x0008(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               Rotation;                                          // 0x0014(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                Scale;                                             // 0x0020(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameNumber                           Time;                                              // 0x002C(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_30[0x18];                                      // 0x0030(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FMovieScene3DTransformKeyStruct;
-
 // ScriptStruct MovieSceneTracks.MovieScene3DScaleKeyStruct
 // 0x0028 (0x0030 - 0x0008)
 struct FMovieScene3DScaleKeyStruct final : public FMovieSceneKeyStruct
@@ -162,6 +151,17 @@ public:
 	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FMovieScene3DRotationKeyStruct;
+
+// ScriptStruct MovieSceneTracks.MovieScene3DLocationKeyStruct
+// 0x0028 (0x0030 - 0x0008)
+struct FMovieScene3DLocationKeyStruct final : public FMovieSceneKeyStruct
+{
+public:
+	struct FVector                                Location;                                          // 0x0008(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameNumber                           Time;                                              // 0x0014(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMovieScene3DLocationKeyStruct;
 
 // ScriptStruct MovieSceneTracks.MovieScene3DTransformTemplateData
 // 0x0650 (0x0650 - 0x0000)

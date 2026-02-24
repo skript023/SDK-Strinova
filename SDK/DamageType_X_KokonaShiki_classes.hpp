@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_X_KokonaShiki.DamageType_X_KokonaShiki_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class DamageType_X_KokonaShiki::UDamageType_X_KokonaShiki_C final : public UPMDamageType
 {
 public:

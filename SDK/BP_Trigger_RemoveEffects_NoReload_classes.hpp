@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Trigger_RemoveEffects_NoReload.BP_Trigger_RemoveEffects_NoReload_C
 // 0x0000 (0x02A0 - 0x02A0)
-class BP_Trigger_RemoveEffects_NoReload::UBP_Trigger_RemoveEffects_NoReload_C final : public UCyGATriggerRemoveGameEffect
+class UBP_Trigger_RemoveEffects_NoReload_C final : public UCyGATriggerRemoveGameEffect
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_Trigger_RemoveEffects_NoReload.BP_Trigger_RemoveEffects_NoReload_C")
+		BP_STATIC_CLASS_IMPL("BP_Trigger_RemoveEffects_NoReload_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_Trigger_RemoveEffects_NoReload_C")
 	}
-	static class BP_Trigger_RemoveEffects_NoReload::UBP_Trigger_RemoveEffects_NoReload_C* GetDefaultObj()
+	static class UBP_Trigger_RemoveEffects_NoReload_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_Trigger_RemoveEffects_NoReload::UBP_Trigger_RemoveEffects_NoReload_C>();
+		return GetDefaultObjImpl<UBP_Trigger_RemoveEffects_NoReload_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_Trigger_RemoveEffects_NoReload__UBP_Trigger_RemoveEffects_NoReload_C;
+DUMPER7_ASSERTS_UBP_Trigger_RemoveEffects_NoReload_C;
 
 }
 

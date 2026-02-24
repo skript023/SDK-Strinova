@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_KokonaShiki_Summon_AddArmor.GE_Q_KokonaShiki_Summon_AddArmor_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Q_KokonaShiki_Summon_AddArmor::UGE_Q_KokonaShiki_Summon_AddArmor_C final : public UCyGameplayEffect
 {
 public:

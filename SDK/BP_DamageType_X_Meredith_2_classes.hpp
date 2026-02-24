@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_X_Meredith.BP_DamageType_X_Meredith_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class BP_DamageType_X_Meredith_2::UBP_DamageType_X_Meredith_C final : public UPMDamageType
 {
 public:

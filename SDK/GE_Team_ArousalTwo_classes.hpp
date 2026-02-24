@@ -17,24 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Team_ArousalTwo.GE_Team_ArousalTwo_C
-// 0x0000 (0x10D8 - 0x10D8)
-class UGE_Team_ArousalTwo_C final : public UCyGameplayEffect
+// 0x0000 (0x10E0 - 0x10E0)
+class GE_Team_ArousalTwo::UGE_Team_ArousalTwo_C final : public UCyGameplayEffect
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("GE_Team_ArousalTwo_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass GE_Team_ArousalTwo.GE_Team_ArousalTwo_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"GE_Team_ArousalTwo_C")
 	}
-	static class UGE_Team_ArousalTwo_C* GetDefaultObj()
+	static class GE_Team_ArousalTwo::UGE_Team_ArousalTwo_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UGE_Team_ArousalTwo_C>();
+		return GetDefaultObjImpl<GE_Team_ArousalTwo::UGE_Team_ArousalTwo_C>();
 	}
 };
-DUMPER7_ASSERTS_UGE_Team_ArousalTwo_C;
+DUMPER7_ASSERTS_GE_Team_ArousalTwo__UGE_Team_ArousalTwo_C;
 
 }
 

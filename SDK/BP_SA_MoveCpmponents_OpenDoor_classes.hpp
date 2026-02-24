@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_MoveCpmponents_OpenDoor.BP_SA_MoveCpmponents_OpenDoor_C
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05E8 - 0x05E8)
 class UBP_SA_MoveCpmponents_OpenDoor_C final : public UCySAtomMoveComponents
 {
 public:

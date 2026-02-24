@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TeamWarmUpPanel.WBP_TeamWarmUpPanel_C
-// 0x0008 (0x0B20 - 0x0B18)
+// 0x0008 (0x0B88 - 0x0B80)
 class UWBP_TeamWarmUpPanel_C final : public UPMUWCommonTimePanelPC
 {
 public:
-	class UCanvasPanel*                           Panel_Root;                                        // 0x0B18(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Panel_Root;                                        // 0x0B80(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

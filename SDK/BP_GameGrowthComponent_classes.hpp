@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GameGrowthComponent.BP_GameGrowthComponent_C
-// 0x0000 (0x1010 - 0x1010)
+// 0x0000 (0x10D8 - 0x10D8)
 class UBP_GameGrowthComponent_C final : public UCyGameGrowthComponent
 {
 public:

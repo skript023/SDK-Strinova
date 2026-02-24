@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AIController_Payload.AIController_Payload_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x0420 - 0x0420)
 class AAIController_Payload_C final : public ACyPayloadAIController
 {
 public:

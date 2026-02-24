@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AddHealthEnergy.GE_AddHealthEnergy_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_AddHealthEnergy_0::UGE_AddHealthEnergy_C final : public UCyGameplayEffect
 {
 public:

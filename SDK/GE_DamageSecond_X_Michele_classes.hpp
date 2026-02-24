@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_DamageSecond_X_Michele.GE_DamageSecond_X_Michele_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_DamageSecond_X_Michele_C final : public UCyGameplayEffect
 {
 public:

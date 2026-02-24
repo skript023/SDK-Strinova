@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_StateAtom_DeathCameraParam.BP_StateAtom_DeathCameraParam_C
-// 0x0000 (0x0748 - 0x0748)
+// 0x0000 (0x0750 - 0x0750)
 class UBP_StateAtom_DeathCameraParam_C final : public UCySAtomChangeCameraParam
 {
 public:

@@ -29,10 +29,10 @@ public:
 	TMulticastInlineDelegate<void()>              OnLvChanged;                                       // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_WBP_RankBadgeLvEff(int32 EntryPoint);
-	void ChangeLevel();
-	void SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_0();
 	void SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_1();
+	void SequenceEvent__ENTRYPOINTWBP_RankBadgeLvEff_0();
+	void ChangeLevel();
+	void ExecuteUbergraph_WBP_RankBadgeLvEff(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

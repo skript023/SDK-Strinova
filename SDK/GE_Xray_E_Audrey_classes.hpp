@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Xray_E_Audrey.GE_Xray_E_Audrey_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Xray_E_Audrey_C final : public UCyGameplayEffect
 {
 public:

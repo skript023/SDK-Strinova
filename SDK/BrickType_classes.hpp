@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BrickType.BrickType_C
-// 0x0000 (0x0348 - 0x0348)
+// 0x0000 (0x03B8 - 0x03B8)
 class ABrickType_C final : public AAtomCollision_BP_C
 {
 public:

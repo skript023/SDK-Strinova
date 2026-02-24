@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Enum_CareerRankProgressBar_structs.hpp"
 #include "Engine_structs.hpp"
 #include "PMGame_classes.hpp"
-#include "Enum_CareerRankProgressBar_structs.hpp"
 
 
 namespace SDK
@@ -53,8 +53,8 @@ public:
 	int32                                         LimitY_Special;                                    // 0x0670(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CareerRankDetailProgressBar(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_CareerRankDetailProgressBar(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ModeFeedbackTipsPanel.WBP_ModeFeedbackTipsPanel_C
-// 0x0010 (0x0B10 - 0x0B00)
+// 0x0010 (0x0B28 - 0x0B18)
 class UWBP_ModeFeedbackTipsPanel_C final : public UCyUWFeedbackTipsMonitorPanel
 {
 public:
-	class UImage*                                 Img;                                               // 0x0B00(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UInvalidationBox*                       InvalidationBox_3;                                 // 0x0B08(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img;                                               // 0x0B18(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_3;                                 // 0x0B20(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_X_CrystalloidAlpha.Weapon_X_CrystalloidAlpha_C
-// 0x0000 (0x1190 - 0x1190)
+// 0x0000 (0x1260 - 0x1260)
 class AWeapon_X_CrystalloidAlpha_C final : public ACyWeaponSkill
 {
 public:

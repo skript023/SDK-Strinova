@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_MiniMapScene.WBP_MiniMapScene_C
-// 0x0000 (0x0C78 - 0x0C78)
+// 0x0000 (0x0DB0 - 0x0DB0)
 class UWBP_MiniMapScene_C final : public UCyMiniSceneMap2D
 {
 public:

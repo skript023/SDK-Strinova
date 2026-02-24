@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_E_Audery.Weapon_E_Audery_C
-// 0x0000 (0x1190 - 0x1190)
+// 0x0000 (0x1260 - 0x1260)
 class Weapon_E_Audery_0::AWeapon_E_Audery_C final : public ACyWeaponThrow
 {
 public:

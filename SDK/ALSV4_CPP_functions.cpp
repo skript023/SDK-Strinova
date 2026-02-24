@@ -17,236 +17,26 @@
 namespace SDK
 {
 
-// Function ALSV4_CPP.CyRagdollComponent.Multicast_RagdollEnd
-// (Net, NetReliable, Native, Event, NetMulticast, Protected, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   CharacterLocation                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UCyRagdollComponent::Multicast_RagdollEnd(const struct FVector& CharacterLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "Multicast_RagdollEnd");
-
-	Params::CyRagdollComponent_Multicast_RagdollEnd Parms{};
-
-	Parms.CharacterLocation = std::move(CharacterLocation);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.Multicast_RagdollStart
-// (Net, NetReliable, Native, Event, NetMulticast, Protected, BlueprintCallable)
-
-void UCyRagdollComponent::Multicast_RagdollStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "Multicast_RagdollStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.OnMovementStateChanged
+// Function ALSV4_CPP.CyRotationComponent.OnRotationModeChanged
 // (Final, Native, Protected)
 // Parameters:
-// EALSMovementState                       PreMovementState                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EALSMovementState                       CurMovementState                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EALSRotationMode                        PreviousRotationMode                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCyRagdollComponent::OnMovementStateChanged(EALSMovementState PreMovementState, EALSMovementState CurMovementState)
+void UCyRotationComponent::OnRotationModeChanged(EALSRotationMode PreviousRotationMode)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "OnMovementStateChanged");
+		Func = Class->GetFunction("CyRotationComponent", "OnRotationModeChanged");
 
-	Params::CyRagdollComponent_OnMovementStateChanged Parms{};
+	Params::CyRotationComponent_OnRotationModeChanged Parms{};
 
-	Parms.PreMovementState = PreMovementState;
-	Parms.CurMovementState = CurMovementState;
+	Parms.PreviousRotationMode = PreviousRotationMode;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.RagdollEnd
-// (Native, Public, BlueprintCallable)
-
-void UCyRagdollComponent::RagdollEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "RagdollEnd");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.RagdollStart
-// (Native, Public, BlueprintCallable)
-
-void UCyRagdollComponent::RagdollStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "RagdollStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.ReplicatedRagdollEnd
-// (Final, Native, Public, BlueprintCallable)
-
-void UCyRagdollComponent::ReplicatedRagdollEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "ReplicatedRagdollEnd");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.ReplicatedRagdollStart
-// (Final, Native, Public, BlueprintCallable)
-
-void UCyRagdollComponent::ReplicatedRagdollStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "ReplicatedRagdollStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.Server_RagdollEnd
-// (Net, NetReliable, Native, Event, Protected, NetServer, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   CharacterLocation                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UCyRagdollComponent::Server_RagdollEnd(const struct FVector& CharacterLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "Server_RagdollEnd");
-
-	Params::CyRagdollComponent_Server_RagdollEnd Parms{};
-
-	Parms.CharacterLocation = std::move(CharacterLocation);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.Server_RagdollStart
-// (Net, NetReliable, Native, Event, Protected, NetServer, BlueprintCallable)
-
-void UCyRagdollComponent::Server_RagdollStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "Server_RagdollStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.Server_SetMeshLocationDuringRagdoll
-// (Net, Native, Event, Protected, NetServer, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   MeshLocation                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UCyRagdollComponent::Server_SetMeshLocationDuringRagdoll(const struct FVector& MeshLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "Server_SetMeshLocationDuringRagdoll");
-
-	Params::CyRagdollComponent_Server_SetMeshLocationDuringRagdoll Parms{};
-
-	Parms.MeshLocation = std::move(MeshLocation);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ALSV4_CPP.CyRagdollComponent.SwitchRagdoll
-// (Final, Native, Public, BlueprintCallable)
-
-void UCyRagdollComponent::SwitchRagdoll()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRagdollComponent", "SwitchRagdoll");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -2732,6 +2522,241 @@ bool UCyBlueprintLibrary::UpdateAnimRootMotion(class UAnimSequence* SrcAnimSeque
 }
 
 
+// Function ALSV4_CPP.CyRagdollComponent.Multicast_RagdollEnd
+// (Net, NetReliable, Native, Event, NetMulticast, Protected, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   CharacterLocation                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UCyRagdollComponent::Multicast_RagdollEnd(const struct FVector& CharacterLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "Multicast_RagdollEnd");
+
+	Params::CyRagdollComponent_Multicast_RagdollEnd Parms{};
+
+	Parms.CharacterLocation = std::move(CharacterLocation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.Multicast_RagdollStart
+// (Net, NetReliable, Native, Event, NetMulticast, Protected, BlueprintCallable)
+
+void UCyRagdollComponent::Multicast_RagdollStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "Multicast_RagdollStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.OnMovementStateChanged
+// (Final, Native, Protected)
+// Parameters:
+// EALSMovementState                       PreMovementState                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EALSMovementState                       CurMovementState                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UCyRagdollComponent::OnMovementStateChanged(EALSMovementState PreMovementState, EALSMovementState CurMovementState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "OnMovementStateChanged");
+
+	Params::CyRagdollComponent_OnMovementStateChanged Parms{};
+
+	Parms.PreMovementState = PreMovementState;
+	Parms.CurMovementState = CurMovementState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.RagdollEnd
+// (Native, Public, BlueprintCallable)
+
+void UCyRagdollComponent::RagdollEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "RagdollEnd");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.RagdollStart
+// (Native, Public, BlueprintCallable)
+
+void UCyRagdollComponent::RagdollStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "RagdollStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.ReplicatedRagdollEnd
+// (Final, Native, Public, BlueprintCallable)
+
+void UCyRagdollComponent::ReplicatedRagdollEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "ReplicatedRagdollEnd");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.ReplicatedRagdollStart
+// (Final, Native, Public, BlueprintCallable)
+
+void UCyRagdollComponent::ReplicatedRagdollStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "ReplicatedRagdollStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.Server_RagdollEnd
+// (Net, NetReliable, Native, Event, Protected, NetServer, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   CharacterLocation                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UCyRagdollComponent::Server_RagdollEnd(const struct FVector& CharacterLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "Server_RagdollEnd");
+
+	Params::CyRagdollComponent_Server_RagdollEnd Parms{};
+
+	Parms.CharacterLocation = std::move(CharacterLocation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.Server_RagdollStart
+// (Net, NetReliable, Native, Event, Protected, NetServer, BlueprintCallable)
+
+void UCyRagdollComponent::Server_RagdollStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "Server_RagdollStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.Server_SetMeshLocationDuringRagdoll
+// (Net, Native, Event, Protected, NetServer, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   MeshLocation                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UCyRagdollComponent::Server_SetMeshLocationDuringRagdoll(const struct FVector& MeshLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "Server_SetMeshLocationDuringRagdoll");
+
+	Params::CyRagdollComponent_Server_SetMeshLocationDuringRagdoll Parms{};
+
+	Parms.MeshLocation = std::move(MeshLocation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ALSV4_CPP.CyRagdollComponent.SwitchRagdoll
+// (Final, Native, Public, BlueprintCallable)
+
+void UCyRagdollComponent::SwitchRagdoll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CyRagdollComponent", "SwitchRagdoll");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function ALSV4_CPP.CyRollComponent.OnBreakfall
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -2800,31 +2825,6 @@ void UCyRollComponent::OnOwnerRollInput(bool* bDisposed)
 
 	if (bDisposed != nullptr)
 		*bDisposed = Parms.bDisposed;
-}
-
-
-// Function ALSV4_CPP.CyRotationComponent.OnRotationModeChanged
-// (Final, Native, Protected)
-// Parameters:
-// EALSRotationMode                        PreviousRotationMode                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UCyRotationComponent::OnRotationModeChanged(EALSRotationMode PreviousRotationMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CyRotationComponent", "OnRotationModeChanged");
-
-	Params::CyRotationComponent_OnRotationModeChanged Parms{};
-
-	Parms.PreviousRotationMode = PreviousRotationMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 }

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Silence_X_Nobunaga.GE_Silence_X_Nobunaga_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Silence_X_Nobunaga_0::UGE_Silence_X_Nobunaga_C final : public UCyGameplayEffect
 {
 public:

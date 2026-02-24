@@ -17,25 +17,14 @@
 namespace SDK::Params
 {
 
-// Function AudioMixer.SubmixEffectReverbPreset.SetSettings
-// 0x0034 (0x0034 - 0x0000)
-struct SubmixEffectReverbPreset_SetSettings final
-{
-public:
-	struct FSubmixEffectReverbSettings            InSettings;                                        // 0x0000(0x0034)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SubmixEffectReverbPreset_SetSettings;
-
-// Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
+// Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
 // 0x0010 (0x0010 - 0x0000)
-struct SubmixEffectReverbPreset_SetSettingsWithReverbEffect final
+struct SubmixEffectSubmixEQPreset_SetSettings final
 {
 public:
-	const class UReverbEffect*                    InReverbEffect;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WetLevel;                                          // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DryLevel;                                          // 0x000C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSubmixEffectSubmixEQSettings          InSettings;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_SubmixEffectReverbPreset_SetSettingsWithReverbEffect;
+DUMPER7_ASSERTS_SubmixEffectSubmixEQPreset_SetSettings;
 
 // Function AudioMixer.SynthComponent.SetSubmixSend
 // 0x0010 (0x0010 - 0x0000)
@@ -346,14 +335,25 @@ public:
 };
 DUMPER7_ASSERTS_SubmixEffectDynamicsProcessorPreset_SetSettings;
 
-// Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
-// 0x0010 (0x0010 - 0x0000)
-struct SubmixEffectSubmixEQPreset_SetSettings final
+// Function AudioMixer.SubmixEffectReverbPreset.SetSettings
+// 0x0034 (0x0034 - 0x0000)
+struct SubmixEffectReverbPreset_SetSettings final
 {
 public:
-	struct FSubmixEffectSubmixEQSettings          InSettings;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FSubmixEffectReverbSettings            InSettings;                                        // 0x0000(0x0034)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_SubmixEffectSubmixEQPreset_SetSettings;
+DUMPER7_ASSERTS_SubmixEffectReverbPreset_SetSettings;
+
+// Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
+// 0x0010 (0x0010 - 0x0000)
+struct SubmixEffectReverbPreset_SetSettingsWithReverbEffect final
+{
+public:
+	const class UReverbEffect*                    InReverbEffect;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WetLevel;                                          // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DryLevel;                                          // 0x000C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SubmixEffectReverbPreset_SetSettingsWithReverbEffect;
 
 // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings
 // 0x0038 (0x0038 - 0x0000)

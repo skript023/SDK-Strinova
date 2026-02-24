@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_SearchTargets_Escort2.BP_SearchTargets_Escort2_C
 // 0x0000 (0x0790 - 0x0790)
-class UBP_SearchTargets_Escort2_C final : public UCySAtomSearchTargets
+class BP_SearchTargets_Escort2::UBP_SearchTargets_Escort2_C final : public UCySAtomSearchTargets
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_SearchTargets_Escort2_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_SearchTargets_Escort2.BP_SearchTargets_Escort2_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_SearchTargets_Escort2_C")
 	}
-	static class UBP_SearchTargets_Escort2_C* GetDefaultObj()
+	static class BP_SearchTargets_Escort2::UBP_SearchTargets_Escort2_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_SearchTargets_Escort2_C>();
+		return GetDefaultObjImpl<BP_SearchTargets_Escort2::UBP_SearchTargets_Escort2_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_SearchTargets_Escort2_C;
+DUMPER7_ASSERTS_BP_SearchTargets_Escort2__UBP_SearchTargets_Escort2_C;
 
 }
 

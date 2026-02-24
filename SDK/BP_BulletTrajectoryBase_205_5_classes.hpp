@@ -10,19 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
+#include "BP_BulletTrajectoryBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectoryBase_205.BP_BulletTrajectoryBase_205_C
-// 0x0008 (0x02F0 - 0x02E8)
-class BP_BulletTrajectoryBase_205_5::ABP_BulletTrajectoryBase_205_C final : public ACyBulletTrajectory
+// 0x0000 (0x0330 - 0x0330)
+class BP_BulletTrajectoryBase_205_5::ABP_BulletTrajectoryBase_205_C final : public ABP_BulletTrajectoryBase_C
 {
-public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
 public:
 	static class UClass* StaticClass()
 	{

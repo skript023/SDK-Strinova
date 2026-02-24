@@ -51,11 +51,11 @@ public:
 	struct FLinearColor                           TeamBarNormalColor;                                // 0x0730(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_RoleGridItem(int32 EntryPoint);
-	void OnListItemObjectSet(class UObject* ListItemObject);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
-	void BP_OnItemExpansionChanged(bool bIsExpanded);
 	void BP_OnEntryReleased();
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void ExecuteUbergraph_WBP_RoleGridItem(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -42,11 +42,11 @@ public:
 	TSoftClassPtr<class UClass>                   TargetWidget;                                      // 0x0650(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 
 public:
-	void BP_OnEntryReleased();
-	void BP_OnItemExpansionChanged(bool bIsExpanded);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
-	void OnListItemObjectSet(class UObject* ListItemObject);
 	void ExecuteUbergraph_WBP_CustomWidgetOptMenu(int32 EntryPoint);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnEntryReleased();
 
 public:
 	static class UClass* StaticClass()

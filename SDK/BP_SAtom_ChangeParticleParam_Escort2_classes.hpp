@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SAtom_ChangeParticleParam_Escort2.BP_SAtom_ChangeParticleParam_Escort2_C
-// 0x0000 (0x07A8 - 0x07A8)
+// 0x0000 (0x07B0 - 0x07B0)
 class UBP_SAtom_ChangeParticleParam_Escort2_C final : public UCySAtomParticleParameterChange
 {
 public:

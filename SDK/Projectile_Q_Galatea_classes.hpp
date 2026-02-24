@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Q_Galatea.Projectile_Q_Galatea_C
-// 0x0010 (0x0AD8 - 0x0AC8)
+// 0x0010 (0x0B20 - 0x0B10)
 class Projectile_Q_Galatea::AProjectile_Q_Galatea_C final : public ACyProjectileBlast
 {
 public:
-	class UBP_GameStateComponent_Summon_C*        BP_GameStateComponent_Summon;                      // 0x0AC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0AD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_GameStateComponent_Summon_C*        BP_GameStateComponent_Summon;                      // 0x0B10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

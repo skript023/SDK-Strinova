@@ -44,8 +44,8 @@ public:
 	bool                                          IsShowWeaponPanel;                                 // 0x0674(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void ExecuteUbergraph_WBP_ListPanel(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_ListPanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

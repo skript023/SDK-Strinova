@@ -17,48 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_ListItem.WBP_ListItem_C.ExecuteUbergraph_WBP_ListItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ListItem.WBP_ListItem_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_ListItem_C::ExecuteUbergraph_WBP_ListItem(int32 EntryPoint)
+void UWBP_ListItem_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ListItem_C", "ExecuteUbergraph_WBP_ListItem");
+		Func = Class->GetFunction("WBP_ListItem_C", "BP_OnEntryReleased");
 
-	Params::WBP_ListItem_C_ExecuteUbergraph_WBP_ListItem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ListItem.WBP_ListItem_C.OnListItemObjectSet
-// (Native, Event, Protected, BlueprintEvent)
+// Function WBP_ListItem.WBP_ListItem_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_ListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
+void UWBP_ListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ListItem_C", "OnListItemObjectSet");
+		Func = Class->GetFunction("WBP_ListItem_C", "BP_OnItemExpansionChanged");
 
-	Params::WBP_ListItem_C_OnListItemObjectSet Parms{};
+	Params::WBP_ListItem_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.ListItemObject = ListItemObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -87,37 +76,48 @@ void UWBP_ListItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
 }
 
 
-// Function WBP_ListItem.WBP_ListItem_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ListItem.WBP_ListItem_C.OnListItemObjectSet
+// (Native, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+void UWBP_ListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ListItem_C", "BP_OnItemExpansionChanged");
+		Func = Class->GetFunction("WBP_ListItem_C", "OnListItemObjectSet");
 
-	Params::WBP_ListItem_C_BP_OnItemExpansionChanged Parms{};
+	Params::WBP_ListItem_C_OnListItemObjectSet Parms{};
 
-	Parms.bIsExpanded = bIsExpanded;
+	Parms.ListItemObject = ListItemObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
-// Function WBP_ListItem.WBP_ListItem_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ListItem.WBP_ListItem_C.ExecuteUbergraph_WBP_ListItem
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ListItem_C::BP_OnEntryReleased()
+void UWBP_ListItem_C::ExecuteUbergraph_WBP_ListItem(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ListItem_C", "BP_OnEntryReleased");
+		Func = Class->GetFunction("WBP_ListItem_C", "ExecuteUbergraph_WBP_ListItem");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_ListItem_C_ExecuteUbergraph_WBP_ListItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SAtom_VerifyPositionReset_Target_Escort2.BP_SAtom_VerifyPositionReset_Target_Escort2_C
-// 0x0000 (0x05E8 - 0x05E8)
+// 0x0000 (0x05F0 - 0x05F0)
 class UBP_SAtom_VerifyPositionReset_Target_Escort2_C final : public UCySAtomVerifyPositionReset
 {
 public:

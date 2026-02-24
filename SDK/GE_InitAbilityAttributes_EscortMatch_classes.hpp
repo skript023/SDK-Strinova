@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_InitAbilityAttributes_EscortMatch.GE_InitAbilityAttributes_EscortMatch_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_InitAbilityAttributes_EscortMatch_C final : public UCyGameplayEffect
 {
 public:

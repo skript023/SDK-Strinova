@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Engine_classes.hpp"
 #include "UGC_structs.hpp"
@@ -19,26 +18,58 @@
 namespace SDK
 {
 
+// Class UGC.UGCActorInterface
+// 0x0000 (0x0000 - 0x0000)
+class IUGCActorInterface final
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UGCActorInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UGCActorInterface")
+	}
+	static class IUGCActorInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<IUGCActorInterface>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
+};
+DUMPER7_ASSERTS_IUGCActorInterface;
+
 // Class UGC.UGCBaseActor
-// 0x0070 (0x0340 - 0x02D0)
+// 0x00A0 (0x03B0 - 0x0310)
 class AUGCBaseActor : public AActor
 {
 public:
-	class USceneComponent*                        UGCRoot;                                           // 0x02D0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   VisibleUseComponent;                               // 0x02D8(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UMaterialInterface*>             PreviewRightMaterial;                              // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UMaterialInterface*>             PreviewErrorMaterial;                              // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         bIgnoreOverlap : 1;                                // 0x0300(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bExclusive : 1;                                    // 0x0300(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bConflict : 1;                                     // 0x0300(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_301[0x27];                                     // 0x0301(0x0027)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ItemId;                                            // 0x0328(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         UID;                                               // 0x032C(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                Color;                                             // 0x0330(0x000C)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         ConnectItemID;                                     // 0x033C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_310[0x8];                                      // 0x0310(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        UGCRoot;                                           // 0x0318(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   VisibleUseComponent;                               // 0x0320(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UMaterialInterface*>             PreviewRightMaterial;                              // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class UMaterialInterface*>             PreviewErrorMaterial;                              // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         bIgnoreOverlap : 1;                                // 0x0348(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bExclusive : 1;                                    // 0x0348(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bConflict : 1;                                     // 0x0348(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_349[0x37];                                     // 0x0349(0x0037)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ItemId;                                            // 0x0380(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         UID;                                               // 0x0384(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<float>                                 CustomData;                                        // 0x0388(0x0010)(Net, ZeroConstructor, RepNotify, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         ConnectItemID;                                     // 0x0398(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         ChildItemID;                                       // 0x039C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<struct FReplaceActorConfig>            ReplaceActorClasses;                               // 0x03A0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
-	void OnRep_Color();
+	void OnRep_CustomData();
 
 public:
 	static class UClass* StaticClass()
@@ -57,11 +88,11 @@ public:
 DUMPER7_ASSERTS_AUGCBaseActor;
 
 // Class UGC.UGCAtomActor
-// 0x0008 (0x0348 - 0x0340)
+// 0x0008 (0x03B8 - 0x03B0)
 class AUGCAtomActor : public AUGCBaseActor
 {
 public:
-	class UStaticMeshComponent*                   AtomComponent;                                     // 0x0340(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   AtomComponent;                                     // 0x03B0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -80,11 +111,11 @@ public:
 DUMPER7_ASSERTS_AUGCAtomActor;
 
 // Class UGC.UGCVolumeActor
-// 0x0008 (0x02D8 - 0x02D0)
+// 0x0008 (0x0318 - 0x0310)
 class AUGCVolumeActor : public AActor
 {
 public:
-	class UStaticMeshComponent*                   VolumeComponent;                                   // 0x02D0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   VolumeComponent;                                   // 0x0310(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -103,7 +134,7 @@ public:
 DUMPER7_ASSERTS_AUGCVolumeActor;
 
 // Class UGC.UGCBlockVolumeActor
-// 0x0000 (0x02D8 - 0x02D8)
+// 0x0000 (0x0318 - 0x0318)
 class AUGCBlockVolumeActor final : public AUGCVolumeActor
 {
 public:
@@ -152,12 +183,12 @@ public:
 DUMPER7_ASSERTS_UUGCBlueprintFunctionLibrary;
 
 // Class UGC.UGCBoxSelectActor
-// 0x0010 (0x0350 - 0x0340)
+// 0x0010 (0x03C0 - 0x03B0)
 class AUGCBoxSelectActor final : public AUGCBaseActor
 {
 public:
-	class UInstancedStaticMeshComponent*          ExtendComponent;                                   // 0x0340(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ULineBatchComponent*                    RangeBoxComponent;                                 // 0x0348(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UInstancedStaticMeshComponent*          ExtendComponent;                                   // 0x03B0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ULineBatchComponent*                    RangeBoxComponent;                                 // 0x03B8(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -176,12 +207,12 @@ public:
 DUMPER7_ASSERTS_AUGCBoxSelectActor;
 
 // Class UGC.UGCExtendEditView
-// 0x0010 (0x02E0 - 0x02D0)
+// 0x0010 (0x0320 - 0x0310)
 class AUGCExtendEditView : public AActor
 {
 public:
-	class USceneComponent*                        ExtendRootComponent;                               // 0x02D0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   ExtendComponent;                                   // 0x02D8(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        ExtendRootComponent;                               // 0x0310(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   ExtendComponent;                                   // 0x0318(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -200,11 +231,11 @@ public:
 DUMPER7_ASSERTS_AUGCExtendEditView;
 
 // Class UGC.UGCPlaneActor
-// 0x0008 (0x0348 - 0x0340)
+// 0x0008 (0x03B8 - 0x03B0)
 class AUGCPlaneActor : public AUGCBaseActor
 {
 public:
-	class UStaticMeshComponent*                   PlaneComponent;                                    // 0x0340(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   PlaneComponent;                                    // 0x03B0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -223,7 +254,7 @@ public:
 DUMPER7_ASSERTS_AUGCPlaneActor;
 
 // Class UGC.UGCGroudActor
-// 0x0000 (0x0348 - 0x0348)
+// 0x0000 (0x03B8 - 0x03B8)
 class AUGCGroudActor final : public AUGCPlaneActor
 {
 public:
@@ -243,11 +274,11 @@ public:
 DUMPER7_ASSERTS_AUGCGroudActor;
 
 // Class UGC.UGCInstaceStaticMeshActor
-// 0x0008 (0x02D8 - 0x02D0)
+// 0x0008 (0x0318 - 0x0310)
 class AUGCInstaceStaticMeshActor final : public AActor
 {
 public:
-	class UInstancedStaticMeshComponent*          InstancedStaticMeshComponent;                      // 0x02D0(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UInstancedStaticMeshComponent*          InstancedStaticMeshComponent;                      // 0x0310(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -266,14 +297,14 @@ public:
 DUMPER7_ASSERTS_AUGCInstaceStaticMeshActor;
 
 // Class UGC.UGCPlaneEditView
-// 0x0020 (0x02F0 - 0x02D0)
+// 0x0020 (0x0330 - 0x0310)
 class AUGCPlaneEditView : public AActor
 {
 public:
-	class USceneComponent*                        EditViewRootComponent;                             // 0x02D0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMesh*                            Mesh;                                              // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      NormalMaterial;                                    // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      ChooseMaterial;                                    // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        EditViewRootComponent;                             // 0x0310(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMesh*                            Mesh;                                              // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      NormalMaterial;                                    // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      ChooseMaterial;                                    // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -292,14 +323,14 @@ public:
 DUMPER7_ASSERTS_AUGCPlaneEditView;
 
 // Class UGC.UGCPlaneEditViewStepOne
-// 0x0020 (0x0310 - 0x02F0)
+// 0x0020 (0x0350 - 0x0330)
 class AUGCPlaneEditViewStepOne : public AUGCPlaneEditView
 {
 public:
-	class UStaticMeshComponent*                   UpLeft;                                            // 0x02F0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   UpRight;                                           // 0x02F8(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   RightDown;                                         // 0x0300(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   LeftDown;                                          // 0x0308(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   UpLeft;                                            // 0x0330(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   UpRight;                                           // 0x0338(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   RightDown;                                         // 0x0340(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   LeftDown;                                          // 0x0348(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -318,11 +349,11 @@ public:
 DUMPER7_ASSERTS_AUGCPlaneEditViewStepOne;
 
 // Class UGC.UGCPlaneEditViewStepTwo
-// 0x0008 (0x02F8 - 0x02F0)
+// 0x0008 (0x0338 - 0x0330)
 class AUGCPlaneEditViewStepTwo : public AUGCPlaneEditView
 {
 public:
-	class UStaticMeshComponent*                   Middle;                                            // 0x02F0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   Middle;                                            // 0x0330(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -341,7 +372,7 @@ public:
 DUMPER7_ASSERTS_AUGCPlaneEditViewStepTwo;
 
 // Class UGC.UGCPlaneEditViewStepThree
-// 0x0000 (0x02F0 - 0x02F0)
+// 0x0000 (0x0330 - 0x0330)
 class AUGCPlaneEditViewStepThree : public AUGCPlaneEditView
 {
 public:
@@ -361,7 +392,7 @@ public:
 DUMPER7_ASSERTS_AUGCPlaneEditViewStepThree;
 
 // Class UGC.UGCPrefabActor
-// 0x0000 (0x0340 - 0x0340)
+// 0x0000 (0x03B0 - 0x03B0)
 class AUGCPrefabActor : public AUGCBaseActor
 {
 public:
@@ -381,12 +412,12 @@ public:
 DUMPER7_ASSERTS_AUGCPrefabActor;
 
 // Class UGC.UGCPreviewExtendActor
-// 0x0018 (0x0358 - 0x0340)
+// 0x0018 (0x03C8 - 0x03B0)
 class AUGCPreviewExtendActor final : public AUGCBaseActor
 {
 public:
-	class UInstancedStaticMeshComponent*          ExtendComponent;                                   // 0x0340(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_348[0x10];                                     // 0x0348(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UInstancedStaticMeshComponent*          ExtendComponent;                                   // 0x03B0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3B8[0x10];                                     // 0x03B8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -405,17 +436,17 @@ public:
 DUMPER7_ASSERTS_AUGCPreviewExtendActor;
 
 // Class UGC.UGCPreviewPlaneStepOneActor
-// 0x0038 (0x0380 - 0x0348)
+// 0x0038 (0x03F0 - 0x03B8)
 class AUGCPreviewPlaneStepOneActor : public AUGCPlaneActor
 {
 public:
-	class UStaticMesh*                            Mesh;                                              // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      RightMaterial;                                     // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      ErrorMaterial;                                     // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   UpLeft;                                            // 0x0360(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   UpRight;                                           // 0x0368(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   RightDown;                                         // 0x0370(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   LeftDown;                                          // 0x0378(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMesh*                            Mesh;                                              // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      RightMaterial;                                     // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      ErrorMaterial;                                     // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   UpLeft;                                            // 0x03D0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   UpRight;                                           // 0x03D8(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   RightDown;                                         // 0x03E0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   LeftDown;                                          // 0x03E8(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -434,11 +465,11 @@ public:
 DUMPER7_ASSERTS_AUGCPreviewPlaneStepOneActor;
 
 // Class UGC.UGCSMPrefabActor
-// 0x0008 (0x0348 - 0x0340)
+// 0x0008 (0x03B8 - 0x03B0)
 class AUGCSMPrefabActor : public AUGCPrefabActor
 {
 public:
-	class UStaticMeshComponent*                   PrefabSMComponent;                                 // 0x0340(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   PrefabSMComponent;                                 // 0x03B0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -457,12 +488,9 @@ public:
 DUMPER7_ASSERTS_AUGCSMPrefabActor;
 
 // Class UGC.UGCReferencePrefabActor
-// 0x0010 (0x0358 - 0x0348)
+// 0x0000 (0x03B8 - 0x03B8)
 class AUGCReferencePrefabActor final : public AUGCSMPrefabActor
 {
-public:
-	TArray<struct FReplaceActorConfig>            ReplaceActorClasses;                               // 0x0348(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -480,11 +508,11 @@ public:
 DUMPER7_ASSERTS_AUGCReferencePrefabActor;
 
 // Class UGC.UGCSKPrefabActor
-// 0x0008 (0x0348 - 0x0340)
+// 0x0008 (0x03B8 - 0x03B0)
 class AUGCSKPrefabActor final : public AUGCPrefabActor
 {
 public:
-	class USkeletalMeshComponent*                 PrefabSKComponent;                                 // 0x0340(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 PrefabSKComponent;                                 // 0x03B0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -503,7 +531,7 @@ public:
 DUMPER7_ASSERTS_AUGCSKPrefabActor;
 
 // Class UGC.UGCSMPrefabFunctionalActor
-// 0x0000 (0x0348 - 0x0348)
+// 0x0000 (0x03B8 - 0x03B8)
 class AUGCSMPrefabFunctionalActor final : public AUGCSMPrefabActor
 {
 public:
@@ -523,11 +551,11 @@ public:
 DUMPER7_ASSERTS_AUGCSMPrefabFunctionalActor;
 
 // Class UGC.UGCTriggerActor
-// 0x0008 (0x0348 - 0x0340)
+// 0x0008 (0x03B8 - 0x03B0)
 class AUGCTriggerActor : public AUGCBaseActor
 {
 public:
-	class UStaticMeshComponent*                   TriggerComponent;                                  // 0x0340(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   TriggerComponent;                                  // 0x03B0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ActorOverlapBegin(class AActor* OverlappedActor, class AActor* OtherActor);

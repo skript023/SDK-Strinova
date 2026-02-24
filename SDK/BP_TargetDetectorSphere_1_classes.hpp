@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TargetDetectorSphere.BP_TargetDetectorSphere_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class BP_TargetDetectorSphere_1::UBP_TargetDetectorSphere_C final : public UCyTargetDetectorSphere
 {
 public:

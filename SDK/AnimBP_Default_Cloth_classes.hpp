@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass AnimBP_Default_Cloth.AnimBP_Default_Cloth_C
-// 0x0170 (0x0440 - 0x02D0)
+// 0x0170 (0x03F0 - 0x0280)
 class UAnimBP_Default_Cloth_C final : public UCyClothAnimInstance
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose_1;                   // 0x02D8(0x0098)()
-	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x0370(0x0098)()
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0408(0x0030)()
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose_1;                   // 0x0288(0x0098)()
+	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x0320(0x0098)()
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x03B8(0x0030)()
 
 public:
 	void AnimGraph(const struct FPoseLink& BaseLayerInput, const struct FPoseLink& OverlayLayerInput, struct FPoseLink* AnimGraph_0);

@@ -14,33 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_CustomWidgetOptMenu.WBP_CustomWidgetOptMenu_C.BP_OnItemExpansionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CustomWidgetOptMenu_C_BP_OnItemExpansionChanged final
-{
-public:
-	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_CustomWidgetOptMenu_C_BP_OnItemExpansionChanged;
-
-// Function WBP_CustomWidgetOptMenu.WBP_CustomWidgetOptMenu_C.BP_OnItemSelectionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CustomWidgetOptMenu_C_BP_OnItemSelectionChanged final
-{
-public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_CustomWidgetOptMenu_C_BP_OnItemSelectionChanged;
-
-// Function WBP_CustomWidgetOptMenu.WBP_CustomWidgetOptMenu_C.OnListItemObjectSet
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomWidgetOptMenu_C_OnListItemObjectSet final
-{
-public:
-	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CustomWidgetOptMenu_C_OnListItemObjectSet;
-
 // Function WBP_CustomWidgetOptMenu.WBP_CustomWidgetOptMenu_C.ExecuteUbergraph_WBP_CustomWidgetOptMenu
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_CustomWidgetOptMenu_C_ExecuteUbergraph_WBP_CustomWidgetOptMenu final
@@ -53,6 +26,33 @@ public:
 	bool                                          K2Node_Event_bIsSelected;                          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_CustomWidgetOptMenu_C_ExecuteUbergraph_WBP_CustomWidgetOptMenu;
+
+// Function WBP_CustomWidgetOptMenu.WBP_CustomWidgetOptMenu_C.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CustomWidgetOptMenu_C_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CustomWidgetOptMenu_C_OnListItemObjectSet;
+
+// Function WBP_CustomWidgetOptMenu.WBP_CustomWidgetOptMenu_C.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CustomWidgetOptMenu_C_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CustomWidgetOptMenu_C_BP_OnItemSelectionChanged;
+
+// Function WBP_CustomWidgetOptMenu.WBP_CustomWidgetOptMenu_C.BP_OnItemExpansionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CustomWidgetOptMenu_C_BP_OnItemExpansionChanged final
+{
+public:
+	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CustomWidgetOptMenu_C_BP_OnItemExpansionChanged;
 
 }
 

@@ -66,6 +66,16 @@ public:
 };
 DUMPER7_ASSERTS_FInAppPurchaseProductInfo;
 
+// ScriptStruct OnlineSubsystem.NamedInterfaceDef
+// 0x0018 (0x0018 - 0x0000)
+struct FNamedInterfaceDef final
+{
+public:
+	class FName                                   InterfaceName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InterfaceClassName;                                // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FNamedInterfaceDef;
+
 // ScriptStruct OnlineSubsystem.InAppPurchaseRestoreInfo
 // 0x0030 (0x0030 - 0x0000)
 struct FInAppPurchaseRestoreInfo final
@@ -76,16 +86,6 @@ public:
 	class FString                                 TransactionIdentifier;                             // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FInAppPurchaseRestoreInfo;
-
-// ScriptStruct OnlineSubsystem.NamedInterfaceDef
-// 0x0018 (0x0018 - 0x0000)
-struct FNamedInterfaceDef final
-{
-public:
-	class FName                                   InterfaceName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 InterfaceClassName;                                // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FNamedInterfaceDef;
 
 // ScriptStruct OnlineSubsystem.NamedInterface
 // 0x0010 (0x0010 - 0x0000)

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_Ming_CauseDamge_Armor.GE_X_Ming_CauseDamge_Armor_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_Ming_CauseDamge_Armor_0::UGE_X_Ming_CauseDamge_Armor_C final : public UCyGameplayEffect
 {
 public:

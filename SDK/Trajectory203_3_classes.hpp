@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Trajectory203.Trajectory203_C
-// 0x0000 (0x02F0 - 0x02F0)
+// 0x0000 (0x0330 - 0x0330)
 class Trajectory203_3::ATrajectory203_C final : public ABP_BulletTrajectoryBase_C
 {
 public:

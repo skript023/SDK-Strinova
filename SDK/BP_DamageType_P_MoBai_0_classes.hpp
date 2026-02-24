@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_P_MoBai.BP_DamageType_P_MoBai_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class BP_DamageType_P_MoBai_0::UBP_DamageType_P_MoBai_C final : public UPMDamageType
 {
 public:

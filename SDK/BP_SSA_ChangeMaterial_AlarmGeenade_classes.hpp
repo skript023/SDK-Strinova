@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SSA_ChangeMaterial_AlarmGeenade.BP_SSA_ChangeMaterial_AlarmGeenade_C
-// 0x0000 (0x0060 - 0x0060)
+// 0x0000 (0x0070 - 0x0070)
 class UBP_SSA_ChangeMaterial_AlarmGeenade_C final : public UCySSAtomChangeMaterial
 {
 public:

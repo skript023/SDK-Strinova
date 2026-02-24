@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SummmonWeaponMgr.BP_SummmonWeaponMgr_C
-// 0x0000 (0x15E0 - 0x15E0)
+// 0x0000 (0x1660 - 0x1660)
 class BP_SummmonWeaponMgr::UBP_SummmonWeaponMgr_C final : public UCySummonWeaponManagerComponent
 {
 public:

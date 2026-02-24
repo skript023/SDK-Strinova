@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_WaterPolo.GC_WaterPolo_C
-// 0x0008 (0x0340 - 0x0338)
+// 0x0008 (0x0380 - 0x0378)
 class AGC_WaterPolo_C final : public APMGCWaterPolo
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

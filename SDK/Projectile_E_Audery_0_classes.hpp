@@ -17,12 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_E_Audery.Projectile_E_Audery_C
-// 0x0010 (0x0AD8 - 0x0AC8)
+// 0x0018 (0x0B28 - 0x0B10)
 class Projectile_E_Audery_0::AProjectile_E_Audery_C final : public ACyProjectileBlast
 {
 public:
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0AC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0AD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_GameStateComponent_Summon_C*        BP_GameStateComponent_Summon;                      // 0x0B10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0B20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

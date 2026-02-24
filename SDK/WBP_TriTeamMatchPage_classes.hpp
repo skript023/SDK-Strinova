@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TriTeamMatchPage.WBP_TriTeamMatchPage_C
-// 0x0030 (0x08F0 - 0x08C0)
+// 0x0030 (0x0908 - 0x08D8)
 class UWBP_TriTeamMatchPage_C final : public UPMUserWidget
 {
 public:
-	class UWBP_GameModeCommonPage_C*              GameModeCommon;                                    // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TeamChangeRoleTips_C*              TeamChangeRoleTips;                                // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FeedbackManagerPage_C*             WBP_FeedbackManagerPage;                           // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TeamTriScoreInfoPanel_C*           WBP_TeamTriScoreInfoPanel_PC;                      // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TriTeamRoundPanel_C*               WBP_TriTeamRoundPanel_PC;                          // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WarmUpScreenPanel_C*               WBP_WarmUpScreenPanel;                             // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GameModeCommonPage_C*              GameModeCommon;                                    // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TeamChangeRoleTips_C*              TeamChangeRoleTips;                                // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FeedbackManagerPage_C*             WBP_FeedbackManagerPage;                           // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TeamTriScoreInfoPanel_C*           WBP_TeamTriScoreInfoPanel_PC;                      // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TriTeamRoundPanel_C*               WBP_TriTeamRoundPanel_PC;                          // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WarmUpScreenPanel_C*               WBP_WarmUpScreenPanel;                             // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

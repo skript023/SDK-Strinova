@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Geneate_Custom_Instance_01.BP_Geneate_Custom_Instance_01_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UBP_Geneate_Custom_Instance_01_C final : public UCyGameplayEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_X_Yugiri.GA_X_Yugiri_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class UGA_X_Yugiri_C final : public UCyBaseAbility
 {
 public:

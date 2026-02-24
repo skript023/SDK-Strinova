@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SAtom_AttachToInstigator.BP_SAtom_AttachToInstigator_C
-// 0x0000 (0x0660 - 0x0660)
+// 0x0000 (0x0670 - 0x0670)
 class BP_SAtom_AttachToInstigator_0::UBP_SAtom_AttachToInstigator_C final : public UCySAtomAttachTo
 {
 public:

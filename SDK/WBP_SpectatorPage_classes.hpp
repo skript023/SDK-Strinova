@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SpectatorPage.WBP_SpectatorPage_C
-// 0x0018 (0x0A58 - 0x0A40)
+// 0x0018 (0x0A70 - 0x0A58)
 class UWBP_SpectatorPage_C final : public UCyUWSpectatorPagePC
 {
 public:
-	class UImage*                                 Image_Floor;                                       // 0x0A40(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings;                             // 0x0A48(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings_132;                         // 0x0A50(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Floor;                                       // 0x0A58(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings;                             // 0x0A60(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InGameKeyMappings_C*               WBP_InGameKeyMappings_132;                         // 0x0A68(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

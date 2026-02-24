@@ -17,9 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilitySuicide.WBP_AbilitySuicide_C
-// 0x0000 (0x0BA8 - 0x0BA8)
+// 0x0018 (0x0C88 - 0x0C70)
 class UWBP_AbilitySuicide_C final : public UCyUWAbilitySuicide
 {
+public:
+	class UImage*                                 Image_Backslash;                                   // 0x0C70(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InGameKeyMappings_C*               KeyMappingPanel_Q_1;                               // 0x0C78(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_Info;                               // 0x0C80(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+
 public:
 	static class UClass* StaticClass()
 	{

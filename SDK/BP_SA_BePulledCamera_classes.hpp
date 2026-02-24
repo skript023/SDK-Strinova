@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_BePulledCamera.BP_SA_BePulledCamera_C
-// 0x0000 (0x0748 - 0x0748)
+// 0x0000 (0x0750 - 0x0750)
 class UBP_SA_BePulledCamera_C final : public UCySAtomChangeCameraParam
 {
 public:

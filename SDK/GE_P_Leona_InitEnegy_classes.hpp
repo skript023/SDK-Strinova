@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_Leona_InitEnegy.GE_P_Leona_InitEnegy_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_P_Leona_InitEnegy_C final : public UCyGameplayEffect
 {
 public:

@@ -34,6 +34,24 @@ public:
 };
 DUMPER7_ASSERTS_GizmoBaseComponent_UpdateWorldLocalState;
 
+// Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
+// 0x0004 (0x0004 - 0x0000)
+struct GizmoFloatParameterSource_SetParameter final
+{
+public:
+	float                                         NewValue;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GizmoFloatParameterSource_SetParameter;
+
+// Function InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
+// 0x0004 (0x0004 - 0x0000)
+struct GizmoFloatParameterSource_GetParameter final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GizmoFloatParameterSource_GetParameter;
+
 // Function InteractiveToolsFramework.GizmoTransformSource.SetTransform
 // 0x0030 (0x0030 - 0x0000)
 struct GizmoTransformSource_SetTransform final
@@ -97,24 +115,6 @@ public:
 	bool                                          bHovering;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GizmoClickTarget_UpdateHoverState;
-
-// Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
-// 0x0004 (0x0004 - 0x0000)
-struct GizmoFloatParameterSource_SetParameter final
-{
-public:
-	float                                         NewValue;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_GizmoFloatParameterSource_SetParameter;
-
-// Function InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
-// 0x0004 (0x0004 - 0x0000)
-struct GizmoFloatParameterSource_GetParameter final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_GizmoFloatParameterSource_GetParameter;
 
 // Function InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
 // 0x0008 (0x0008 - 0x0000)

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CinematicClickDialogue.WBP_CinematicClickDialogue_C
-// 0x0000 (0x09C8 - 0x09C8)
+// 0x0000 (0x09E0 - 0x09E0)
 class UWBP_CinematicClickDialogue_C final : public UCyCinematicClickDialogue
 {
 public:

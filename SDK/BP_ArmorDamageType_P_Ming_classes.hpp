@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ArmorDamageType_P_Ming.BP_ArmorDamageType_P_Ming_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_ArmorDamageType_P_Ming_C final : public UPMArmorDamageType
 {
 public:

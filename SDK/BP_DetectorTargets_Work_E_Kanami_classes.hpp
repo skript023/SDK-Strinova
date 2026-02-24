@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DetectorTargets_Work_E_Kanami.BP_DetectorTargets_Work_E_Kanami_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class UBP_DetectorTargets_Work_E_Kanami_C final : public UCyTargetDetectorSphere
 {
 public:

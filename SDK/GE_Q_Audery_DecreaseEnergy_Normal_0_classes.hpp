@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Audery_DecreaseEnergy_Normal.GE_Q_Audery_DecreaseEnergy_Normal_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Q_Audery_DecreaseEnergy_Normal_0::UGE_Q_Audery_DecreaseEnergy_Normal_C final : public UCyGameplayEffect
 {
 public:

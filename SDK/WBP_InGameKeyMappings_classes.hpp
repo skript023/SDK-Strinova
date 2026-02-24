@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_InGameKeyMappings.WBP_InGameKeyMappings_C
-// 0x0000 (0x0A88 - 0x0A88)
+// 0x0000 (0x0AA0 - 0x0AA0)
 class UWBP_InGameKeyMappings_C final : public UCyUWInGameCommonKeyMapping
 {
 public:

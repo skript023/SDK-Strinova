@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon15601001.Weapon15601001_C
-// 0x0010 (0x1200 - 0x11F0)
+// 0x0010 (0x12D0 - 0x12C0)
 class AWeapon15601001_C final : public AWeapon15201001_C
 {
 public:
-	class UCyFSmiteBeginSwitch*                   CyFSmiteBeginSwitch;                               // 0x11F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFSmiteBeginSwitch*                   CyFSmiteBeginSwitch;                               // 0x12C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

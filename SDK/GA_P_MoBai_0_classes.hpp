@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_P_MoBai.GA_P_MoBai_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_P_MoBai_0::UGA_P_MoBai_C final : public UCyBaseAbility
 {
 public:

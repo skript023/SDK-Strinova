@@ -17,48 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_RoleGridItem.WBP_RoleGridItem_C.ExecuteUbergraph_WBP_RoleGridItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_RoleGridItem.WBP_RoleGridItem_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_RoleGridItem_C::ExecuteUbergraph_WBP_RoleGridItem(int32 EntryPoint)
+void UWBP_RoleGridItem_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoleGridItem_C", "ExecuteUbergraph_WBP_RoleGridItem");
+		Func = Class->GetFunction("WBP_RoleGridItem_C", "BP_OnEntryReleased");
 
-	Params::WBP_RoleGridItem_C_ExecuteUbergraph_WBP_RoleGridItem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RoleGridItem.WBP_RoleGridItem_C.OnListItemObjectSet
-// (Native, Event, Protected, BlueprintEvent)
+// Function WBP_RoleGridItem.WBP_RoleGridItem_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_RoleGridItem_C::OnListItemObjectSet(class UObject* ListItemObject)
+void UWBP_RoleGridItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoleGridItem_C", "OnListItemObjectSet");
+		Func = Class->GetFunction("WBP_RoleGridItem_C", "BP_OnItemExpansionChanged");
 
-	Params::WBP_RoleGridItem_C_OnListItemObjectSet Parms{};
+	Params::WBP_RoleGridItem_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.ListItemObject = ListItemObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -87,37 +76,48 @@ void UWBP_RoleGridItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
 }
 
 
-// Function WBP_RoleGridItem.WBP_RoleGridItem_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_RoleGridItem.WBP_RoleGridItem_C.OnListItemObjectSet
+// (Native, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RoleGridItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+void UWBP_RoleGridItem_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoleGridItem_C", "BP_OnItemExpansionChanged");
+		Func = Class->GetFunction("WBP_RoleGridItem_C", "OnListItemObjectSet");
 
-	Params::WBP_RoleGridItem_C_BP_OnItemExpansionChanged Parms{};
+	Params::WBP_RoleGridItem_C_OnListItemObjectSet Parms{};
 
-	Parms.bIsExpanded = bIsExpanded;
+	Parms.ListItemObject = ListItemObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
-// Function WBP_RoleGridItem.WBP_RoleGridItem_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
+// Function WBP_RoleGridItem.WBP_RoleGridItem_C.ExecuteUbergraph_WBP_RoleGridItem
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RoleGridItem_C::BP_OnEntryReleased()
+void UWBP_RoleGridItem_C::ExecuteUbergraph_WBP_RoleGridItem(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoleGridItem_C", "BP_OnEntryReleased");
+		Func = Class->GetFunction("WBP_RoleGridItem_C", "ExecuteUbergraph_WBP_RoleGridItem");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_RoleGridItem_C_ExecuteUbergraph_WBP_RoleGridItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

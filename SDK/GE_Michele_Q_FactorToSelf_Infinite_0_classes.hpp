@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Michele_Q_FactorToSelf_Infinite.GE_Michele_Q_FactorToSelf_Infinite_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Michele_Q_FactorToSelf_Infinite_0::UGE_Michele_Q_FactorToSelf_Infinite_C final : public UCyGameplayEffect
 {
 public:

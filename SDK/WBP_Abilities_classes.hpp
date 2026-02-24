@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Abilities.WBP_Abilities_C
-// 0x0000 (0x1128 - 0x1128)
+// 0x0000 (0x1140 - 0x1140)
 class UWBP_Abilities_C final : public UPMUWGameplayAbility
 {
 public:

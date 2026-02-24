@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Damage_ArousalThree_Leona.GE_Damage_ArousalThree_Leona_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Damage_ArousalThree_Leona_C final : public UCyGameplayEffect
 {
 public:

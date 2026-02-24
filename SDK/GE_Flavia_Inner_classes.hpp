@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Flavia_Inner.GE_Flavia_Inner_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Flavia_Inner::UGE_Flavia_Inner_C final : public UCyGameplayEffect
 {
 public:

@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Pickup15204001.BP_Pickup15204001_C
-// 0x0028 (0x0750 - 0x0728)
+// 0x0028 (0x0790 - 0x0768)
 class ABP_Pickup15204001_C final : public ACyPickupCapsuleActor
 {
 public:
-	class UBP_CommonOverheadComponent_C*          BP_CommonOverhead_PickUp15204001;                  // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySceneMapMaskComponent*               CySceneMapPickUp15204001;                          // 0x0730(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyPickupWeapon*                        CyPickupWeapon;                                    // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPB_PickMovement_C*                     PB_PickMovement;                                   // 0x0740(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 Mesh;                                              // 0x0748(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_CommonOverheadComponent_C*          BP_CommonOverhead_PickUp15204001;                  // 0x0768(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySceneMapMaskComponent*               CySceneMapPickUp15204001;                          // 0x0770(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPickupWeapon*                        CyPickupWeapon;                                    // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPB_PickMovement_C*                     PB_PickMovement;                                   // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 Mesh;                                              // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

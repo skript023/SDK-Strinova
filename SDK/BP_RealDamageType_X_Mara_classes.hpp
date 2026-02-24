@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_RealDamageType_X_Mara.BP_RealDamageType_X_Mara_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_RealDamageType_X_Mara_C final : public UPMRealDamageType
 {
 public:

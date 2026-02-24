@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_EnemySpeedDown_Q_Mara.GE_EnemySpeedDown_Q_Mara_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_EnemySpeedDown_Q_Mara_C final : public UCyGameplayEffect
 {
 public:

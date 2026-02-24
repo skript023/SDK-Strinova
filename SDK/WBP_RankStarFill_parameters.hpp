@@ -14,6 +14,24 @@
 namespace SDK::Params
 {
 
+// Function WBP_RankStarFill.WBP_RankStarFill_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RankStarFill_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_RankStarFill_C_PreConstruct;
+
+// Function WBP_RankStarFill.WBP_RankStarFill_C.SetIsFilled
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RankStarFill_C_SetIsFilled final
+{
+public:
+	bool                                          bFill;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_RankStarFill_C_SetIsFilled;
+
 // Function WBP_RankStarFill.WBP_RankStarFill_C.ExecuteUbergraph_WBP_RankStarFill
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_RankStarFill_C_ExecuteUbergraph_WBP_RankStarFill final
@@ -32,24 +50,6 @@ public:
 	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_1; // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_RankStarFill_C_ExecuteUbergraph_WBP_RankStarFill;
-
-// Function WBP_RankStarFill.WBP_RankStarFill_C.SetIsFilled
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RankStarFill_C_SetIsFilled final
-{
-public:
-	bool                                          bFill;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_RankStarFill_C_SetIsFilled;
-
-// Function WBP_RankStarFill.WBP_RankStarFill_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RankStarFill_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_RankStarFill_C_PreConstruct;
 
 }
 

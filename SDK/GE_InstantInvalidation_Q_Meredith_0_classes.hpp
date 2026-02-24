@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_InstantInvalidation_Q_Meredith.GE_InstantInvalidation_Q_Meredith_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_InstantInvalidation_Q_Meredith_0::UGE_InstantInvalidation_Q_Meredith_C final : public UCyGameplayEffect
 {
 public:

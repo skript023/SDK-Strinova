@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Infinite_Armor.GE_Infinite_Armor_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Infinite_Armor_C final : public UCyGameplayEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Actuator_SpeedUp.BP_Actuator_SpeedUp_C
-// 0x0000 (0x01F8 - 0x01F8)
+// 0x0000 (0x0208 - 0x0208)
 class UBP_Actuator_SpeedUp_C final : public UCyActuatorComponent
 {
 public:

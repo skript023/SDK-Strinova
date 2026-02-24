@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_ArousalOne_Maddelena.Projectile_ArousalOne_Maddelena_C
-// 0x0000 (0x0AC8 - 0x0AC8)
+// 0x0000 (0x0B10 - 0x0B10)
 class Projectile_ArousalOne_Maddelena::AProjectile_ArousalOne_Maddelena_C final : public ACyProjectileBlast
 {
 public:

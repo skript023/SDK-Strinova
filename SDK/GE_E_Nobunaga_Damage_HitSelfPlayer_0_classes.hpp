@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_E_Nobunaga_Damage_HitSelfPlayer.GE_E_Nobunaga_Damage_HitSelfPlayer_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_E_Nobunaga_Damage_HitSelfPlayer_0::UGE_E_Nobunaga_Damage_HitSelfPlayer_C final : public UCyGameplayEffect
 {
 public:

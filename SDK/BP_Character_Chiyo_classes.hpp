@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_PMCharacterBase_V3_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Character_Chiyo.BP_Character_Chiyo_C
-// 0x0030 (0x1DE0 - 0x1DB0)
+// 0x0020 (0x1E30 - 0x1E10)
 class ABP_Character_Chiyo_C final : public ABP_PMCharacterBase_V3_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1DB0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1DB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_WeaponManager_Chiyo_C*              BP_WeaponManager_Chiyo;                            // 0x1DC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Blinking______0_6D509F4E4638B0CA2F67FDAD77A8A1BE;  // 0x1DC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Blinking__Direction_6D509F4E4638B0CA2F67FDAD77A8A1BE; // 0x1DCC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DCD[0x3];                                     // 0x1DCD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Blinking;                                          // 0x1DD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1E08(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1E10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_WeaponManager_Chiyo_C*              BP_WeaponManager_Chiyo;                            // 0x1E18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Blinking______0_6D509F4E4638B0CA2F67FDAD77A8A1BE;  // 0x1E20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Blinking__Direction_6D509F4E4638B0CA2F67FDAD77A8A1BE; // 0x1E24(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E25[0x3];                                     // 0x1E25(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Blinking;                                          // 0x1E28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Blinking__FinishedFunc();

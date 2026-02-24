@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_X_Fissioner1.Weapon_X_Fissioner1_C
-// 0x0010 (0x11A0 - 0x1190)
+// 0x0010 (0x1270 - 0x1260)
 class AWeapon_X_Fissioner1_C final : public ACyWeaponSkill
 {
 public:
-	class UAkComponent*                           Ak;                                                // 0x1190(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x1260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

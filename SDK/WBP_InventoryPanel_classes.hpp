@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_InventoryPanel.WBP_InventoryPanel_C
-// 0x0008 (0x0B80 - 0x0B78)
+// 0x0008 (0x0C58 - 0x0C50)
 class UWBP_InventoryPanel_C final : public UPMUWInventoryPanelPC
 {
 public:
-	class UInvalidationBox*                       InvalidationBox_3;                                 // 0x0B78(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_3;                                 // 0x0C50(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

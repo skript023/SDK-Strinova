@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Calculation_HealthRecoverySelf.BP_Calculation_HealthRecoverySelf_C
-// 0x0000 (0x0130 - 0x0130)
+// 0x0000 (0x0258 - 0x0258)
 class UBP_Calculation_HealthRecoverySelf_C final : public UCyCalculationWithAttributes
 {
 public:

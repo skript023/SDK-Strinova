@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_Mobai_SpeedFactor.GE_X_Mobai_SpeedFactor_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_Mobai_SpeedFactor_0::UGE_X_Mobai_SpeedFactor_C final : public UCyGameplayEffect
 {
 public:

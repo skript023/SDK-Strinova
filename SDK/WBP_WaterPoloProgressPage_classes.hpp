@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_WaterPoloProgressPage.WBP_WaterPoloProgressPage_C
-// 0x0000 (0x0908 - 0x0908)
+// 0x0000 (0x0920 - 0x0920)
 class UWBP_WaterPoloProgressPage_C final : public UPMUWWaterPoloProgressPagePC
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_InstantInvalidation_X_Meredith_Sign.GE_InstantInvalidation_X_Meredith_Sign_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_InstantInvalidation_X_Meredith_Sign::UGE_InstantInvalidation_X_Meredith_Sign_C final : public UCyGameplayEffect
 {
 public:

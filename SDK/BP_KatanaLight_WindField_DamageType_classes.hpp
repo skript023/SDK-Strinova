@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_KatanaLight_WindField_DamageType.BP_KatanaLight_WindField_DamageType_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_KatanaLight_WindField_DamageType_C final : public UPMDamageType
 {
 public:

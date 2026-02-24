@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon10602099.Weapon10602099_C
-// 0x0000 (0x11C0 - 0x11C0)
+// 0x0000 (0x1290 - 0x1290)
 class AWeapon10602099_C final : public ACyWeaponRifle
 {
 public:

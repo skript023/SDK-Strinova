@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_ListPanel.WBP_ListPanel_C.ExecuteUbergraph_WBP_ListPanel
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ListPanel_C::ExecuteUbergraph_WBP_ListPanel(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ListPanel_C", "ExecuteUbergraph_WBP_ListPanel");
-
-	Params::WBP_ListPanel_C_ExecuteUbergraph_WBP_ListPanel Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ListPanel.WBP_ListPanel_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void UWBP_ListPanel_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_ListPanel_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ListPanel.WBP_ListPanel_C.ExecuteUbergraph_WBP_ListPanel
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ListPanel_C::ExecuteUbergraph_WBP_ListPanel(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ListPanel_C", "ExecuteUbergraph_WBP_ListPanel");
+
+	Params::WBP_ListPanel_C_ExecuteUbergraph_WBP_ListPanel Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

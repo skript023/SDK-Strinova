@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_InitArmor_GrenadeShield.GE_InitArmor_GrenadeShield_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_InitArmor_GrenadeShield_C final : public UCyGameplayEffect
 {
 public:

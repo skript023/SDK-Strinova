@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_Grenade_SlowDown.DamageType_Grenade_SlowDown_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UDamageType_Grenade_SlowDown_C final : public UPMDamageType
 {
 public:

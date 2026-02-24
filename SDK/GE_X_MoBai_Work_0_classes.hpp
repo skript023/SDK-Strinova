@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_MoBai_Work.GE_X_MoBai_Work_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_MoBai_Work_0::UGE_X_MoBai_Work_C final : public UCyGameplayEffect
 {
 public:

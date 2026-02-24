@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_ArousalTwo_Chiyo.BP_DamageType_ArousalTwo_Chiyo_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_DamageType_ArousalTwo_Chiyo_C final : public UPMDamageType
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Pickup_ArmorTeammate.BP_Pickup_ArmorTeammate_C
-// 0x0000 (0x0750 - 0x0750)
+// 0x0000 (0x0790 - 0x0790)
 class ABP_Pickup_ArmorTeammate_C final : public ABP_PickupArmor_Template_C
 {
 public:

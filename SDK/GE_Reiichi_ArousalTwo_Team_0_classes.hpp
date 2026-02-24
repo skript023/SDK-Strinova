@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Reiichi_ArousalTwo_Team.GE_Reiichi_ArousalTwo_Team_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Reiichi_ArousalTwo_Team_0::UGE_Reiichi_ArousalTwo_Team_C final : public UCyGameplayEffect
 {
 public:

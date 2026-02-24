@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Summon_CanDamageByTeam.GE_Q_Summon_CanDamageByTeam_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Q_Summon_CanDamageByTeam_C final : public UCyGameplayEffect
 {
 public:

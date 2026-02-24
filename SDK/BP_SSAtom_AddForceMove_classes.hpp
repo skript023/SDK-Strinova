@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SSAtom_AddForceMove.BP_SSAtom_AddForceMove_C
-// 0x0000 (0x02A0 - 0x02A0)
+// 0x0000 (0x02A8 - 0x02A8)
 class BP_SSAtom_AddForceMove::UBP_SSAtom_AddForceMove_C final : public UCySSAtomAddForceMove
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass UGCPlaneEditStepTwo_BP.UGCPlaneEditStepTwo_BP_C
-// 0x0000 (0x02F8 - 0x02F8)
+// 0x0000 (0x0338 - 0x0338)
 class AUGCPlaneEditStepTwo_BP_C final : public AUGCPlaneEditViewStepTwo
 {
 public:

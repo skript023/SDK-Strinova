@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_RankStarFill.WBP_RankStarFill_C.ExecuteUbergraph_WBP_RankStarFill
-// (Final, UbergraphFunction)
+// Function WBP_RankStarFill.WBP_RankStarFill_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_RankStarFill_C::ExecuteUbergraph_WBP_RankStarFill(int32 EntryPoint)
+void UWBP_RankStarFill_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankStarFill_C", "ExecuteUbergraph_WBP_RankStarFill");
+		Func = Class->GetFunction("WBP_RankStarFill_C", "PreConstruct");
 
-	Params::WBP_RankStarFill_C_ExecuteUbergraph_WBP_RankStarFill Parms{};
+	Params::WBP_RankStarFill_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_RankStarFill_C::SetIsFilled(bool bFill)
 }
 
 
-// Function WBP_RankStarFill.WBP_RankStarFill_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_RankStarFill.WBP_RankStarFill_C.ExecuteUbergraph_WBP_RankStarFill
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RankStarFill_C::PreConstruct(bool IsDesignTime)
+void UWBP_RankStarFill_C::ExecuteUbergraph_WBP_RankStarFill(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankStarFill_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_RankStarFill_C", "ExecuteUbergraph_WBP_RankStarFill");
 
-	Params::WBP_RankStarFill_C_PreConstruct Parms{};
+	Params::WBP_RankStarFill_C_ExecuteUbergraph_WBP_RankStarFill Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

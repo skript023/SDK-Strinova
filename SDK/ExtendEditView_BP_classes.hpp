@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ExtendEditView_BP.ExtendEditView_BP_C
-// 0x0000 (0x02E0 - 0x02E0)
+// 0x0000 (0x0320 - 0x0320)
 class AExtendEditView_BP_C final : public AUGCExtendEditView
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_ArousalThree_Chiyo.Projectile_ArousalThree_Chiyo_C
-// 0x0000 (0x0AF8 - 0x0AF8)
+// 0x0000 (0x0B40 - 0x0B40)
 class AProjectile_ArousalThree_Chiyo_C : public AProjectile_Q_Chiyo_C
 {
 public:

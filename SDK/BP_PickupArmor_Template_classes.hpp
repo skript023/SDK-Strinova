@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PickupArmor_Template.BP_PickupArmor_Template_C
-// 0x0020 (0x0750 - 0x0730)
+// 0x0020 (0x0790 - 0x0770)
 class ABP_PickupArmor_Template_C : public ACyPickupBoxActor
 {
 public:
-	class UCyInteractComponent*                   CyInteract;                                        // 0x0730(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPB_PickMovement_C*                     PB_PickMovement;                                   // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyPickupBuff*                          CyPickupBuff;                                      // 0x0740(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Main;                                              // 0x0748(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyInteractComponent*                   CyInteract;                                        // 0x0770(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPB_PickMovement_C*                     PB_PickMovement;                                   // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPickupBuff*                          CyPickupBuff;                                      // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Main;                                              // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

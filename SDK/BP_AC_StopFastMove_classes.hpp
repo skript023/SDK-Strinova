@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AC_StopFastMove.BP_AC_StopFastMove_C
-// 0x0000 (0x04E8 - 0x04E8)
+// 0x0000 (0x04F0 - 0x04F0)
 class UBP_AC_StopFastMove_C final : public UCyGPActionContainer
 {
 public:

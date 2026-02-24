@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Payload_InPayloadWall_Infinite.GE_Payload_InPayloadWall_Infinite_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Payload_InPayloadWall_Infinite_C final : public UCyGameplayEffect
 {
 public:

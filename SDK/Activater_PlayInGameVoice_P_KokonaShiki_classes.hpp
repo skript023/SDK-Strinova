@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Activater_PlayInGameVoice_P_KokonaShiki.Activater_PlayInGameVoice_P_KokonaShiki_C
-// 0x0000 (0x0238 - 0x0238)
+// 0x0000 (0x03C0 - 0x03C0)
 class Activater_PlayInGameVoice_P_KokonaShiki::UActivater_PlayInGameVoice_P_KokonaShiki_C final : public UCyGAActivatorPlayInGameVoice
 {
 public:

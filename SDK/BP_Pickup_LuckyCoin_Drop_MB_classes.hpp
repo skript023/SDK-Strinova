@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Pickup_LuckyCoin_Drop_MB.BP_Pickup_LuckyCoin_Drop_MB_C
-// 0x0000 (0x0738 - 0x0738)
+// 0x0000 (0x0778 - 0x0778)
 class ABP_Pickup_LuckyCoin_Drop_MB_C final : public ABP_Pickup_LuckyCoin_Template_C
 {
 public:

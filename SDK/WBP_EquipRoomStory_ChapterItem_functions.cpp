@@ -17,37 +17,43 @@
 namespace SDK
 {
 
-// Function WBP_EquipRoomStory_ChapterItem.WBP_EquipRoomStory_ChapterItem_C.ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem
-// (Final, UbergraphFunction)
+// Function WBP_EquipRoomStory_ChapterItem.WBP_EquipRoomStory_ChapterItem_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_EquipRoomStory_ChapterItem_C::ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem(int32 EntryPoint)
+void UWBP_EquipRoomStory_ChapterItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipRoomStory_ChapterItem_C", "ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem");
+		Func = Class->GetFunction("WBP_EquipRoomStory_ChapterItem_C", "BP_OnItemExpansionChanged");
 
-	Params::WBP_EquipRoomStory_ChapterItem_C_ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem Parms{};
+	Params::WBP_EquipRoomStory_ChapterItem_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_EquipRoomStory_ChapterItem.WBP_EquipRoomStory_ChapterItem_C.BP_OnEntryReleased
+// Function WBP_EquipRoomStory_ChapterItem.WBP_EquipRoomStory_ChapterItem_C.BP_OnItemSelectionChanged
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_EquipRoomStory_ChapterItem_C::BP_OnEntryReleased()
+void UWBP_EquipRoomStory_ChapterItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipRoomStory_ChapterItem_C", "BP_OnEntryReleased");
+		Func = Class->GetFunction("WBP_EquipRoomStory_ChapterItem_C", "BP_OnItemSelectionChanged");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_EquipRoomStory_ChapterItem_C_BP_OnItemSelectionChanged Parms{};
+
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -76,41 +82,35 @@ void UWBP_EquipRoomStory_ChapterItem_C::OnListItemObjectSet(class UObject* ListI
 }
 
 
-// Function WBP_EquipRoomStory_ChapterItem.WBP_EquipRoomStory_ChapterItem_C.BP_OnItemSelectionChanged
+// Function WBP_EquipRoomStory_ChapterItem.WBP_EquipRoomStory_ChapterItem_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_EquipRoomStory_ChapterItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
+void UWBP_EquipRoomStory_ChapterItem_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipRoomStory_ChapterItem_C", "BP_OnItemSelectionChanged");
+		Func = Class->GetFunction("WBP_EquipRoomStory_ChapterItem_C", "BP_OnEntryReleased");
 
-	Params::WBP_EquipRoomStory_ChapterItem_C_BP_OnItemSelectionChanged Parms{};
-
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_EquipRoomStory_ChapterItem.WBP_EquipRoomStory_ChapterItem_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_EquipRoomStory_ChapterItem.WBP_EquipRoomStory_ChapterItem_C.ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EquipRoomStory_ChapterItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+void UWBP_EquipRoomStory_ChapterItem_C::ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipRoomStory_ChapterItem_C", "BP_OnItemExpansionChanged");
+		Func = Class->GetFunction("WBP_EquipRoomStory_ChapterItem_C", "ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem");
 
-	Params::WBP_EquipRoomStory_ChapterItem_C_BP_OnItemExpansionChanged Parms{};
+	Params::WBP_EquipRoomStory_ChapterItem_C_ExecuteUbergraph_WBP_EquipRoomStory_ChapterItem Parms{};
 
-	Parms.bIsExpanded = bIsExpanded;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

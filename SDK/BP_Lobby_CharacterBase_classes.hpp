@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Lobby_CharacterBase.BP_Lobby_CharacterBase_C
-// 0x0000 (0x0980 - 0x0980)
+// 0x0000 (0x09C0 - 0x09C0)
 class ABP_Lobby_CharacterBase_C : public APMLobbyCharacter
 {
 public:

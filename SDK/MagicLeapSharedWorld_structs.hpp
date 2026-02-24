@@ -17,15 +17,6 @@
 namespace SDK
 {
 
-// ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldAlignmentTransforms
-// 0x0010 (0x0010 - 0x0000)
-struct FMagicLeapSharedWorldAlignmentTransforms final
-{
-public:
-	TArray<struct FTransform>                     AlignmentTransforms;                               // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FMagicLeapSharedWorldAlignmentTransforms;
-
 // ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldSharedData
 // 0x0010 (0x0010 - 0x0000)
 struct FMagicLeapSharedWorldSharedData final
@@ -34,6 +25,15 @@ public:
 	TArray<struct FGuid>                          PinIDs;                                            // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FMagicLeapSharedWorldSharedData;
+
+// ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldAlignmentTransforms
+// 0x0010 (0x0010 - 0x0000)
+struct FMagicLeapSharedWorldAlignmentTransforms final
+{
+public:
+	TArray<struct FTransform>                     AlignmentTransforms;                               // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMagicLeapSharedWorldAlignmentTransforms;
 
 // ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldPinData
 // 0x0020 (0x0020 - 0x0000)

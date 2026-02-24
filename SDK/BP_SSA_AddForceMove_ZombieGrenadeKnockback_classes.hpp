@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SSA_AddForceMove_ZombieGrenadeKnockback.BP_SSA_AddForceMove_ZombieGrenadeKnockback_C
-// 0x0000 (0x02A0 - 0x02A0)
+// 0x0000 (0x02A8 - 0x02A8)
 class UBP_SSA_AddForceMove_ZombieGrenadeKnockback_C final : public UCySSAtomAddForceMove
 {
 public:

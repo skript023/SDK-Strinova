@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_RecoveryHealth_Duration_SubPEnergy.GE_RecoveryHealth_Duration_SubPEnergy_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_RecoveryHealth_Duration_SubPEnergy_0::UGE_RecoveryHealth_Duration_SubPEnergy_C final : public UCyGameplayEffect
 {
 public:

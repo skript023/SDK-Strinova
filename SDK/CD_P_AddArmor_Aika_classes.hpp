@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_P_AddArmor_Aika.CD_P_AddArmor_Aika_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UCD_P_AddArmor_Aika_C final : public UCyGameplayEffect
 {
 public:

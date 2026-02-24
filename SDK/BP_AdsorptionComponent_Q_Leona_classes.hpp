@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AdsorptionComponent_Q_Leona.BP_AdsorptionComponent_Q_Leona_C
-// 0x0000 (0x0148 - 0x0148)
+// 0x0000 (0x0158 - 0x0158)
 class UBP_AdsorptionComponent_Q_Leona_C final : public UCyAdsorptionComponent
 {
 public:

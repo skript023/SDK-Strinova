@@ -17,24 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectory_ShotGun_203.BP_BulletTrajectory_ShotGun_203_C
-// 0x0000 (0x02E8 - 0x02E8)
-class ABP_BulletTrajectory_ShotGun_203_C final : public ACyBulletTrajectory
+// 0x0008 (0x0330 - 0x0328)
+class BP_BulletTrajectory_ShotGun_203::ABP_BulletTrajectory_ShotGun_203_C final : public ACyBulletTrajectory
 {
+public:
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_BulletTrajectory_ShotGun_203_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_BulletTrajectory_ShotGun_203.BP_BulletTrajectory_ShotGun_203_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_BulletTrajectory_ShotGun_203_C")
 	}
-	static class ABP_BulletTrajectory_ShotGun_203_C* GetDefaultObj()
+	static class BP_BulletTrajectory_ShotGun_203::ABP_BulletTrajectory_ShotGun_203_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ABP_BulletTrajectory_ShotGun_203_C>();
+		return GetDefaultObjImpl<BP_BulletTrajectory_ShotGun_203::ABP_BulletTrajectory_ShotGun_203_C>();
 	}
 };
-DUMPER7_ASSERTS_ABP_BulletTrajectory_ShotGun_203_C;
+DUMPER7_ASSERTS_BP_BulletTrajectory_ShotGun_203__ABP_BulletTrajectory_ShotGun_203_C;
 
 }
 

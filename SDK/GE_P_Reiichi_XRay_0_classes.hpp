@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_Reiichi_XRay.GE_P_Reiichi_XRay_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_P_Reiichi_XRay_0::UGE_P_Reiichi_XRay_C final : public UCyGameplayEffect
 {
 public:

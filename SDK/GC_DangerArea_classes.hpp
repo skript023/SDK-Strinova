@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GC_DangerArea.GC_DangerArea_C
-// 0x0008 (0x0438 - 0x0430)
+// 0x0008 (0x0478 - 0x0470)
 class AGC_DangerArea_C final : public APMDangerAreaNotifyActor
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0430(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

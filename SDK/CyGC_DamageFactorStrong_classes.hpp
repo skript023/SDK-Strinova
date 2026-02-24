@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CyGC_DamageFactorStrong.CyGC_DamageFactorStrong_C
-// 0x0010 (0x04C0 - 0x04B0)
+// 0x0010 (0x0500 - 0x04F0)
 class ACyGC_DamageFactorStrong_C final : public ACyCueNotifyActor
 {
 public:
-	class UDecalComponent*                        Decal;                                             // 0x04B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x04B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UDecalComponent*                        Decal;                                             // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x04F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SA_ReceivedAttackHitEffect_PrecticeTarget.BP_SA_ReceivedAttackHitEffect_PrecticeTarget_C
-// 0x0000 (0x07A0 - 0x07A0)
+// 0x0000 (0x07B0 - 0x07B0)
 class UBP_SA_ReceivedAttackHitEffect_PrecticeTarget_C final : public UCySAReceivedAttackHitEffect
 {
 public:

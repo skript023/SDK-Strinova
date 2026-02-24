@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Starlight_Flash.GE_Starlight_Flash_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Starlight_Flash::UGE_Starlight_Flash_C final : public UCyGameplayEffect
 {
 public:

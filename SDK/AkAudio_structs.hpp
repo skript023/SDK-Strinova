@@ -554,6 +554,64 @@ enum class EPlayAudioDirection : uint8
 	EPlayAudioDirection_MAX                  = 3,
 };
 
+// ScriptStruct AkAudio.AkHurtOther
+// 0x0020 (0x0020 - 0x0000)
+struct FAkHurtOther final
+{
+public:
+	class UAkAudioEvent*                          Armor_Headshot;                                    // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Armor;                                             // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Headshot;                                          // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Body;                                              // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkHurtOther;
+
+// ScriptStruct AkAudio.AkLipSyncCheckData
+// 0x0078 (0x0080 - 0x0008)
+struct FAkLipSyncCheckData final : public FTableRowBase
+{
+public:
+	class FString                                 AudioName;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ChineseResult;                                     // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 JapaneseResult;                                    // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EnglishResult;                                     // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 KoreanResult;                                      // 0x0048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UAkAudioEvent>           AudioEvent;                                        // 0x0058(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkLipSyncCheckData;
+
+// ScriptStruct AkAudio.AKWaapiJsonObject
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FAKWaapiJsonObject final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAKWaapiJsonObject;
+
+// ScriptStruct AkAudio.AkLipSyncSpawnData
+// 0x0078 (0x0080 - 0x0008)
+struct FAkLipSyncSpawnData final : public FTableRowBase
+{
+public:
+	TSoftObjectPtr<class UAkAudioEvent>           AudioEvent;                                        // 0x0008(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AudioName;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ChineseResult;                                     // 0x0040(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 JapaneseResult;                                    // 0x0050(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EnglishResult;                                     // 0x0060(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 KoreanResult;                                      // 0x0070(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkLipSyncSpawnData;
+
+// ScriptStruct AkAudio.AkWaapiSubscriptionId
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) FAkWaapiSubscriptionId final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAkWaapiSubscriptionId;
+
 // ScriptStruct AkAudio.AkAdvancedInitializationSettings
 // 0x0030 (0x0030 - 0x0000)
 struct FAkAdvancedInitializationSettings
@@ -600,59 +658,6 @@ public:
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAkAndroidAdvancedInitializationSettings;
-
-// ScriptStruct AkAudio.AkPropertyToControl
-// 0x0010 (0x0010 - 0x0000)
-struct FAkPropertyToControl final
-{
-public:
-	class FString                                 ItemProperty;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkPropertyToControl;
-
-// ScriptStruct AkAudio.AKWaapiJsonObject
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FAKWaapiJsonObject final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAKWaapiJsonObject;
-
-// ScriptStruct AkAudio.AkHurtOther
-// 0x0020 (0x0020 - 0x0000)
-struct FAkHurtOther final
-{
-public:
-	class UAkAudioEvent*                          Armor_Headshot;                                    // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Armor;                                             // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Headshot;                                          // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Body;                                              // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkHurtOther;
-
-// ScriptStruct AkAudio.AkXSXAdvancedInitializationSettings
-// 0x000C (0x0048 - 0x003C)
-struct FAkXSXAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
-{
-public:
-	uint16                                        MaximumNumberOfXMAVoices;                          // 0x003C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          UseHardwareCodecLowLatencyMode;                    // 0x003E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3F[0x1];                                       // 0x003F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	uint16                                        MaximumNumberOfOpusVoices;                         // 0x0040(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	uint32                                        uMaxSystemAudioObjects;                            // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkXSXAdvancedInitializationSettings;
-
-// ScriptStruct AkAudio.AkWaapiSubscriptionId
-// 0x0008 (0x0008 - 0x0000)
-struct alignas(0x08) FAkWaapiSubscriptionId final
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAkWaapiSubscriptionId;
 
 // ScriptStruct AkAudio.AkAudioEventPlatformInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -856,6 +861,17 @@ public:
 };
 DUMPER7_ASSERTS_FAkGeometrySurfaceOverride;
 
+// ScriptStruct AkAudio.AkAcousticSurface
+// 0x0018 (0x0018 - 0x0000)
+struct FAkAcousticSurface final
+{
+public:
+	uint32                                        Texture;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Occlusion;                                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name;                                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkAcousticSurface;
+
 // ScriptStruct AkAudio.AkTriangle
 // 0x0008 (0x0008 - 0x0000)
 struct FAkTriangle final
@@ -867,17 +883,6 @@ public:
 	uint16                                        Surface;                                           // 0x0006(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FAkTriangle;
-
-// ScriptStruct AkAudio.AkAcousticSurface
-// 0x0018 (0x0018 - 0x0000)
-struct FAkAcousticSurface final
-{
-public:
-	uint32                                        Texture;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Occlusion;                                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Name;                                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkAcousticSurface;
 
 // ScriptStruct AkAudio.AkGeometryData
 // 0x0050 (0x0050 - 0x0000)
@@ -1012,6 +1017,15 @@ public:
 };
 DUMPER7_ASSERTS_FAkBoolPropertyToControl;
 
+// ScriptStruct AkAudio.AkPropertyToControl
+// 0x0010 (0x0010 - 0x0000)
+struct FAkPropertyToControl final
+{
+public:
+	class FString                                 ItemProperty;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkPropertyToControl;
+
 // ScriptStruct AkAudio.AkLipSyncCheckAnimData
 // 0x0098 (0x00A0 - 0x0008)
 struct FAkLipSyncCheckAnimData final : public FTableRowBase
@@ -1045,34 +1059,6 @@ public:
 	TArray<TSoftObjectPtr<class UObject>>         AVGSequences;                                      // 0x00B0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FAkLipSyncCheckSequenceData;
-
-// ScriptStruct AkAudio.AkLipSyncCheckData
-// 0x0078 (0x0080 - 0x0008)
-struct FAkLipSyncCheckData final : public FTableRowBase
-{
-public:
-	class FString                                 AudioName;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ChineseResult;                                     // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 JapaneseResult;                                    // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 EnglishResult;                                     // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 KoreanResult;                                      // 0x0048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UAkAudioEvent>           AudioEvent;                                        // 0x0058(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkLipSyncCheckData;
-
-// ScriptStruct AkAudio.AkLipSyncSpawnData
-// 0x0078 (0x0080 - 0x0008)
-struct FAkLipSyncSpawnData final : public FTableRowBase
-{
-public:
-	TSoftObjectPtr<class UAkAudioEvent>           AudioEvent;                                        // 0x0008(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AudioName;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ChineseResult;                                     // 0x0040(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 JapaneseResult;                                    // 0x0050(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 EnglishResult;                                     // 0x0060(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 KoreanResult;                                      // 0x0070(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkLipSyncSpawnData;
 
 // ScriptStruct AkAudio.AkLipSyncData
 // 0x0118 (0x0120 - 0x0008)
@@ -1319,6 +1305,20 @@ public:
 	uint32                                        NonCachedSize;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FAkXSXApuHeapInitializationSettings;
+
+// ScriptStruct AkAudio.AkXSXAdvancedInitializationSettings
+// 0x000C (0x0048 - 0x003C)
+struct FAkXSXAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
+{
+public:
+	uint16                                        MaximumNumberOfXMAVoices;                          // 0x003C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UseHardwareCodecLowLatencyMode;                    // 0x003E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3F[0x1];                                       // 0x003F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint16                                        MaximumNumberOfOpusVoices;                         // 0x0040(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        uMaxSystemAudioObjects;                            // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkXSXAdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.MovieSceneAkAudioEventTemplate
 // 0x0008 (0x0028 - 0x0020)

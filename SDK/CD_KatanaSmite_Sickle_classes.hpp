@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_KatanaSmite_Sickle.CD_KatanaSmite_Sickle_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UCD_KatanaSmite_Sickle_C final : public UCyGameplayEffect
 {
 public:

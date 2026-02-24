@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_X_Maddelena_Damage.GE_X_Maddelena_Damage_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_X_Maddelena_Damage::UGE_X_Maddelena_Damage_C final : public UCyGameplayEffect
 {
 public:

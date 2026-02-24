@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_Aika_AttackDuration.GE_P_Aika_AttackDuration_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_P_Aika_AttackDuration_0::UGE_P_Aika_AttackDuration_C final : public UCyGameplayEffect
 {
 public:

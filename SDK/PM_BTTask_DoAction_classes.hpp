@@ -27,8 +27,8 @@ public:
 	EPMAIActionTypes                              ActionType;                                        // 0x00B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_PM_BTTask_DoAction(int32 EntryPoint);
 	void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
+	void ExecuteUbergraph_PM_BTTask_DoAction(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

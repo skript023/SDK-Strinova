@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Q_CrystalloidAlpha_Stage4.Projectile_Q_CrystalloidAlpha_Stage4_C
-// 0x0010 (0x0B28 - 0x0B18)
+// 0x0010 (0x0B70 - 0x0B60)
 class AProjectile_Q_CrystalloidAlpha_Stage4_C final : public AProjectile_Q_CrystalloidAlpha_Stage1_C
 {
 public:
-	class USphereComponent*                       Sphere_0;                                          // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak_0;                                              // 0x0B20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Sphere_0;                                          // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak_0;                                              // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

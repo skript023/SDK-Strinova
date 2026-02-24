@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BuffItem.WBP_BuffItem_C
-// 0x0018 (0x0AC0 - 0x0AA8)
+// 0x0018 (0x0AD8 - 0x0AC0)
 class WBP_BuffItem_0::UWBP_BuffItem_C final : public UPMUWBuffItemPC
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AA8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       MoveDown;                                          // 0x0AB0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	bool                                          Is_BUFF;                                           // 0x0AB8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AC0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       MoveDown;                                          // 0x0AC8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	bool                                          Is_BUFF;                                           // 0x0AD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void PreConstruct(bool IsDesignTime);

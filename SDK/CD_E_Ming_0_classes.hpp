@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_E_Ming.CD_E_Ming_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class CD_E_Ming_0::UCD_E_Ming_C final : public UCyGameplayEffect
 {
 public:

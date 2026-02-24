@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PickupMine_Blue_DeathDrop_Stolen.BP_PickupMine_Blue_DeathDrop_Stolen_C
-// 0x0010 (0x0748 - 0x0738)
+// 0x0010 (0x0788 - 0x0778)
 class ABP_PickupMine_Blue_DeathDrop_Stolen_C final : public ABP_PickupMine_Blue_Template_C
 {
 public:
-	class UCySceneMapMaskComponent*               CySceneMapMask;                                    // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_CommonOverheadComponent_C*          BP_CommonOverheadComponent;                        // 0x0740(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySceneMapMaskComponent*               CySceneMapMask;                                    // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_CommonOverheadComponent_C*          BP_CommonOverheadComponent;                        // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

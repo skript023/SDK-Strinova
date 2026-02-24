@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ChatTitle.WBP_ChatTitle_C
-// 0x0008 (0x08C8 - 0x08C0)
+// 0x0008 (0x08E0 - 0x08D8)
 class UWBP_ChatTitle_C final : public UPMUserWidget
 {
 public:
-	class UImage*                                 Image_19;                                          // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_19;                                          // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

@@ -17,12 +17,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TeamScoreInfoPanel.WBP_TeamScoreInfoPanel_C
-// 0x0010 (0x0CE0 - 0x0CD0)
+// 0x0018 (0x0D00 - 0x0CE8)
 class UWBP_TeamScoreInfoPanel_C final : public UPMUWTeamScoreInfoPanel
 {
 public:
-	class UCanvasPanel*                           CanvasPanel_LeftPlayerCount;                       // 0x0CD0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_1;                                             // 0x0CD8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_LeftPlayerCount;                       // 0x0CE8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_1;                                             // 0x0CF0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_55;                                // 0x0CF8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

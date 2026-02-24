@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function UGC.UGCBaseActor.OnRep_Color
+// Function UGC.UGCBaseActor.OnRep_CustomData
 // (Final, Native, Protected)
 
-void AUGCBaseActor::OnRep_Color()
+void AUGCBaseActor::OnRep_CustomData()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UGCBaseActor", "OnRep_Color");
+		Func = Class->GetFunction("UGCBaseActor", "OnRep_CustomData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

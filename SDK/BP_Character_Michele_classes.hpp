@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_PMCharacterBase_V3_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Character_Michele.BP_Character_Michele_C
-// 0x0020 (0x1DD0 - 0x1DB0)
+// 0x0020 (0x1E30 - 0x1E10)
 class ABP_Character_Michele_C final : public ABP_PMCharacterBase_V3_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1DB0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_WeaponManager_Michele_C*            BP_WeaponManager_Michele;                          // 0x1DB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Blinking______0_7F2B089A47F3EFF98C2F35838C025B78;  // 0x1DC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Blinking__Direction_7F2B089A47F3EFF98C2F35838C025B78; // 0x1DC4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DC5[0x3];                                     // 0x1DC5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Blinking;                                          // 0x1DC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1E08(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_WeaponManager_Michele_C*            BP_WeaponManager_Michele;                          // 0x1E10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Blinking______0_7F2B089A47F3EFF98C2F35838C025B78;  // 0x1E18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Blinking__Direction_7F2B089A47F3EFF98C2F35838C025B78; // 0x1E1C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E1D[0x3];                                     // 0x1E1D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Blinking;                                          // 0x1E20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Blinking__FinishedFunc();

@@ -36,11 +36,12 @@ public:
 DUMPER7_ASSERTS_AnimBP_PPMCharacter_Master_v2_C_AnimGraph;
 
 // Function AnimBP_PPMCharacter_Master_v2.AnimBP_PPMCharacter_Master_v2_C.ExecuteUbergraph_AnimBP_PPMCharacter_Master_v2
-// 0x0004 (0x0004 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct AnimBP_PPMCharacter_Master_v2_C_ExecuteUbergraph_AnimBP_PPMCharacter_Master_v2 final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_AnimBP_PPMCharacter_Master_v2_C_ExecuteUbergraph_AnimBP_PPMCharacter_Master_v2;
 

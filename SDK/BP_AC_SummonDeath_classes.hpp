@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AC_SummonDeath.BP_AC_SummonDeath_C
-// 0x0000 (0x04E8 - 0x04E8)
+// 0x0000 (0x04F0 - 0x04F0)
 class BP_AC_SummonDeath::UBP_AC_SummonDeath_C final : public UCyGPActionContainer
 {
 public:

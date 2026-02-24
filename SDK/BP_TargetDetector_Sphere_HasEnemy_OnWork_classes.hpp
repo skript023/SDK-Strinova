@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TargetDetector_Sphere_HasEnemy_OnWork.BP_TargetDetector_Sphere_HasEnemy_OnWork_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class BP_TargetDetector_Sphere_HasEnemy_OnWork::UBP_TargetDetector_Sphere_HasEnemy_OnWork_C final : public UCyTargetDetectorSphere
 {
 public:

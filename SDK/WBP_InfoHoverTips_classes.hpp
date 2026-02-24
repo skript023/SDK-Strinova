@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -29,9 +29,9 @@ public:
 	EMenuPlacement                                TipsPosType;                                       // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InfoHoverTips(int32 EntryPoint);
-	void SetTipsText(const class FText& InText);
 	void PreConstruct(bool IsDesignTime);
+	void SetTipsText(const class FText& InText);
+	void ExecuteUbergraph_WBP_InfoHoverTips(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

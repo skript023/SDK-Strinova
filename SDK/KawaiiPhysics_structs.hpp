@@ -70,6 +70,15 @@ public:
 };
 DUMPER7_ASSERTS_FCollisionLimitBase;
 
+// ScriptStruct KawaiiPhysics.PlanarLimit
+// 0x0010 (0x0060 - 0x0050)
+struct FPlanarLimit final : public FCollisionLimitBase
+{
+public:
+	struct FPlane                                 Plane;                                             // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPlanarLimit;
+
 // ScriptStruct KawaiiPhysics.SphericalLimit
 // 0x0010 (0x0060 - 0x0050)
 struct FSphericalLimit final : public FCollisionLimitBase
@@ -91,15 +100,6 @@ public:
 	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FCapsuleLimit;
-
-// ScriptStruct KawaiiPhysics.PlanarLimit
-// 0x0010 (0x0060 - 0x0050)
-struct FPlanarLimit final : public FCollisionLimitBase
-{
-public:
-	struct FPlane                                 Plane;                                             // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPlanarLimit;
 
 // ScriptStruct KawaiiPhysics.KawaiiPhysicsModifyBone
 // 0x00B0 (0x00B0 - 0x0000)

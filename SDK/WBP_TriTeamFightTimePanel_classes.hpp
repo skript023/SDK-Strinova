@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TriTeamFightTimePanel.WBP_TriTeamFightTimePanel_C
-// 0x0008 (0x0B30 - 0x0B28)
+// 0x0008 (0x0B98 - 0x0B90)
 class UWBP_TriTeamFightTimePanel_C final : public UPMUWTriRoundFightingPanelPC
 {
 public:
-	class UCanvasPanel*                           Panel_Root;                                        // 0x0B28(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Panel_Root;                                        // 0x0B90(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

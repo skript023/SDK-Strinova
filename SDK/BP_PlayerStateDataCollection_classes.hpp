@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PlayerStateDataCollection.BP_PlayerStateDataCollection_C
-// 0x0000 (0x0618 - 0x0618)
+// 0x0000 (0x0628 - 0x0628)
 class UBP_PlayerStateDataCollection_C final : public UCyDataCollectionComponent
 {
 public:

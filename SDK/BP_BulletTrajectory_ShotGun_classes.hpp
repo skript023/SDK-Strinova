@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectory_ShotGun.BP_BulletTrajectory_ShotGun_C
-// 0x0000 (0x02E8 - 0x02E8)
+// 0x0000 (0x0328 - 0x0328)
 class ABP_BulletTrajectory_ShotGun_C final : public ACyBulletTrajectory
 {
 public:

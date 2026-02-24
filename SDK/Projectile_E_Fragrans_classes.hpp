@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_E_Fragrans.Projectile_E_Fragrans_C
-// 0x0008 (0x0AD0 - 0x0AC8)
+// 0x0008 (0x0B18 - 0x0B10)
 class Projectile_E_Fragrans::AProjectile_E_Fragrans_C final : public ACyProjectileBlast
 {
 public:
-	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0AC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0B10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

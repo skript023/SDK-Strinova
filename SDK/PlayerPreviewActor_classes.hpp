@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerPreviewActor.PlayerPreviewActor_C
-// 0x0010 (0x0338 - 0x0328)
+// 0x0010 (0x0378 - 0x0368)
 class APlayerPreviewActor_C final : public APMWallSceneCapture
 {
 public:
-	class USkeletalMeshComponent*                 BigHeadMesh;                                       // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 BigHeadMesh;                                       // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

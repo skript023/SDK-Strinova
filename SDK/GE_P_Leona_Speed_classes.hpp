@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_Leona_Speed.GE_P_Leona_Speed_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_P_Leona_Speed_C final : public UCyGameplayEffect
 {
 public:

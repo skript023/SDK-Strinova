@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PickupMine_Blue_Template.BP_PickupMine_Blue_Template_C
-// 0x0010 (0x0738 - 0x0728)
+// 0x0010 (0x0778 - 0x0768)
 class ABP_PickupMine_Blue_Template_C : public ACyPickupSphereActor
 {
 public:
-	class UCyPickupMine*                          CyPickupMine;                                      // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPB_PickMovement_C*                     PB_PickMovement;                                   // 0x0730(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPickupMine*                          CyPickupMine;                                      // 0x0768(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPB_PickMovement_C*                     PB_PickMovement;                                   // 0x0770(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

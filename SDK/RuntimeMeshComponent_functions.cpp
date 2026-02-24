@@ -17,946 +17,6 @@
 namespace SDK
 {
 
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   NewIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::AddIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "AddIndex");
-
-	Params::RuntimeBlueprintMeshBuilder_AddIndex Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddTriangle
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index1                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index2                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::AddTriangle(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index0, int32 Index1, int32 Index2)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "AddTriangle");
-
-	Params::RuntimeBlueprintMeshBuilder_AddTriangle Parms{};
-
-	Parms.Index0 = Index0;
-	Parms.Index1 = Index1;
-	Parms.Index2 = Index2;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddVertex
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InPosition                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Normal                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FRuntimeMeshTangent&       Tangent                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// const struct FVector2D&                 UV0                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FLinearColor&              Color                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::AddVertex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, const struct FVector& InPosition, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent, const struct FVector2D& UV0, const struct FLinearColor& Color)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "AddVertex");
-
-	Params::RuntimeBlueprintMeshBuilder_AddVertex Parms{};
-
-	Parms.InPosition = std::move(InPosition);
-	Parms.Normal = std::move(Normal);
-	Parms.Tangent = std::move(Tangent);
-	Parms.UV0 = std::move(UV0);
-	Parms.Color = std::move(Color);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.EmptyIndices
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Slack                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URuntimeBlueprintMeshBuilder::EmptyIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Slack)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "EmptyIndices");
-
-	Params::RuntimeBlueprintMeshBuilder_EmptyIndices Parms{};
-
-	Parms.Slack = Slack;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.EmptyVertices
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Slack                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URuntimeBlueprintMeshBuilder::EmptyVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Slack)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "EmptyVertices");
-
-	Params::RuntimeBlueprintMeshBuilder_EmptyVertices Parms{};
-
-	Parms.Slack = Slack;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetColor
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FLinearColor URuntimeBlueprintMeshBuilder::GetColor(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetColor");
-
-	Params::RuntimeBlueprintMeshBuilder_GetColor Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::GetIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetIndex");
-
-	Params::RuntimeBlueprintMeshBuilder_GetIndex Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetNormal
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector4                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector4 URuntimeBlueprintMeshBuilder::GetNormal(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetNormal");
-
-	Params::RuntimeBlueprintMeshBuilder_GetNormal Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetPosition
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector URuntimeBlueprintMeshBuilder::GetPosition(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetPosition");
-
-	Params::RuntimeBlueprintMeshBuilder_GetPosition Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetTangent
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector URuntimeBlueprintMeshBuilder::GetTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetTangent");
-
-	Params::RuntimeBlueprintMeshBuilder_GetTangent Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetUV
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Channel                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector2D                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector2D URuntimeBlueprintMeshBuilder::GetUV(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, int32 Channel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetUV");
-
-	Params::RuntimeBlueprintMeshBuilder_GetUV Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Channel = Channel;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsReadonly
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URuntimeBlueprintMeshBuilder::IsReadonly(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "IsReadonly");
-
-	Params::RuntimeBlueprintMeshBuilder_IsReadonly Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsing32BitIndices
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URuntimeBlueprintMeshBuilder::IsUsing32BitIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "IsUsing32BitIndices");
-
-	Params::RuntimeBlueprintMeshBuilder_IsUsing32BitIndices Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsingHighPrecisionTangents
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URuntimeBlueprintMeshBuilder::IsUsingHighPrecisionTangents(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "IsUsingHighPrecisionTangents");
-
-	Params::RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionTangents Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsingHighPrecisionUVs
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URuntimeBlueprintMeshBuilder::IsUsingHighPrecisionUVs(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "IsUsingHighPrecisionUVs");
-
-	Params::RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionUVs Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumIndices
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::NumIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "NumIndices");
-
-	Params::RuntimeBlueprintMeshBuilder_NumIndices Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumUVChannels
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::NumUVChannels(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "NumUVChannels");
-
-	Params::RuntimeBlueprintMeshBuilder_NumUVChannels Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumVertices
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::NumVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "NumVertices");
-
-	Params::RuntimeBlueprintMeshBuilder_NumVertices Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetColor
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FLinearColor&              Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::SetColor(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FLinearColor& Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetColor");
-
-	Params::RuntimeBlueprintMeshBuilder_SetColor Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Value = std::move(Value);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URuntimeBlueprintMeshBuilder::SetIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, int32 Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetIndex");
-
-	Params::RuntimeBlueprintMeshBuilder_SetIndex Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNormal
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector4&                  Value                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::SetNormal(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector4& Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetNormal");
-
-	Params::RuntimeBlueprintMeshBuilder_SetNormal Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Value = std::move(Value);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNormalTangent
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Normal                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FRuntimeMeshTangent&       Tangent                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::SetNormalTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetNormalTangent");
-
-	Params::RuntimeBlueprintMeshBuilder_SetNormalTangent Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Normal = std::move(Normal);
-	Parms.Tangent = std::move(Tangent);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNumIndices
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   NewNum                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URuntimeBlueprintMeshBuilder::SetNumIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetNumIndices");
-
-	Params::RuntimeBlueprintMeshBuilder_SetNumIndices Parms{};
-
-	Parms.NewNum = NewNum;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNumVertices
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   NewNum                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URuntimeBlueprintMeshBuilder::SetNumVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetNumVertices");
-
-	Params::RuntimeBlueprintMeshBuilder_SetNumVertices Parms{};
-
-	Parms.NewNum = NewNum;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetPosition
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::SetPosition(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetPosition");
-
-	Params::RuntimeBlueprintMeshBuilder_SetPosition Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Value = std::move(Value);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetTangent
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FRuntimeMeshTangent&       Value                                                  (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::SetTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FRuntimeMeshTangent& Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetTangent");
-
-	Params::RuntimeBlueprintMeshBuilder_SetTangent Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Value = std::move(Value);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetTangents
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TangentX                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TangentY                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TangentZ                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::SetTangents(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& TangentX, const struct FVector& TangentY, const struct FVector& TangentZ)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetTangents");
-
-	Params::RuntimeBlueprintMeshBuilder_SetTangents Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.TangentX = std::move(TangentX);
-	Parms.TangentY = std::move(TangentY);
-	Parms.TangentZ = std::move(TangentZ);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetUV
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector2D&                 Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Channel                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::SetUV(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector2D& Value, int32 Channel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetUV");
-
-	Params::RuntimeBlueprintMeshBuilder_SetUV Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Value = std::move(Value);
-	Parms.Channel = Channel;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetVertex
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InPosition                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Normal                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FRuntimeMeshTangent&       Tangent                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// const struct FVector2D&                 UV0                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FLinearColor&              Color                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URuntimeBlueprintMeshBuilder::SetVertex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& InPosition, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent, const struct FVector2D& UV0, const struct FLinearColor& Color)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetVertex");
-
-	Params::RuntimeBlueprintMeshBuilder_SetVertex Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.InPosition = std::move(InPosition);
-	Parms.Normal = std::move(Normal);
-	Parms.Tangent = std::move(Tangent);
-	Parms.UV0 = std::move(UV0);
-	Parms.Color = std::move(Color);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutMeshBuilder != nullptr)
-		*OutMeshBuilder = Parms.OutMeshBuilder;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function RuntimeMeshComponent.RuntimeMesh.AddCollisionBox
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -2429,6 +1489,946 @@ void ARuntimeMeshActor::SetRuntimeMeshMobility(ERuntimeMeshMobility NewMobility)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   NewIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::AddIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "AddIndex");
+
+	Params::RuntimeBlueprintMeshBuilder_AddIndex Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddTriangle
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index1                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index2                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::AddTriangle(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index0, int32 Index1, int32 Index2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "AddTriangle");
+
+	Params::RuntimeBlueprintMeshBuilder_AddTriangle Parms{};
+
+	Parms.Index0 = Index0;
+	Parms.Index1 = Index1;
+	Parms.Index2 = Index2;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.AddVertex
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InPosition                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Normal                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FRuntimeMeshTangent&       Tangent                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FVector2D&                 UV0                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FLinearColor&              Color                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::AddVertex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, const struct FVector& InPosition, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent, const struct FVector2D& UV0, const struct FLinearColor& Color)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "AddVertex");
+
+	Params::RuntimeBlueprintMeshBuilder_AddVertex Parms{};
+
+	Parms.InPosition = std::move(InPosition);
+	Parms.Normal = std::move(Normal);
+	Parms.Tangent = std::move(Tangent);
+	Parms.UV0 = std::move(UV0);
+	Parms.Color = std::move(Color);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.EmptyIndices
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Slack                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URuntimeBlueprintMeshBuilder::EmptyIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Slack)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "EmptyIndices");
+
+	Params::RuntimeBlueprintMeshBuilder_EmptyIndices Parms{};
+
+	Parms.Slack = Slack;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.EmptyVertices
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Slack                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URuntimeBlueprintMeshBuilder::EmptyVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Slack)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "EmptyVertices");
+
+	Params::RuntimeBlueprintMeshBuilder_EmptyVertices Parms{};
+
+	Parms.Slack = Slack;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetColor
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FLinearColor URuntimeBlueprintMeshBuilder::GetColor(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetColor");
+
+	Params::RuntimeBlueprintMeshBuilder_GetColor Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::GetIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetIndex");
+
+	Params::RuntimeBlueprintMeshBuilder_GetIndex Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetNormal
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector4                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector4 URuntimeBlueprintMeshBuilder::GetNormal(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetNormal");
+
+	Params::RuntimeBlueprintMeshBuilder_GetNormal Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetPosition
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector URuntimeBlueprintMeshBuilder::GetPosition(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetPosition");
+
+	Params::RuntimeBlueprintMeshBuilder_GetPosition Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetTangent
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector URuntimeBlueprintMeshBuilder::GetTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetTangent");
+
+	Params::RuntimeBlueprintMeshBuilder_GetTangent Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.GetUV
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Channel                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector2D                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector2D URuntimeBlueprintMeshBuilder::GetUV(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, int32 Channel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "GetUV");
+
+	Params::RuntimeBlueprintMeshBuilder_GetUV Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Channel = Channel;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsReadonly
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URuntimeBlueprintMeshBuilder::IsReadonly(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "IsReadonly");
+
+	Params::RuntimeBlueprintMeshBuilder_IsReadonly Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsing32BitIndices
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URuntimeBlueprintMeshBuilder::IsUsing32BitIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "IsUsing32BitIndices");
+
+	Params::RuntimeBlueprintMeshBuilder_IsUsing32BitIndices Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsingHighPrecisionTangents
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URuntimeBlueprintMeshBuilder::IsUsingHighPrecisionTangents(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "IsUsingHighPrecisionTangents");
+
+	Params::RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionTangents Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.IsUsingHighPrecisionUVs
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URuntimeBlueprintMeshBuilder::IsUsingHighPrecisionUVs(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "IsUsingHighPrecisionUVs");
+
+	Params::RuntimeBlueprintMeshBuilder_IsUsingHighPrecisionUVs Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumIndices
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::NumIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "NumIndices");
+
+	Params::RuntimeBlueprintMeshBuilder_NumIndices Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumUVChannels
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::NumUVChannels(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "NumUVChannels");
+
+	Params::RuntimeBlueprintMeshBuilder_NumUVChannels Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.NumVertices
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::NumVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "NumVertices");
+
+	Params::RuntimeBlueprintMeshBuilder_NumVertices Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetColor
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FLinearColor&              Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::SetColor(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FLinearColor& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetColor");
+
+	Params::RuntimeBlueprintMeshBuilder_SetColor Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Value = std::move(Value);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URuntimeBlueprintMeshBuilder::SetIndex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, int32 Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetIndex");
+
+	Params::RuntimeBlueprintMeshBuilder_SetIndex Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNormal
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector4&                  Value                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::SetNormal(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector4& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetNormal");
+
+	Params::RuntimeBlueprintMeshBuilder_SetNormal Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Value = std::move(Value);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNormalTangent
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Normal                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FRuntimeMeshTangent&       Tangent                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::SetNormalTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetNormalTangent");
+
+	Params::RuntimeBlueprintMeshBuilder_SetNormalTangent Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Normal = std::move(Normal);
+	Parms.Tangent = std::move(Tangent);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNumIndices
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   NewNum                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URuntimeBlueprintMeshBuilder::SetNumIndices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetNumIndices");
+
+	Params::RuntimeBlueprintMeshBuilder_SetNumIndices Parms{};
+
+	Parms.NewNum = NewNum;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetNumVertices
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   NewNum                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URuntimeBlueprintMeshBuilder::SetNumVertices(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 NewNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetNumVertices");
+
+	Params::RuntimeBlueprintMeshBuilder_SetNumVertices Parms{};
+
+	Parms.NewNum = NewNum;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetPosition
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::SetPosition(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetPosition");
+
+	Params::RuntimeBlueprintMeshBuilder_SetPosition Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Value = std::move(Value);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetTangent
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FRuntimeMeshTangent&       Value                                                  (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::SetTangent(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FRuntimeMeshTangent& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetTangent");
+
+	Params::RuntimeBlueprintMeshBuilder_SetTangent Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Value = std::move(Value);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetTangents
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TangentX                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TangentY                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TangentZ                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::SetTangents(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& TangentX, const struct FVector& TangentY, const struct FVector& TangentZ)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetTangents");
+
+	Params::RuntimeBlueprintMeshBuilder_SetTangents Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.TangentX = std::move(TangentX);
+	Parms.TangentY = std::move(TangentY);
+	Parms.TangentZ = std::move(TangentZ);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetUV
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector2D&                 Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Channel                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::SetUV(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector2D& Value, int32 Channel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetUV");
+
+	Params::RuntimeBlueprintMeshBuilder_SetUV Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Value = std::move(Value);
+	Parms.Channel = Channel;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RuntimeMeshComponent.RuntimeBlueprintMeshBuilder.SetVertex
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class URuntimeBlueprintMeshBuilder**    OutMeshBuilder                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InPosition                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Normal                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FRuntimeMeshTangent&       Tangent                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FVector2D&                 UV0                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FLinearColor&              Color                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URuntimeBlueprintMeshBuilder::SetVertex(class URuntimeBlueprintMeshBuilder** OutMeshBuilder, int32 Index_0, const struct FVector& InPosition, const struct FVector& Normal, const struct FRuntimeMeshTangent& Tangent, const struct FVector2D& UV0, const struct FLinearColor& Color)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RuntimeBlueprintMeshBuilder", "SetVertex");
+
+	Params::RuntimeBlueprintMeshBuilder_SetVertex Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.InPosition = std::move(InPosition);
+	Parms.Normal = std::move(Normal);
+	Parms.Tangent = std::move(Tangent);
+	Parms.UV0 = std::move(UV0);
+	Parms.Color = std::move(Color);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutMeshBuilder != nullptr)
+		*OutMeshBuilder = Parms.OutMeshBuilder;
+
+	return Parms.ReturnValue;
 }
 
 

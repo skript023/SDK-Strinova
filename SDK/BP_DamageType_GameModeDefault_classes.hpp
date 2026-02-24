@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_GameModeDefault.BP_DamageType_GameModeDefault_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_DamageType_GameModeDefault_C final : public UPMDamageType
 {
 public:

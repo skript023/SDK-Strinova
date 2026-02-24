@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Q_Chiyo.GA_Q_Chiyo_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class UGA_Q_Chiyo_C final : public UCyBaseAbility
 {
 public:

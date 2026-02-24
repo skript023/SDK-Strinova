@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FilterTargetNoBlocked.BP_FilterTargetNoBlocked_C
-// 0x0000 (0x0088 - 0x0088)
+// 0x0000 (0x0090 - 0x0090)
 class BP_FilterTargetNoBlocked_0::UBP_FilterTargetNoBlocked_C final : public UCyFilterTargetNoBlocked
 {
 public:

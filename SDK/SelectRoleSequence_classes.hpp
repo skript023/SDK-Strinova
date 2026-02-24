@@ -19,37 +19,37 @@ namespace SDK
 
 // BlueprintGeneratedClass SelectRoleSequence.SequenceDirector_C
 // 0x0008 (0x0038 - 0x0030)
-class USequenceDirector_C final : public ULevelSequenceDirector
+class SelectRoleSequence::USequenceDirector_C final : public ULevelSequenceDirector
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0030(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void SequenceEvent__ENTRYPOINTSequenceDirector_3(class ASkeletalMeshActor* Dollbear_Mesh);
-	void SequenceEvent__ENTRYPOINTSequenceDirector_2(class ABP_Character_LobbyYvette_C* BP_Character_LobbyYvette);
-	void SequenceEvent__ENTRYPOINTSequenceDirector_1(class USkeletalMeshComponent* SkeletalMeshComponent0);
+	void SequenceEvent__ENTRYPOINTSequenceDirector_3(class APMLobbyCharacter* BP_Character_LobbyFuchsia);
+	void SequenceEvent__ENTRYPOINTSequenceDirector_2(class APMLobbyCharacter* BP_Character_LobbyFuchsia);
+	void SequenceEvent__ENTRYPOINTSequenceDirector_1(class UWFBaseSkeletalMeshComponent* CharacterMesh0);
 	void SequenceEvent__ENTRYPOINTSequenceDirector_0();
-	void 播放动画(class USkeletalMeshComponent* SkeletalMeshComponent0, class UAnimationAsset* NewAnimToPlay, bool bLooping);
-	void Pause_Sequence();
-	void Dollbear_Mesh_Event_0(class ASkeletalMeshActor* Dollbear_Mesh, class UAnimationAsset* NewAnimToPlay, bool bLooping);
-	void BP_Character_LobbyYvette_Event_0(class ABP_Character_LobbyYvette_C* BP_Character_LobbyYvette, class UAnimSequenceBase* NewAnimToPlay);
+	void CharacterMesh0_Event_0(class UWFBaseSkeletalMeshComponent* CharacterMesh0, class UAnimationAsset* NewAnimToPlay, bool bLooping);
+	void SequenceEvent_0();
+	void BP_Character_LobbyFuchsia_Event_0(class APMLobbyCharacter* BP_Character_LobbyFuchsia, class UAnimSequenceBase* NewAnimToPlay);
+	void BP_Character_LobbyFuchsia_Event_2(class APMLobbyCharacter* BP_Character_LobbyFuchsia, class UAnimSequenceBase* NewAnimToPlay);
 	void ExecuteUbergraph_SequenceDirector(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("SequenceDirector_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass SelectRoleSequence.SequenceDirector_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"SequenceDirector_C")
 	}
-	static class USequenceDirector_C* GetDefaultObj()
+	static class SelectRoleSequence::USequenceDirector_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<USequenceDirector_C>();
+		return GetDefaultObjImpl<SelectRoleSequence::USequenceDirector_C>();
 	}
 };
-DUMPER7_ASSERTS_USequenceDirector_C;
+DUMPER7_ASSERTS_SelectRoleSequence__USequenceDirector_C;
 
 }
 

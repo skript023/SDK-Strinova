@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BulletTrajectory_SCARH_202.BP_BulletTrajectory_SCARH_202_C
-// 0x0000 (0x02E8 - 0x02E8)
+// 0x0000 (0x0328 - 0x0328)
 class ABP_BulletTrajectory_SCARH_202_C final : public ACyBulletTrajectory
 {
 public:

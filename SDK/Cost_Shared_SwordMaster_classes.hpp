@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cost_Shared_SwordMaster.Cost_Shared_SwordMaster_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UCost_Shared_SwordMaster_C final : public UCyGameplayEffect
 {
 public:

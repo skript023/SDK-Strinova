@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Atom_AddEffect_SwordMaster.BP_Atom_AddEffect_SwordMaster_C
-// 0x0000 (0x0628 - 0x0628)
+// 0x0000 (0x0638 - 0x0638)
 class UBP_Atom_AddEffect_SwordMaster_C final : public UCySAtomAddGameplayEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_E_Flash_Ming.GE_E_Flash_Ming_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_E_Flash_Ming_C final : public UCyGameplayEffect
 {
 public:

@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_AtomPlayEffect_FirstHit.BP_AtomPlayEffect_FirstHit_C
 // 0x0000 (0x05D0 - 0x05D0)
-class UBP_AtomPlayEffect_FirstHit_C final : public UCySAtomPlayAsset_BeamTarget
+class BP_AtomPlayEffect_FirstHit::UBP_AtomPlayEffect_FirstHit_C final : public UCySAtomPlayAsset_BeamTarget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_AtomPlayEffect_FirstHit_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_AtomPlayEffect_FirstHit.BP_AtomPlayEffect_FirstHit_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_AtomPlayEffect_FirstHit_C")
 	}
-	static class UBP_AtomPlayEffect_FirstHit_C* GetDefaultObj()
+	static class BP_AtomPlayEffect_FirstHit::UBP_AtomPlayEffect_FirstHit_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_AtomPlayEffect_FirstHit_C>();
+		return GetDefaultObjImpl<BP_AtomPlayEffect_FirstHit::UBP_AtomPlayEffect_FirstHit_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_AtomPlayEffect_FirstHit_C;
+DUMPER7_ASSERTS_BP_AtomPlayEffect_FirstHit__UBP_AtomPlayEffect_FirstHit_C;
 
 }
 

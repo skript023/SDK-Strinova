@@ -26,8 +26,8 @@ public:
 	class UListView*                              ListView_MenuContent;                              // 0x05D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CareerRankCombo(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_CareerRankCombo(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

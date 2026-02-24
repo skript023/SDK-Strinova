@@ -19,6 +19,36 @@
 namespace SDK
 {
 
+// Class VariantManagerContent.LevelVariantSets
+// 0x0068 (0x0090 - 0x0028)
+class ULevelVariantSets final : public UObject
+{
+public:
+	class UClass*                                 DirectorClass;                                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<class UVariantSet*>                    VariantSets;                                       // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_40[0x50];                                      // 0x0040(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	int32 GetNumVariantSets();
+	class UVariantSet* GetVariantSet(int32 VariantSetIndex);
+	class UVariantSet* GetVariantSetByName(const class FString& VariantSetName);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LevelVariantSets")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelVariantSets")
+	}
+	static class ULevelVariantSets* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULevelVariantSets>();
+	}
+};
+DUMPER7_ASSERTS_ULevelVariantSets;
+
 // Class VariantManagerContent.PropertyValue
 // 0x0190 (0x01B8 - 0x0028)
 class UPropertyValue : public UObject
@@ -80,85 +110,6 @@ public:
 };
 DUMPER7_ASSERTS_UPropertyValueMaterial;
 
-// Class VariantManagerContent.LevelVariantSets
-// 0x0068 (0x0090 - 0x0028)
-class ULevelVariantSets final : public UObject
-{
-public:
-	class UClass*                                 DirectorClass;                                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UVariantSet*>                    VariantSets;                                       // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_40[0x50];                                      // 0x0040(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	int32 GetNumVariantSets();
-	class UVariantSet* GetVariantSet(int32 VariantSetIndex);
-	class UVariantSet* GetVariantSetByName(const class FString& VariantSetName);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LevelVariantSets")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LevelVariantSets")
-	}
-	static class ULevelVariantSets* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULevelVariantSets>();
-	}
-};
-DUMPER7_ASSERTS_ULevelVariantSets;
-
-// Class VariantManagerContent.LevelVariantSetsActor
-// 0x0018 (0x02E8 - 0x02D0)
-class ALevelVariantSetsActor final : public AActor
-{
-public:
-	struct FSoftObjectPath                        LevelVariantSets;                                  // 0x02D0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	class ULevelVariantSets* GetLevelVariantSets(bool bLoad);
-	void SetLevelVariantSets(class ULevelVariantSets* InVariantSets);
-	bool SwitchOnVariantByIndex(int32 VariantSetIndex, int32 VariantIndex);
-	bool SwitchOnVariantByName(const class FString& VariantSetName, const class FString& VariantName);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LevelVariantSetsActor")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LevelVariantSetsActor")
-	}
-	static class ALevelVariantSetsActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ALevelVariantSetsActor>();
-	}
-};
-DUMPER7_ASSERTS_ALevelVariantSetsActor;
-
-// Class VariantManagerContent.PropertyValueSoftObject
-// 0x0000 (0x01B8 - 0x01B8)
-class UPropertyValueSoftObject final : public UPropertyValue
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("PropertyValueSoftObject")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"PropertyValueSoftObject")
-	}
-	static class UPropertyValueSoftObject* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPropertyValueSoftObject>();
-	}
-};
-DUMPER7_ASSERTS_UPropertyValueSoftObject;
-
 // Class VariantManagerContent.LevelVariantSetsFunctionDirector
 // 0x0018 (0x0040 - 0x0028)
 class ULevelVariantSetsFunctionDirector final : public UObject
@@ -181,6 +132,35 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULevelVariantSetsFunctionDirector;
+
+// Class VariantManagerContent.LevelVariantSetsActor
+// 0x0018 (0x0328 - 0x0310)
+class ALevelVariantSetsActor final : public AActor
+{
+public:
+	struct FSoftObjectPath                        LevelVariantSets;                                  // 0x0310(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	class ULevelVariantSets* GetLevelVariantSets(bool bLoad);
+	void SetLevelVariantSets(class ULevelVariantSets* InVariantSets);
+	bool SwitchOnVariantByIndex(int32 VariantSetIndex, int32 VariantIndex);
+	bool SwitchOnVariantByName(const class FString& VariantSetName, const class FString& VariantName);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LevelVariantSetsActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelVariantSetsActor")
+	}
+	static class ALevelVariantSetsActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ALevelVariantSetsActor>();
+	}
+};
+DUMPER7_ASSERTS_ALevelVariantSetsActor;
 
 // Class VariantManagerContent.PropertyValueTransform
 // 0x0000 (0x01B8 - 0x01B8)
@@ -262,15 +242,35 @@ public:
 };
 DUMPER7_ASSERTS_UPropertyValueOption;
 
+// Class VariantManagerContent.PropertyValueSoftObject
+// 0x0000 (0x01B8 - 0x01B8)
+class UPropertyValueSoftObject final : public UPropertyValue
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PropertyValueSoftObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyValueSoftObject")
+	}
+	static class UPropertyValueSoftObject* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPropertyValueSoftObject>();
+	}
+};
+DUMPER7_ASSERTS_UPropertyValueSoftObject;
+
 // Class VariantManagerContent.SwitchActor
-// 0x0028 (0x02F8 - 0x02D0)
+// 0x0028 (0x0338 - 0x0310)
 class ASwitchActor final : public AActor
 {
 public:
-	uint8                                         Pad_2D0[0x18];                                     // 0x02D0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        SceneComponent;                                    // 0x02E8(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         LastSelectedOption;                                // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2F4[0x4];                                      // 0x02F4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_310[0x18];                                     // 0x0310(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        SceneComponent;                                    // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         LastSelectedOption;                                // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_334[0x4];                                      // 0x0334(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SelectOption(int32 OptionIndex);

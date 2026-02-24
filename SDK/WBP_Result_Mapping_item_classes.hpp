@@ -32,8 +32,8 @@ public:
 	int32                                         Active;                                            // 0x0660(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Result_Mapping_item(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_Result_Mapping_item(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

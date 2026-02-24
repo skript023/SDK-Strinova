@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GPEM_EventDeath.BP_GPEM_EventDeath_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0548 - 0x0548)
 class BP_GPEM_EventDeath::UBP_GPEM_EventDeath_C final : public UCyGPEM_Event
 {
 public:

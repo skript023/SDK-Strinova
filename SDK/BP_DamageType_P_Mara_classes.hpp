@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_P_Mara.BP_DamageType_P_Mara_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UBP_DamageType_P_Mara_C final : public UPMDamageType
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Buff_X_Team.GE_Buff_X_Team_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Buff_X_Team::UGE_Buff_X_Team_C final : public UCyGameplayEffect
 {
 public:

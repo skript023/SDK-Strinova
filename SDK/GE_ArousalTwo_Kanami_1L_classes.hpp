@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ArousalTwo_Kanami_1L.GE_ArousalTwo_Kanami_1L_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_ArousalTwo_Kanami_1L_C final : public UCyGameplayEffect
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_HealthRecoveryTeam_Q_CrystalloidBeta1.GE_HealthRecoveryTeam_Q_CrystalloidBeta1_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_HealthRecoveryTeam_Q_CrystalloidBeta1_C final : public UCyGameplayEffect
 {
 public:

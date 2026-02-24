@@ -20,9 +20,9 @@ namespace SDK
 // Function SelectRoleSequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_3
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ASkeletalMeshActor*               Dollbear_Mesh                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APMLobbyCharacter*                BP_Character_LobbyFuchsia                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_3(class ASkeletalMeshActor* Dollbear_Mesh)
+void SelectRoleSequence::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_3(class APMLobbyCharacter* BP_Character_LobbyFuchsia)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_3(class ASke
 
 	Params::SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_3 Parms{};
 
-	Parms.Dollbear_Mesh = Dollbear_Mesh;
+	Parms.BP_Character_LobbyFuchsia = BP_Character_LobbyFuchsia;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -40,9 +40,9 @@ void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_3(class ASke
 // Function SelectRoleSequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_2
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABP_Character_LobbyYvette_C*      BP_Character_LobbyYvette                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APMLobbyCharacter*                BP_Character_LobbyFuchsia                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_2(class ABP_Character_LobbyYvette_C* BP_Character_LobbyYvette)
+void SelectRoleSequence::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_2(class APMLobbyCharacter* BP_Character_LobbyFuchsia)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +51,7 @@ void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_2(class ABP_
 
 	Params::SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_2 Parms{};
 
-	Parms.BP_Character_LobbyYvette = BP_Character_LobbyYvette;
+	Parms.BP_Character_LobbyFuchsia = BP_Character_LobbyFuchsia;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -60,9 +60,9 @@ void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_2(class ABP_
 // Function SelectRoleSequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_1
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USkeletalMeshComponent*           SkeletalMeshComponent0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWFBaseSkeletalMeshComponent*     CharacterMesh0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_1(class USkeletalMeshComponent* SkeletalMeshComponent0)
+void SelectRoleSequence::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_1(class UWFBaseSkeletalMeshComponent* CharacterMesh0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -71,7 +71,7 @@ void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_1(class USke
 
 	Params::SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_1 Parms{};
 
-	Parms.SkeletalMeshComponent0 = SkeletalMeshComponent0;
+	Parms.CharacterMesh0 = CharacterMesh0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -80,7 +80,7 @@ void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_1(class USke
 // Function SelectRoleSequence.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_0
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_0()
+void SelectRoleSequence::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_0()
 {
 	static class UFunction* Func = nullptr;
 
@@ -91,23 +91,23 @@ void USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_0()
 }
 
 
-// Function SelectRoleSequence.SequenceDirector_C.播放动画
+// Function SelectRoleSequence.SequenceDirector_C.CharacterMesh0_Event_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USkeletalMeshComponent*           SkeletalMeshComponent0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWFBaseSkeletalMeshComponent*     CharacterMesh0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAnimationAsset*                  NewAnimToPlay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bLooping                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void USequenceDirector_C::播放动画(class USkeletalMeshComponent* SkeletalMeshComponent0, class UAnimationAsset* NewAnimToPlay, bool bLooping)
+void SelectRoleSequence::USequenceDirector_C::CharacterMesh0_Event_0(class UWFBaseSkeletalMeshComponent* CharacterMesh0, class UAnimationAsset* NewAnimToPlay, bool bLooping)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "播放动画");
+		Func = Class->GetFunction("SequenceDirector_C", "CharacterMesh0_Event_0");
 
-	Params::SequenceDirector_C_播放动画 Parms{};
+	Params::SequenceDirector_C_CharacterMesh0_Event_0 Parms{};
 
-	Parms.SkeletalMeshComponent0 = SkeletalMeshComponent0;
+	Parms.CharacterMesh0 = CharacterMesh0;
 	Parms.NewAnimToPlay = NewAnimToPlay;
 	Parms.bLooping = bLooping;
 
@@ -115,60 +115,58 @@ void USequenceDirector_C::播放动画(class USkeletalMeshComponent* SkeletalMes
 }
 
 
-// Function SelectRoleSequence.SequenceDirector_C.Pause_Sequence
+// Function SelectRoleSequence.SequenceDirector_C.SequenceEvent_0
 // (BlueprintCallable, BlueprintEvent)
 
-void USequenceDirector_C::Pause_Sequence()
+void SelectRoleSequence::USequenceDirector_C::SequenceEvent_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "Pause_Sequence");
+		Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function SelectRoleSequence.SequenceDirector_C.Dollbear_Mesh_Event_0
+// Function SelectRoleSequence.SequenceDirector_C.BP_Character_LobbyFuchsia_Event_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ASkeletalMeshActor*               Dollbear_Mesh                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimationAsset*                  NewAnimToPlay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bLooping                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class APMLobbyCharacter*                BP_Character_LobbyFuchsia                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimSequenceBase*                NewAnimToPlay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USequenceDirector_C::Dollbear_Mesh_Event_0(class ASkeletalMeshActor* Dollbear_Mesh, class UAnimationAsset* NewAnimToPlay, bool bLooping)
+void SelectRoleSequence::USequenceDirector_C::BP_Character_LobbyFuchsia_Event_0(class APMLobbyCharacter* BP_Character_LobbyFuchsia, class UAnimSequenceBase* NewAnimToPlay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "Dollbear_Mesh_Event_0");
+		Func = Class->GetFunction("SequenceDirector_C", "BP_Character_LobbyFuchsia_Event_0");
 
-	Params::SequenceDirector_C_Dollbear_Mesh_Event_0 Parms{};
+	Params::SequenceDirector_C_BP_Character_LobbyFuchsia_Event_0 Parms{};
 
-	Parms.Dollbear_Mesh = Dollbear_Mesh;
+	Parms.BP_Character_LobbyFuchsia = BP_Character_LobbyFuchsia;
 	Parms.NewAnimToPlay = NewAnimToPlay;
-	Parms.bLooping = bLooping;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function SelectRoleSequence.SequenceDirector_C.BP_Character_LobbyYvette_Event_0
+// Function SelectRoleSequence.SequenceDirector_C.BP_Character_LobbyFuchsia_Event_2
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABP_Character_LobbyYvette_C*      BP_Character_LobbyYvette                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APMLobbyCharacter*                BP_Character_LobbyFuchsia                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAnimSequenceBase*                NewAnimToPlay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USequenceDirector_C::BP_Character_LobbyYvette_Event_0(class ABP_Character_LobbyYvette_C* BP_Character_LobbyYvette, class UAnimSequenceBase* NewAnimToPlay)
+void SelectRoleSequence::USequenceDirector_C::BP_Character_LobbyFuchsia_Event_2(class APMLobbyCharacter* BP_Character_LobbyFuchsia, class UAnimSequenceBase* NewAnimToPlay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "BP_Character_LobbyYvette_Event_0");
+		Func = Class->GetFunction("SequenceDirector_C", "BP_Character_LobbyFuchsia_Event_2");
 
-	Params::SequenceDirector_C_BP_Character_LobbyYvette_Event_0 Parms{};
+	Params::SequenceDirector_C_BP_Character_LobbyFuchsia_Event_2 Parms{};
 
-	Parms.BP_Character_LobbyYvette = BP_Character_LobbyYvette;
+	Parms.BP_Character_LobbyFuchsia = BP_Character_LobbyFuchsia;
 	Parms.NewAnimToPlay = NewAnimToPlay;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -180,7 +178,7 @@ void USequenceDirector_C::BP_Character_LobbyYvette_Event_0(class ABP_Character_L
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USequenceDirector_C::ExecuteUbergraph_SequenceDirector(int32 EntryPoint)
+void SelectRoleSequence::USequenceDirector_C::ExecuteUbergraph_SequenceDirector(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 

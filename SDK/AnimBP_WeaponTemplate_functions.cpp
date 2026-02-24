@@ -17,6 +17,36 @@
 namespace SDK
 {
 
+// Function AnimBP_WeaponTemplate.AnimBP_WeaponTemplate_C.PhysicsLayer
+// (HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FPoseLink&                 InPose                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// bool                                    IsReady_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsRelax_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsWaist_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FPoseLink*                       PhysicsLayer_0                                         (Parm, OutParm, NoDestructor)
+
+void UAnimBP_WeaponTemplate_C::PhysicsLayer(const struct FPoseLink& InPose, bool IsReady_0, bool IsRelax_0, bool IsWaist_0, struct FPoseLink* PhysicsLayer_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_WeaponTemplate_C", "PhysicsLayer");
+
+	Params::AnimBP_WeaponTemplate_C_PhysicsLayer Parms{};
+
+	Parms.InPose = std::move(InPose);
+	Parms.IsReady_0 = IsReady_0;
+	Parms.IsRelax_0 = IsRelax_0;
+	Parms.IsWaist_0 = IsWaist_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PhysicsLayer_0 != nullptr)
+		*PhysicsLayer_0 = std::move(Parms.PhysicsLayer_0);
+}
+
+
 // Function AnimBP_WeaponTemplate.AnimBP_WeaponTemplate_C.SetupLayer
 // (HasOutParams, BlueprintCallable)
 // Parameters:

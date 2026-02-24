@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PM_AbilityDamageType_E_Nobunaga.PM_AbilityDamageType_E_Nobunaga_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class PM_AbilityDamageType_E_Nobunaga_0::UPM_AbilityDamageType_E_Nobunaga_C final : public UPMAbilityDamageType
 {
 public:

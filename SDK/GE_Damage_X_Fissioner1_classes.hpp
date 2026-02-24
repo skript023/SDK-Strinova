@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Damage_X_Fissioner1.GE_Damage_X_Fissioner1_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Damage_X_Fissioner1_C final : public UCyGameplayEffect
 {
 public:

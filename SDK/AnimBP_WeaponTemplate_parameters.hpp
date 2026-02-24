@@ -16,6 +16,20 @@
 namespace SDK::Params
 {
 
+// Function AnimBP_WeaponTemplate.AnimBP_WeaponTemplate_C.PhysicsLayer
+// 0x0028 (0x0028 - 0x0000)
+struct AnimBP_WeaponTemplate_C_PhysicsLayer final
+{
+public:
+	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	bool                                          IsReady_0;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsRelax_0;                                         // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsWaist_0;                                         // 0x0012(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPoseLink                              PhysicsLayer_0;                                    // 0x0018(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_AnimBP_WeaponTemplate_C_PhysicsLayer;
+
 // Function AnimBP_WeaponTemplate.AnimBP_WeaponTemplate_C.SetupLayer
 // 0x0030 (0x0030 - 0x0000)
 struct AnimBP_WeaponTemplate_C_SetupLayer final

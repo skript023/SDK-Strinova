@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_XRay_OnDetected.GE_XRay_OnDetected_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_XRay_OnDetected::UGE_XRay_OnDetected_C final : public UCyGameplayEffect
 {
 public:

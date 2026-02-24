@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SummonDurationPanel.WBP_SummonDurationPanel_C
-// 0x0000 (0x0C98 - 0x0C98)
+// 0x0000 (0x0CB0 - 0x0CB0)
 class UWBP_SummonDurationPanel_C final : public UCyUWSummonDurationPanelPC
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_KillSelf_X_Fissioner1.DamageType_KillSelf_X_Fissioner1_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class UDamageType_KillSelf_X_Fissioner1_C final : public UPMDamageType
 {
 public:

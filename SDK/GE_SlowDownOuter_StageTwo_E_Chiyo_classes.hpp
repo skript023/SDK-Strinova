@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_SlowDownOuter_StageTwo_E_Chiyo.GE_SlowDownOuter_StageTwo_E_Chiyo_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_SlowDownOuter_StageTwo_E_Chiyo_C final : public UCyGameplayEffect
 {
 public:

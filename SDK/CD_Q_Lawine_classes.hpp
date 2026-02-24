@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_Q_Lawine.CD_Q_Lawine_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class CD_Q_Lawine::UCD_Q_Lawine_C final : public UCyGameplayEffect
 {
 public:

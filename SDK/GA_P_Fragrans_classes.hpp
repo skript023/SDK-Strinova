@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_P_Fragrans.GA_P_Fragrans_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_P_Fragrans::UGA_P_Fragrans_C final : public UCyBaseAbility
 {
 public:

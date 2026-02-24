@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_X_Reiichi_Escort2.Weapon_X_Reiichi_Escort2_C
-// 0x0000 (0x1190 - 0x1190)
+// 0x0000 (0x1260 - 0x1260)
 class AWeapon_X_Reiichi_Escort2_C final : public ACyWeaponSkill
 {
 public:

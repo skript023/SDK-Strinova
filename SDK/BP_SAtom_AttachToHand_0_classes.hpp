@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SAtom_AttachToHand.BP_SAtom_AttachToHand_C
-// 0x0000 (0x0660 - 0x0660)
+// 0x0000 (0x0670 - 0x0670)
 class BP_SAtom_AttachToHand_0::UBP_SAtom_AttachToHand_C final : public UCySAtomAttachTo
 {
 public:

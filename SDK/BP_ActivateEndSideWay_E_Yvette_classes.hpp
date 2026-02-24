@@ -18,23 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_ActivateEndSideWay_E_Yvette.BP_ActivateEndSideWay_E_Yvette_C
 // 0x0000 (0x0230 - 0x0230)
-class UBP_ActivateEndSideWay_E_Yvette_C final : public UCyGAActivateEndSideWay
+class BP_ActivateEndSideWay_E_Yvette::UBP_ActivateEndSideWay_E_Yvette_C final : public UCyGAActivateEndSideWay
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_ActivateEndSideWay_E_Yvette_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_ActivateEndSideWay_E_Yvette.BP_ActivateEndSideWay_E_Yvette_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_ActivateEndSideWay_E_Yvette_C")
 	}
-	static class UBP_ActivateEndSideWay_E_Yvette_C* GetDefaultObj()
+	static class BP_ActivateEndSideWay_E_Yvette::UBP_ActivateEndSideWay_E_Yvette_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_ActivateEndSideWay_E_Yvette_C>();
+		return GetDefaultObjImpl<BP_ActivateEndSideWay_E_Yvette::UBP_ActivateEndSideWay_E_Yvette_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_ActivateEndSideWay_E_Yvette_C;
+DUMPER7_ASSERTS_BP_ActivateEndSideWay_E_Yvette__UBP_ActivateEndSideWay_E_Yvette_C;
 
 }
 

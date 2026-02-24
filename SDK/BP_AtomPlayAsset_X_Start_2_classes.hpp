@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AtomPlayAsset_X_Start.BP_AtomPlayAsset_X_Start_C
-// 0x0000 (0x05E0 - 0x05E0)
-class BP_AtomPlayAsset_X_Start_2::UBP_AtomPlayAsset_X_Start_C final : public UCySAtomPlayAsset
+// 0x0000 (0x05E8 - 0x05E8)
+class BP_AtomPlayAsset_X_Start_2::UBP_AtomPlayAsset_X_Start_C final : public UCySAtomPlayAssetLoop
 {
 public:
 	static class UClass* StaticClass()

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AIController_P_KokonaShiki.AIController_P_KokonaShiki_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x0420 - 0x0420)
 class AIController_P_KokonaShiki::AAIController_P_KokonaShiki_C final : public ACyBehaviorAIController
 {
 public:

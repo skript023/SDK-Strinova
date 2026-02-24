@@ -18,21 +18,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectRoleBombPage.WBP_SelectRoleBombPage_C
-// 0x0098 (0x0998 - 0x0900)
+// 0x0098 (0x09B0 - 0x0918)
 class UWBP_SelectRoleBombPage_C final : public UCySelectRolePagePC
 {
 public:
-	class UButton*                                Button_ShortcutTask;                               // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_SelectRoleDetailPanel_C*           DetailPanel;                                       // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_SelectPlayerList_C*                PlayerList;                                        // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_SelectRoleRedSkinButton_C*         RedSkinButton;                                     // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_SelectRoleRoundPanel_C*            RoundPanel;                                        // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_SelectRoleCardIllustrations_C*     SelectRoleCardIllustrations;                       // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_SelectRoleListPanel_C*             SelectRoleList;                                    // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ShortcutTaskPanel_C*               ShortcutTaskPanel;                                 // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_SelectRoleRoomInfo_C*              WBP_SelectRoleRoomInfo_PC;                         // 0x0940(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateColor                            SelectColor;                                       // 0x0948(0x0028)(Edit, BlueprintVisible)
-	struct FSlateColor                            NotSelectColor;                                    // 0x0970(0x0028)(Edit, BlueprintVisible)
+	class UButton*                                Button_ShortcutTask;                               // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_SelectRoleDetailPanel_C*           DetailPanel;                                       // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_SelectPlayerList_C*                PlayerList;                                        // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_SelectRoleRedSkinButton_C*         RedSkinButton;                                     // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_SelectRoleRoundPanel_C*            RoundPanel;                                        // 0x0938(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_SelectRoleCardIllustrations_C*     SelectRoleCardIllustrations;                       // 0x0940(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_SelectRoleListPanel_C*             SelectRoleList;                                    // 0x0948(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ShortcutTaskPanel_C*               ShortcutTaskPanel;                                 // 0x0950(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_SelectRoleRoomInfo_C*              WBP_SelectRoleRoomInfo_PC;                         // 0x0958(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateColor                            SelectColor;                                       // 0x0960(0x0028)(Edit, BlueprintVisible)
+	struct FSlateColor                            NotSelectColor;                                    // 0x0988(0x0028)(Edit, BlueprintVisible)
 
 public:
 	static class UClass* StaticClass()

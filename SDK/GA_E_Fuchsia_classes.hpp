@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_E_Fuchsia.GA_E_Fuchsia_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_E_Fuchsia::UGA_E_Fuchsia_C final : public UCyBaseAbility
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AttackSpeedFactor_Galatea.GE_AttackSpeedFactor_Galatea_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_AttackSpeedFactor_Galatea::UGE_AttackSpeedFactor_Galatea_C final : public UCyGameplayEffect
 {
 public:

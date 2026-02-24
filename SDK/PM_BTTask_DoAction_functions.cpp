@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function PM_BTTask_DoAction.PM_BTTask_DoAction_C.ExecuteUbergraph_PM_BTTask_DoAction
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPM_BTTask_DoAction_C::ExecuteUbergraph_PM_BTTask_DoAction(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PM_BTTask_DoAction_C", "ExecuteUbergraph_PM_BTTask_DoAction");
-
-	Params::PM_BTTask_DoAction_C_ExecuteUbergraph_PM_BTTask_DoAction Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function PM_BTTask_DoAction.PM_BTTask_DoAction_C.ReceiveExecuteAI
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -54,6 +34,26 @@ void UPM_BTTask_DoAction_C::ReceiveExecuteAI(class AAIController* OwnerControlle
 
 	Parms.OwnerController = OwnerController;
 	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PM_BTTask_DoAction.PM_BTTask_DoAction_C.ExecuteUbergraph_PM_BTTask_DoAction
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPM_BTTask_DoAction_C::ExecuteUbergraph_PM_BTTask_DoAction(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PM_BTTask_DoAction_C", "ExecuteUbergraph_PM_BTTask_DoAction");
+
+	Params::PM_BTTask_DoAction_C_ExecuteUbergraph_PM_BTTask_DoAction Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PMGameMode_TeamMatch.BP_PMGameMode_TeamMatch_C
-// 0x0008 (0x06B8 - 0x06B0)
+// 0x0008 (0x06F8 - 0x06F0)
 class ABP_PMGameMode_TeamMatch_C final : public APMGameMode_TeamDeath
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x06B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x06F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

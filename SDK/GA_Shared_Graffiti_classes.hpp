@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_Shared_Graffiti.GA_Shared_Graffiti_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class UGA_Shared_Graffiti_C final : public UCyBaseAbility
 {
 public:

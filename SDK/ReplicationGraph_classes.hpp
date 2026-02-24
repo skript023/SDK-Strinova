@@ -370,12 +370,12 @@ public:
 DUMPER7_ASSERTS_UNetReplicationGraphConnection;
 
 // Class ReplicationGraph.ReplicationGraphDebugActor
-// 0x0010 (0x02E0 - 0x02D0)
+// 0x0010 (0x0320 - 0x0310)
 class AReplicationGraphDebugActor final : public AActor
 {
 public:
-	class UReplicationGraph*                      ReplicationGraph;                                  // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNetReplicationGraphConnection*         ConnectionManager;                                 // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UReplicationGraph*                      ReplicationGraph;                                  // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNetReplicationGraphConnection*         ConnectionManager;                                 // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ClientCellInfo(const struct FVector& CellLocation, const struct FVector& CellExtent, const TArray<class AActor*>& Actors);

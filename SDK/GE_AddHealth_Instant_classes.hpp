@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_AddHealth_Instant.GE_AddHealth_Instant_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_AddHealth_Instant::UGE_AddHealth_Instant_C final : public UCyGameplayEffect
 {
 public:

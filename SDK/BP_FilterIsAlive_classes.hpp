@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FilterIsAlive.BP_FilterIsAlive_C
-// 0x0000 (0x0050 - 0x0050)
+// 0x0000 (0x01F0 - 0x01F0)
 class UBP_FilterIsAlive_C final : public UCyFilterIsAlive
 {
 public:

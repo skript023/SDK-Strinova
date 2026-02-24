@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Katana_DamageType.BP_Katana_DamageType_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class BP_Katana_DamageType::UBP_Katana_DamageType_C final : public UPMMeleeDamageType
 {
 public:

@@ -13,10 +13,10 @@
 #include "AIModule_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "ALSV4_CPP_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "GameplayTags_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -24,74 +24,74 @@ namespace SDK
 {
 
 // Class ALSV4_CPP.CySubAnimInstanceWeapon
-// 0x0240 (0x0510 - 0x02D0)
-class UCySubAnimInstanceWeapon : public UAnimInstance
+// 0x0240 (0x04C0 - 0x0280)
+#pragma pack(push, 0x1)
+class alignas(0x10) UCySubAnimInstanceWeapon : public UAnimInstance
 {
 public:
-	class UALSCharacterAnimInstance*              MasterAnimInstance;                                // 0x02C8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSOverlayOverrideState                      OverlayOverrideState;                              // 0x02D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2D1[0x3];                                      // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BasePose_N;                                        // 0x02D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BasePose_CLF;                                      // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BasePose_K;                                        // 0x02DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         InAirLandPrediction;                               // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         RelativeAccelerationAmountX;                       // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FALSVelocityBlend                      VelocityBlend;                                     // 0x02E8(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         AimSweepTime;                                      // 0x02F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ActualAimSweepTime;                                // 0x02FC(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bInAir;                                            // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bSprinting;                                        // 0x0301(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bSprintFromReadyToRelaxed;                         // 0x0302(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bMoving;                                           // 0x0303(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bRelax;                                            // 0x0304(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bReady;                                            // 0x0305(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bAiming;                                           // 0x0306(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bADS;                                              // 0x0307(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bWaist;                                            // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCustom;                                           // 0x0309(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsViewTarget;                                     // 0x030A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsMoving;                                         // 0x030B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bFly2D;                                            // 0x030C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bWalk2D;                                           // 0x030D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bWall2D;                                           // 0x030E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bForceRelaxed;                                     // 0x030F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bPrevWalk2D;                                       // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsFiring;                                         // 0x0311(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_312[0x2];                                      // 0x0312(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         AttackIndex;                                       // 0x0314(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AttackChargingPercent;                             // 0x0318(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsMobile;                                         // 0x031C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_31D[0x3];                                      // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FScalableFloat                         EnableADSMotionDuration;                           // 0x0320(0x0030)(Edit, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableADSMotion;                                  // 0x0350(0x0001)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         BitPad_351_0 : 2;                                  // 0x0351(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
-	uint8                                         bDisableSweep : 1;                                 // 0x0351(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_352[0x2];                                      // 0x0352(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AimUpWeight;                                       // 0x0354(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AimDownWeight;                                     // 0x0358(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AimCenterWeight;                                   // 0x035C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_360[0xC];                                      // 0x0360(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   AnimMachineName;                                   // 0x036C(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   AnimRelaxedName;                                   // 0x0374(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   AnimAimingName;                                    // 0x037C(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         RelaxedWeight;                                     // 0x0384(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         AimingWeight;                                      // 0x0388(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bActiveWeapon;                                     // 0x038C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_38D[0x3];                                      // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         EnableADSMotionElapsedTime;                        // 0x0390(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_394[0x4];                                      // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        TimeOfWalk2D;                                      // 0x0398(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CurrentStateTime;                                  // 0x03A0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3A4[0x4];                                      // 0x03A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ICyCharacterAnimInterface> CharacterAnimInterface;                        // 0x03A8(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TMap<class FName, struct FAnimInstanceNotifyClassContainer> AnimInstanceNotifyClassMap;          // 0x03B8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TMap<class FName, struct FAnimInstanceNotifyClassContainer> LinkedAnimInstanceNotifyClassMap;    // 0x0408(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FALSRotationMode                       RotationMode;                                      // 0x0458(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	TMap<class FName, class UCyAnimInstanceNotify*> AnimInstanceNotifyMap;                           // 0x0460(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	class FName                                   LinkedTag;                                         // 0x04B0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         LinkedStateIndex;                                  // 0x04B8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         TimeToDisableInstance;                             // 0x04BC(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_4C0[0x50];                                     // 0x04C0(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UALSCharacterAnimInstance*              MasterAnimInstance;                                // 0x0278(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSOverlayOverrideState                      OverlayOverrideState;                              // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_281[0x3];                                      // 0x0281(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BasePose_N;                                        // 0x0284(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BasePose_CLF;                                      // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BasePose_K;                                        // 0x028C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         InAirLandPrediction;                               // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         RelativeAccelerationAmountX;                       // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FALSVelocityBlend                      VelocityBlend;                                     // 0x0298(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         AimSweepTime;                                      // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ActualAimSweepTime;                                // 0x02AC(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bInAir;                                            // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bSprinting;                                        // 0x02B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bSprintFromReadyToRelaxed;                         // 0x02B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bMoving;                                           // 0x02B3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bRelax;                                            // 0x02B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bAutoTransientRelax;                               // 0x02B5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bReady;                                            // 0x02B6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bAiming;                                           // 0x02B7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bADS;                                              // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bWaist;                                            // 0x02B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCustom;                                           // 0x02BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsViewTarget;                                     // 0x02BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsMoving;                                         // 0x02BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bFly2D;                                            // 0x02BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bWalk2D;                                           // 0x02BE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bWall2D;                                           // 0x02BF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bForceRelaxed;                                     // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bPrevWalk2D;                                       // 0x02C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsFiring;                                         // 0x02C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2C3[0x1];                                      // 0x02C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         AttackIndex;                                       // 0x02C4(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AttackChargingPercent;                             // 0x02C8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsMobile;                                         // 0x02CC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2CD[0x3];                                      // 0x02CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FScalableFloat                         EnableADSMotionDuration;                           // 0x02D0(0x0030)(Edit, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableADSMotion;                                  // 0x0300(0x0001)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         BitPad_301_0 : 2;                                  // 0x0301(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         bDisableSweep : 1;                                 // 0x0301(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_302[0x2];                                      // 0x0302(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AimUpWeight;                                       // 0x0304(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AimDownWeight;                                     // 0x0308(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AimCenterWeight;                                   // 0x030C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_310[0xC];                                      // 0x0310(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   AnimMachineName;                                   // 0x031C(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   AnimRelaxedName;                                   // 0x0324(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   AnimAimingName;                                    // 0x032C(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RelaxedWeight;                                     // 0x0334(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         AimingWeight;                                      // 0x0338(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bActiveWeapon;                                     // 0x033C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_33D[0x3];                                      // 0x033D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         EnableADSMotionElapsedTime;                        // 0x0340(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_344[0x4];                                      // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        TimeOfWalk2D;                                      // 0x0348(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TScriptInterface<class ICyCharacterAnimInterface> CharacterAnimInterface;                        // 0x0350(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TMap<class FName, struct FAnimInstanceNotifyClassContainer> AnimInstanceNotifyClassMap;          // 0x0360(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TMap<class FName, struct FAnimInstanceNotifyClassContainer> LinkedAnimInstanceNotifyClassMap;    // 0x03B0(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FALSRotationMode                       RotationMode;                                      // 0x0400(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	TMap<class FName, class UCyAnimInstanceNotify*> AnimInstanceNotifyMap;                           // 0x0408(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	class FName                                   LinkedTag;                                         // 0x0458(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         LinkedStateIndex;                                  // 0x0460(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         TimeToDisableInstance;                             // 0x0464(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_468[0x50];                                     // 0x0468(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -107,30 +107,36 @@ public:
 		return GetDefaultObjImpl<UCySubAnimInstanceWeapon>();
 	}
 };
+#pragma pack(pop)
 DUMPER7_ASSERTS_UCySubAnimInstanceWeapon;
 
-// Class ALSV4_CPP.CySubAnimInstanceDefault
-// 0x0030 (0x0540 - 0x0510)
-class UCySubAnimInstanceDefault : public UCySubAnimInstanceWeapon
+// Class ALSV4_CPP.CySubAnimInstanceBow
+// 0x0140 (0x0600 - 0x04C0)
+class UCySubAnimInstanceBow final : public UCySubAnimInstanceWeapon
 {
 public:
-	struct FCyWeaponAnims                         Relaxed;                                           // 0x0510(0x0030)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x04B8(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCyWeaponSweepAnims                    Ready;                                             // 0x04F8(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCyWeaponSweepAnims                    Waist;                                             // 0x0540(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCyWeaponSweepAnims                    Aiming;                                            // 0x0588(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x05D0(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCyWeaponChargeAnims                   Charge;                                            // 0x05E8(0x0018)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("CySubAnimInstanceDefault")
+		STATIC_CLASS_IMPL("CySubAnimInstanceBow")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"CySubAnimInstanceDefault")
+		STATIC_NAME_IMPL(L"CySubAnimInstanceBow")
 	}
-	static class UCySubAnimInstanceDefault* GetDefaultObj()
+	static class UCySubAnimInstanceBow* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UCySubAnimInstanceDefault>();
+		return GetDefaultObjImpl<UCySubAnimInstanceBow>();
 	}
 };
-DUMPER7_ASSERTS_UCySubAnimInstanceDefault;
+DUMPER7_ASSERTS_UCySubAnimInstanceBow;
 
 // Class ALSV4_CPP.ALSAnimNotifyGroundedEntryState
 // 0x0008 (0x0040 - 0x0038)
@@ -157,7 +163,7 @@ public:
 DUMPER7_ASSERTS_UALSAnimNotifyGroundedEntryState;
 
 // Class ALSV4_CPP.CyPhysicsAnimInstance
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0280 - 0x0280)
 class UCyPhysicsAnimInstance : public UAnimInstance
 {
 public:
@@ -201,79 +207,34 @@ public:
 };
 DUMPER7_ASSERTS_UALS_BTTask_GetRandomLocation;
 
-// Class ALSV4_CPP.CyCharacterComponent
-// 0x0008 (0x0120 - 0x0118)
-class UCyCharacterComponent : public UActorComponent
+// Class ALSV4_CPP.CyPlayerPartAnimInterface
+// 0x0000 (0x0000 - 0x0000)
+class ICyPlayerPartAnimInterface final
 {
-public:
-	class ACharacter*                             OwnerCharacter;                                    // 0x0118(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("CyCharacterComponent")
+		STATIC_CLASS_IMPL("CyPlayerPartAnimInterface")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"CyCharacterComponent")
+		STATIC_NAME_IMPL(L"CyPlayerPartAnimInterface")
 	}
-	static class UCyCharacterComponent* GetDefaultObj()
+	static class ICyPlayerPartAnimInterface* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UCyCharacterComponent>();
+		return GetDefaultObjImpl<ICyPlayerPartAnimInterface>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
 	}
 };
-DUMPER7_ASSERTS_UCyCharacterComponent;
-
-// Class ALSV4_CPP.CyRagdollComponent
-// 0x0120 (0x0240 - 0x0120)
-class UCyRagdollComponent final : public UCyCharacterComponent
-{
-public:
-	uint8                                         Pad_120[0x18];                                     // 0x0120(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ECyWeaponName, class UAnimMontage*>      FaceUpAnimMap;                                     // 0x0138(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TMap<ECyWeaponName, class UAnimMontage*>      FaceDownAnimMap;                                   // 0x0188(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class FName                                   SimulateBoneName;                                  // 0x01D8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bSupportRagdoll;                                   // 0x01E0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bRagdollOnLand;                                    // 0x01E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1E2[0x2];                                      // 0x01E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RagdollOnLandVelocity;                             // 0x01E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bRagdollOnGround;                                  // 0x01E8(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bRagdollFaceUp;                                    // 0x01E9(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1EA[0x2];                                      // 0x01EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LastRagdollVelocity;                               // 0x01EC(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector_NetQuantize10                  TargetRagdollLocation;                             // 0x01F8(0x000C)(BlueprintVisible, Net, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_204[0xC];                                      // 0x0204(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCyAnimationComponent*                  AnimationComponent;                                // 0x0210(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_218[0x28];                                     // 0x0218(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void Multicast_RagdollEnd(const struct FVector& CharacterLocation);
-	void Multicast_RagdollStart();
-	void OnMovementStateChanged(EALSMovementState PreMovementState, EALSMovementState CurMovementState);
-	void RagdollEnd();
-	void RagdollStart();
-	void ReplicatedRagdollEnd();
-	void ReplicatedRagdollStart();
-	void Server_RagdollEnd(const struct FVector& CharacterLocation);
-	void Server_RagdollStart();
-	void Server_SetMeshLocationDuringRagdoll(const struct FVector& MeshLocation);
-	void SwitchRagdoll();
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("CyRagdollComponent")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"CyRagdollComponent")
-	}
-	static class UCyRagdollComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UCyRagdollComponent>();
-	}
-};
-DUMPER7_ASSERTS_UCyRagdollComponent;
+DUMPER7_ASSERTS_ICyPlayerPartAnimInterface;
 
 // Class ALSV4_CPP.ALS_BTTask_SetFocusToPlayer
 // 0x0000 (0x0070 - 0x0070)
@@ -295,32 +256,68 @@ public:
 };
 DUMPER7_ASSERTS_UALS_BTTask_SetFocusToPlayer;
 
-// Class ALSV4_CPP.CySlaveMeshComponent
-// 0x0000 (0x0C20 - 0x0C20)
-class UCySlaveMeshComponent final : public USkeletalMeshComponent
+// Class ALSV4_CPP.CyCharacterComponent
+// 0x0008 (0x0130 - 0x0128)
+class UCyCharacterComponent : public UActorComponent
 {
+public:
+	class ACharacter*                             OwnerCharacter;                                    // 0x0128(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("CySlaveMeshComponent")
+		STATIC_CLASS_IMPL("CyCharacterComponent")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"CySlaveMeshComponent")
+		STATIC_NAME_IMPL(L"CyCharacterComponent")
 	}
-	static class UCySlaveMeshComponent* GetDefaultObj()
+	static class UCyCharacterComponent* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UCySlaveMeshComponent>();
+		return GetDefaultObjImpl<UCyCharacterComponent>();
 	}
 };
-DUMPER7_ASSERTS_UCySlaveMeshComponent;
+DUMPER7_ASSERTS_UCyCharacterComponent;
+
+// Class ALSV4_CPP.CyRotationComponent
+// 0x0048 (0x0178 - 0x0130)
+class UCyRotationComponent : public UCyCharacterComponent
+{
+public:
+	struct FRotator                               LastVelocityRotation;                              // 0x0130(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FRotator                               LastMovementInputRotation;                         // 0x013C(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FRotator                               TargetRotation;                                    // 0x0148(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FRotator                               InAirRotation;                                     // 0x0154(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         RotateActorTime;                                   // 0x0160(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCyAnimationComponent*                  AnimationComponent;                                // 0x0168(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_170[0x8];                                      // 0x0170(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnRotationModeChanged(EALSRotationMode PreviousRotationMode);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("CyRotationComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CyRotationComponent")
+	}
+	static class UCyRotationComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCyRotationComponent>();
+	}
+};
+DUMPER7_ASSERTS_UCyRotationComponent;
 
 // Class ALSV4_CPP.ALSAIController
-// 0x0008 (0x03E0 - 0x03D8)
+// 0x0008 (0x0420 - 0x0418)
 class AALSAIController final : public AAIController
 {
 public:
-	class UBehaviorTree*                          Behaviour;                                         // 0x03D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBehaviorTree*                          Behaviour;                                         // 0x0418(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -337,30 +334,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_AALSAIController;
-
-// Class ALSV4_CPP.CySubAnimInstanceBasicGrenade
-// 0x0050 (0x0560 - 0x0510)
-class UCySubAnimInstanceBasicGrenade final : public UCySubAnimInstanceWeapon
-{
-public:
-	struct FCyWeaponSweepAnims                    AnimSequences;                                     // 0x0510(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_558[0x8];                                      // 0x0558(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("CySubAnimInstanceBasicGrenade")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"CySubAnimInstanceBasicGrenade")
-	}
-	static class UCySubAnimInstanceBasicGrenade* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UCySubAnimInstanceBasicGrenade>();
-	}
-};
-DUMPER7_ASSERTS_UCySubAnimInstanceBasicGrenade;
 
 // Class ALSV4_CPP.ALSAnimNotifyCameraShake
 // 0x0010 (0x0048 - 0x0038)
@@ -387,34 +360,28 @@ public:
 };
 DUMPER7_ASSERTS_UALSAnimNotifyCameraShake;
 
-// Class ALSV4_CPP.CySubAnimInstanceBow
-// 0x0150 (0x0660 - 0x0510)
-class UCySubAnimInstanceBow final : public UCySubAnimInstanceWeapon
+// Class ALSV4_CPP.CySubAnimInstanceBasicGrenade
+// 0x0040 (0x0500 - 0x04C0)
+class UCySubAnimInstanceBasicGrenade final : public UCySubAnimInstanceWeapon
 {
 public:
-	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x0510(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCyWeaponSweepAnims                    Ready;                                             // 0x0550(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCyWeaponSweepAnims                    Waist;                                             // 0x0598(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCyWeaponSweepAnims                    Aiming;                                            // 0x05E0(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x0628(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCyWeaponChargeAnims                   Charge;                                            // 0x0640(0x0018)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_658[0x8];                                      // 0x0658(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FCyWeaponSweepAnims                    AnimSequences;                                     // 0x04B8(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("CySubAnimInstanceBow")
+		STATIC_CLASS_IMPL("CySubAnimInstanceBasicGrenade")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"CySubAnimInstanceBow")
+		STATIC_NAME_IMPL(L"CySubAnimInstanceBasicGrenade")
 	}
-	static class UCySubAnimInstanceBow* GetDefaultObj()
+	static class UCySubAnimInstanceBasicGrenade* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UCySubAnimInstanceBow>();
+		return GetDefaultObjImpl<UCySubAnimInstanceBasicGrenade>();
 	}
 };
-DUMPER7_ASSERTS_UCySubAnimInstanceBow;
+DUMPER7_ASSERTS_UCySubAnimInstanceBasicGrenade;
 
 // Class ALSV4_CPP.ALSAnimNotifyFootstep
 // 0x0020 (0x0058 - 0x0038)
@@ -446,58 +413,56 @@ public:
 };
 DUMPER7_ASSERTS_UALSAnimNotifyFootstep;
 
-// Class ALSV4_CPP.CySubAnimInstancePistol
-// 0x0120 (0x0630 - 0x0510)
+// Class ALSV4_CPP.CySubAnimInstanceMelee
+// 0x00A0 (0x0560 - 0x04C0)
 #pragma pack(push, 0x1)
-class alignas(0x10) UCySubAnimInstancePistol : public UCySubAnimInstanceWeapon
+class alignas(0x10) UCySubAnimInstanceMelee : public UCySubAnimInstanceWeapon
 {
 public:
-	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x0510(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponAnims                         Ready;                                             // 0x0550(0x0030)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponSweepAnims                    Waist;                                             // 0x0580(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponSweepAnims                    Aiming;                                            // 0x05C8(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x0610(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x04B8(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponSweepAnims                    Ready;                                             // 0x04F8(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x0540(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("CySubAnimInstancePistol")
+		STATIC_CLASS_IMPL("CySubAnimInstanceMelee")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"CySubAnimInstancePistol")
+		STATIC_NAME_IMPL(L"CySubAnimInstanceMelee")
 	}
-	static class UCySubAnimInstancePistol* GetDefaultObj()
+	static class UCySubAnimInstanceMelee* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UCySubAnimInstancePistol>();
+		return GetDefaultObjImpl<UCySubAnimInstanceMelee>();
 	}
 };
 #pragma pack(pop)
-DUMPER7_ASSERTS_UCySubAnimInstancePistol;
+DUMPER7_ASSERTS_UCySubAnimInstanceMelee;
 
 // Class ALSV4_CPP.ALSBaseCharacter
-// 0x0240 (0x07B0 - 0x0570)
+// 0x0240 (0x07F0 - 0x05B0)
 class AALSBaseCharacter : public ACharacter
 {
 public:
-	uint8                                         Pad_568[0x58];                                     // 0x0568(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                DynamicCameraOffset;                               // 0x05C0(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UALSCharacterMovementComponent*         ALSCharacterMovementComponent;                     // 0x05D0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AALSPlayerCameraManager*                PlayerCameraManager;                               // 0x05D8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LookUpDownRate;                                    // 0x05E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LookLeftRightRate;                                 // 0x05E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ViewModeSwitchHoldTime;                            // 0x05E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bRightShoulder;                                    // 0x05EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_5ED[0x3];                                      // 0x05ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ECyPOVType, struct FCyPOVParam>          POVParams;                                         // 0x05F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FALSMovementSettings                   CurrentMovementSettings;                           // 0x0640(0x0020)(BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    MovementModel;                                     // 0x0660(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSMovementStateSettings              MovementData;                                      // 0x0670(0x0108)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_778[0x18];                                     // 0x0778(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCyAnimationComponent*                  AnimationComponent;                                // 0x0790(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCyRotationComponent*                   RotationComponent;                                 // 0x0798(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_7A0[0x10];                                     // 0x07A0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5A8[0x58];                                     // 0x05A8(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                DynamicCameraOffset;                               // 0x0600(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UALSCharacterMovementComponent*         ALSCharacterMovementComponent;                     // 0x0610(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AALSPlayerCameraManager*                PlayerCameraManager;                               // 0x0618(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LookUpDownRate;                                    // 0x0620(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LookLeftRightRate;                                 // 0x0624(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ViewModeSwitchHoldTime;                            // 0x0628(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bRightShoulder;                                    // 0x062C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_62D[0x3];                                      // 0x062D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ECyPOVType, struct FCyPOVParam>          POVParams;                                         // 0x0630(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FALSMovementSettings                   CurrentMovementSettings;                           // 0x0680(0x0020)(BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    MovementModel;                                     // 0x06A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSMovementStateSettings              MovementData;                                      // 0x06B0(0x0108)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_7B8[0x18];                                     // 0x07B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCyAnimationComponent*                  AnimationComponent;                                // 0x07D0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCyRotationComponent*                   RotationComponent;                                 // 0x07D8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_7E0[0x10];                                     // 0x07E0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DrawDebugSpheres();
@@ -538,48 +503,42 @@ public:
 };
 DUMPER7_ASSERTS_AALSBaseCharacter;
 
-// Class ALSV4_CPP.CySubAnimInstanceRifle
-// 0x01E0 (0x06F0 - 0x0510)
-#pragma pack(push, 0x1)
-class alignas(0x10) UCySubAnimInstanceRifle : public UCySubAnimInstanceWeapon
+// Class ALSV4_CPP.CySubAnimInstancePistol
+// 0x0110 (0x05D0 - 0x04C0)
+class UCySubAnimInstancePistol final : public UCySubAnimInstanceWeapon
 {
 public:
-	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x0510(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponSweepAnims                    Ready;                                             // 0x0550(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponSweepAnims                    Waist;                                             // 0x0598(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponSweepAnims                    Aiming;                                            // 0x05E0(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponSweepAnims                    ADS;                                               // 0x0628(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponSweepAnims                    Custom;                                            // 0x0670(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x06B8(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponRecoilAnims                   Recoil;                                            // 0x06D0(0x0010)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           ReadyToRelaxTransition;                            // 0x06E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x04B8(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponAnims                         Ready;                                             // 0x04F8(0x0030)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponSweepAnims                    Waist;                                             // 0x0528(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponSweepAnims                    Aiming;                                            // 0x0570(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x05B8(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("CySubAnimInstanceRifle")
+		STATIC_CLASS_IMPL("CySubAnimInstancePistol")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"CySubAnimInstanceRifle")
+		STATIC_NAME_IMPL(L"CySubAnimInstancePistol")
 	}
-	static class UCySubAnimInstanceRifle* GetDefaultObj()
+	static class UCySubAnimInstancePistol* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UCySubAnimInstanceRifle>();
+		return GetDefaultObjImpl<UCySubAnimInstancePistol>();
 	}
 };
-#pragma pack(pop)
-DUMPER7_ASSERTS_UCySubAnimInstanceRifle;
+DUMPER7_ASSERTS_UCySubAnimInstancePistol;
 
 // Class ALSV4_CPP.ALSCharacter
-// 0x0020 (0x07D0 - 0x07B0)
+// 0x0020 (0x0810 - 0x07F0)
 class AALSCharacter final : public AALSBaseCharacter
 {
 public:
-	class USceneComponent*                        HeldObjectRoot;                                    // 0x07B0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x07B8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x07C0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7C8[0x8];                                      // 0x07C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        HeldObjectRoot;                                    // 0x07F0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x07F8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0800(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_808[0x8];                                      // 0x0808(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AttachToHand(class UStaticMesh* NewStaticMesh, class USkeletalMesh* NewSkeletalMesh, class UClass* NewAnimClass, bool bLeftHand, const struct FVector& Offset);
@@ -604,84 +563,88 @@ public:
 DUMPER7_ASSERTS_AALSCharacter;
 
 // Class ALSV4_CPP.ALSCharacterAnimInstance
-// 0x0730 (0x0A00 - 0x02D0)
-class UALSCharacterAnimInstance : public UAnimInstance
+// 0x0760 (0x09E0 - 0x0280)
+#pragma pack(push, 0x1)
+class alignas(0x10) UALSCharacterAnimInstance : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2C8[0x8];                                      // 0x02C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCyAnimationComponent*                  AnimComponent;                                     // 0x02D0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UCySubAnimInstanceWeapon*>       SubAnimInstances;                                  // 0x02D8(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FALSAnimCharacterInformation           CharacterInformation;                              // 0x02E8(0x0070)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSMovementState                      MovementState;                                     // 0x0358(0x0006)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSMovementAction                     MovementAction;                                    // 0x035E(0x0006)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSMoveStatus                         MoveStatus;                                        // 0x0364(0x0007)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSRotationMode                       RotationMode;                                      // 0x036B(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSGait                               Gait;                                              // 0x0373(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSStance                             Stance;                                            // 0x0377(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	bool                                          bSprintFromReadyToRelaxed;                         // 0x037B(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FALSCharacterPartFlags                 CharacterHideParts;                                // 0x037C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	class FName                                   SubGraphStateName;                                 // 0x0384(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FCySubGraphState                       SubGraphState;                                     // 0x038C(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSAnimGraphGrounded                  Grounded;                                          // 0x03A4(0x0038)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         RootRotationScale;                                 // 0x03DC(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FCyCurveValue                          CurveValue;                                        // 0x03E0(0x0014)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         LimitRotatingTime;                                 // 0x03F4(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bInWall;                                           // 0x03F8(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bFly2D;                                            // 0x03F9(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bWalk2D;                                           // 0x03FA(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsFiring;                                         // 0x03FB(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AttackStateTime;                                   // 0x03FC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         AttackIndex;                                       // 0x0400(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AttackChargingPercent;                             // 0x0404(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bViewTarget;                                       // 0x0408(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bReady;                                            // 0x0409(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bLandTransition;                                   // 0x040A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_40B[0x1];                                      // 0x040B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SpineRotAdditive;                                  // 0x040C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SweepRotAdditive;                                  // 0x0410(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         DisableTransitionCount;                            // 0x0414(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FALSVelocityBlend                      VelocityBlend;                                     // 0x0418(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSLeanAmount                         LeanAmount;                                        // 0x0428(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FVector                                RelativeAccelerationAmount;                        // 0x0430(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FALSGroundedEntryState                 GroundedEntryState;                                // 0x043C(0x0003)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSMovementDirection                  MovementDirection;                                 // 0x043F(0x0005)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyBoneNames                           BoneNames;                                         // 0x0444(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSAnimGraphInAir                     InAir;                                             // 0x049C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSAnimGraphAimingValues              AimingValues;                                      // 0x04AC(0x0038)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FVector2D                              SmoothedAimingAngle;                               // 0x04E4(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_4EC[0x10];                                     // 0x04EC(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FlailRate;                                         // 0x04FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FALSAnimGraphOverlaySlot               OverlaySlotValues;                                 // 0x0500(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSAnimGraphLayerBlending             LayerBlendingValues;                               // 0x0510(0x0034)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSModifyCurve                        ModifyCurves;                                      // 0x0544(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSAnimGraphFootIK                    FootIKValues;                                      // 0x059C(0x009C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSAnimTurnInPlace                    TurnInPlaceValues;                                 // 0x0638(0x0098)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSAnimRotateInPlace                  RotateInPlace;                                     // 0x06D0(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSAnimConfiguration                  Config;                                            // 0x0730(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         AimDownSightShakingValue;                          // 0x0778(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableFootIK;                                     // 0x077C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bMummyTimeState;                                   // 0x077D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_77E[0xA];                                      // 0x077E(0x000A)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            DiagonalScaleAmountCurve;                          // 0x0788(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCurveFloat*                            StrideBlend_N_Walk;                                // 0x0790(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCurveFloat*                            StrideBlend_N_Run;                                 // 0x0798(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCurveFloat*                            StrideBlend_C_Walk;                                // 0x07A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCurveFloat*                            LandPredictionCurve;                               // 0x07A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCurveFloat*                            LeanInAirCurve;                                    // 0x07B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCurveVector*                           YawOffset_FB;                                      // 0x07B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCurveVector*                           YawOffset_LR;                                      // 0x07C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           N_Transition_R;                                    // 0x07C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           N_Transition_L;                                    // 0x07D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         CustomSweepAngle;                                  // 0x07D8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         StopQuicknessTime;                                 // 0x07DC(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_7E0[0xC8];                                     // 0x07E0(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, TSubclassOf<class UCyAnimInstanceNotify>> AnimInstanceNotifyClassMap;          // 0x08A8(0x0050)(Edit, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TMap<class FName, TSubclassOf<class UCyAnimInstanceNotify>> LinkedAnimInstanceNotifyClassMap;    // 0x08F8(0x0050)(Edit, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TMap<class FName, class UCyAnimInstanceNotify*> AnimInstanceNotifyMap;                           // 0x0948(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	class FName                                   OverlayMachineName;                                // 0x0998(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_9A0[0x58];                                     // 0x09A0(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bEnableSweep : 1;                                  // 0x09F8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_9F9[0x7];                                      // 0x09F9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_278[0x10];                                     // 0x0278(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCyAnimationComponent*                  AnimComponent;                                     // 0x0288(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class UCySubAnimInstanceWeapon*>       SubAnimInstances;                                  // 0x0290(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FALSAnimCharacterInformation           CharacterInformation;                              // 0x02A0(0x0070)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSMovementState                      MovementState;                                     // 0x0310(0x0006)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSMovementAction                     MovementAction;                                    // 0x0316(0x0006)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSMoveStatus                         MoveStatus;                                        // 0x031C(0x0007)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSRotationMode                       RotationMode;                                      // 0x0323(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSGait                               Gait;                                              // 0x032B(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSStance                             Stance;                                            // 0x032F(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	bool                                          bSprintFromReadyToRelaxed;                         // 0x0333(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bAutoTransientRelax;                               // 0x0334(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_335[0x3];                                      // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FALSCharacterPartFlags                 CharacterHideParts;                                // 0x0338(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	class FName                                   SubGraphStateName;                                 // 0x0340(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FCySubGraphState                       SubGraphState;                                     // 0x0348(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSAnimGraphGrounded                  Grounded;                                          // 0x0360(0x0038)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         RootRotationScale;                                 // 0x0398(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FCyCurveValue                          CurveValue;                                        // 0x039C(0x0014)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         LimitRotatingTime;                                 // 0x03B0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bInWall;                                           // 0x03B4(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bFly2D;                                            // 0x03B5(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bWalk2D;                                           // 0x03B6(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsFiring;                                         // 0x03B7(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         AttackIndex;                                       // 0x03B8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AttackChargingPercent;                             // 0x03BC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bViewTarget;                                       // 0x03C0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bReady;                                            // 0x03C1(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bLandTransition;                                   // 0x03C2(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3C3[0x1];                                      // 0x03C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SpineRotAdditive;                                  // 0x03C4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SweepRotAdditive;                                  // 0x03C8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         DisableTransitionCount;                            // 0x03CC(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FALSVelocityBlend                      VelocityBlend;                                     // 0x03D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSLeanAmount                         LeanAmount;                                        // 0x03E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FVector                                RelativeAccelerationAmount;                        // 0x03E8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FALSGroundedEntryState                 GroundedEntryState;                                // 0x03F4(0x0003)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSMovementDirection                  MovementDirection;                                 // 0x03F7(0x0005)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyBoneNames                           BoneNames;                                         // 0x03FC(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSAnimGraphInAir                     InAir;                                             // 0x0454(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSAnimGraphAimingValues              AimingValues;                                      // 0x0464(0x0038)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FVector2D                              SmoothedAimingAngle;                               // 0x049C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4A4[0x10];                                     // 0x04A4(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FlailRate;                                         // 0x04B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FALSAnimGraphOverlaySlot               OverlaySlotValues;                                 // 0x04B8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSAnimGraphLayerBlending             LayerBlendingValues;                               // 0x04C8(0x0034)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSModifyCurve                        ModifyCurves;                                      // 0x04FC(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSAnimGraphFootIK                    FootIKValues;                                      // 0x0554(0x009C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSAnimGraphHandIK                    HandIKValues;                                      // 0x05F0(0x001C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FALSAnimTurnInPlace                    TurnInPlaceValues;                                 // 0x0610(0x0098)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSAnimRotateInPlace                  RotateInPlace;                                     // 0x06A8(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSAnimConfiguration                  Config;                                            // 0x0708(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         AimDownSightShakingValue;                          // 0x0750(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableFootIK;                                     // 0x0754(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bMummyTimeState;                                   // 0x0755(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_756[0xA];                                      // 0x0756(0x000A)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            DiagonalScaleAmountCurve;                          // 0x0760(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveFloat*                            StrideBlend_N_Walk;                                // 0x0768(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveFloat*                            StrideBlend_N_Run;                                 // 0x0770(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveFloat*                            StrideBlend_C_Walk;                                // 0x0778(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveFloat*                            LandPredictionCurve;                               // 0x0780(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveFloat*                            LeanInAirCurve;                                    // 0x0788(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveVector*                           YawOffset_FB;                                      // 0x0790(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveVector*                           YawOffset_LR;                                      // 0x0798(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           N_Transition_R;                                    // 0x07A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           N_Transition_L;                                    // 0x07A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CustomSweepAngle;                                  // 0x07B0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         StopQuicknessTime;                                 // 0x07B4(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_7B8[0xC8];                                     // 0x07B8(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, TSubclassOf<class UCyAnimInstanceNotify>> AnimInstanceNotifyClassMap;          // 0x0880(0x0050)(Edit, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TMap<class FName, TSubclassOf<class UCyAnimInstanceNotify>> LinkedAnimInstanceNotifyClassMap;    // 0x08D0(0x0050)(Edit, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TMap<class FName, class UCyAnimInstanceNotify*> AnimInstanceNotifyMap;                           // 0x0920(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	class FName                                   OverlayMachineName;                                // 0x0970(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_978[0x58];                                     // 0x0978(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bEnableSweep : 1;                                  // 0x09D0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_9D1[0x7];                                      // 0x09D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnPivot();
@@ -711,10 +674,11 @@ public:
 		return GetDefaultObjImpl<UALSCharacterAnimInstance>();
 	}
 };
+#pragma pack(pop)
 DUMPER7_ASSERTS_UALSCharacterAnimInstance;
 
 // Class ALSV4_CPP.ALSCharacterMovementComponent
-// 0x0000 (0x0B50 - 0x0B50)
+// 0x0000 (0x0B70 - 0x0B70)
 class UALSCharacterMovementComponent : public UCharacterMovementComponent
 {
 public:
@@ -734,15 +698,15 @@ public:
 DUMPER7_ASSERTS_UALSCharacterMovementComponent;
 
 // Class ALSV4_CPP.ALSDebugComponent
-// 0x0010 (0x0128 - 0x0118)
+// 0x0010 (0x0138 - 0x0128)
 class UALSDebugComponent final : public UActorComponent
 {
 public:
-	class AALSCharacter*                          OwnerCharacter;                                    // 0x0118(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSlomo;                                            // 0x0120(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShowHUD;                                          // 0x0121(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShowCharacterInfo;                                // 0x0122(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123[0x5];                                      // 0x0123(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AALSCharacter*                          OwnerCharacter;                                    // 0x0128(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSlomo;                                            // 0x0130(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShowHUD;                                          // 0x0131(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShowCharacterInfo;                                // 0x0132(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_133[0x5];                                      // 0x0133(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DrawDebugSpheres();
@@ -779,26 +743,26 @@ public:
 DUMPER7_ASSERTS_UALSDebugComponent;
 
 // Class ALSV4_CPP.ALSMantleComponent
-// 0x01F8 (0x0310 - 0x0118)
+// 0x01F8 (0x0320 - 0x0128)
 class UALSMantleComponent final : public UActorComponent
 {
 public:
-	class UTimelineComponent*                     MantleTimeline;                                    // 0x0118(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FALSMantleTraceSettings                GroundedTraceSettings;                             // 0x0120(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSMantleTraceSettings                AutomaticTraceSettings;                            // 0x0134(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSMantleTraceSettings                FallingTraceSettings;                              // 0x0148(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            MantleTimelineCurve;                               // 0x0160(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FALSMantleParams                       MantleParams;                                      // 0x0168(0x0028)(BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FALSComponentAndTransform              MantleLedgeLS;                                     // 0x0190(0x0040)(BlueprintVisible, BlueprintReadOnly, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FTransform                             MantleTarget;                                      // 0x01D0(0x0030)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FTransform                             MantleActualStartOffset;                           // 0x0200(0x0030)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FTransform                             MantleAnimatedStartOffset;                         // 0x0230(0x0030)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         AcceptableVelocityWhileMantling;                   // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EALSMantleType, struct FALSMantleAsset>  DefaultMantleMap;                                  // 0x0268(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TMap<ECyWeaponName, class UAnimMontage*>      LowMantleAnimMap;                                  // 0x02B8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class AALSBaseCharacter*                      OwnerCharacter;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UTimelineComponent*                     MantleTimeline;                                    // 0x0128(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FALSMantleTraceSettings                GroundedTraceSettings;                             // 0x0130(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSMantleTraceSettings                AutomaticTraceSettings;                            // 0x0144(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSMantleTraceSettings                FallingTraceSettings;                              // 0x0158(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            MantleTimelineCurve;                               // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FALSMantleParams                       MantleParams;                                      // 0x0178(0x0028)(BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FALSComponentAndTransform              MantleLedgeLS;                                     // 0x01A0(0x0040)(BlueprintVisible, BlueprintReadOnly, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FTransform                             MantleTarget;                                      // 0x01E0(0x0030)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FTransform                             MantleActualStartOffset;                           // 0x0210(0x0030)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FTransform                             MantleAnimatedStartOffset;                         // 0x0240(0x0030)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         AcceptableVelocityWhileMantling;                   // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EALSMantleType, struct FALSMantleAsset>  DefaultMantleMap;                                  // 0x0278(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TMap<ECyWeaponName, class UAnimMontage*>      LowMantleAnimMap;                                  // 0x02C8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class AALSBaseCharacter*                      OwnerCharacter;                                    // 0x0318(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void MantleEnd();
@@ -933,20 +897,20 @@ public:
 DUMPER7_ASSERTS_UALSNotifyStateOverlayOverride;
 
 // Class ALSV4_CPP.ALSPlayerCameraBehavior
-// 0x0010 (0x02E0 - 0x02D0)
+// 0x0010 (0x0290 - 0x0280)
 class UALSPlayerCameraBehavior final : public UAnimInstance
 {
 public:
-	class AALSPlayerCameraManager*                PlayerCameraManager;                               // 0x02C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSMovementState                             MovementState;                                     // 0x02D0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSMovementAction                            MovementAction;                                    // 0x02D1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSRotationMode                              RotationMode;                                      // 0x02D2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSGait                                      Gait;                                              // 0x02D3(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSStance                                    Stance;                                            // 0x02D4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSViewMode                                  ViewMode;                                          // 0x02D5(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bRightShoulder;                                    // 0x02D6(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bDebugView;                                        // 0x02D7(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2D8[0x8];                                      // 0x02D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AALSPlayerCameraManager*                PlayerCameraManager;                               // 0x0278(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSMovementState                             MovementState;                                     // 0x0280(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSMovementAction                            MovementAction;                                    // 0x0281(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSRotationMode                              RotationMode;                                      // 0x0282(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSGait                                      Gait;                                              // 0x0283(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSStance                                    Stance;                                            // 0x0284(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSViewMode                                  ViewMode;                                          // 0x0285(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bRightShoulder;                                    // 0x0286(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bDebugView;                                        // 0x0287(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_288[0x8];                                      // 0x0288(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -965,21 +929,21 @@ public:
 DUMPER7_ASSERTS_UALSPlayerCameraBehavior;
 
 // Class ALSV4_CPP.ALSPlayerCameraManager
-// 0x0170 (0x2B60 - 0x29F0)
+// 0x0170 (0x2BB0 - 0x2A40)
 class AALSPlayerCameraManager final : public APlayerCameraManager
 {
 public:
-	class ACharacter*                             ControlledCharacter;                               // 0x29F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TScriptInterface<class ICyCharacterCameraInterface> ControlledCharacterInterface;                // 0x29F8(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	struct FVector                                RootLocation;                                      // 0x2A08(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2A14[0xC];                                     // 0x2A14(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             SmoothedPivotTarget;                               // 0x2A20(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FVector                                PivotLocation;                                     // 0x2A50(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                TargetCameraLocation;                              // 0x2A5C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FRotator                               TargetCameraRotation;                              // 0x2A68(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FRotator                               DebugViewRotation;                                 // 0x2A74(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FVector                                DebugViewOffset;                                   // 0x2A80(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2A8C[0xD4];                                    // 0x2A8C(0x00D4)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class ACharacter*                             ControlledCharacter;                               // 0x2A40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TScriptInterface<class ICyCharacterCameraInterface> ControlledCharacterInterface;                // 0x2A48(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	struct FVector                                RootLocation;                                      // 0x2A58(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2A64[0xC];                                     // 0x2A64(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             SmoothedPivotTarget;                               // 0x2A70(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FVector                                PivotLocation;                                     // 0x2AA0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                TargetCameraLocation;                              // 0x2AAC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FRotator                               TargetCameraRotation;                              // 0x2AB8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FRotator                               DebugViewRotation;                                 // 0x2AC4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FVector                                DebugViewOffset;                                   // 0x2AD0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2ADC[0xD4];                                    // 0x2ADC(0x00D4)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static struct FVector CalculateAxisIndependentLag(const struct FVector& CurrentLocation, const struct FVector& TargetLocation, const struct FRotator& CameraRotation, const struct FVector& LagSpeeds, float DeltaTime);
@@ -1003,12 +967,12 @@ public:
 DUMPER7_ASSERTS_AALSPlayerCameraManager;
 
 // Class ALSV4_CPP.ALSPlayerController
-// 0x0018 (0x0638 - 0x0620)
+// 0x0018 (0x0678 - 0x0660)
 class AALSPlayerController final : public APlayerController
 {
 public:
-	class ACharacter*                             PossessedCharacter;                                // 0x0620(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TScriptInterface<class ICyCharacterCameraInterface> PossessedCharacterInterface;                 // 0x0628(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	class ACharacter*                             PossessedCharacter;                                // 0x0660(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TScriptInterface<class ICyCharacterCameraInterface> PossessedCharacterInterface;                 // 0x0668(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -1421,67 +1385,70 @@ public:
 DUMPER7_ASSERTS_UCyAnimAssetRifle;
 
 // Class ALSV4_CPP.CyAnimationComponent
-// 0x0200 (0x0320 - 0x0120)
+// 0x0220 (0x0350 - 0x0130)
 class UCyAnimationComponent : public UCyCharacterComponent
 {
 public:
-	uint8                                         Pad_120[0x8];                                      // 0x0120(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDataAsset*                             AnimAsset;                                         // 0x0128(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UDataAsset*                             MeshAsset;                                         // 0x0130(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_138[0x38];                                     // 0x0138(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCyAnimAssetCharacter*                  CharacterAnimAssets;                               // 0x0170(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCyAnimAssetDefault*                    WeaponDefaultAnimAssets;                           // 0x0178(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UALSCharacterAnimInstance*              AnimInstance;                                      // 0x0180(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class FName>                           UnusedSubGraphs;                                   // 0x0188(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSRotationMode                              DesiredRotationMode;                               // 0x0198(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSGait                                      DesiredGait;                                       // 0x0199(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_19A[0x6];                                      // 0x019A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FALSMovementSettings                   MovementSettings;                                  // 0x01A0(0x0020)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FVector                                Acceleration;                                      // 0x01C0(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsMoving;                                         // 0x01CC(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bHasMovementInput;                                 // 0x01CD(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1CE[0x2];                                      // 0x01CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Speed;                                             // 0x01D0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MovementInputAmount;                               // 0x01D4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AimYawRate;                                        // 0x01D8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableFootIK;                                     // 0x01DC(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1DD[0x3];                                      // 0x01DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         EasedMaxAcceleration;                              // 0x01E0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SpineRotAdditive;                                  // 0x01E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SweepRotAdditive;                                  // 0x01E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSMovementState                             MovementState;                                     // 0x01EC(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSMovementState                             PrevMovementState;                                 // 0x01ED(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSMovementAction                            MovementAction;                                    // 0x01EE(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSRotationMode                              RotationMode;                                      // 0x01EF(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSGait                                      Gait;                                              // 0x01F0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSGait                                      AllowedGait;                                       // 0x01F1(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSStance                                    Stance;                                            // 0x01F2(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1F3[0x1];                                      // 0x01F3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	EALSCharacterPartFlags                        CharacterHideParts;                                // 0x01F4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EALSViewMode                                  ViewMode;                                          // 0x01F8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bInWall;                                           // 0x01F9(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bFly2D;                                            // 0x01FA(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bWalk2D;                                           // 0x01FB(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsFiring;                                         // 0x01FC(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1FD[0x3];                                      // 0x01FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ChargePercent;                                     // 0x0200(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AttackStateTime;                                   // 0x0204(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                PreviousVelocity;                                  // 0x0208(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FRotator                               PreviousVelocityRotation;                          // 0x0214(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         PreviousAimYaw;                                    // 0x0220(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AimingCorrectAngle;                                // 0x0224(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FRotator                               AimingRotation;                                    // 0x0228(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FRotator                               CharacterRotation;                                 // 0x0234(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FVector                                ActorForwardVector;                                // 0x0240(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                ActorRightVector;                                  // 0x024C(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_258[0x10];                                     // 0x0258(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ECyWeaponName, class UCyAnimAssetWeapon*> WeaponAnimAssetMap;                               // 0x0268(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	TSet<ECyWeaponName>                           IgnoreWeaponNames;                                 // 0x02B8(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	struct FVector                                OverrideAnimationVelocity;                         // 0x0308(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bOverrideAnimationVelocity;                        // 0x0314(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ReadyToRelaxTime;                                  // 0x0318(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_130[0x8];                                      // 0x0130(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDataAsset*                             AnimAsset;                                         // 0x0138(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UDataAsset*                             MeshAsset;                                         // 0x0140(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_148[0x38];                                     // 0x0148(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCyAnimAssetCharacter*                  CharacterAnimAssets;                               // 0x0180(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCyAnimAssetDefault*                    WeaponDefaultAnimAssets;                           // 0x0188(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UALSCharacterAnimInstance*              AnimInstance;                                      // 0x0190(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class FName>                           UnusedSubGraphs;                                   // 0x0198(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSRotationMode                              DesiredRotationMode;                               // 0x01A8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSGait                                      DesiredGait;                                       // 0x01A9(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1AA[0x6];                                      // 0x01AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FALSMovementSettings                   MovementSettings;                                  // 0x01B0(0x0020)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FVector                                Acceleration;                                      // 0x01D0(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsMoving;                                         // 0x01DC(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bHasMovementInput;                                 // 0x01DD(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1DE[0x2];                                      // 0x01DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Speed;                                             // 0x01E0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MovementInputAmount;                               // 0x01E4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AimYawRate;                                        // 0x01E8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableFootIK;                                     // 0x01EC(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1ED[0x3];                                      // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         EasedMaxAcceleration;                              // 0x01F0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SpineRotAdditive;                                  // 0x01F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SweepRotAdditive;                                  // 0x01F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSMovementState                             MovementState;                                     // 0x01FC(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSMovementState                             PrevMovementState;                                 // 0x01FD(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSMovementAction                            MovementAction;                                    // 0x01FE(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSRotationMode                              RotationMode;                                      // 0x01FF(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSGait                                      Gait;                                              // 0x0200(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSGait                                      AllowedGait;                                       // 0x0201(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSStance                                    Stance;                                            // 0x0202(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_203[0x1];                                      // 0x0203(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	EALSCharacterPartFlags                        CharacterHideParts;                                // 0x0204(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EALSViewMode                                  ViewMode;                                          // 0x0208(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bInWall;                                           // 0x0209(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bFly2D;                                            // 0x020A(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bWalk2D;                                           // 0x020B(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsFiring;                                         // 0x020C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_20D[0x3];                                      // 0x020D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ChargePercent;                                     // 0x0210(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AttackStateTime;                                   // 0x0214(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LastAttackStateTimeWhenForceReady;                 // 0x0218(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                PreviousVelocity;                                  // 0x021C(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FRotator                               PreviousVelocityRotation;                          // 0x0228(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         PreviousAimYaw;                                    // 0x0234(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AimingCorrectAngle;                                // 0x0238(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FRotator                               AimingRotation;                                    // 0x023C(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FRotator                               CharacterRotation;                                 // 0x0248(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FVector                                ActorForwardVector;                                // 0x0254(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                ActorRightVector;                                  // 0x0260(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_26C[0x14];                                     // 0x026C(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ECyWeaponName, class UCyAnimAssetWeapon*> WeaponAnimAssetMap;                               // 0x0280(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	TSet<ECyWeaponName>                           IgnoreWeaponNames;                                 // 0x02D0(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	struct FVector                                OverrideAnimationVelocity;                         // 0x0320(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bOverrideAnimationVelocity;                        // 0x032C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_32D[0x3];                                      // 0x032D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                AnimAngleClampPitchInfo;                           // 0x0330(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_33C[0xC];                                      // 0x033C(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ReadyToRelaxTime;                                  // 0x0348(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34C[0x4];                                      // 0x034C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DrawDebugSpheres();
@@ -1768,7 +1735,7 @@ public:
 DUMPER7_ASSERTS_UCyBlueprintLibrary;
 
 // Class ALSV4_CPP.CyCharacter
-// 0x0000 (0x07B0 - 0x07B0)
+// 0x0000 (0x07F0 - 0x07F0)
 class ACyCharacter final : public AALSBaseCharacter
 {
 public:
@@ -1788,115 +1755,114 @@ public:
 DUMPER7_ASSERTS_ACyCharacter;
 
 // Class ALSV4_CPP.CyCharacterAnimInstance
-// 0x0330 (0x0D30 - 0x0A00)
-#pragma pack(push, 0x1)
-class alignas(0x10) UCyCharacterAnimInstance : public UALSCharacterAnimInstance
+// 0x0320 (0x0D00 - 0x09E0)
+class UCyCharacterAnimInstance : public UALSCharacterAnimInstance
 {
 public:
-	class UAnimSequenceBase*                      N_Pose;                                            // 0x0A00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Pose_Motion;                                     // 0x0A08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Pose;                                            // 0x0A10(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_Pose;                                            // 0x0A18(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_Lean;                                            // 0x0A20(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_WalkRun_F;                                       // 0x0A28(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_WalkRun_B;                                       // 0x0A30(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_WalkRun_FL;                                      // 0x0A38(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_WalkRun_BL;                                      // 0x0A40(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_WalkRun_FR;                                      // 0x0A48(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_WalkRun_BR;                                      // 0x0A50(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Sprint_F;                                        // 0x0A58(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Sprint_F_Impulse;                                // 0x0A60(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_LocoDetail_Accel_F_Additive;                     // 0x0A68(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_LocoDetail_Accel_B_Additive;                     // 0x0A70(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_LocoDetail_Accel_L_Additive;                     // 0x0A78(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_LocoDetail_Accel_R_Additive;                     // 0x0A80(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AlphaLocoDetailAccel;                              // 0x0A88(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_A8C[0x4];                                      // 0x0A8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimSequenceBase*                      N_Rotate_L90;                                      // 0x0A90(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Rotate_R90;                                      // 0x0A98(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Walk_F;                                          // 0x0AA0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Walk_B;                                          // 0x0AA8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Walk_LF;                                         // 0x0AB0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Walk_LB;                                         // 0x0AB8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Walk_RF;                                         // 0x0AC0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Walk_RB;                                         // 0x0AC8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopLeftTime_F;                                    // 0x0AD0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopLeftTime_B;                                    // 0x0AD4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopLeftTime_LF;                                   // 0x0AD8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopLeftTime_LB;                                   // 0x0ADC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopLeftTime_RF;                                   // 0x0AE0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopLeftTime_RB;                                   // 0x0AE4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopRightTime_F;                                   // 0x0AE8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopRightTime_B;                                   // 0x0AEC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopRightTime_LF;                                  // 0x0AF0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopRightTime_LB;                                  // 0x0AF4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopRightTime_RF;                                  // 0x0AF8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         StopRightTime_RB;                                  // 0x0AFC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_WalkPose;                                        // 0x0B00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Walk_F;                                          // 0x0B08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Walk_B;                                          // 0x0B10(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Walk_LF;                                         // 0x0B18(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Walk_LB;                                         // 0x0B20(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Walk_RF;                                         // 0x0B28(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Walk_RB;                                         // 0x0B30(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Rotate_L90;                                      // 0x0B38(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_Rotate_R90;                                      // 0x0B40(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FAnimSequencePose                      LandRollEndPose;                                   // 0x0B48(0x0010)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_To_N;                                            // 0x0B58(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_To_C;                                            // 0x0B60(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_LeanFalling_Additive;                            // 0x0B68(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Land_Heavy;                                      // 0x0B70(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Land_Heavy_Additive;                             // 0x0B78(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Land_Light;                                      // 0x0B80(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Land_Light_Additive;                             // 0x0B88(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_WalkJump_LF;                                     // 0x0B90(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_RunJump_LF;                                      // 0x0B98(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_WalkJump_RF;                                     // 0x0BA0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_RunJump_RF;                                      // 0x0BA8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_SecondJump;                                      // 0x0BB0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_JumpLoop;                                        // 0x0BB8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_JumpFlail;                                       // 0x0BC0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Flail;                                           // 0x0BC8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_FallLoop;                                        // 0x0BD0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_FallLoopFast;                                    // 0x0BD8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_MummyTimeLoop;                                   // 0x0BE0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Look_F_Sweep_Additive;                           // 0x0BE8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlendSpaceBase*                        N_Look;                                            // 0x0BF0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           N_Stop_R;                                          // 0x0BF8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           N_Stop_L;                                          // 0x0C00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           N_QuickStop;                                       // 0x0C08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           C_Stop;                                            // 0x0C10(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Stop_Quickness;                                  // 0x0C18(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_WalkPose;                                        // 0x0C20(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_Walk_F;                                          // 0x0C28(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_Walk_B;                                          // 0x0C30(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_Walk_LF;                                         // 0x0C38(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_Walk_LB;                                         // 0x0C40(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_Walk_RF;                                         // 0x0C48(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_Walk_RB;                                         // 0x0C50(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_Motion;                                          // 0x0C58(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      C_To_K;                                            // 0x0C60(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_To_C;                                            // 0x0C68(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_To_K;                                            // 0x0C70(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      K_To_N;                                            // 0x0C78(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_InAir_3D;                                        // 0x0C80(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_InAir_Fly;                                       // 0x0C88(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_InAir_FlyTo3D;                                   // 0x0C90(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_InAir_FlyToLand3D;                               // 0x0C98(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_InAir_Side;                                      // 0x0CA0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_InAir_SideTo3D;                                  // 0x0CA8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Stand_3D;                                        // 0x0CB0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Stand_Side;                                      // 0x0CB8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Stand_SideTo3D;                                  // 0x0CC0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimSequenceBase*                      N_Walk_SideTo3D;                                   // 0x0CC8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         BitPad_CD0_0 : 2;                                  // 0x0CD0(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
-	uint8                                         bIsMobile : 1;                                     // 0x0CD0(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bEnablePhysics : 1;                                // 0x0CD0(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bEnableNLocamotionDetail : 1;                      // 0x0CD0(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bEnableHitReaction : 1;                            // 0x0CD0(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bEnableCloth : 1;                                  // 0x0CD0(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bEnableHands : 1;                                  // 0x0CD0(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_CD1[0x57];                                     // 0x0CD1(0x0057)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UAnimSequenceBase*                      N_Pose;                                            // 0x09D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Pose_Motion;                                     // 0x09E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Pose;                                            // 0x09E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_Pose;                                            // 0x09F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_Lean;                                            // 0x09F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_WalkRun_F;                                       // 0x0A00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_WalkRun_B;                                       // 0x0A08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_WalkRun_FL;                                      // 0x0A10(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_WalkRun_BL;                                      // 0x0A18(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_WalkRun_FR;                                      // 0x0A20(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_WalkRun_BR;                                      // 0x0A28(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Sprint_F;                                        // 0x0A30(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Sprint_F_Impulse;                                // 0x0A38(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_LocoDetail_Accel_F_Additive;                     // 0x0A40(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_LocoDetail_Accel_B_Additive;                     // 0x0A48(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_LocoDetail_Accel_L_Additive;                     // 0x0A50(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_LocoDetail_Accel_R_Additive;                     // 0x0A58(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AlphaLocoDetailAccel;                              // 0x0A60(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_A64[0x4];                                      // 0x0A64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimSequenceBase*                      N_Rotate_L90;                                      // 0x0A68(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Rotate_R90;                                      // 0x0A70(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Walk_F;                                          // 0x0A78(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Walk_B;                                          // 0x0A80(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Walk_LF;                                         // 0x0A88(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Walk_LB;                                         // 0x0A90(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Walk_RF;                                         // 0x0A98(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Walk_RB;                                         // 0x0AA0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopLeftTime_F;                                    // 0x0AA8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopLeftTime_B;                                    // 0x0AAC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopLeftTime_LF;                                   // 0x0AB0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopLeftTime_LB;                                   // 0x0AB4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopLeftTime_RF;                                   // 0x0AB8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopLeftTime_RB;                                   // 0x0ABC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopRightTime_F;                                   // 0x0AC0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopRightTime_B;                                   // 0x0AC4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopRightTime_LF;                                  // 0x0AC8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopRightTime_LB;                                  // 0x0ACC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopRightTime_RF;                                  // 0x0AD0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         StopRightTime_RB;                                  // 0x0AD4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_WalkPose;                                        // 0x0AD8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Walk_F;                                          // 0x0AE0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Walk_B;                                          // 0x0AE8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Walk_LF;                                         // 0x0AF0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Walk_LB;                                         // 0x0AF8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Walk_RF;                                         // 0x0B00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Walk_RB;                                         // 0x0B08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Rotate_L90;                                      // 0x0B10(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_Rotate_R90;                                      // 0x0B18(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FAnimSequencePose                      LandRollEndPose;                                   // 0x0B20(0x0010)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_To_N;                                            // 0x0B30(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_To_C;                                            // 0x0B38(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_LeanFalling_Additive;                            // 0x0B40(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Land_Heavy;                                      // 0x0B48(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Land_Heavy_Additive;                             // 0x0B50(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Land_Light;                                      // 0x0B58(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Land_Light_Additive;                             // 0x0B60(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_WalkJump_LF;                                     // 0x0B68(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_RunJump_LF;                                      // 0x0B70(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_WalkJump_RF;                                     // 0x0B78(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_RunJump_RF;                                      // 0x0B80(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_SecondJump;                                      // 0x0B88(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_JumpLoop;                                        // 0x0B90(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_JumpFlail;                                       // 0x0B98(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Flail;                                           // 0x0BA0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_FallLoop;                                        // 0x0BA8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_FallLoopFast;                                    // 0x0BB0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_MummyTimeLoop;                                   // 0x0BB8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Look_F_Sweep_Additive;                           // 0x0BC0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlendSpaceBase*                        N_Look;                                            // 0x0BC8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           N_Stop_R;                                          // 0x0BD0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           N_Stop_L;                                          // 0x0BD8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           N_QuickStop;                                       // 0x0BE0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           C_Stop;                                            // 0x0BE8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Stop_Quickness;                                  // 0x0BF0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_WalkPose;                                        // 0x0BF8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_Walk_F;                                          // 0x0C00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_Walk_B;                                          // 0x0C08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_Walk_LF;                                         // 0x0C10(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_Walk_LB;                                         // 0x0C18(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_Walk_RF;                                         // 0x0C20(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_Walk_RB;                                         // 0x0C28(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_Motion;                                          // 0x0C30(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      C_To_K;                                            // 0x0C38(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_To_C;                                            // 0x0C40(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_To_K;                                            // 0x0C48(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      K_To_N;                                            // 0x0C50(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_InAir_3D;                                        // 0x0C58(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_InAir_Fly;                                       // 0x0C60(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_InAir_FlyTo3D;                                   // 0x0C68(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_InAir_FlyToLand3D;                               // 0x0C70(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_InAir_Side;                                      // 0x0C78(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_InAir_SideTo3D;                                  // 0x0C80(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Stand_3D;                                        // 0x0C88(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Stand_Side;                                      // 0x0C90(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Stand_SideTo3D;                                  // 0x0C98(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimSequenceBase*                      N_Walk_SideTo3D;                                   // 0x0CA0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         BitPad_CA8_0 : 2;                                  // 0x0CA8(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         bIsMobile : 1;                                     // 0x0CA8(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bEnablePhysics : 1;                                // 0x0CA8(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bEnableNLocamotionDetail : 1;                      // 0x0CA8(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bEnableHitReaction : 1;                            // 0x0CA8(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bEnableCloth : 1;                                  // 0x0CA8(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bEnableHands : 1;                                  // 0x0CA8(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_CA9[0x57];                                     // 0x0CA9(0x0057)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1912,7 +1878,6 @@ public:
 		return GetDefaultObjImpl<UCyCharacterAnimInstance>();
 	}
 };
-#pragma pack(pop)
 DUMPER7_ASSERTS_UCyCharacterAnimInstance;
 
 // Class ALSV4_CPP.CyCharacterCameraInterface
@@ -1945,7 +1910,7 @@ public:
 DUMPER7_ASSERTS_ICyCharacterCameraInterface;
 
 // Class ALSV4_CPP.CyClothAnimInstance
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0280 - 0x0280)
 class UCyClothAnimInstance : public UAnimInstance
 {
 public:
@@ -1965,8 +1930,8 @@ public:
 DUMPER7_ASSERTS_UCyClothAnimInstance;
 
 // Class ALSV4_CPP.CyLobbyPhysicsAnimInstance
-// 0x0000 (0x02D0 - 0x02D0)
-class UCyLobbyPhysicsAnimInstance : public UAnimInstance
+// 0x0000 (0x0280 - 0x0280)
+class UCyLobbyPhysicsAnimInstance final : public UAnimInstance
 {
 public:
 	static class UClass* StaticClass()
@@ -1985,13 +1950,14 @@ public:
 DUMPER7_ASSERTS_UCyLobbyPhysicsAnimInstance;
 
 // Class ALSV4_CPP.CyMasterMeshComponent
-// 0x0010 (0x0C30 - 0x0C20)
+// 0x0020 (0x0C50 - 0x0C30)
 class UCyMasterMeshComponent final : public USkeletalMeshComponent
 {
 public:
-	bool                                          bEnableCombine;                                    // 0x0C18(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C19[0x7];                                      // 0x0C19(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USkeletalMesh*>                  CombinedMeshes;                                    // 0x0C20(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableCombine;                                    // 0x0C30(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C31[0x7];                                      // 0x0C31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USkeletalMesh*>                  CombinedMeshes;                                    // 0x0C38(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C48[0x8];                                      // 0x0C48(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2122,18 +2088,69 @@ public:
 };
 DUMPER7_ASSERTS_UCyNotifyStateRootMotion;
 
+// Class ALSV4_CPP.CyRagdollComponent
+// 0x0120 (0x0250 - 0x0130)
+class UCyRagdollComponent final : public UCyCharacterComponent
+{
+public:
+	uint8                                         Pad_130[0x18];                                     // 0x0130(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ECyWeaponName, class UAnimMontage*>      FaceUpAnimMap;                                     // 0x0148(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TMap<ECyWeaponName, class UAnimMontage*>      FaceDownAnimMap;                                   // 0x0198(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class FName                                   SimulateBoneName;                                  // 0x01E8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bSupportRagdoll;                                   // 0x01F0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bRagdollOnLand;                                    // 0x01F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1F2[0x2];                                      // 0x01F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RagdollOnLandVelocity;                             // 0x01F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bRagdollOnGround;                                  // 0x01F8(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bRagdollFaceUp;                                    // 0x01F9(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1FA[0x2];                                      // 0x01FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                LastRagdollVelocity;                               // 0x01FC(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector_NetQuantize10                  TargetRagdollLocation;                             // 0x0208(0x000C)(BlueprintVisible, Net, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_214[0xC];                                      // 0x0214(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCyAnimationComponent*                  AnimationComponent;                                // 0x0220(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_228[0x28];                                     // 0x0228(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void Multicast_RagdollEnd(const struct FVector& CharacterLocation);
+	void Multicast_RagdollStart();
+	void OnMovementStateChanged(EALSMovementState PreMovementState, EALSMovementState CurMovementState);
+	void RagdollEnd();
+	void RagdollStart();
+	void ReplicatedRagdollEnd();
+	void ReplicatedRagdollStart();
+	void Server_RagdollEnd(const struct FVector& CharacterLocation);
+	void Server_RagdollStart();
+	void Server_SetMeshLocationDuringRagdoll(const struct FVector& MeshLocation);
+	void SwitchRagdoll();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("CyRagdollComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CyRagdollComponent")
+	}
+	static class UCyRagdollComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCyRagdollComponent>();
+	}
+};
+DUMPER7_ASSERTS_UCyRagdollComponent;
+
 // Class ALSV4_CPP.CyRollComponent
-// 0x0068 (0x0180 - 0x0118)
+// 0x0068 (0x0190 - 0x0128)
 class UCyRollComponent final : public UActorComponent
 {
 public:
-	bool                                          bBreakfallOnLand;                                  // 0x0118(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BreakfallOnLandVelocity;                           // 0x011C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         RollDoubleTapTimeout;                              // 0x0120(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AALSBaseCharacter*                      OwnerCharacter;                                    // 0x0128(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<ECyWeaponName, class UAnimMontage*>      RollAnimMap;                                       // 0x0130(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	bool                                          bBreakfallOnLand;                                  // 0x0128(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BreakfallOnLandVelocity;                           // 0x012C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         RollDoubleTapTimeout;                              // 0x0130(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AALSBaseCharacter*                      OwnerCharacter;                                    // 0x0138(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<ECyWeaponName, class UAnimMontage*>      RollAnimMap;                                       // 0x0140(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 
 public:
 	void OnBreakfall();
@@ -2156,71 +2173,89 @@ public:
 };
 DUMPER7_ASSERTS_UCyRollComponent;
 
-// Class ALSV4_CPP.CyRotationComponent
-// 0x0048 (0x0168 - 0x0120)
-class UCyRotationComponent : public UCyCharacterComponent
+// Class ALSV4_CPP.CySlaveMeshComponent
+// 0x0000 (0x0C30 - 0x0C30)
+class UCySlaveMeshComponent final : public USkeletalMeshComponent
 {
 public:
-	struct FRotator                               LastVelocityRotation;                              // 0x0120(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FRotator                               LastMovementInputRotation;                         // 0x012C(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FRotator                               TargetRotation;                                    // 0x0138(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FRotator                               InAirRotation;                                     // 0x0144(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         RotateActorTime;                                   // 0x0150(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCyAnimationComponent*                  AnimationComponent;                                // 0x0158(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_160[0x8];                                      // 0x0160(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("CySlaveMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CySlaveMeshComponent")
+	}
+	static class UCySlaveMeshComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCySlaveMeshComponent>();
+	}
+};
+DUMPER7_ASSERTS_UCySlaveMeshComponent;
 
+// Class ALSV4_CPP.CySubAnimInstanceDefault
+// 0x0030 (0x04F0 - 0x04C0)
+#pragma pack(push, 0x1)
+class alignas(0x10) UCySubAnimInstanceDefault : public UCySubAnimInstanceWeapon
+{
 public:
-	void OnRotationModeChanged(EALSRotationMode PreviousRotationMode);
+	struct FCyWeaponAnims                         Relaxed;                                           // 0x04B8(0x0030)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("CyRotationComponent")
+		STATIC_CLASS_IMPL("CySubAnimInstanceDefault")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"CyRotationComponent")
+		STATIC_NAME_IMPL(L"CySubAnimInstanceDefault")
 	}
-	static class UCyRotationComponent* GetDefaultObj()
+	static class UCySubAnimInstanceDefault* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UCyRotationComponent>();
+		return GetDefaultObjImpl<UCySubAnimInstanceDefault>();
 	}
 };
-DUMPER7_ASSERTS_UCyRotationComponent;
+#pragma pack(pop)
+DUMPER7_ASSERTS_UCySubAnimInstanceDefault;
 
-// Class ALSV4_CPP.CySubAnimInstanceMelee
-// 0x00A0 (0x05B0 - 0x0510)
-class UCySubAnimInstanceMelee : public UCySubAnimInstanceWeapon
+// Class ALSV4_CPP.CySubAnimInstanceRifle
+// 0x01D0 (0x0690 - 0x04C0)
+class UCySubAnimInstanceRifle : public UCySubAnimInstanceWeapon
 {
 public:
-	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x0510(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponSweepAnims                    Ready;                                             // 0x0550(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x0598(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x04B8(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponSweepAnims                    Ready;                                             // 0x04F8(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponSweepAnims                    Waist;                                             // 0x0540(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponSweepAnims                    Aiming;                                            // 0x0588(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponSweepAnims                    ADS;                                               // 0x05D0(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponSweepAnims                    Custom;                                            // 0x0618(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x0660(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FCyWeaponRecoilAnims                   Recoil;                                            // 0x0678(0x0010)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           ReadyToRelaxTransition;                            // 0x0688(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("CySubAnimInstanceMelee")
+		STATIC_CLASS_IMPL("CySubAnimInstanceRifle")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"CySubAnimInstanceMelee")
+		STATIC_NAME_IMPL(L"CySubAnimInstanceRifle")
 	}
-	static class UCySubAnimInstanceMelee* GetDefaultObj()
+	static class UCySubAnimInstanceRifle* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UCySubAnimInstanceMelee>();
+		return GetDefaultObjImpl<UCySubAnimInstanceRifle>();
 	}
 };
-DUMPER7_ASSERTS_UCySubAnimInstanceMelee;
+DUMPER7_ASSERTS_UCySubAnimInstanceRifle;
 
 // Class ALSV4_CPP.CySummonAnimationComponent
-// 0x0010 (0x0128 - 0x0118)
+// 0x0010 (0x0138 - 0x0128)
 class UCySummonAnimationComponent : public UActorComponent
 {
 public:
-	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDataAsset*                             AnimAsset;                                         // 0x0120(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_128[0x8];                                      // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDataAsset*                             AnimAsset;                                         // 0x0130(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -2239,17 +2274,18 @@ public:
 DUMPER7_ASSERTS_UCySummonAnimationComponent;
 
 // Class ALSV4_CPP.CySummonAnimInstance
-// 0x0040 (0x0310 - 0x02D0)
+// 0x0050 (0x02D0 - 0x0280)
 #pragma pack(push, 0x1)
 class alignas(0x10) UCySummonAnimInstance : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2C8[0x8];                                      // 0x02C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCySummonAnimationComponent*            SummonAnimComponent;                               // 0x02D0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FRotator                               FaceRotation;                                      // 0x02D8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FRotator                               FaceRotationWS;                                    // 0x02E4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FVector                                GroundedLocation;                                  // 0x02F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                GroundedLocationWS;                                // 0x02FC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_278[0x10];                                     // 0x0278(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCySummonAnimationComponent*            SummonAnimComponent;                               // 0x0288(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FALSCharacterPartFlags                 CharacterHideParts;                                // 0x0290(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FRotator                               FaceRotation;                                      // 0x0298(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FRotator                               FaceRotationWS;                                    // 0x02A4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FVector                                GroundedLocation;                                  // 0x02B0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                GroundedLocationWS;                                // 0x02BC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()

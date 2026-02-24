@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectRoleSkillPanel.WBP_SelectRoleSkillPanel_C
-// 0x0008 (0x0A80 - 0x0A78)
+// 0x0008 (0x0A98 - 0x0A90)
 class UWBP_SelectRoleSkillPanel_C final : public UCySelectRoleSkillPanelPC
 {
 public:
-	class UWBP_ScrollWidgetItem_C*                WBP_ScrollWidgetItem_PC;                           // 0x0A78(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScrollWidgetItem_C*                WBP_ScrollWidgetItem_PC;                           // 0x0A90(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

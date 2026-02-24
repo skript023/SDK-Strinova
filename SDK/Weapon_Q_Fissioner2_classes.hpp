@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Q_Fissioner2.Weapon_Q_Fissioner2_C
-// 0x0030 (0x13D0 - 0x13A0)
+// 0x0030 (0x14A0 - 0x1470)
 class AWeapon_Q_Fissioner2_C final : public ACyWeaponCustom
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x13A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCyFFinishState*                        CyFFinishState;                                    // 0x13A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFSecondWorkState*                    CyFSecondWorkState;                                // 0x13B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x13B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyWeaponControlModeComponent*          CyWeaponControlMode;                               // 0x13C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFWorkState*                          CyFWorkState;                                      // 0x13C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1470(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCyFFinishState*                        CyFFinishState;                                    // 0x1478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFSecondWorkState*                    CyFSecondWorkState;                                // 0x1480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyWeaponControlModeComponent*          CyWeaponControlMode;                               // 0x1490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFWorkState*                          CyFWorkState;                                      // 0x1498(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ReceiveTick(float DeltaSeconds);

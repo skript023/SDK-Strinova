@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Shared_Rescue_ChangeCameraParam.BP_Shared_Rescue_ChangeCameraParam_C
-// 0x0000 (0x03D8 - 0x03D8)
+// 0x0000 (0x03E0 - 0x03E0)
 class UBP_Shared_Rescue_ChangeCameraParam_C final : public UCyGAActivateChangeCameraParam
 {
 public:

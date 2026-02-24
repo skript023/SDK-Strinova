@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_OverheadEmotion.WBP_OverheadEmotion_C
-// 0x0008 (0x08D0 - 0x08C8)
+// 0x0008 (0x08E8 - 0x08E0)
 class UWBP_OverheadEmotion_C final : public UCyUWOverheadEmotionPanelPC
 {
 public:
-	class UImage*                                 Image_106;                                         // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_106;                                         // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

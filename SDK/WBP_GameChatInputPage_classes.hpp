@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GameChatInputPage.WBP_GameChatInputPage_C
-// 0x0040 (0x0910 - 0x08D0)
+// 0x0040 (0x0938 - 0x08F8)
 class UWBP_GameChatInputPage_C final : public UPMGameChatPage
 {
 public:
-	TSoftClassPtr<class UClass>                   ChatTextPanelClass;                                // 0x08D0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         TimeInterval;                                      // 0x08F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TimeCoolDown;                                      // 0x08FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TimeCount;                                         // 0x0900(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MsgLimit;                                          // 0x0904(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MaxPrivateChatNum;                                 // 0x0908(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftClassPtr<class UClass>                   ChatTextPanelClass;                                // 0x08F8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         TimeInterval;                                      // 0x0920(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TimeCoolDown;                                      // 0x0924(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TimeCount;                                         // 0x0928(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MsgLimit;                                          // 0x092C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxPrivateChatNum;                                 // 0x0930(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

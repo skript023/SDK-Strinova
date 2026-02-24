@@ -17,61 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.ExecuteUbergraph_WBP_RankBadge7n1
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.SequenceEvent__ENTRYPOINTWBP_RankBadge7n1_0
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RankBadge7n1_C::ExecuteUbergraph_WBP_RankBadge7n1(int32 EntryPoint)
+void UWBP_RankBadge7n1_C::SequenceEvent__ENTRYPOINTWBP_RankBadge7n1_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankBadge7n1_C", "ExecuteUbergraph_WBP_RankBadge7n1");
-
-	Params::WBP_RankBadge7n1_C_ExecuteUbergraph_WBP_RankBadge7n1 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.BadgeDownDisappear
-// (Native, BlueprintCallable, BlueprintEvent)
-
-void UWBP_RankBadge7n1_C::BadgeDownDisappear()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankBadge7n1_C", "BadgeDownDisappear");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+		Func = Class->GetFunction("WBP_RankBadge7n1_C", "SequenceEvent__ENTRYPOINTWBP_RankBadge7n1_0");
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.Construct
-// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
-
-void UWBP_RankBadge7n1_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankBadge7n1_C", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -95,17 +51,61 @@ void UWBP_RankBadge7n1_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.SequenceEvent__ENTRYPOINTWBP_RankBadge7n1_0
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.Construct
+// (BlueprintCosmetic, Native, Event, Public, BlueprintEvent)
 
-void UWBP_RankBadge7n1_C::SequenceEvent__ENTRYPOINTWBP_RankBadge7n1_0()
+void UWBP_RankBadge7n1_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RankBadge7n1_C", "SequenceEvent__ENTRYPOINTWBP_RankBadge7n1_0");
+		Func = Class->GetFunction("WBP_RankBadge7n1_C", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.BadgeDownDisappear
+// (Native, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RankBadge7n1_C::BadgeDownDisappear()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RankBadge7n1_C", "BadgeDownDisappear");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function WBP_RankBadge7n1.WBP_RankBadge7n1_C.ExecuteUbergraph_WBP_RankBadge7n1
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RankBadge7n1_C::ExecuteUbergraph_WBP_RankBadge7n1(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RankBadge7n1_C", "ExecuteUbergraph_WBP_RankBadge7n1");
+
+	Params::WBP_RankBadge7n1_C_ExecuteUbergraph_WBP_RankBadge7n1 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

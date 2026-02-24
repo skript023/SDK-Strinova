@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GameStateComponent.BP_GameStateComponent_C
-// 0x0000 (0x01B0 - 0x01B0)
+// 0x0000 (0x01C0 - 0x01C0)
 class UBP_GameStateComponent_C final : public UCyGameStateComponent
 {
 public:

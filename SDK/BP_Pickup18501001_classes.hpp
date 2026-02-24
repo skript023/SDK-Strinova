@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Pickup18501001.BP_Pickup18501001_C
-// 0x0000 (0x0748 - 0x0748)
+// 0x0000 (0x0788 - 0x0788)
 class ABP_Pickup18501001_C final : public ABP_PickupWeapon_Template_C
 {
 public:

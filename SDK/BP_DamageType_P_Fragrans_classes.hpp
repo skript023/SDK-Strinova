@@ -17,24 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DamageType_P_Fragrans.BP_DamageType_P_Fragrans_C
-// 0x0000 (0x05B0 - 0x05B0)
-class UBP_DamageType_P_Fragrans_C final : public UPMDamageType
+// 0x0000 (0x0540 - 0x0540)
+class BP_DamageType_P_Fragrans::UBP_DamageType_P_Fragrans_C final : public UPMDamageType
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL("BP_DamageType_P_Fragrans_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_DamageType_P_Fragrans.BP_DamageType_P_Fragrans_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_DamageType_P_Fragrans_C")
 	}
-	static class UBP_DamageType_P_Fragrans_C* GetDefaultObj()
+	static class BP_DamageType_P_Fragrans::UBP_DamageType_P_Fragrans_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBP_DamageType_P_Fragrans_C>();
+		return GetDefaultObjImpl<BP_DamageType_P_Fragrans::UBP_DamageType_P_Fragrans_C>();
 	}
 };
-DUMPER7_ASSERTS_UBP_DamageType_P_Fragrans_C;
+DUMPER7_ASSERTS_BP_DamageType_P_Fragrans__UBP_DamageType_P_Fragrans_C;
 
 }
 

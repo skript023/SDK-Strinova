@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Damage_EnemyPlayer_Lawine.GE_Damage_EnemyPlayer_Lawine_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Damage_EnemyPlayer_Lawine::UGE_Damage_EnemyPlayer_Lawine_C final : public UCyGameplayEffect
 {
 public:

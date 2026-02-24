@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GPEM_UpdateGameProgressToDSA_Timer.BP_GPEM_UpdateGameProgressToDSA_Timer_C
-// 0x0000 (0x0650 - 0x0650)
+// 0x0000 (0x0710 - 0x0710)
 class UBP_GPEM_UpdateGameProgressToDSA_Timer_C final : public UCyGPEM_Timer
 {
 public:

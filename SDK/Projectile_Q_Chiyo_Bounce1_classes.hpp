@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Q_Chiyo_Bounce1.Projectile_Q_Chiyo_Bounce1_C
-// 0x0000 (0x0AF8 - 0x0AF8)
+// 0x0000 (0x0B40 - 0x0B40)
 class AProjectile_Q_Chiyo_Bounce1_C final : public AProjectile_Q_Chiyo_C
 {
 public:

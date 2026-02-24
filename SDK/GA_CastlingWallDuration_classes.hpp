@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_CastlingWallDuration.GA_CastlingWallDuration_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_CastlingWallDuration::UGA_CastlingWallDuration_C final : public UCyBaseAbility
 {
 public:

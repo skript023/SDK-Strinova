@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Debuff_Duration_X_Yvette.GE_Debuff_Duration_X_Yvette_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_Debuff_Duration_X_Yvette_0::UGE_Debuff_Duration_X_Yvette_C final : public UCyGameplayEffect
 {
 public:

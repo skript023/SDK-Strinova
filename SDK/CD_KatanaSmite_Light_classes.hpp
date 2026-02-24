@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CD_KatanaSmite_Light.CD_KatanaSmite_Light_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UCD_KatanaSmite_Light_C final : public UCyGameplayEffect
 {
 public:

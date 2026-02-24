@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Q_Lawine.Projectile_Q_Lawine_C
-// 0x0010 (0x0AD8 - 0x0AC8)
+// 0x0010 (0x0B20 - 0x0B10)
 class Projectile_Q_Lawine::AProjectile_Q_Lawine_C final : public ACyProjectileBlast
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AC8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0AD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B10(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ReceiveBeginPlay();

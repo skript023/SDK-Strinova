@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_E_KokonaShiki.GA_E_KokonaShiki_C
-// 0x0000 (0x1AE8 - 0x1AE8)
+// 0x0000 (0x1AF8 - 0x1AF8)
 class GA_E_KokonaShiki::UGA_E_KokonaShiki_C final : public UCyBaseAbility
 {
 public:

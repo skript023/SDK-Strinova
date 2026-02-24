@@ -223,12 +223,12 @@ public:
 DUMPER7_ASSERTS_ULiveLinkAnimationVirtualSubject;
 
 // Class LiveLink.LiveLinkComponent
-// 0x0020 (0x0138 - 0x0118)
+// 0x0020 (0x0148 - 0x0128)
 class ULiveLinkComponent final : public UActorComponent
 {
 public:
-	TMulticastInlineDelegate<void(float DeltaTime)> OnLiveLinkUpdated;                               // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_128[0x10];                                     // 0x0128(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(float DeltaTime)> OnLiveLinkUpdated;                               // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138[0x10];                                     // 0x0138(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetAvailableSubjectNames(TArray<class FName>* SubjectNames);
@@ -253,15 +253,15 @@ public:
 DUMPER7_ASSERTS_ULiveLinkComponent;
 
 // Class LiveLink.LiveLinkDrivenComponent
-// 0x0018 (0x0130 - 0x0118)
+// 0x0018 (0x0140 - 0x0128)
 class ULiveLinkDrivenComponent final : public UActorComponent
 {
 public:
-	struct FLiveLinkSubjectName                   SubjectName;                                       // 0x0118(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   ActorTransformBone;                                // 0x0120(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bModifyActorTransform;                             // 0x0128(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSetRelativeLocation;                              // 0x0129(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12A[0x6];                                      // 0x012A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FLiveLinkSubjectName                   SubjectName;                                       // 0x0128(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   ActorTransformBone;                                // 0x0130(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bModifyActorTransform;                             // 0x0138(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSetRelativeLocation;                              // 0x0139(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_13A[0x6];                                      // 0x013A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -280,11 +280,11 @@ public:
 DUMPER7_ASSERTS_ULiveLinkDrivenComponent;
 
 // Class LiveLink.LiveLinkInstance
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0280 - 0x0280)
 class ULiveLinkInstance final : public UAnimInstance
 {
 public:
-	class ULiveLinkRetargetAsset*                 CurrentRetargetAsset;                              // 0x02C8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ULiveLinkRetargetAsset*                 CurrentRetargetAsset;                              // 0x0278(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()

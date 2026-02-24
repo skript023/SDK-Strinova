@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_RefereeEquipmentPanel_1.WBP_RefereeEquipmentPanel_1_C
-// 0x0010 (0x1030 - 0x1020)
+// 0x0010 (0x1040 - 0x1030)
 class UWBP_RefereeEquipmentPanel_1_C final : public UPMUWRefereeEquipmentPanel
 {
 public:
-	class UImage*                                 Img_Bg;                                            // 0x1020(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Bg;                                            // 0x1030(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

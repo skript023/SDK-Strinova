@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_HideSight_P_Nobunaga.GE_HideSight_P_Nobunaga_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_HideSight_P_Nobunaga_0::UGE_HideSight_P_Nobunaga_C final : public UCyGameplayEffect
 {
 public:

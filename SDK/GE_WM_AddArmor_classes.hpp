@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_WM_AddArmor.GE_WM_AddArmor_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_WM_AddArmor_C final : public UCyGameplayEffect
 {
 public:

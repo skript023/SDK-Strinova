@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_InitializeExtraEnergySpeed_P_Chiyo.GE_InitializeExtraEnergySpeed_P_Chiyo_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_InitializeExtraEnergySpeed_P_Chiyo_C final : public UCyGameplayEffect
 {
 public:

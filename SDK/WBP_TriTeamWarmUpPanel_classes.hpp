@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TriTeamWarmUpPanel.WBP_TriTeamWarmUpPanel_C
-// 0x0000 (0x0B18 - 0x0B18)
+// 0x0000 (0x0B80 - 0x0B80)
 class UWBP_TriTeamWarmUpPanel_C final : public UPMUWCommonTimePanelPC
 {
 public:

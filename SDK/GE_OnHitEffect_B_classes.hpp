@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_OnHitEffect_B.GE_OnHitEffect_B_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_OnHitEffect_B_C final : public UCyGameplayEffect
 {
 public:

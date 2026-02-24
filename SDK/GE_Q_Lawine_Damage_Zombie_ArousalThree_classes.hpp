@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Lawine_Damage_Zombie_ArousalThree.GE_Q_Lawine_Damage_Zombie_ArousalThree_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Q_Lawine_Damage_Zombie_ArousalThree_C final : public UCyGameplayEffect
 {
 public:

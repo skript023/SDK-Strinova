@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AIController_Kuma_Tracking.AIController_Kuma_Tracking_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x0420 - 0x0420)
 class AIController_Kuma_Tracking::AAIController_Kuma_Tracking_C final : public ACyBehaviorAIController
 {
 public:

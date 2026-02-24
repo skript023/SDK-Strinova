@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_WeaponManager_Maddelena.BP_WeaponManager_Maddelena_C
-// 0x0000 (0x15E8 - 0x15E8)
+// 0x0000 (0x1668 - 0x1668)
 class UBP_WeaponManager_Maddelena_C final : public UBP_WeaponManager_C
 {
 public:

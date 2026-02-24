@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ScreenEffectManager.WBP_ScreenEffectManager_C
-// 0x0000 (0x0B08 - 0x0B08)
+// 0x0000 (0x0B20 - 0x0B20)
 class UWBP_ScreenEffectManager_C final : public UCyScreenEffectManager
 {
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PB_PickMovement.PB_PickMovement_C
-// 0x0000 (0x0250 - 0x0250)
+// 0x0000 (0x0260 - 0x0260)
 class UPB_PickMovement_C final : public UCyPickupMovementComponent
 {
 public:

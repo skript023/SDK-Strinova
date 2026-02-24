@@ -20,7 +20,7 @@ namespace SDK
 // Function Summon_Q_Fragrans_SecondWork.Summon_Q_Fragrans_SecondWork_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
-void ASummon_Q_Fragrans_SecondWork_C::ReceiveBeginPlay()
+void Summon_Q_Fragrans_SecondWork::ASummon_Q_Fragrans_SecondWork_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
@@ -36,7 +36,7 @@ void ASummon_Q_Fragrans_SecondWork_C::ReceiveBeginPlay()
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASummon_Q_Fragrans_SecondWork_C::ExecuteUbergraph_Summon_Q_Fragrans_SecondWork(int32 EntryPoint)
+void Summon_Q_Fragrans_SecondWork::ASummon_Q_Fragrans_SecondWork_C::ExecuteUbergraph_Summon_Q_Fragrans_SecondWork(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 

@@ -17,11 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_WarmUpScreenPanel.WBP_WarmUpScreenPanel_C
-// 0x0008 (0x0A18 - 0x0A10)
+// 0x0010 (0x0A38 - 0x0A28)
 class UWBP_WarmUpScreenPanel_C final : public UPMUWWarmUpTransPanelPC
 {
 public:
-	class UImage*                                 Image_163;                                         // 0x0A10(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_163;                                         // 0x0A28(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_193;                               // 0x0A30(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

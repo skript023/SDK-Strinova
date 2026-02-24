@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GE_SpeedUp.BP_GE_SpeedUp_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UBP_GE_SpeedUp_C final : public UCyGameplayEffect
 {
 public:

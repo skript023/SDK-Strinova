@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ResultScoreTips.WBP_ResultScoreTips_C
-// 0x0060 (0x0920 - 0x08C0)
+// 0x0060 (0x0938 - 0x08D8)
 class UWBP_ResultScoreTips_C final : public UPMUserWidget
 {
 public:
-	class UWidgetSwitcher*                        Switcher_Bg;                                       // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Txt_ScoreTips;                                     // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<int32, class FText>                      ScoreTipMap;                                       // 0x08D0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWidgetSwitcher*                        Switcher_Bg;                                       // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Txt_ScoreTips;                                     // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMap<int32, class FText>                      ScoreTipMap;                                       // 0x08E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	static class UClass* StaticClass()

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FCTween_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FCTween_structs.hpp"
 
 
 namespace SDK::Params

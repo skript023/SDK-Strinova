@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AddPointPanel.WBP_AddPointPanel_C
-// 0x0000 (0x0B48 - 0x0B48)
+// 0x0000 (0x0B60 - 0x0B60)
 class UWBP_AddPointPanel_C final : public UCyUWScoreBehaviorPanel
 {
 public:

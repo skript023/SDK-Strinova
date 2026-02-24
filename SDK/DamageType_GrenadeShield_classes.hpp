@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DamageType_GrenadeShield.DamageType_GrenadeShield_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x0540 - 0x0540)
 class DamageType_GrenadeShield::UDamageType_GrenadeShield_C final : public UPMDamageType
 {
 public:

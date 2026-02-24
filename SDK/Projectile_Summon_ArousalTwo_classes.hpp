@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_Summon_ArousalTwo.Projectile_Summon_ArousalTwo_C
-// 0x0010 (0x0AD8 - 0x0AC8)
+// 0x0010 (0x0B20 - 0x0B10)
 class Projectile_Summon_ArousalTwo::AProjectile_Summon_ArousalTwo_C final : public ACyProjectileBlast
 {
 public:
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0AC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0AD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

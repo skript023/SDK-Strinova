@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PreviewLevel.PreviewLevel_C
-// 0x0000 (0x02D8 - 0x02D8)
+// 0x0000 (0x0318 - 0x0318)
 class APreviewLevel_C final : public ALevelScriptActor
 {
 public:

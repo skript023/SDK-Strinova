@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_P_Flavia_XPoint.GE_P_Flavia_XPoint_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class GE_P_Flavia_XPoint_0::UGE_P_Flavia_XPoint_C final : public UCyGameplayEffect
 {
 public:

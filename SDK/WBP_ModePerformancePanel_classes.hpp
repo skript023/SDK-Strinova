@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ModePerformancePanel.WBP_ModePerformancePanel_C
-// 0x0008 (0x09A8 - 0x09A0)
+// 0x0008 (0x09C0 - 0x09B8)
 class UWBP_ModePerformancePanel_C final : public UPMUWModePerformancePanelPC
 {
 public:
-	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x09A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x09B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

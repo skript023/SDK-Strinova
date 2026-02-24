@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Q_Kanami_ArousalThree_Duration.GE_Q_Kanami_ArousalThree_Duration_C
-// 0x0000 (0x10D8 - 0x10D8)
+// 0x0000 (0x10E0 - 0x10E0)
 class UGE_Q_Kanami_ArousalThree_Duration_C final : public UCyGameplayEffect
 {
 public:

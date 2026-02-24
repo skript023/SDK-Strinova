@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_KillMessagesItemPanel.WBP_KillMessagesItemPanel_C
-// 0x0028 (0x0A20 - 0x09F8)
+// 0x0028 (0x0A38 - 0x0A10)
 class UWBP_KillMessagesItemPanel_C final : public UPMUWKillMessagesItemPanelPC
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x09F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 FadeInImg;                                         // 0x0A00(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_380;                                         // 0x0A08(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Grey;                                        // 0x0A10(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Red;                                         // 0x0A18(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A10(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 FadeInImg;                                         // 0x0A18(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_380;                                         // 0x0A20(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Grey;                                        // 0x0A28(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Red;                                         // 0x0A30(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void SequenceEvent_0();

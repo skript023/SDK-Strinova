@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TargetDetectorSphere_E_Flavia_02_Client.BP_TargetDetectorSphere_E_Flavia_02_Client_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class BP_TargetDetectorSphere_E_Flavia_02_Client::UBP_TargetDetectorSphere_E_Flavia_02_Client_C final : public UCyTargetDetectorSphere
 {
 public:
